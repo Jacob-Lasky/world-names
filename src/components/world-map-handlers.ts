@@ -35,13 +35,20 @@ export function featureId(f: CountryFeature): string {
 /** Did this deck.gl event originate from a touchscreen?
  *
  *  deck.gl attaches the underlying browser event at runtime via
- *  `info.event`, but the typed PickingInfo doesn't include it (event is
- *  the second arg of the layer's onClick signature; deck.gl's runtime
- *  layers it onto the info object regardless). We runtime-narrow the
- *  shape rather than cast: PointerEvents expose `pointerType`, and
- *  `'touch'` is the value we care about for forking desktop (mouse →
- *  click=SELECT, hover=INSPECT) from mobile (touch → tap=INSPECT,
- *  long-press=SELECT).
+ *  `info.event`, but the typed PickingInfo doesn't include it. TWO
+ *  underlying event shapes can appear, and the choice is browser-
+ *  dependent (deck.gl uses Hammer.js, which prefers TouchEvents over
+ *  PointerEvents on Android browsers):
+ *
+ *    PointerEvent → srcEvent.pointerType === 'touch'
+ *    TouchEvent   → srcEvent.type starts with 'touch' (touchstart /
+ *                   touchend / touchmove / touchcancel). NO
+ *                   pointerType field.
+ *
+ *  DO NOT check only `pointerType` — on Android Firefox the srcEvent
+ *  is a TouchEvent and pointerType is undefined, so the mouse/desktop
+ *  branch wins and every tap selects instead of inspects (PR #11 v1
+ *  shipped with this bug; fix is to check both shapes).
  *
  *  Takes `unknown` so call sites pass deck.gl's PickingInfo directly
  *  without local casts. Returns false for any non-touch / malformed
@@ -53,7 +60,38 @@ export function isTouchEvent(info: unknown): boolean {
   if (!event || typeof event !== 'object') return false;
   const srcEvent = (event as { srcEvent?: unknown }).srcEvent;
   if (!srcEvent || typeof srcEvent !== 'object') return false;
-  return (srcEvent as { pointerType?: unknown }).pointerType === 'touch';
+  // PointerEvent path
+  if ((srcEvent as { pointerType?: unknown }).pointerType === 'touch') return true;
+  // TouchEvent path (Hammer.js default on Android browsers).
+  const type = (srcEvent as { type?: unknown }).type;
+  if (typeof type === 'string' && type.startsWith('touch')) return true;
+  return false;
+}
+
+/** Touch tap on a country. The mobile-UX rule:
+ *
+ *    Nothing selected → SELECT this country (entry point). Without this
+ *      first-tap-selects behavior, the user can never get out of the
+ *      empty state — INSPECT with no selection has nothing to be
+ *      foreign-relative-to, so the tap would do nothing visible.
+ *    A country is already selected → INSPECT this country. The user is
+ *      asking "what does THIS country call my selection?" — that's
+ *      what the inspection card answers.
+ *
+ *  Long-press is the gesture for "change focus once you're past the
+ *  entry point"; that path bypasses this handler entirely (the
+ *  WorldMap-level pointerdown timer fires SELECT directly).
+ */
+export function handleTouchTap(
+  f: CountryFeature,
+  actions: SelectionActions,
+  selectedId: string | null,
+): void {
+  if (selectedId == null) {
+    handleCountrySelect(f, actions);
+  } else {
+    handleCountryInspect(f, actions, selectedId);
+  }
 }
 
 /** SELECT: change focus to this country. Clears any open inspection. */

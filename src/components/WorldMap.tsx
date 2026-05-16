@@ -13,6 +13,7 @@ import {
   isTouchEvent,
   handleCountrySelect,
   handleCountryInspect,
+  handleTouchTap,
   handleBackgroundDeselect,
   handleBackgroundDismissInspection,
 } from './world-map-handlers';
@@ -112,11 +113,21 @@ export function WorldMap() {
   // remembers where the press began so we can pick at that point even if
   // the finger drifted slightly. `longPressFired` blocks the subsequent
   // touchend → onClick from firing inspect on the same press.
+  //
+  // `lastInputWasTouch` is the source-of-truth for "was this a touch
+  // interaction" because deck.gl's info.event metadata isn't reliable
+  // across browsers (Android Firefox emits TouchEvents through Hammer.js
+  // which lack pointerType). We set it from our own React PointerEvent
+  // handler — pointer events are universal in modern browsers and React
+  // normalizes them consistently. isTouchEvent(info) is kept as a
+  // fallback layer for synthetic clicks that may not have a paired
+  // pointerdown (e.g. screen-reader-triggered activation).
   const wrapperRef = useRef<HTMLDivElement>(null);
   const deckRef = useRef<DeckGLRef | null>(null);
   const pressTimer = useRef<number | null>(null);
   const pressStart = useRef<{ clientX: number; clientY: number } | null>(null);
   const longPressFired = useRef(false);
+  const lastInputWasTouch = useRef(false);
 
   function pickAt(clientX: number, clientY: number): CountryFeature | null {
     const wrapper = wrapperRef.current;
@@ -137,6 +148,10 @@ export function WorldMap() {
   }
 
   function onPointerDown(e: React.PointerEvent<HTMLDivElement>) {
+    // Record the input modality on EVERY pointerdown so the subsequent
+    // onClick (which may arrive without reliable event metadata) can read
+    // it from a ref instead of trying to introspect deck.gl's info.event.
+    lastInputWasTouch.current = e.pointerType === 'touch';
     // Mouse/pen path stays on deck.gl's onClick (no long-press needed —
     // desktop clicks are unambiguous). Only touch needs the long-press
     // gesture.
@@ -185,8 +200,13 @@ export function WorldMap() {
       longPressFired.current = false;
       return;
     }
-    if (isTouchEvent(info)) {
-      handleCountryInspect(f, { selectCountry, hover }, selectedId);
+    // Two signals: our own pointerdown ref (most reliable; covers Android
+    // Firefox where deck.gl emits TouchEvents with no pointerType) plus
+    // isTouchEvent on info (covers synthetic clicks with no paired
+    // pointerdown). Either being true = touch.
+    const isTouch = lastInputWasTouch.current || isTouchEvent(info);
+    if (isTouch) {
+      handleTouchTap(f, { selectCountry, hover }, selectedId);
     } else {
       handleCountrySelect(f, { selectCountry, hover });
     }
@@ -196,9 +216,13 @@ export function WorldMap() {
     // Touch-derived hover events fire on touchstart and would race with the
     // explicit tap → onClick path. Inspection on touch is owned exclusively
     // by onClick (tap) and the press timer (long-press).
-    if (isTouchEvent(info)) return;
+    if (lastInputWasTouch.current || isTouchEvent(info)) return;
     const f = info.object as CountryFeature | undefined;
     if (f) {
+      // Desktop hover is INSPECT-only — never SELECT, even when nothing is
+      // selected (otherwise the user can't move the mouse without
+      // accidentally focusing every country it passes over). With no
+      // selection, INSPECT just highlights the polygon under the cursor.
       handleCountryInspect(f, { selectCountry, hover }, selectedId);
     } else {
       hover(null);
@@ -308,7 +332,7 @@ export function WorldMap() {
     // Background click handling. Mouse → deselect (clear selection + hover);
     // touch → dismiss inspection only (selection persists; wayward
     // background taps during pan shouldn't blow away focus).
-    if (isTouchEvent(info)) {
+    if (lastInputWasTouch.current || isTouchEvent(info)) {
       handleBackgroundDismissInspection(info.object, { selectCountry, hover });
     } else {
       handleBackgroundDeselect(info.object, { selectCountry, hover });

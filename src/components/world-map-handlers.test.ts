@@ -5,6 +5,7 @@ import {
   isTouchEvent,
   handleCountrySelect,
   handleCountryInspect,
+  handleTouchTap,
   handleBackgroundDeselect,
   handleBackgroundDismissInspection,
 } from './world-map-handlers';
@@ -40,21 +41,49 @@ describe('featureId', () => {
 });
 
 describe('isTouchEvent', () => {
-  it('returns true when pointerType is touch', () => {
-    expect(isTouchEvent({ event: { srcEvent: { pointerType: 'touch' } } })).toBe(true);
+  describe('PointerEvent shape', () => {
+    it('returns true when pointerType is touch', () => {
+      expect(isTouchEvent({ event: { srcEvent: { pointerType: 'touch' } } })).toBe(true);
+    });
+    it('returns false for mouse', () => {
+      expect(isTouchEvent({ event: { srcEvent: { pointerType: 'mouse' } } })).toBe(false);
+    });
+    it('returns false for pen (treat as desktop — click=SELECT, hover=INSPECT)', () => {
+      expect(isTouchEvent({ event: { srcEvent: { pointerType: 'pen' } } })).toBe(false);
+    });
   });
-  it('returns false for mouse', () => {
-    expect(isTouchEvent({ event: { srcEvent: { pointerType: 'mouse' } } })).toBe(false);
+
+  describe('TouchEvent shape (Hammer.js path on Android browsers)', () => {
+    // Regression coverage for the Android Firefox bug — deck.gl's
+    // Hammer.js layer hands us a TouchEvent (no pointerType), and the
+    // old code returned false here, dropping every tap into the
+    // desktop SELECT branch.
+    it('returns true for touchstart', () => {
+      expect(isTouchEvent({ event: { srcEvent: { type: 'touchstart' } } })).toBe(true);
+    });
+    it('returns true for touchend (the most common — fires on tap release)', () => {
+      expect(isTouchEvent({ event: { srcEvent: { type: 'touchend' } } })).toBe(true);
+    });
+    it('returns true for touchmove', () => {
+      expect(isTouchEvent({ event: { srcEvent: { type: 'touchmove' } } })).toBe(true);
+    });
+    it('returns true for touchcancel', () => {
+      expect(isTouchEvent({ event: { srcEvent: { type: 'touchcancel' } } })).toBe(true);
+    });
+    it('returns false for mousedown / click (similar shape but not touch)', () => {
+      expect(isTouchEvent({ event: { srcEvent: { type: 'mousedown' } } })).toBe(false);
+      expect(isTouchEvent({ event: { srcEvent: { type: 'click' } } })).toBe(false);
+    });
   });
-  it('returns false for pen (treat as desktop — click=SELECT, hover=INSPECT)', () => {
-    expect(isTouchEvent({ event: { srcEvent: { pointerType: 'pen' } } })).toBe(false);
-  });
-  it('returns false when the carrier is null or missing fields', () => {
-    expect(isTouchEvent(null)).toBe(false);
-    expect(isTouchEvent(undefined)).toBe(false);
-    expect(isTouchEvent({})).toBe(false);
-    expect(isTouchEvent({ event: {} })).toBe(false);
-    expect(isTouchEvent({ event: { srcEvent: {} } })).toBe(false);
+
+  describe('malformed input', () => {
+    it('returns false when the carrier is null or missing fields', () => {
+      expect(isTouchEvent(null)).toBe(false);
+      expect(isTouchEvent(undefined)).toBe(false);
+      expect(isTouchEvent({})).toBe(false);
+      expect(isTouchEvent({ event: {} })).toBe(false);
+      expect(isTouchEvent({ event: { srcEvent: {} } })).toBe(false);
+    });
   });
 });
 
@@ -124,6 +153,38 @@ describe('handleBackgroundDeselect', () => {
     handleBackgroundDeselect(makeFeature(276, 'Germany'), actions);
     expect(actions.selectCountry).not.toHaveBeenCalled();
     expect(actions.hover).not.toHaveBeenCalled();
+  });
+});
+
+describe('handleTouchTap', () => {
+  // Mobile UX rule: tap-on-country = SELECT when nothing's focused yet
+  // (the entry point), and INSPECT once a focus exists.
+  it('SELECTS on the first tap (no current selection — entry point)', () => {
+    const actions = makeActions();
+    handleTouchTap(makeFeature(276, 'Germany'), actions, null);
+    expect(actions.selectCountry).toHaveBeenCalledWith({
+      numericId: '276',
+      name: 'Germany',
+    });
+    // SELECT also clears hover by contract.
+    expect(actions.hover).toHaveBeenCalledWith(null);
+  });
+
+  it('INSPECTS once a country is already selected', () => {
+    const actions = makeActions();
+    handleTouchTap(makeFeature(250, 'France'), actions, '276');
+    expect(actions.hover).toHaveBeenCalledWith('250');
+    expect(actions.selectCountry).not.toHaveBeenCalled();
+  });
+
+  it('clears the inspection when tapping the country that is already selected', () => {
+    // Inherits handleCountryInspect's "don't inspect self" rule —
+    // tapping the focused country a second time has nothing extra to
+    // show, so we collapse the inspection card.
+    const actions = makeActions();
+    handleTouchTap(makeFeature(276, 'Germany'), actions, '276');
+    expect(actions.hover).toHaveBeenCalledWith(null);
+    expect(actions.selectCountry).not.toHaveBeenCalled();
   });
 });
 

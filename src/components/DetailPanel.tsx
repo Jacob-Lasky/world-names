@@ -16,8 +16,11 @@ export function DetailPanel() {
           drifted across other languages.
         </p>
         <p style={{ ...mutedText, marginTop: '0.75rem', fontSize: '0.8rem' }}>
-          Desktop: <strong>click</strong> to change focus, <strong>hover</strong> to peek.
-          Mobile: <strong>long-press</strong> to change focus, <strong>tap</strong> to peek.
+          Desktop: <strong>click</strong> a country to focus, <strong>hover</strong> another to peek.
+        </p>
+        <p style={{ ...mutedText, marginTop: '0.5rem', fontSize: '0.8rem' }}>
+          Mobile: <strong>tap</strong> a country to focus, then <strong>tap</strong> another to peek
+          and <strong>long-press</strong> to switch focus.
         </p>
       </aside>
     );

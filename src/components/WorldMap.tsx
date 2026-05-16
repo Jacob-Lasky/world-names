@@ -75,6 +75,18 @@ export function WorldMap() {
         stroked: true,
         pickable: true,
         autoHighlight: false,
+        // Natural Earth's Russia polygon crosses the antimeridian (Chukotka). The
+        // raw GeoJSON has consecutive vertex pairs that jump >180° in longitude,
+        // which deck.gl renders as horizontal stripes across the map (and the
+        // stripes pick up as Russia on hover, since they ARE Russia, badly drawn).
+        //
+        // GeoJsonLayer internally hardcodes _normalize=false on its polygon
+        // sub-layers. Override via _subLayerProps so the tesselator runs
+        // cutPolygonByMercatorBounds and splits the polygon at ±180°.
+        _subLayerProps: {
+          'polygons-fill': { _normalize: true, wrapLongitude: true },
+          'polygons-stroke': { _normalize: true, wrapLongitude: true },
+        },
         getFillColor: (f) => {
           const id = featureId(f);
           if (id === selectedId) return RGBA.selected;

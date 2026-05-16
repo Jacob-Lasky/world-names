@@ -39,5 +39,8 @@ body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-se
 }
 
 @media (max-width: 768px) {
-  .app-main { grid-template-columns: 1fr; grid-template-rows: 1fr auto; }
+  /* Lock the detail panel to a fixed row height so the map's aspect ratio
+   * doesn't shift when the blurb populates (otherwise deck.gl re-projects and
+   * countries visibly change shape under the user's finger). */
+  .app-main { grid-template-columns: 1fr; grid-template-rows: 1fr 40vh; }
 }

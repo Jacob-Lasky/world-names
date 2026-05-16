@@ -6,6 +6,11 @@ import { feature } from 'topojson-client';
 import type { Topology, GeometryCollection } from 'topojson-specification';
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import { useSelection } from '../store/selection';
+import {
+  featureId,
+  handleCountryClick,
+  handleBackgroundClick,
+} from './world-map-handlers';
 
 type CountryProps = { name: string };
 // `id` is already optional on GeoJSON Feature; no need to redeclare.
@@ -31,12 +36,6 @@ const RGBA = {
 function dataUrl(): string {
   // Respects Vite's base path so this works both at /world-names/ and locally.
   return `${import.meta.env.BASE_URL}countries-50m.json`;
-}
-
-// TopoJSON ids can be `string | number`; normalize once so equality checks
-// against the selection store (which holds strings) are reliable everywhere.
-function featureId(f: CountryFeature): string {
-  return String(f.id ?? '');
 }
 
 export function WorldMap() {
@@ -101,14 +100,12 @@ export function WorldMap() {
         },
         // Layer-level handlers: fire when a pick lands on a feature in this
         // layer. DeckGL's top-level onClick was unreliable in headless test
-        // runs — feature picking belongs on the layer.
+        // runs — feature picking belongs on the layer. Click + background
+        // handlers are pure functions in world-map-handlers.ts so the state
+        // transitions are unit-tested.
         onClick: (info: PickingInfo) => {
           const f = info.object as CountryFeature | undefined;
-          if (!f) return;
-          selectCountry({
-            numericId: featureId(f),
-            name: f.properties?.name ?? 'Unknown',
-          });
+          if (f) handleCountryClick(f, { selectCountry, hover });
         },
         onHover: (info: PickingInfo) => {
           const f = info.object as CountryFeature | undefined;
@@ -118,9 +115,8 @@ export function WorldMap() {
     ];
   }, [features, selectedId, hoveredId, selectCountry, hover]);
 
-  function onBackgroundClick(info: PickingInfo): void {
-    // Clicks on water / empty background — clear the current selection.
-    if (!info.object) selectCountry(null);
+  function onDeckClick(info: PickingInfo): void {
+    handleBackgroundClick(info.object, { selectCountry, hover });
   }
 
   return (
@@ -151,7 +147,7 @@ export function WorldMap() {
         initialViewState={INITIAL_VIEW_STATE}
         controller={true}
         layers={layers}
-        onClick={onBackgroundClick}
+        onClick={onDeckClick}
         getCursor={({ isHovering }) => (isHovering ? 'pointer' : 'grab')}
         style={{ position: 'absolute', width: '100%', height: '100%' }}
       />

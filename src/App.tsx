@@ -3,6 +3,7 @@ import { DetailPanel } from './components/DetailPanel';
 import './App.css';
 
 export default function App() {
+
   return (
     <div className="app">
       <header className="app-header">

@@ -16,12 +16,20 @@ export function DetailPanel() {
       {selected ? (
         <>
           <h2 style={{ marginTop: 0, color: 'var(--accent)', fontSize: '1.1rem' }}>
-            {selected.endonym}
+            {selected.endonym ?? selected.name}
           </h2>
           <p style={{ color: 'var(--muted)', fontSize: '0.85rem', marginTop: 0 }}>
-            ISO {selected.iso3} &middot; spoken language: {selected.language}
+            {selected.iso3 ? `ISO ${selected.iso3} · ` : ''}
+            {selected.language ? `spoken language: ${selected.language}` : `M49 ${selected.numericId}`}
           </p>
-          <p>{selected.blurb ?? 'Etymology blurb arrives once the ETL ships.'}</p>
+          <p>
+            {selected.blurb ?? (
+              <span style={{ color: 'var(--muted)' }}>
+                Etymology blurb arrives once the ETL ships data. For now, polygons
+                are live and selection state is wired through Zustand.
+              </span>
+            )}
+          </p>
         </>
       ) : (
         <p style={{ color: 'var(--muted)' }}>

@@ -1,0 +1,190 @@
+# Etymological root clusters for "Germany" across world languages.
+#
+# Germany is the canonical viz example: the same political entity is referred
+# to by 6+ unrelated historical roots, and the clusters reveal a map of
+# linguistic contact zones. The Roman name "Germani" spread through Latin to
+# Greek/Slavic east; the Alemanni tribal name reached French and onward to
+# Arabic/Turkish via Romance; the Germanic self-name "Deutsch" stayed home
+# and migrated to East Asia via Dutch/Chinese; the Slavic "mute ones" root
+# is its own zone; Finnic took the Saxons as the local exemplar; Baltic
+# kept a separate ancient ethnonym; Chinese coined a phonetic transliteration.
+#
+# Each cluster has a base hue (0-360, HSL). Within-cluster lightness gradient
+# is handled at render time by lib/similarity.ts:clusterColor().
+#
+# Language assignments are hand-curated based on actual exonym strings in
+# cache/exonyms.jsonl. Languages NOT listed here will have cluster_id = NULL
+# in the SQLite (rendered in the default neutral color).
+
+country: DEU
+name: Germany
+
+clusters:
+  germani:
+    label: "Germani — Roman name for Germanic tribes"
+    hue: 200
+    etymology_origin: |
+      From Latin "Germani", the Roman exonym for the Germanic peoples east of
+      the Rhine. The root spread through Latin to Greek, then into Slavic
+      East and via the British Empire into many South Asian, African, and
+      Pacific languages.
+    languages:
+      # Latin/Romance/Greek tradition
+      - eng    # Germany
+      - ita    # Germania
+      - ron    # Germania
+      - lat    # Germania
+      - ell    # Γερμανία
+      - mlt    # Ġermanja
+      - sqi    # Gjermania
+      # Slavic East (Russian-influenced)
+      - rus    # Германия
+      - bul    # Германия
+      - mkd    # Германија
+      - kir    # Германия
+      - mon    # Герман
+      - tuk    # Germaniýa
+      - uzb    # Germaniya
+      - hye    # Գերմանիա
+      - kat    # გერმანია
+      # Semitic
+      - heb    # גרמניה
+      # South/Southeast Asian via colonial English/Dutch
+      - ind    # Jerman
+      - msa    # Jerman
+      - ben    # জার্মানি
+      - hin    # जर्मनी
+      - nep    # जर्मनी
+      - bho    # जर्मनी
+      - pan    # ਜਰਮਨੀ
+      - div    # ޖަރުމަނުވިލާތް
+      - dzo    # ཇཱར་མ་ནི་
+      - sin    # ජර්මනිය
+      - pus    # جرمني
+      # African + Pacific via English
+      - ewe    # Germany
+      - nya    # Germany
+      - sna    # Germany
+      - bis    # Jemani
+      - fij    # Jamani
+      - jam    # Joermani
+      - nau    # Djermani
+      - orm    # Jarmanii
+      - som    # Jarmalka
+      - sot    # Jeremane
+      - hau    # Jamus
+      - lao    # ປະເທດເຢຍລະມັນ (Prathet Yelaman)
+      - mya    # ဂျာမနီနိုင်ငံ (Jamani-naingan)
+      - tha    # ประเทศเยอรมนี (Prathet Yelamani)
+
+  alemanni:
+    label: "Alemanni — southwestern Germanic tribal confederation"
+    hue: 30
+    etymology_origin: |
+      From the Alemanni, a tribal confederation on the upper Rhine that
+      bordered Gaul. French neighbors picked up the name and spread it
+      through Romance languages and onward to Arabic, Turkish, and Persian.
+      Several southern African Bantu languages also use the Alemanni root.
+    languages:
+      # Western Romance
+      - fra    # Allemagne
+      - spa    # Alemania
+      - cat    # Alemanya
+      - por    # Alemanha
+      - grn    # Alemaña (Guaraní, Spanish-influenced)
+      - kea    # Alimanha (Kabuverdianu)
+      - tet    # Alemaña (Tetum, Portuguese-influenced)
+      - tgl    # Alemanya (Tagalog, Spanish-influenced)
+      - pap    # Alemania (Papiamento)
+      # Arabic/Turkic
+      - ara    # ألمانيا
+      - aze    # Almaniya
+      - tur    # Almanya
+      - fas    # آلمان
+      - khm    # អាល្លឺម៉ង់ (Khmer, French-influenced)
+      # African (Fulani, Malagasy)
+      - ful    # Almaanya
+      - mlg    # Alemaina
+      # Bantu (likely via missionary contact with German/Dutch)
+      - ssw    # IJalimane
+      - zul    # IJalimani
+      - ton    # Siamane
+      - tgk    # Олмон (Tajik, Olmon — Persian-derived)
+
+  deutsch:
+    label: "Proto-Germanic *þeudō — 'the people'"
+    hue: 90
+    etymology_origin: |
+      From Proto-Germanic *þeudō ('people'), the Germanic self-name. Yields
+      German Deutsch, Dutch Duits, Luxembourgish Däitsch. The North Germanic
+      branch evolved separately into Tysk. Borrowed into East Asia via Dutch
+      (Japanese ドイツ from Duits) and Vietnamese via Chinese 德.
+    languages:
+      # West Germanic
+      - deu    # Deutschland
+      - nld    # Duitsland
+      - afr    # Duitsland
+      - ltz    # Däitschland
+      # North Germanic (Tysk variants — same Proto-Germanic root)
+      - isl    # Þýskaland
+      - nor    # Tyskland
+      - nno    # Tyskland
+      - swe    # Tyskland
+      - dan    # Tyskland
+      - kal    # Tyskland (Greenlandic, via Danish)
+      # East Asian via Dutch/Chinese
+      - jpn    # ドイツ (Doitsu, from Dutch Duits)
+      - vie    # Đức (via Chinese 德)
+      # Rwandan-Burundi: Ubudage from Deutsch via German colonial contact
+      - kin    # Ubudage
+
+  niemcy:
+    label: "Slavic *němьcь — 'the mute/foreign ones'"
+    hue: 270
+    etymology_origin: |
+      From Proto-Slavic *němьcь, originally meaning 'mute' or 'unable to
+      speak [Slavic]'. The root spread through Slavic-speaking territories
+      and was borrowed into Hungarian via centuries of contact.
+    languages:
+      - pol    # Niemcy
+      - ces    # Německo
+      - slk    # Nemecko
+      - slv    # Nemčija
+      - hrv    # Njemačka
+      - bos    # Njemačka
+      - srp    # Немачка
+      - ukr    # Німеччина
+      - hun    # Németország
+
+  saksa:
+    label: "Saxons — Finnic borrowing"
+    hue: 150
+    etymology_origin: |
+      From the Saxon tribe in northern Germany. Finnic peoples first
+      encountered Saxon traders, so 'Saksa' became the catch-all for the
+      whole German-speaking area.
+    languages:
+      - fin    # Saksa
+      - est    # Saksamaa
+
+  baltic_vaka:
+    label: "Baltic *Vāka — ancient Baltic ethnonym"
+    hue: 320
+    etymology_origin: |
+      From Proto-Baltic *Vāka. Used only in the two surviving Baltic
+      languages, possibly a fossilized name for a specific Germanic group
+      Balts encountered early.
+    languages:
+      - lav    # Vācija
+      - lit    # Vokietija
+
+  chinese_de:
+    label: "Chinese 德 — phonetic transliteration"
+    hue: 0
+    etymology_origin: |
+      Chinese rendering 德國 (dé-guó, 'virtue country') is a phonetic
+      transliteration of the first syllable of 'Deutschland'. Korean 독일
+      uses a different Chinese rendering 獨逸 (dú-yì) of the same source.
+    languages:
+      - cmn    # 德國
+      - kor    # 독일

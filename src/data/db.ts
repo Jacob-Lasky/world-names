@@ -126,4 +126,54 @@ export class WorldNamesDB {
       exonym: r.exonym as string,
     }));
   }
+
+  /**
+   * For the given target country (its M49 numeric id, since that's what
+   * the deck.gl polygons key on), return a map: observer-country M49 →
+   * { cluster_id, hue, exonym }. Observers are countries whose L1-dominant
+   * language has an exonym for the target. Rows with no cluster_id assigned
+   * yet (cluster YAMLs haven't covered them) get hue = null.
+   *
+   * The polygon recolor on selection consumes this directly.
+   */
+  observerColorsByM49(targetM49: string): Map<string, { cluster_id: string | null; hue: number | null; exonym: string }> {
+    const rows = this.inner.exec({
+      sql: `
+        WITH target AS (
+          SELECT iso3 FROM countries WHERE m49 = ?
+        )
+        SELECT obs.m49 AS observer_m49,
+               e.exonym,
+               e.cluster_id,
+               cs.hue
+        FROM country_languages cl
+        JOIN countries obs ON obs.iso3 = cl.country_iso3
+        JOIN target t ON 1=1
+        JOIN exonyms e
+          ON e.observer_language_code = cl.language_code
+         AND e.target_country_iso3 = t.iso3
+        LEFT JOIN clusters cs ON cs.id = e.cluster_id
+        WHERE cl.is_dominant_l1 = 1
+          AND obs.m49 IS NOT NULL
+      `,
+      bind: [targetM49],
+      returnValue: 'resultRows',
+      rowMode: 'object',
+    });
+    const out = new Map<string, { cluster_id: string | null; hue: number | null; exonym: string }>();
+    for (const r of rows) {
+      const m49 = r.observer_m49 as string;
+      // First write wins — multiple observer countries can share a dominant
+      // language, but we keyed by the observer's M49 not by language, so each
+      // M49 only appears once anyway.
+      if (!out.has(m49)) {
+        out.set(m49, {
+          cluster_id: (r.cluster_id as string | null) ?? null,
+          hue: (r.hue as number | null) ?? null,
+          exonym: r.exonym as string,
+        });
+      }
+    }
+    return out;
+  }
 }

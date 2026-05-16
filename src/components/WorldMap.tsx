@@ -6,6 +6,8 @@ import { feature } from 'topojson-client';
 import type { Topology, GeometryCollection } from 'topojson-specification';
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import { useSelection } from '../store/selection';
+import { useClusterColors } from '../data/use-cluster-colors';
+import { hslToRgb } from '../lib/similarity';
 import {
   featureId,
   handleCountryClick,
@@ -31,6 +33,7 @@ const RGBA = {
   hover: [80, 95, 115, 255] as [number, number, number, number],
   selected: [255, 184, 107, 255] as [number, number, number, number],
   stroke: [20, 25, 32, 255] as [number, number, number, number],
+  unclustered: [55, 65, 80, 255] as [number, number, number, number],
 };
 
 function dataUrl(): string {
@@ -46,6 +49,12 @@ export function WorldMap() {
   const hoveredId = useSelection((s) => s.hoveredId);
   const selectCountry = useSelection((s) => s.selectCountry);
   const hover = useSelection((s) => s.hover);
+
+  // When a country is selected, fetch every other country's cluster + hue
+  // for that target. The map recolors live: each country gets the hue of
+  // its dominant language's etymological-root cluster for the selected
+  // country's name.
+  const clusterColors = useClusterColors(selectedId);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -90,13 +99,23 @@ export function WorldMap() {
           const id = featureId(f);
           if (id === selectedId) return RGBA.selected;
           if (id === hoveredId) return RGBA.hover;
+          if (clusterColors) {
+            const c = clusterColors.get(id);
+            if (c?.hue != null) {
+              const [r, g, b] = hslToRgb(c.hue);
+              return [r, g, b, 255];
+            }
+            // We have cluster data for the selected target, but this country
+            // has no exonym row or no cluster yet (uncovered observer language).
+            return RGBA.unclustered;
+          }
           return RGBA.default;
         },
         getLineColor: RGBA.stroke,
         lineWidthMinPixels: 0.5,
         // Force the GPU attribute buffers to refresh when selection/hover changes.
         updateTriggers: {
-          getFillColor: [selectedId, hoveredId],
+          getFillColor: [selectedId, hoveredId, clusterColors],
         },
         // Layer-level handlers: fire when a pick lands on a feature in this
         // layer. DeckGL's top-level onClick was unreliable in headless test
@@ -113,7 +132,7 @@ export function WorldMap() {
         },
       }),
     ];
-  }, [features, selectedId, hoveredId, selectCountry, hover]);
+  }, [features, selectedId, hoveredId, selectCountry, hover, clusterColors]);
 
   function onDeckClick(info: PickingInfo): void {
     handleBackgroundClick(info.object, { selectCountry, hover });

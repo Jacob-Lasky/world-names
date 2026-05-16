@@ -61,9 +61,8 @@ export function DetailPanel() {
         {d.language_name ? ` · spoken language: ${d.language_name}` : ''}
       </p>
       <p style={mutedText}>
-        Etymological clustering of how the rest of the world refers to {d.endonym ?? d.name_en}{' '}
-        will land with Issue #2 — the data is already in the shipped SQLite, just
-        not yet coloring the map.
+        The map recolors by etymological-root cluster: each country's hue reflects
+        which historical root its dominant language uses to refer to {d.endonym ?? d.name_en}.
       </p>
     </aside>
   );

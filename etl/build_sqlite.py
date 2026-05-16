@@ -23,6 +23,7 @@ LANGUAGES = ETL / "cache" / "languages.jsonl"
 COUNTRY_LANGUAGES = ETL / "cache" / "country_languages.jsonl"
 ENDONYMS = ETL / "cache" / "endonyms.jsonl"
 EXONYMS = ETL / "cache" / "exonyms.jsonl"
+CLUSTERS = ETL / "cache" / "clusters.jsonl"
 
 SCHEMA = """
 CREATE TABLE countries (
@@ -109,6 +110,7 @@ def main() -> int:
     country_langs = load_jsonl(COUNTRY_LANGUAGES)
     endonyms = load_jsonl(ENDONYMS)
     exonyms = load_jsonl(EXONYMS)
+    clusters = load_jsonl(CLUSTERS)
 
     if not countries or not languages:
         print("ERROR: countries.jsonl or languages.jsonl is empty. Run stages 1-2 first.")
@@ -177,10 +179,17 @@ def main() -> int:
         [(e["country_iso3"], e["language_code"], e["endonym"]) for e in endonyms],
     )
     con.executemany(
+        """INSERT INTO clusters
+           (id, target_country_iso3, label, hue, etymology_origin)
+           VALUES (?, ?, ?, ?, ?)""",
+        [(c["id"], c["target_country_iso3"], c["label"], c["hue"], c.get("etymology_origin")) for c in clusters],
+    )
+    con.executemany(
         """INSERT INTO exonyms
            (observer_language_code, target_country_iso3, exonym, cluster_id)
-           VALUES (?, ?, ?, NULL)""",
-        [(e["observer_language_code"], e["target_country_iso3"], e["exonym"]) for e in exonyms],
+           VALUES (?, ?, ?, ?)""",
+        [(e["observer_language_code"], e["target_country_iso3"], e["exonym"], e.get("cluster_id"))
+         for e in exonyms],
     )
 
     con.execute("INSERT INTO meta (key, value) VALUES ('schema_version', '1')")
@@ -202,6 +211,9 @@ def main() -> int:
     print(f"  country_languages:  {len(cl_filtered)}")
     print(f"  endonyms:           {len(endonyms)}")
     print(f"  exonyms:            {len(exonyms)}")
+    print(f"  clusters:           {len(clusters)}")
+    clustered = sum(1 for e in exonyms if e.get("cluster_id"))
+    print(f"  exonyms w/ cluster: {clustered} / {len(exonyms)}")
 
     # Sanity probe: select a country and read its endonym + exonyms
     probe = sqlite3.connect(PUBLIC_DEST)

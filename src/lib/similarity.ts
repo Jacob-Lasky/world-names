@@ -29,3 +29,27 @@ export function clusterColor(cluster: Cluster, distance: number): string {
   const lightness = 65 - clamped * 25; // 65% (close) → 40% (far)
   return `hsl(${cluster.hue} 70% ${lightness}%)`;
 }
+
+/**
+ * HSL → 0-255 RGB tuple. Used to compute deck.gl polygon fill colors from
+ * cluster hues stored in the SQLite. Defaults match `clusterColor`'s
+ * centroid lightness so the live map fills line up with any CSS swatches.
+ */
+export function hslToRgb(h: number, s = 0.6, l = 0.5): [number, number, number] {
+  const c = (1 - Math.abs(2 * l - 1)) * s;
+  const hp = ((h % 360) + 360) % 360 / 60;
+  const x = c * (1 - Math.abs((hp % 2) - 1));
+  let r1 = 0, g1 = 0, b1 = 0;
+  if (hp < 1) { r1 = c; g1 = x; }
+  else if (hp < 2) { r1 = x; g1 = c; }
+  else if (hp < 3) { g1 = c; b1 = x; }
+  else if (hp < 4) { g1 = x; b1 = c; }
+  else if (hp < 5) { r1 = x; b1 = c; }
+  else { r1 = c; b1 = x; }
+  const m = l - c / 2;
+  return [
+    Math.round((r1 + m) * 255),
+    Math.round((g1 + m) * 255),
+    Math.round((b1 + m) * 255),
+  ];
+}

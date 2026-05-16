@@ -7,7 +7,7 @@
 // query volume; revisit Promiser/worker mode if init blocks UX.
 
 import sqlite3InitModule from '@sqlite.org/sqlite-wasm';
-import type { CountryDetail, Exonym } from './types';
+import type { CountryDetail, Exonym, InspectionDetail } from './types';
 
 // The package doesn't ship types. We use `any` for the SQLite handles
 // and lean on this wrapper class for app-side type safety.
@@ -177,5 +177,66 @@ export class WorldNamesDB {
       }
     }
     return out;
+  }
+
+  /**
+   * For a (selected target, hovered observer) pair, return everything the
+   * inspection card needs: the observer country's name, the observer's
+   * dominant language's name, the exonym it uses for the target, and the
+   * cluster's label + etymology origin. Returns null when there's no
+   * exonym row (uncovered observer language or non-country polygon).
+   *
+   * Keyed by the M49 numericIds the deck.gl polygons carry. Both must be
+   * present — call sites should short-circuit before invoking when either
+   * is null.
+   */
+  inspectionDetail(targetM49: string, observerM49: string): InspectionDetail | null {
+    const rows = this.inner.exec({
+      sql: `
+        WITH target AS (
+          SELECT iso3 FROM countries WHERE m49 = ?
+        ),
+        observer AS (
+          SELECT iso3, name_en FROM countries WHERE m49 = ?
+        )
+        SELECT obs.iso3              AS observer_iso3,
+               obs.name_en           AS observer_name_en,
+               l.name_en             AS observer_language_name,
+               e.exonym              AS exonym,
+               cs.label              AS cluster_label,
+               cs.etymology_origin   AS etymology_origin,
+               cs.hue                AS hue,
+               e.similarity_to_endonym AS similarity
+        FROM observer obs
+        JOIN target t ON 1=1
+        JOIN country_languages cl
+          ON cl.country_iso3 = obs.iso3
+         AND cl.is_dominant_l1 = 1
+        LEFT JOIN languages l ON l.code = cl.language_code
+        LEFT JOIN exonyms e
+          ON e.observer_language_code = cl.language_code
+         AND e.target_country_iso3 = t.iso3
+        LEFT JOIN clusters cs ON cs.id = e.cluster_id
+        LIMIT 1
+      `,
+      bind: [targetM49, observerM49],
+      returnValue: 'resultRows',
+      rowMode: 'object',
+    });
+    if (rows.length === 0) return null;
+    const r = rows[0];
+    // exonym is the load-bearing field; if it's missing the row is useless
+    // (observer's dominant language has no exonym entry for the target).
+    if (r.exonym == null) return null;
+    return {
+      observer_iso3: r.observer_iso3 as string,
+      observer_name_en: r.observer_name_en as string,
+      observer_language_name: (r.observer_language_name as string | null) ?? null,
+      exonym: r.exonym as string,
+      cluster_label: (r.cluster_label as string | null) ?? null,
+      etymology_origin: (r.etymology_origin as string | null) ?? null,
+      hue: (r.hue as number | null) ?? null,
+      similarity: (r.similarity as number | null) ?? null,
+    };
   }
 }

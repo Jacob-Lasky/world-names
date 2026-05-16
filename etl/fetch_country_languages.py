@@ -51,6 +51,18 @@ COUNTRY_NAME_OVERRIDES = {
     "Sao Tome and Principe": "STP",
 }
 
+# Final-mile dominance overrides for countries where the data-driven path
+# picks a language nobody would call "dominant" in everyday use. Each entry
+# is justified by what the country's L1-plurality language actually is per
+# census data; the data path was either picking sign languages (filtered),
+# small Formosan/Austronesian relatives (Wikidata P37 ordering noise), or
+# a regional minority that happens to be listed first.
+COUNTRY_DOMINANT_OVERRIDES = {
+    "TWN": "cmn",  # Mandarin Chinese; Wikidata P37 surfaces Formosan languages first.
+    "TLS": "tet",  # Tetum; P37/P2936 ordering surfaces Mambai/Kemak otherwise.
+    "BRN": "msa",  # Malay; P37 sometimes returns British English first.
+}
+
 # Factbook language names that don't match Wikidata's primary English label.
 # Factbook string → ISO 639-3.
 LANGUAGE_NAME_OVERRIDES = {
@@ -79,6 +91,7 @@ LANGUAGE_NAME_OVERRIDES = {
     "Cantonese": "yue",
     "Guarani": "grn",
     "Castilian": "spa",
+    "Castilian Spanish": "spa",
     "Filipino": "fil",
     "Tagalog": "tgl",
     "Farsi": "fas",
@@ -184,16 +197,21 @@ def fetch_wikidata_dominance_fallback(country_qids: list[str]) -> dict[str, str]
     values = " ".join(f"wd:{q}" for q in country_qids)
     # `priority` orders the result so P37 hits sort before P2936; the
     # caller takes the first per country.
+    # FILTER excludes sign languages (P31/P279* of Q34228 "sign language"),
+    # which sometimes surface first via P37 for political reasons (Taiwan's
+    # Taiwanese Sign Language, NZ's NZSL). The viz tracks spoken L1 plurality.
     query = f"""
     SELECT ?country ?iso ?priority WHERE {{
       VALUES ?country {{ {values} }}
       {{
         ?country wdt:P37 ?lang .
         ?lang wdt:P220 ?iso .
+        FILTER NOT EXISTS {{ ?lang wdt:P31/wdt:P279* wd:Q34228 }}
         BIND(1 AS ?priority)
       }} UNION {{
         ?country wdt:P2936 ?lang .
         ?lang wdt:P220 ?iso .
+        FILTER NOT EXISTS {{ ?lang wdt:P31/wdt:P279* wd:Q34228 }}
         BIND(2 AS ?priority)
       }}
     }}
@@ -289,6 +307,9 @@ def main() -> int:
         iso3 = qid_to_iso3.get(cq)
         if not iso3 or iso not in lang_codes:
             continue
+        # Manual override wins over the data-driven pick.
+        if iso3 in COUNTRY_DOMINANT_OVERRIDES:
+            iso = COUNTRY_DOMINANT_OVERRIDES[iso3]
         rows.append({
             "country_iso3": iso3,
             "language_code": iso,
@@ -297,6 +318,37 @@ def main() -> int:
             "is_official": True,
         })
         fallback_rows += 1
+
+    # Some countries are in COUNTRY_DOMINANT_OVERRIDES but landed in
+    # `covered` via Factbook (with the wrong choice). Force-override those too.
+    by_iso3: dict[str, list[dict]] = {}
+    for r in rows:
+        by_iso3.setdefault(r["country_iso3"], []).append(r)
+    for iso3, override_lang in COUNTRY_DOMINANT_OVERRIDES.items():
+        country_rows = by_iso3.get(iso3, [])
+        if not country_rows:
+            # Country had no rows at all — emit an override row.
+            if override_lang in lang_codes:
+                rows.append({
+                    "country_iso3": iso3,
+                    "language_code": override_lang,
+                    "l1_pct": None,
+                    "is_dominant_l1": True,
+                    "is_official": True,
+                })
+            continue
+        # Clear any existing dominant flag and set on the override (creating row if needed)
+        if not any(r["language_code"] == override_lang for r in country_rows):
+            country_rows.append({
+                "country_iso3": iso3,
+                "language_code": override_lang,
+                "l1_pct": None,
+                "is_dominant_l1": False,
+                "is_official": True,
+            })
+            rows.append(country_rows[-1])
+        for r in country_rows:
+            r["is_dominant_l1"] = (r["language_code"] == override_lang)
 
     rows.sort(key=lambda r: (r["country_iso3"], -(r["l1_pct"] or 0)))
     OUT.parent.mkdir(parents=True, exist_ok=True)

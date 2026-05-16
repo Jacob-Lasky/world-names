@@ -108,3 +108,84 @@ def qid(binding: dict, key: str) -> str | None:
     if not uri:
         return None
     return uri.rsplit("/", 1)[-1]
+
+
+def fetch_country_labels(
+    country_qids: list[str],
+    cache_path: Path,
+    *,
+    chunk_size: int = 50,
+    force: bool = False,
+) -> dict[str, dict[str, str]]:
+    """For each country QID, return {bcp47_tag: label}. Stages 4 and 5 both
+    consume this; the cache means stage 5 doesn't re-hit Wikidata after
+    stage 4 ran.
+
+    Cache shape on disk: JSONL, one row per (country_qid, lang_tag) tuple,
+    sorted deterministically. ~25-30K rows for 204 countries.
+    """
+    if cache_path.exists() and not force:
+        result: dict[str, dict[str, str]] = {}
+        for line in cache_path.read_text().splitlines():
+            if not line:
+                continue
+            row = json.loads(line)
+            result.setdefault(row["country_qid"], {})[row["lang_tag"]] = row["label"]
+        return result
+
+    result = {}
+    for i in range(0, len(country_qids), chunk_size):
+        chunk = country_qids[i:i + chunk_size]
+        values = " ".join(f"wd:{q}" for q in chunk)
+        query = f"""
+        SELECT ?country ?label WHERE {{
+          VALUES ?country {{ {values} }}
+          ?country rdfs:label ?label .
+        }}
+        """
+        bindings = sparql_query(query)
+        for b in bindings:
+            cq = b["country"]["value"].rsplit("/", 1)[-1]
+            label_cell = b["label"]
+            lang_tag = label_cell.get("xml:lang") or ""
+            text = label_cell.get("value") or ""
+            if not lang_tag or not text:
+                continue
+            result.setdefault(cq, {})[lang_tag] = text
+        print(f"  fetched labels for countries {i + 1}-{i + len(chunk)} of {len(country_qids)}")
+
+    # Persist
+    rows = []
+    for cq in sorted(result):
+        for lang_tag in sorted(result[cq]):
+            rows.append({"country_qid": cq, "lang_tag": lang_tag, "label": result[cq][lang_tag]})
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache_path.write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n")
+    print(f"  wrote {len(rows)} labels to {cache_path}")
+    return result
+
+
+def fetch_language_bcp47(
+    language_qids: list[str],
+) -> dict[str, str | None]:
+    """For each language QID, return its ISO 639-1 alpha-2 (BCP47 short tag),
+    or None if it doesn't have one. Languages without an alpha-2 (e.g. Zulu
+    has 'zu' but many indigenous languages don't) fall back to using their
+    ISO 639-3 tag directly, which Wikidata also accepts."""
+    if not language_qids:
+        return {}
+    values = " ".join(f"wd:{q}" for q in language_qids)
+    query = f"""
+    SELECT ?lang ?alpha2 WHERE {{
+      VALUES ?lang {{ {values} }}
+      OPTIONAL {{ ?lang wdt:P218 ?alpha2 }}
+    }}
+    """
+    bindings = sparql_query(query)
+    out: dict[str, str | None] = {q: None for q in language_qids}
+    for b in bindings:
+        lq = b["lang"]["value"].rsplit("/", 1)[-1]
+        alpha2 = b.get("alpha2", {}).get("value")
+        if alpha2:
+            out[lq] = alpha2
+    return out

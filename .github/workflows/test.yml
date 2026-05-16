@@ -20,3 +20,17 @@ jobs:
       - run: npm test
       - run: npm run build
       # Playwright e2e deferred to its own workflow once browser-cache strategy is in place.
+
+  etl-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: etl
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync
+      - run: uv run pytest -q

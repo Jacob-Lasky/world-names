@@ -4,8 +4,10 @@ import { clusterColor, hslToRgb, type Cluster } from './similarity';
 const cluster: Cluster = { id: 'test', label: 'Test', hue: 30 };
 
 describe('clusterColor', () => {
+  // Values reflect CLUSTER_SATURATION/LIGHTNESS in similarity.ts — the shared
+  // constants used by both the CSS-string helper and the deck.gl tuple helper.
   it('emits a centroid-bright color at distance 0', () => {
-    expect(clusterColor(cluster, 0)).toBe('hsl(30 70% 65%)');
+    expect(clusterColor(cluster, 0)).toBe('hsl(30 70% 55%)');
   });
 
   it('emits a darker color at maximum distance', () => {
@@ -13,7 +15,7 @@ describe('clusterColor', () => {
   });
 
   it('clamps out-of-range distances', () => {
-    expect(clusterColor(cluster, -0.5)).toBe('hsl(30 70% 65%)');
+    expect(clusterColor(cluster, -0.5)).toBe('hsl(30 70% 55%)');
     expect(clusterColor(cluster, 2)).toBe('hsl(30 70% 40%)');
   });
 

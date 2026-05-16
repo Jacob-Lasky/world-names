@@ -54,7 +54,8 @@ export function WorldMap() {
   // for that target. The map recolors live: each country gets the hue of
   // its dominant language's etymological-root cluster for the selected
   // country's name.
-  const clusterColors = useClusterColors(selectedId);
+  const clusterColorsState = useClusterColors(selectedId);
+  const clusterColors = clusterColorsState.status === 'ready' ? clusterColorsState.colors : null;
 
   useEffect(() => {
     const controller = new AbortController();

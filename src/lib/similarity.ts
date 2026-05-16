@@ -20,22 +20,31 @@ export type Cluster = {
   hue: number;
 };
 
+// Single source of truth for cluster color saturation/lightness. Used by
+// both the CSS-string helper (clusterColor) and the deck.gl tuple helper
+// (hslToRgb) so swatches and polygon fills stay visually identical.
+export const CLUSTER_SATURATION = 0.7;
+export const CLUSTER_LIGHTNESS = 0.55;
+
 /**
  * Within-cluster color: same hue, lightness varies by intra-cluster distance.
  * `distance` is in [0, 1], where 0 = cluster centroid, 1 = farthest member.
  */
 export function clusterColor(cluster: Cluster, distance: number): string {
   const clamped = Math.max(0, Math.min(1, distance));
-  const lightness = 65 - clamped * 25; // 65% (close) → 40% (far)
-  return `hsl(${cluster.hue} 70% ${lightness}%)`;
+  // Lightness drops from the centroid value toward 40% at the cluster edge.
+  // Round to integer percent so float math doesn't leak into the CSS string.
+  const lightnessPct = Math.round(CLUSTER_LIGHTNESS * 100 - clamped * 15);
+  const satPct = Math.round(CLUSTER_SATURATION * 100);
+  return `hsl(${cluster.hue} ${satPct}% ${lightnessPct}%)`;
 }
 
 /**
  * HSL → 0-255 RGB tuple. Used to compute deck.gl polygon fill colors from
- * cluster hues stored in the SQLite. Defaults match `clusterColor`'s
- * centroid lightness so the live map fills line up with any CSS swatches.
+ * cluster hues stored in the SQLite. Defaults to the shared cluster S/L so
+ * the live map fills line up with any CSS swatches.
  */
-export function hslToRgb(h: number, s = 0.6, l = 0.5): [number, number, number] {
+export function hslToRgb(h: number, s = CLUSTER_SATURATION, l = CLUSTER_LIGHTNESS): [number, number, number] {
   const c = (1 - Math.abs(2 * l - 1)) * s;
   const hp = ((h % 360) + 360) % 360 / 60;
   const x = c * (1 - Math.abs((hp % 2) - 1));

@@ -165,6 +165,34 @@ def fetch_country_labels(
     return result
 
 
+# BCP47 overrides used by both stages 4 and 5. Centralized here so the two
+# callers can't drift out of sync. Each entry: Wikidata's primary entity for
+# the ISO 639-3 lacks `wdt:P218` (alpha-2), but actual rdfs:label tags in
+# Wikidata use the alpha-2 we list — so we map directly.
+ISO_TO_BCP47_OVERRIDES: dict[str, str] = {
+    "cmn": "zh",   # Mandarin: Q9192/Q727694/Q24841726 all lack P218
+    "heb": "he",   # Modern Hebrew: same shape
+    "nor": "no",   # Norwegian (macro)
+    "zho": "zh",
+}
+
+
+def resolve_bcp47(iso639_3: str, qid_to_alpha2: dict[str, str | None], iso_to_qid: dict[str, str]) -> str:
+    """Pick the BCP47 lang tag for an ISO 639-3 code, with this priority:
+    1. ISO_TO_BCP47_OVERRIDES (for cases Wikidata's primary entity is missing P218)
+    2. P218 alpha-2 from Wikidata
+    3. The ISO 639-3 code itself (Wikidata accepts it as a fallback lang tag)
+    """
+    if iso639_3 in ISO_TO_BCP47_OVERRIDES:
+        return ISO_TO_BCP47_OVERRIDES[iso639_3]
+    qid = iso_to_qid.get(iso639_3)
+    if qid:
+        alpha2 = qid_to_alpha2.get(qid)
+        if alpha2:
+            return alpha2
+    return iso639_3
+
+
 def fetch_language_bcp47(
     language_qids: list[str],
 ) -> dict[str, str | None]:

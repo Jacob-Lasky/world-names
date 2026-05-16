@@ -16,18 +16,7 @@ import json
 import sys
 from pathlib import Path
 
-from _lib import fetch_country_labels, fetch_language_bcp47
-
-# Manual BCP47 overrides where Wikidata's primary entity for an ISO 639-3
-# code doesn't carry P218 (alpha-2), but the labels in Wikidata are actually
-# tagged with the alpha-2 anyway. Without these, common languages like
-# Mandarin and Hebrew miss their country labels.
-ISO_TO_BCP47_OVERRIDES = {
-    "cmn": "zh",   # Mandarin: P218 absent on Q9192/Q727694/Q24841726, but labels use "zh"
-    "heb": "he",   # Modern Hebrew: same shape
-    "nor": "no",   # Norwegian (macro)
-    "zho": "zh",
-}
+from _lib import fetch_country_labels, fetch_language_bcp47, resolve_bcp47
 
 ETL = Path(__file__).parent
 COUNTRIES_CACHE = ETL / "cache" / "countries.jsonl"
@@ -62,15 +51,9 @@ def main() -> int:
 
     print(f"fetching BCP47 tags for {len(dominant_qids)} dominant languages...")
     qid_to_bcp47 = fetch_language_bcp47(dominant_qids)
-    # iso639_3 → bcp47. Priority: manual override > P218 alpha-2 > iso639_3 itself.
-    iso_to_bcp47: dict[str, str] = {}
-    for iso in dominant_isos:
-        if iso in ISO_TO_BCP47_OVERRIDES:
-            iso_to_bcp47[iso] = ISO_TO_BCP47_OVERRIDES[iso]
-            continue
-        qid_for_lang = lang_qid_by_iso.get(iso)
-        alpha2 = qid_to_bcp47.get(qid_for_lang) if qid_for_lang else None
-        iso_to_bcp47[iso] = alpha2 or iso
+    iso_to_bcp47: dict[str, str] = {
+        iso: resolve_bcp47(iso, qid_to_bcp47, lang_qid_by_iso) for iso in dominant_isos
+    }
 
     print(f"fetching country labels (cache: {LABELS_CACHE})...")
     country_labels = fetch_country_labels(

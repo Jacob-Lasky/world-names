@@ -15,15 +15,7 @@ import json
 import sys
 from pathlib import Path
 
-from _lib import fetch_country_labels, fetch_language_bcp47
-
-# Same overrides as fetch_endonyms.py — must stay in sync.
-ISO_TO_BCP47_OVERRIDES = {
-    "cmn": "zh",
-    "heb": "he",
-    "nor": "no",
-    "zho": "zh",
-}
+from _lib import fetch_country_labels, fetch_language_bcp47, resolve_bcp47
 
 ETL = Path(__file__).parent
 COUNTRIES_CACHE = ETL / "cache" / "countries.jsonl"
@@ -55,14 +47,9 @@ def main() -> int:
     # BCP47 tags for each dominant language.
     dominant_qids = [lang_qid_by_iso[iso] for iso in dominant_isos if iso in lang_qid_by_iso]
     qid_to_alpha2 = fetch_language_bcp47(dominant_qids)
-    iso_to_bcp47: dict[str, str] = {}
-    for iso in dominant_isos:
-        if iso in ISO_TO_BCP47_OVERRIDES:
-            iso_to_bcp47[iso] = ISO_TO_BCP47_OVERRIDES[iso]
-            continue
-        q = lang_qid_by_iso.get(iso)
-        alpha2 = qid_to_alpha2.get(q) if q else None
-        iso_to_bcp47[iso] = alpha2 or iso
+    iso_to_bcp47: dict[str, str] = {
+        iso: resolve_bcp47(iso, qid_to_alpha2, lang_qid_by_iso) for iso in dominant_isos
+    }
 
     # Country labels — reuses the cache populated by stage 4.
     print(f"loading country labels from {LABELS_CACHE}...")

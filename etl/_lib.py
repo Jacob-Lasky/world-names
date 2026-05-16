@@ -7,11 +7,17 @@ per-stage scripts only need to specify the query, the parser, and the PK.
 
 Reads are idempotent: if the cache exists, we return parsed rows without
 hitting Wikidata. Pass `--force` (handled by callers) to bypass.
+
+Also hosts pure-function utilities used by build_sqlite (Unicode-normalized
+Levenshtein-based string similarity) so the viz's "how foreign-sounding is
+this exonym vs the endonym" lightness channel can be precomputed at build
+time and shipped in the SQLite payload.
 """
 from __future__ import annotations
 
 import json
 import time
+import unicodedata
 from pathlib import Path
 from typing import Callable
 
@@ -191,6 +197,75 @@ def resolve_bcp47(iso639_3: str, qid_to_alpha2: dict[str, str | None], iso_to_qi
         if alpha2:
             return alpha2
     return iso639_3
+
+
+def _normalize_for_similarity(s: str) -> str:
+    """Casefold + NFKD-decompose + strip combining marks.
+
+    Used before edit-distance so accent / case / compatibility variants
+    don't inflate distance. Example: 'Allemagne' vs 'allemagne' should be
+    identical; 'naïve' vs 'naive' should be identical. Script differences
+    (Latin vs CJK vs Arabic) are intentionally preserved — that IS the
+    signal we want lightness to encode.
+    """
+    folded = s.casefold()
+    decomposed = unicodedata.normalize("NFKD", folded)
+    return "".join(ch for ch in decomposed if not unicodedata.combining(ch))
+
+
+def _levenshtein(a: str, b: str) -> int:
+    """Iterative two-row Levenshtein. ~17k pairs * avg ~10-char strings is
+    trivial Python; no rapidfuzz dep needed."""
+    if a == b:
+        return 0
+    if not a:
+        return len(b)
+    if not b:
+        return len(a)
+    if len(a) < len(b):
+        a, b = b, a  # ensure a is the longer one; smaller inner row
+    prev = list(range(len(b) + 1))
+    curr = [0] * (len(b) + 1)
+    for i, ca in enumerate(a, start=1):
+        curr[0] = i
+        for j, cb in enumerate(b, start=1):
+            cost = 0 if ca == cb else 1
+            curr[j] = min(
+                prev[j] + 1,        # deletion
+                curr[j - 1] + 1,    # insertion
+                prev[j - 1] + cost, # substitution
+            )
+        prev, curr = curr, prev
+    return prev[len(b)]
+
+
+def normalized_similarity(exonym: str, endonym: str) -> float:
+    """Return a similarity score in [0, 1] where:
+      - 1.0 = identical after casefold + NFKD (e.g. 'Aruba' vs 'Aruba')
+      - 0.0 = completely disjoint (e.g. 'ドイツ' vs 'Deutschland')
+
+    Computed as 1 - levenshtein(a, b) / max(len(a), len(b)) on the
+    normalized strings. The denominator means strings of vastly different
+    lengths (or different scripts) bottom out near 0, which is what we
+    want — they ARE foreign-sounding to the endonym.
+
+    Used as the lightness channel in the map's cluster recolor: hue
+    encodes etymological cluster (categorical), similarity encodes
+    orthographic closeness to the endonym (continuous). Together they
+    let the viewer see, at a glance, "this country calls itself X, and
+    its neighbors say things that sound mostly like / kinda like / not
+    at all like X."
+    """
+    if not exonym and not endonym:
+        return 1.0
+    a = _normalize_for_similarity(exonym)
+    b = _normalize_for_similarity(endonym)
+    if not a and not b:
+        return 1.0
+    denom = max(len(a), len(b))
+    if denom == 0:
+        return 1.0
+    return 1.0 - _levenshtein(a, b) / denom
 
 
 def fetch_language_bcp47(

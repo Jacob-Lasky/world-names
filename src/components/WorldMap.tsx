@@ -7,7 +7,7 @@ import type { Topology, GeometryCollection } from 'topojson-specification';
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import { useSelection } from '../store/selection';
 import { useClusterColors } from '../data/use-cluster-colors';
-import { hslToRgb } from '../lib/similarity';
+import { clusterFill } from '../lib/similarity';
 import {
   featureId,
   handleCountryClick,
@@ -31,10 +31,24 @@ const INITIAL_VIEW_STATE = {
 const RGBA = {
   default: [40, 50, 65, 255] as [number, number, number, number],
   hover: [80, 95, 115, 255] as [number, number, number, number],
-  selected: [255, 184, 107, 255] as [number, number, number, number],
+  // Fallback for the selected feature when its own cluster data hasn't
+  // landed yet (or when its dominant language has no cluster covered by an
+  // etl/roots/*.yaml). Near-white so the bold outline reads clearly even
+  // before cluster colors flow in.
+  selectedFallback: [240, 240, 240, 255] as [number, number, number, number],
   stroke: [20, 25, 32, 255] as [number, number, number, number],
+  // Bold contrast outline for the selected polygon. Pure black against any
+  // hue or near-white fill — works against the deutsch cluster's white tint
+  // and against neighboring cluster hues uniformly.
+  selectedStroke: [0, 0, 0, 255] as [number, number, number, number],
   unclustered: [55, 65, 80, 255] as [number, number, number, number],
 };
+
+// Outline widths in pixels. Selected gets a bold 2.5px stroke so the
+// selection reads at every zoom level; everyone else stays at the thin
+// 0.5px graticule width.
+const STROKE_WIDTH_SELECTED = 2.5;
+const STROKE_WIDTH_DEFAULT = 0.5;
 
 function dataUrl(): string {
   // Respects Vite's base path so this works both at /world-names/ and locally.
@@ -50,10 +64,11 @@ export function WorldMap() {
   const selectCountry = useSelection((s) => s.selectCountry);
   const hover = useSelection((s) => s.hover);
 
-  // When a country is selected, fetch every other country's cluster + hue
-  // for that target. The map recolors live: each country gets the hue of
-  // its dominant language's etymological-root cluster for the selected
-  // country's name.
+  // When a country is selected, fetch every other country's cluster + hue +
+  // orthographic similarity for that target. The map recolors live: each
+  // country gets the hue of its dominant language's etymological-root cluster
+  // for the selected country's name, with lightness driven by how similar the
+  // exonym is to the selected country's endonym.
   const clusterColorsState = useClusterColors(selectedId);
   const clusterColors = clusterColorsState.status === 'ready' ? clusterColorsState.colors : null;
 
@@ -84,6 +99,10 @@ export function WorldMap() {
         stroked: true,
         pickable: true,
         autoHighlight: false,
+        // Pixel-mode stroke widths so the bold selected outline reads at
+        // every zoom level without scaling away on zoom-out.
+        lineWidthUnits: 'pixels',
+        lineWidthMinPixels: STROKE_WIDTH_DEFAULT,
         // Natural Earth's Russia polygon crosses the antimeridian (Chukotka). The
         // raw GeoJSON has consecutive vertex pairs that jump >180° in longitude,
         // which deck.gl renders as horizontal stripes across the map (and the
@@ -98,12 +117,31 @@ export function WorldMap() {
         },
         getFillColor: (f) => {
           const id = featureId(f);
-          if (id === selectedId) return RGBA.selected;
+          // Selected country: route through the cluster fill so it inherits
+          // its OWN cluster's hue at near-white (similarity=1). The exonym
+          // row for (target's dominant lang, target) equals the endonym by
+          // definition, so the precomputed similarity is 1.0. If cluster
+          // data hasn't landed (or there's no YAML coverage for the
+          // dominant language), fall back to near-white so the bold outline
+          // alone communicates selection.
+          if (id === selectedId) {
+            const c = clusterColors?.get(id);
+            if (c?.hue != null) {
+              const [r, g, b] = clusterFill(c.hue, c.similarity ?? 1);
+              return [r, g, b, 255];
+            }
+            return RGBA.selectedFallback;
+          }
           if (id === hoveredId) return RGBA.hover;
           if (clusterColors) {
             const c = clusterColors.get(id);
             if (c?.hue != null) {
-              const [r, g, b] = hslToRgb(c.hue);
+              // similarity null shouldn't happen post-Phase-2 since ETL
+              // populates it for every (target, observer) pair where the
+              // target has an endonym, but default to 0 (fully saturated
+              // base hue) to keep rendering deterministic.
+              const sim = c.similarity ?? 0;
+              const [r, g, b] = clusterFill(c.hue, sim);
               return [r, g, b, 255];
             }
             // We have cluster data for the selected target, but this country
@@ -112,11 +150,19 @@ export function WorldMap() {
           }
           return RGBA.default;
         },
-        getLineColor: RGBA.stroke,
-        lineWidthMinPixels: 0.5,
-        // Force the GPU attribute buffers to refresh when selection/hover changes.
+        getLineColor: (f) => {
+          const id = featureId(f);
+          return id === selectedId ? RGBA.selectedStroke : RGBA.stroke;
+        },
+        getLineWidth: (f) => {
+          const id = featureId(f);
+          return id === selectedId ? STROKE_WIDTH_SELECTED : STROKE_WIDTH_DEFAULT;
+        },
+        // Force the GPU attribute buffers to refresh when selection/hover/data changes.
         updateTriggers: {
           getFillColor: [selectedId, hoveredId, clusterColors],
+          getLineColor: [selectedId],
+          getLineWidth: [selectedId],
         },
         // Layer-level handlers: fire when a pick lands on a feature in this
         // layer. DeckGL's top-level onClick was unreliable in headless test

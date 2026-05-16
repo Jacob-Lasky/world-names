@@ -1,18 +1,26 @@
-// Etymological-root clustering primitives.
+// Color encoding for the world-names map.
 //
-// The viz colors countries by which root-cluster their exonym for the selected
-// country belongs to (e.g. Germany → Germani / Alemanni / Deutsch / Niemcy /
-// Saksa). String-distance is intentionally NOT the primary metric — different
-// roots can rhyme by accident, and same-root names can have huge edit distance
-// (Deutschland vs Tyskland). The ETL pipeline emits cluster labels per
-// (observer, target) pair; runtime just looks them up.
+// Two channels combine to color each country when one is selected:
+//   1. HUE  = which etymological cluster the observer's exonym belongs to.
+//             (Germany → Germani / Alemanni / Deutsch / Niemcy / Saksa / ...)
+//             Hand-curated in etl/roots/<iso3>.yaml, joined into the SQLite.
+//   2. LIGHTNESS / SATURATION = orthographic similarity of the exonym to
+//             the selected country's endonym. Computed at ETL build time by
+//             _lib.normalized_similarity. similarity=1 (exonym IS the
+//             endonym, e.g. Germany clicking itself sees "Deutschland")
+//             yields near-white; similarity=0 (no shared characters, e.g.
+//             Japanese "ドイツ" vs "Deutschland") yields the cluster's base
+//             saturated hue.
 //
-// This module hosts the small helpers the UI uses for color assignment within
-// a cluster (lightness gradient from cluster centroid, etc). Pure functions
-// only — easy to unit-test with vitest.
+// Together: hue tells you "which family of names does this country use",
+// lightness tells you "how foreign-sounding is that name relative to what
+// the target calls itself." Same cluster, different scripts → same hue,
+// different brightness — visually legible at a glance.
+//
+// Pure functions only; easy to unit-test with vitest.
 
 export type Cluster = {
-  /** Stable id, e.g. 'germany.deutsch'. */
+  /** Stable id, e.g. 'deu.deutsch'. */
   id: string;
   /** Human-readable label, e.g. 'Deutsch root'. */
   label: string;
@@ -20,31 +28,58 @@ export type Cluster = {
   hue: number;
 };
 
-// Single source of truth for cluster color saturation/lightness. Used by
-// both the CSS-string helper (clusterColor) and the deck.gl tuple helper
-// (hslToRgb) so swatches and polygon fills stay visually identical.
-export const CLUSTER_SATURATION = 0.7;
-export const CLUSTER_LIGHTNESS = 0.55;
+// Endpoints of the similarity lerp. Base = the cluster's saturated hue
+// (similarity 0, "fully foreign"). Self-like = near-white tinted by the
+// hue (similarity 1, "this IS the endonym"). Tuned by eye for legible
+// gradient on the dark map background.
+export const CLUSTER_BASE_SATURATION = 0.7;
+export const CLUSTER_BASE_LIGHTNESS = 0.55;
+export const SELF_LIKE_SATURATION = 0.18;
+export const SELF_LIKE_LIGHTNESS = 0.92;
 
 /**
- * Within-cluster color: same hue, lightness varies by intra-cluster distance.
- * `distance` is in [0, 1], where 0 = cluster centroid, 1 = farthest member.
+ * Polygon fill for a country, given its cluster's hue and the orthographic
+ * similarity of its exonym to the selected country's endonym (in [0, 1]).
+ *
+ * similarity = 1 → nearly white with a faint hue tint (this country's name
+ *   IS what the target calls itself).
+ * similarity = 0 → fully saturated cluster hue (this country's name is
+ *   wholly foreign to the endonym's spelling).
+ *
+ * The selected country itself flows through this same function with
+ * similarity = 1.0 — no special-case fill code needed in WorldMap.
  */
-export function clusterColor(cluster: Cluster, distance: number): string {
-  const clamped = Math.max(0, Math.min(1, distance));
-  // Lightness drops from the centroid value toward 40% at the cluster edge.
-  // Round to integer percent so float math doesn't leak into the CSS string.
-  const lightnessPct = Math.round(CLUSTER_LIGHTNESS * 100 - clamped * 15);
-  const satPct = Math.round(CLUSTER_SATURATION * 100);
-  return `hsl(${cluster.hue} ${satPct}% ${lightnessPct}%)`;
+export function clusterFill(hue: number, similarity: number): [number, number, number] {
+  const t = Math.max(0, Math.min(1, similarity));
+  const s = CLUSTER_BASE_SATURATION + (SELF_LIKE_SATURATION - CLUSTER_BASE_SATURATION) * t;
+  const l = CLUSTER_BASE_LIGHTNESS + (SELF_LIKE_LIGHTNESS - CLUSTER_BASE_LIGHTNESS) * t;
+  return hslToRgb(hue, s, l);
 }
 
 /**
- * HSL → 0-255 RGB tuple. Used to compute deck.gl polygon fill colors from
- * cluster hues stored in the SQLite. Defaults to the shared cluster S/L so
- * the live map fills line up with any CSS swatches.
+ * CSS color string for the DetailPanel heading, using the same hue + lightness
+ * gradient as the polygon fill. Pure function so the conditional fallback
+ * behavior is unit-testable.
+ *
+ * Returns `null` for the caller to fall back to its own default (e.g. an
+ * accent CSS variable) when:
+ *   - no cluster data is ready (loading / error / no selection)
+ *   - the selected country has no cluster row (target isn't covered by an
+ *     etl/roots/<iso3>.yaml yet)
  */
-export function hslToRgb(h: number, s = CLUSTER_SATURATION, l = CLUSTER_LIGHTNESS): [number, number, number] {
+export function selectedHeadingColor(
+  row: { hue: number | null; similarity: number | null } | null | undefined,
+): string | null {
+  if (!row || row.hue == null) return null;
+  const [r, g, b] = clusterFill(row.hue, row.similarity ?? 1);
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+/**
+ * HSL → 0-255 RGB tuple. Used by clusterFill; exported because the polygon
+ * stroke + hover paths sometimes want an HSL-derived color of their own.
+ */
+export function hslToRgb(h: number, s: number, l: number): [number, number, number] {
   const c = (1 - Math.abs(2 * l - 1)) * s;
   const hp = ((h % 360) + 360) % 360 / 60;
   const x = c * (1 - Math.abs((hp % 2) - 1));

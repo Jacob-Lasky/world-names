@@ -14,6 +14,9 @@ import sqlite3
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from _lib import normalized_similarity  # noqa: E402
+
 ETL = Path(__file__).parent
 PUBLIC_DEST = ETL.parent / "public" / "world-names.sqlite"
 TEMP_DB = ETL / "cache" / "world-names.sqlite"
@@ -62,10 +65,17 @@ CREATE TABLE endonyms (
 );
 
 CREATE TABLE exonyms (
-  observer_language_code TEXT NOT NULL REFERENCES languages(code),
-  target_country_iso3    TEXT NOT NULL REFERENCES countries(iso3),
-  exonym                 TEXT NOT NULL,
-  cluster_id             TEXT,  -- populated by Issue #2 (etymological clustering)
+  observer_language_code  TEXT NOT NULL REFERENCES languages(code),
+  target_country_iso3     TEXT NOT NULL REFERENCES countries(iso3),
+  exonym                  TEXT NOT NULL,
+  cluster_id              TEXT,  -- populated by Issue #2 (etymological clustering)
+  -- Similarity to the target's endonym in [0, 1]. 1.0 = identical after
+  -- casefold + NFKD (this exonym IS what the country calls itself); 0.0 =
+  -- fully foreign (different script, no shared characters). Computed in
+  -- _lib.normalized_similarity at build time so the front-end consumes a
+  -- ready-made channel for the polygon-fill lightness gradient — no
+  -- string-distance code ships to the browser.
+  similarity_to_endonym   REAL,
   PRIMARY KEY (observer_language_code, target_country_iso3)
 );
 CREATE INDEX idx_exo_target ON exonyms(target_country_iso3);
@@ -184,17 +194,33 @@ def main() -> int:
            VALUES (?, ?, ?, ?, ?)""",
         [(c["id"], c["target_country_iso3"], c["label"], c["hue"], c.get("etymology_origin")) for c in clusters],
     )
+    # similarity_to_endonym: precomputed per (target, observer) pair so the
+    # front-end's lightness channel comes out of the SQLite as-is. Keyed by
+    # target ISO3; for any exonym whose target has no endonym in our data
+    # (vanishingly rare — happens only if the upstream Wikidata fetch
+    # missed a country), leave the value NULL and the front-end falls back
+    # to the cluster's base lightness.
+    endonym_by_iso3 = {e["country_iso3"]: e["endonym"] for e in endonyms}
     con.executemany(
         """INSERT INTO exonyms
-           (observer_language_code, target_country_iso3, exonym, cluster_id)
-           VALUES (?, ?, ?, ?)""",
-        [(e["observer_language_code"], e["target_country_iso3"], e["exonym"], e.get("cluster_id"))
-         for e in exonyms],
+           (observer_language_code, target_country_iso3, exonym, cluster_id, similarity_to_endonym)
+           VALUES (?, ?, ?, ?, ?)""",
+        [
+            (
+                e["observer_language_code"],
+                e["target_country_iso3"],
+                e["exonym"],
+                e.get("cluster_id"),
+                normalized_similarity(e["exonym"], endonym_by_iso3[e["target_country_iso3"]])
+                if e["target_country_iso3"] in endonym_by_iso3 else None,
+            )
+            for e in exonyms
+        ],
     )
 
-    con.execute("INSERT INTO meta (key, value) VALUES ('schema_version', '1')")
+    con.execute("INSERT INTO meta (key, value) VALUES ('schema_version', '2')")
     con.execute("INSERT INTO meta (key, value) VALUES ('source', 'github.com/Jacob-Lasky/world-names')")
-    con.execute("INSERT INTO meta (key, value) VALUES ('phase', 'phase-1-no-clusters-no-blurbs')")
+    con.execute("INSERT INTO meta (key, value) VALUES ('phase', 'phase-2-similarity-encoding')")
     con.commit()
 
     # Vacuum to reclaim space.
@@ -214,6 +240,8 @@ def main() -> int:
     print(f"  clusters:           {len(clusters)}")
     clustered = sum(1 for e in exonyms if e.get("cluster_id"))
     print(f"  exonyms w/ cluster: {clustered} / {len(exonyms)}")
+    with_sim = sum(1 for e in exonyms if e["target_country_iso3"] in endonym_by_iso3)
+    print(f"  exonyms w/ sim:     {with_sim} / {len(exonyms)}")
 
     # Sanity probe: select a country and read its endonym + exonyms
     probe = sqlite3.connect(PUBLIC_DEST)

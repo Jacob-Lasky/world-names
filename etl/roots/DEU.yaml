@@ -9,8 +9,9 @@
 # is its own zone; Finnic took the Saxons as the local exemplar; Baltic
 # kept a separate ancient ethnonym; Chinese coined a phonetic transliteration.
 #
-# Each cluster has a base hue (0-360, HSL). Within-cluster lightness gradient
-# is handled at render time by lib/similarity.ts:clusterColor().
+# Each cluster has a base hue (0-360, HSL). Lightness at render time is
+# driven by orthographic similarity to the target's endonym (computed in
+# etl/_lib.normalized_similarity, applied by lib/similarity.ts:clusterFill).
 #
 # Language assignments are hand-curated based on actual exonym strings in
 # cache/exonyms.jsonl. Languages NOT listed here will have cluster_id = NULL

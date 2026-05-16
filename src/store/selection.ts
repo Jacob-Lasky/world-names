@@ -1,15 +1,11 @@
 import { create } from 'zustand';
 
-// Stored from clicking a polygon. The numericId is M49 (what the TopoJSON ships).
-// Ideologically the join key for the dataset is ISO 3166-1 alpha-3, populated
-// by the data layer once we have a numeric→alpha3 mapping in SQLite.
+// Click-time selection state. The DB layer enriches this (endonym, language,
+// ISO3, etc.) via `useCountryDetail(numericId)` when a component needs it —
+// the store stays minimal so the click handler doesn't need DB access.
 export type CountrySelection = {
-  numericId: string;
-  name: string;
-  iso3?: string;
-  endonym?: string;
-  language?: string;
-  blurb?: string;
+  numericId: string;  // M49 numeric, from the polygon
+  name: string;       // English label, from the polygon
 };
 
 type SelectionState = {

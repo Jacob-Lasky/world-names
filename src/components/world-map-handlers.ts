@@ -34,16 +34,26 @@ export function featureId(f: CountryFeature): string {
 
 /** Did this deck.gl event originate from a touchscreen?
  *
- *  deck.gl's PickingInfo carries the underlying browser event via
- *  `event.srcEvent`. PointerEvents expose `pointerType` which we use
- *  to fork desktop (mouse → click=SELECT, hover=INSPECT) from mobile
- *  (touch → tap=INSPECT, long-press=SELECT). Pulled out as a helper so
- *  every call site reads the same shape and unit tests can pin the
- *  branching without instantiating a deck.gl scene.
+ *  deck.gl attaches the underlying browser event at runtime via
+ *  `info.event`, but the typed PickingInfo doesn't include it (event is
+ *  the second arg of the layer's onClick signature; deck.gl's runtime
+ *  layers it onto the info object regardless). We runtime-narrow the
+ *  shape rather than cast: PointerEvents expose `pointerType`, and
+ *  `'touch'` is the value we care about for forking desktop (mouse →
+ *  click=SELECT, hover=INSPECT) from mobile (touch → tap=INSPECT,
+ *  long-press=SELECT).
+ *
+ *  Takes `unknown` so call sites pass deck.gl's PickingInfo directly
+ *  without local casts. Returns false for any non-touch / malformed
+ *  shape — never throws.
  */
-type DeckEventCarrier = { event?: { srcEvent?: { pointerType?: string } } };
-export function isTouchEvent(info: DeckEventCarrier | null | undefined): boolean {
-  return info?.event?.srcEvent?.pointerType === 'touch';
+export function isTouchEvent(info: unknown): boolean {
+  if (!info || typeof info !== 'object') return false;
+  const event = (info as { event?: unknown }).event;
+  if (!event || typeof event !== 'object') return false;
+  const srcEvent = (event as { srcEvent?: unknown }).srcEvent;
+  if (!srcEvent || typeof srcEvent !== 'object') return false;
+  return (srcEvent as { pointerType?: unknown }).pointerType === 'touch';
 }
 
 /** SELECT: change focus to this country. Clears any open inspection. */

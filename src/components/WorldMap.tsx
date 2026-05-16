@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import DeckGL from '@deck.gl/react';
+import DeckGL, { type DeckGLRef } from '@deck.gl/react';
 import { GeoJsonLayer } from '@deck.gl/layers';
 import type { PickingInfo } from '@deck.gl/core';
 import { feature } from 'topojson-client';
@@ -72,13 +72,6 @@ function dataUrl(): string {
   return `${import.meta.env.BASE_URL}countries-50m.json`;
 }
 
-// deck.gl's React wrapper has dynamic-ish types; the bits we need here are
-// pickObject and a containing element to translate clientX/Y → canvas-local
-// coordinates for the picker.
-type DeckRef = {
-  pickObject?: (opts: { x: number; y: number; radius?: number }) => PickingInfo | null;
-  deck?: { pickObject?: (opts: { x: number; y: number; radius?: number }) => PickingInfo | null };
-};
 
 export function WorldMap() {
   const [features, setFeatures] = useState<CountryFeature[] | null>(null);
@@ -120,7 +113,7 @@ export function WorldMap() {
   // the finger drifted slightly. `longPressFired` blocks the subsequent
   // touchend → onClick from firing inspect on the same press.
   const wrapperRef = useRef<HTMLDivElement>(null);
-  const deckRef = useRef<DeckRef | null>(null);
+  const deckRef = useRef<DeckGLRef | null>(null);
   const pressTimer = useRef<number | null>(null);
   const pressStart = useRef<{ clientX: number; clientY: number } | null>(null);
   const longPressFired = useRef(false);
@@ -131,12 +124,7 @@ export function WorldMap() {
     const rect = wrapper.getBoundingClientRect();
     const x = clientX - rect.left;
     const y = clientY - rect.top;
-    // deck.gl React wrapper sometimes exposes pickObject directly, sometimes
-    // only on the inner deck instance. Try both before giving up.
-    const pick = deckRef.current?.pickObject?.bind(deckRef.current)
-      ?? deckRef.current?.deck?.pickObject?.bind(deckRef.current.deck);
-    if (!pick) return null;
-    const info = pick({ x, y, radius: 5 });
+    const info = deckRef.current?.pickObject({ x, y, radius: 5 });
     return (info?.object as CountryFeature | undefined) ?? null;
   }
 
@@ -363,7 +351,7 @@ export function WorldMap() {
         </div>
       )}
       <DeckGL
-        ref={deckRef as unknown as React.Ref<DeckGL>}
+        ref={deckRef}
         initialViewState={INITIAL_VIEW_STATE}
         controller={true}
         layers={layers}

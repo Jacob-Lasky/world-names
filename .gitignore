@@ -22,8 +22,11 @@ test-results/
 # Python ETL
 etl/.venv/
 etl/__pycache__/
+etl/**/__pycache__/
 etl/*.egg-info/
 etl/uv.lock
+etl/cache/
+.pytest_cache/
 
 # Editor directories and files
 .vscode/*

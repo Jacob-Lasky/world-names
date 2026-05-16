@@ -2,27 +2,40 @@
 
 Build-time Python pipeline that emits `public/world-names.sqlite` (the static DB shipped to the browser and queried via `@sqlite.org/sqlite-wasm`).
 
-## Stages
+See Issue #1 on the repo for the full schema and dominance rule. Short version: most-L1-speakers wins (not "official language"), six normalized tables, status flags on `country_languages` carry the colonial/indigenous/contested signal as a side channel.
 
-1. **`fetch_endonyms.py`** — Wikidata SPARQL query: for each country (Q-id with P31:Q6256), pull its native label in its dominant language(s).
-2. **`fetch_exonyms.py`** — For each (observer-country × target-country) pair, pull the target's name in the observer's dominant language.
-3. **`cluster_etymology.py`** — Group exonyms by etymological root cluster (Germani / Alemanni / Deutsch / Niemcy / Saksa for Germany, analogous families for each target country). Source: Wiktionary etymology sections, hand-curated overrides where Wiktionary is silent.
-4. **`generate_blurbs.py`** — One LLM call per country to generate the etymology narrative (~195 calls, ~few cents on Haiku). Cached in DB; never regenerated unless schema changes.
-5. **`build_sqlite.py`** — Pack everything into `world-names.sqlite` (a single file, ~1MB), copy to `../public/`.
+## Files
 
-## Tables
+- `_lib.py` — shared helpers: `sparql_query`, `sparql_to_jsonl`, value/qid extractors. Centralizes the Wikidata user-agent and retry-on-429/5xx logic so per-stage scripts only specify the query, the parser, and the PK.
+- `fetch_countries.py` — **stage 1**. Pulls every current country with an ISO 3166-1 alpha-3 from Wikidata, plus a manual override row for Kosovo (XKX is user-assigned, Wikidata won't surface it). Cache: `cache/countries.jsonl`.
+- `tests/test_parse.py` — pure-function tests for the row parsers. Static binding fixtures, no network. `pytest -q`.
 
-```
-countries(iso3 PK, name_en, endonym, language, latitude, longitude)
-clusters(id PK, target_iso3, label, hue, etymology_origin)
-exonyms(observer_iso3, target_iso3, exonym, cluster_id, intra_cluster_distance)
-blurbs(target_iso3 PK, narrative_md)
-```
+Future stages (not yet implemented; see Issue #1):
+
+- `fetch_languages.py` — every language Q-ID with an ISO 639-3 code.
+- `fetch_country_languages.py` — L1 speaker counts per (country, language) via `P1098`. Computes `l1_pct`, marks `is_dominant_l1` for `MAX(l1_pct)` per country.
+- `fetch_endonyms.py` — `P1448` (native label) of each country in its dominant language.
+- `fetch_exonyms.py` — labels of each country in every "dominant" world language.
+- `build_sqlite.py` — packs everything into `world-names.sqlite`, copies to `../public/`.
+
+## Cache strategy
+
+Each stage writes JSONL to `cache/<stage>.jsonl`. Stages are idempotent: rerunning skips the network if the cache exists. Pass `--force` to bypass and re-query Wikidata.
+
+`cache/` is gitignored — the data is reproducible from Wikidata + the manual overrides in each fetcher.
 
 ## Run
 
 ```sh
-uv sync
+uv sync                                  # install deps
+uv run pytest -q                         # unit tests (no network)
+uv run python fetch_countries.py         # stage 1 (uses cache if present)
+uv run python fetch_countries.py --force # bypass cache, re-query Wikidata
+```
+
+Final build target once all stages exist:
+
+```sh
 uv run python build_sqlite.py
 ```
 

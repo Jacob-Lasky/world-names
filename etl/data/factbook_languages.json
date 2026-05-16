@@ -1,0 +1,1543 @@
+{
+  "_source": "https://github.com/factbook/factbook.json",
+  "_source_commit": "557b21501f94abe5796a3a4d3393549e588b1c65",
+  "_license": "CC0 (public domain — derived from CIA World Factbook)",
+  "entries": [
+    {
+      "cia_code": "ag",
+      "continent": "africa",
+      "country_name": "Algeria",
+      "languages_text": "Arabic (official), French (lingua franca), Tamazight (official) (dialects include Kabyle (Taqbaylit), Shawiya (Tacawit), Mzab, Tuareg (Tamahaq))"
+    },
+    {
+      "cia_code": "ao",
+      "continent": "africa",
+      "country_name": "Angola",
+      "languages_text": "Portuguese 71.2% (official), Umbundu 23%, Kikongo 8.2%, Kimbundu 7.8%, Chokwe 6.5%, Nhaneca 3.4%, Nganguela 3.1%, Fiote 2.4%, Kwanhama 2.3%, Muhumbi 2.1%, Luvale 1%, other 3.6%  (2014 est.)"
+    },
+    {
+      "cia_code": "bc",
+      "continent": "africa",
+      "country_name": "Botswana",
+      "languages_text": "Setswana 77.3%, Sekalanga 7.4%, Shekgalagadi 3.4%, English (official) 2.8%, Zezuru/Shona 2%, Sesarwa 1.7%, Sembukushu 1.6%, Ndebele 1%, other 2.8% (2011 est.)"
+    },
+    {
+      "cia_code": "bn",
+      "continent": "africa",
+      "country_name": "Benin",
+      "languages_text": "55 languages; French (official); Fon (a Gbe language), Yom (a Gur language) and Yoruba are the most important indigenous languages in the south; half a dozen regionally important languages in the north, including Bariba and Fulfulde"
+    },
+    {
+      "cia_code": "by",
+      "continent": "africa",
+      "country_name": "Burundi",
+      "languages_text": "Kirundi (official), French (official), English (official, least spoken), Swahili (2008 est.)"
+    },
+    {
+      "cia_code": "cd",
+      "continent": "africa",
+      "country_name": "Chad",
+      "languages_text": "French (official), Arabic (official), Sara (in south), more than 120 languages and dialects"
+    },
+    {
+      "cia_code": "cf",
+      "continent": "africa",
+      "country_name": "Congo (Brazzaville)",
+      "languages_text": "French (official), French Lingala and Monokutuba (trade languages), many local languages and dialects (of which Kikongo is the most widespread)"
+    },
+    {
+      "cia_code": "cg",
+      "continent": "africa",
+      "country_name": "DRC",
+      "languages_text": "French (official), Lingala (a trade language), Kingwana (a dialect of Kiswahili or Swahili), Kikongo, Tshiluba"
+    },
+    {
+      "cia_code": "cm",
+      "continent": "africa",
+      "country_name": "Cameroon",
+      "languages_text": "24 major African language groups, English (official), French (official)"
+    },
+    {
+      "cia_code": "cn",
+      "continent": "africa",
+      "country_name": "Comoros",
+      "languages_text": "Arabic (official), French (official), Shikomoro (official; similar to Swahili), Comorian"
+    },
+    {
+      "cia_code": "ct",
+      "continent": "africa",
+      "country_name": "none",
+      "languages_text": "French (official), Sangho (lingua franca and national language), tribal languages"
+    },
+    {
+      "cia_code": "cv",
+      "continent": "africa",
+      "country_name": "Cabo Verde",
+      "languages_text": "Portuguese (official), Crioulo (a Portuguese-based creole language with two main dialects)"
+    },
+    {
+      "cia_code": "dj",
+      "continent": "africa",
+      "country_name": "Djibouti",
+      "languages_text": "French (official), Arabic (official), Somali, Afar"
+    },
+    {
+      "cia_code": "eg",
+      "continent": "africa",
+      "country_name": "Egypt",
+      "languages_text": "Arabic (official); English and French widely understood by educated classes"
+    },
+    {
+      "cia_code": "ek",
+      "continent": "africa",
+      "country_name": "Equatorial Guinea",
+      "languages_text": "Spanish (official) 67.6%, other (includes Fang, Bubi, Portuguese (official), French (official), Fa d'Ambo spoken in Annobon) 32.4% (1994 est.)"
+    },
+    {
+      "cia_code": "er",
+      "continent": "africa",
+      "country_name": "Eritrea",
+      "languages_text": "Tigrinya (official), Arabic (official), English (official), Tigre, Kunama, Afar, other Cushitic languages"
+    },
+    {
+      "cia_code": "et",
+      "continent": "africa",
+      "country_name": "Ethiopia",
+      "languages_text": "Oromo (official regional working language) 33.8%, Amharic (official national language) 29.3%, Somali (official regional working language) 6.2%, Tigrigna (Tigrinya) (official regional working language) 5.9%, Sidamo 4%, Wolaytta 2.2%, Gurage 2%, Afar (official regional working language) 1.7%, Hadiyya 1.7%, Gamo 1.5%, Gedeo 1.3%, Opuuo 1.2%, Kafa 1.1%, other 8.1%, English (2007 est.)"
+    },
+    {
+      "cia_code": "ga",
+      "continent": "africa",
+      "country_name": "The Gambia",
+      "languages_text": "English (official), Mandinka, Wolof, Fula, other indigenous vernaculars"
+    },
+    {
+      "cia_code": "gb",
+      "continent": "africa",
+      "country_name": "Gabon",
+      "languages_text": "French (official), Fang, Myene, Nzebi, Bapounou/Eschira, Bandjabi"
+    },
+    {
+      "cia_code": "gh",
+      "continent": "africa",
+      "country_name": "Ghana",
+      "languages_text": "Asante 16%, Ewe 14%, Fante 11.6%, Boron (Brong) 4.9%, Dagomba 4.4%, Dangme 4.2%, Dagarte (Dagaba) 3.9%, Kokomba 3.5%, Akyem 3.2%, Ga 3.1%, other 31.2% (2010 est.)"
+    },
+    {
+      "cia_code": "gv",
+      "continent": "africa",
+      "country_name": "Guinea",
+      "languages_text": "French (official), Pular, Maninka, Susu, other native languages"
+    },
+    {
+      "cia_code": "iv",
+      "continent": "africa",
+      "country_name": "C&ocirc;te d'Ivoire",
+      "languages_text": "French (official), 60 native dialects of which Dioula is the most widely spoken"
+    },
+    {
+      "cia_code": "ke",
+      "continent": "africa",
+      "country_name": "Kenya",
+      "languages_text": "English (official), Kiswahili (official), numerous indigenous languages"
+    },
+    {
+      "cia_code": "li",
+      "continent": "africa",
+      "country_name": "Liberia",
+      "languages_text": "English 20% (official) and 27 indigenous languages, including Liberian English variants"
+    },
+    {
+      "cia_code": "lt",
+      "continent": "africa",
+      "country_name": "Lesotho",
+      "languages_text": "Sesotho (official), English (official), Phuthi, Xhosa, Zulu"
+    },
+    {
+      "cia_code": "ly",
+      "continent": "africa",
+      "country_name": "Libya",
+      "languages_text": "Arabic (official), Italian, English (all widely understood in the major cities); Tamazight (Nafusi, Ghadamis, Suknah, Awjilah, Tamasheq)"
+    },
+    {
+      "cia_code": "ma",
+      "continent": "africa",
+      "country_name": "Madagascar",
+      "languages_text": "Malagasy (official) 99.9%, French (official) 23.6%, English 8.2%, other 0.6% (2018 est.)"
+    },
+    {
+      "cia_code": "mi",
+      "continent": "africa",
+      "country_name": "Malawi",
+      "languages_text": "English (official), Chewa (dominant), Lambya, Lomwe, Ngoni, Nkhonde, Nyakyusa, Nyanja, Sena, Tonga, Tumbuka, Yao"
+    },
+    {
+      "cia_code": "ml",
+      "continent": "africa",
+      "country_name": "Mali",
+      "languages_text": "Bambara (official), French 17.2%, Peuhl/Foulfoulbe/Fulani 9.4%, Dogon 7.2%, Maraka/Soninke 6.4%, Malinke 5.6%, Sonrhai/Djerma 5.6%, Minianka 4.3%, Tamacheq 3.5%, Senoufo 2.6%, Bobo 2.1%, other 6.3%, unspecified 0.7% (2009 est.)"
+    },
+    {
+      "cia_code": "mo",
+      "continent": "africa",
+      "country_name": "Morocco",
+      "languages_text": "Arabic (official), Tamazight languages (Tamazight (official), Tachelhit, Tarifit), French (often the language of business, government, and diplomacy)"
+    },
+    {
+      "cia_code": "mp",
+      "continent": "africa",
+      "country_name": "Mauritius",
+      "languages_text": "Creole 86.5%, Bhojpuri 5.3%, French 4.1%, two languages 1.4%, other 2.6% (includes English, one of the two official languages of the National Assembly, which is spoken by less than 1% of the population), unspecified 0.1% (2011 est.)"
+    },
+    {
+      "cia_code": "mr",
+      "continent": "africa",
+      "country_name": "Mauritania",
+      "languages_text": "Arabic (official and national), Pular, Soninke, Wolof (all national languages), French"
+    },
+    {
+      "cia_code": "mz",
+      "continent": "africa",
+      "country_name": "Mozambique",
+      "languages_text": "Makhuwa 26.1%, Portuguese (official) 16.6%, Tsonga 8.6%, Nyanja 8.1, Sena 7.1%, Lomwe 7.1%, Chuwabo 4.7%, Ndau 3.8%, Tswa 3.8%, other Mozambican languages 11.8%, other 0.5%, unspecified 1.8% (2017 est.)"
+    },
+    {
+      "cia_code": "ng",
+      "continent": "africa",
+      "country_name": "Niger",
+      "languages_text": "Hausa, Zarma, French (official), Fufulde, Tamashek, Kanuri, Gurmancema, Tagdal"
+    },
+    {
+      "cia_code": "ni",
+      "continent": "africa",
+      "country_name": "Nigeria",
+      "languages_text": "English (official), Hausa, Yoruba, Igbo (Ibo), Fulani, over 500 additional indigenous languages"
+    },
+    {
+      "cia_code": "od",
+      "continent": "africa",
+      "country_name": "South Sudan",
+      "languages_text": "English (official), Arabic (includes Juba and Sudanese variants), ethnic languages include Dinka, Nuer, Bari, Zande, Shilluk"
+    },
+    {
+      "cia_code": "pu",
+      "continent": "africa",
+      "country_name": "Guinea-Bissau",
+      "languages_text": "Portuguese-based Creole, Portuguese (official; largely used as a second or third language), Pular (a Fula language), Mandingo"
+    },
+    {
+      "cia_code": "rw",
+      "continent": "africa",
+      "country_name": "Rwanda",
+      "languages_text": "Kinyarwanda (official, universal Bantu vernacular) 93.2%, French (official) &lt;0.1%, English (official) &lt;0.1%, Swahili/Kiswahili (official, used in commercial centers) &lt;0.1%, more than one language, other 6.3%, unspecified 0.3% (2002 est.)"
+    },
+    {
+      "cia_code": "se",
+      "continent": "africa",
+      "country_name": "Seychelles",
+      "languages_text": "Seychellois Creole (official) 89.1%, English (official) 5.1%, French (official) 0.7%, other 3.8%, unspecified 1.4% (2010 est.)"
+    },
+    {
+      "cia_code": "sf",
+      "continent": "africa",
+      "country_name": "South Africa",
+      "languages_text": "isiZulu or Zulu (official) 25.3%, isiXhosa or Xhosa (official) 14.8%, Afrikaans (official) 12.2%, Sepedi or Pedi (official) 10.1%, Setswana or Tswana (official) 9.1%, English (official) 8.1%, Sesotho or Sotho (official) 7.9%, Xitsonga or Tsonga (official) 3.6%, siSwati or Swati (official) 2.8%, Tshivenda or Venda (official) 2.5%, isiNdebele or Ndebele (official) 1.6%, other (includes South African sign language (official) and Khoi or Khoisan or Khoe languages) 2% (2018 est.)"
+    },
+    {
+      "cia_code": "sg",
+      "continent": "africa",
+      "country_name": "Senegal",
+      "languages_text": "French (official), Wolof, Pulaar, Jola, Mandinka, Serer, Soninke"
+    },
+    {
+      "cia_code": "sh",
+      "continent": "africa",
+      "country_name": "none",
+      "languages_text": "English"
+    },
+    {
+      "cia_code": "sl",
+      "continent": "africa",
+      "country_name": "Sierra Leone",
+      "languages_text": "English (official, regular use limited to literate minority), Mende (principal vernacular in the south), Temne (principal vernacular in the north), Krio (English-based Creole, spoken by the descendants of freed Jamaican slaves; a first language for 10% of the population but understood by 95%)"
+    },
+    {
+      "cia_code": "so",
+      "continent": "africa",
+      "country_name": "Somalia",
+      "languages_text": "Somali (official), Arabic (official), Italian, English"
+    },
+    {
+      "cia_code": "su",
+      "continent": "africa",
+      "country_name": "Sudan",
+      "languages_text": "Arabic (official), English (official), Nubian, Ta Bedawie, Fur"
+    },
+    {
+      "cia_code": "to",
+      "continent": "africa",
+      "country_name": "Togo",
+      "languages_text": "French (official, language of commerce), Ewe and Mina (in the south), Kabye (sometimes spelled Kabiye) and Dagomba (in the north)"
+    },
+    {
+      "cia_code": "tp",
+      "continent": "africa",
+      "country_name": "Sao Tome and Principe",
+      "languages_text": "Portuguese 98.4% (official), Forro 36.2%, Cabo Verdian 8.5%, French 6.8%, Angolar 6.6%, English 4.9%, Lunguie 1%, other (including sign language) 2.4%; other Portuguese-based Creoles are also spoken (2012 est.)"
+    },
+    {
+      "cia_code": "ts",
+      "continent": "africa",
+      "country_name": "Tunisia",
+      "languages_text": "Arabic (official, one of the languages of commerce), French (commerce), Tamazight"
+    },
+    {
+      "cia_code": "tz",
+      "continent": "africa",
+      "country_name": "Tanzania",
+      "languages_text": "Kiswahili or Swahili (official), Kiunguja (name for Swahili in Zanzibar), English (official, primary language of commerce, administration, and higher education), Arabic, many local languages"
+    },
+    {
+      "cia_code": "ug",
+      "continent": "africa",
+      "country_name": "Uganda",
+      "languages_text": "English (official), Ganda or Luganda (most widely used of the Niger-Congo languages and the language used most often in the capital), other Niger-Congo languages, Nilo-Saharan languages, Swahili (official), Arabic"
+    },
+    {
+      "cia_code": "uv",
+      "continent": "africa",
+      "country_name": "Burkina Faso",
+      "languages_text": "Mossi 52.9%, Fula 7.8%, Gourmantche 6.8%, Dyula 5.7%, Bissa 3.3%, Gurunsi 3.2%, French (official) 2.2%, Bwamu 2%, Dagara 2%, San 1.7%, Marka 1.6%, Bobo 1.5%, Senufo 1.5%, Lobi 1.2%, other 6.6% (2019 est.)"
+    },
+    {
+      "cia_code": "wa",
+      "continent": "africa",
+      "country_name": "Namibia",
+      "languages_text": "Oshiwambo languages 49.7%, Nama/Damara 11%, Kavango languages 10.4%, Afrikaans 9.4%, Herero languages 9.2%, Zambezi languages 4.9%, English (official) 2.3%, other African languages 1.5%, other European languages 0.7%, other 1% (2016 est.)"
+    },
+    {
+      "cia_code": "wi",
+      "continent": "africa",
+      "country_name": "Western Sahara",
+      "languages_text": "Standard Arabic, Hassaniya Arabic, Moroccan Arabic, Berber, Spanish, French"
+    },
+    {
+      "cia_code": "wz",
+      "continent": "africa",
+      "country_name": "Eswatini",
+      "languages_text": "English (official, used for government business), siSwati (official)"
+    },
+    {
+      "cia_code": "za",
+      "continent": "africa",
+      "country_name": "Zambia",
+      "languages_text": "Bemba 33.4%, Nyanja 14.7%, Tonga 11.4%, Lozi 5.5%, Chewa 4.5%, Nsenga 2.9%, Tumbuka 2.5%, Lunda (North Western) 1.9%, Kaonde 1.8%, Lala 1.8%, Lamba 1.8%, English (official) 1.7%, Luvale 1.5%, Mambwe 1.3%, Namwanga 1.2%, Lenje 1.1%, Bisa 1%, other 9.7%, unspecified 0.2% (2010 est.)"
+    },
+    {
+      "cia_code": "zi",
+      "continent": "africa",
+      "country_name": "Zimbabwe",
+      "languages_text": "Shona (official, most widely spoken) 80.9%, Ndebele (official, second most widely spoken) 11.5%, English (official, traditionally used for official business) 0.3%, 13 minority languages (official; includes Chewa, Chibarwe, Kalanga, Koisan, Nambya, Ndau, Shangani, sign language, Sotho, Tonga, Tswana, Venda, and Xhosa) 7%, other 0.3% (2022 est.)"
+    },
+    {
+      "cia_code": "ay",
+      "continent": "antarctica",
+      "country_name": "Antarctica",
+      "languages_text": null
+    },
+    {
+      "cia_code": "bv",
+      "continent": "antarctica",
+      "country_name": "Bouvet Island",
+      "languages_text": null
+    },
+    {
+      "cia_code": "fs",
+      "continent": "antarctica",
+      "country_name": "French Southern and Antarctic Lands",
+      "languages_text": null
+    },
+    {
+      "cia_code": "hm",
+      "continent": "antarctica",
+      "country_name": "Heard Island and McDonald Islands",
+      "languages_text": null
+    },
+    {
+      "cia_code": "aq",
+      "continent": "australia-oceania",
+      "country_name": "American Samoa",
+      "languages_text": "Samoan 87.9% (closely related to Hawaiian and other Polynesian languages), English 3.3%, Tongan 2.1%, other Pacific Islander 4.1%, Asian languages 2.1%, other 0.5% (2020 est.)"
+    },
+    {
+      "cia_code": "as",
+      "continent": "australia-oceania",
+      "country_name": "Australia",
+      "languages_text": "English 72%, Mandarin 2.7%, Arabic 1.4%, Vietnamese 1.3%, Cantonese 1.2%, other 15.7%, unspecified 5.7% (2021 est.)"
+    },
+    {
+      "cia_code": "at",
+      "continent": "australia-oceania",
+      "country_name": "Ashmore and Cartier Islands",
+      "languages_text": null
+    },
+    {
+      "cia_code": "bp",
+      "continent": "australia-oceania",
+      "country_name": "Solomon Islands",
+      "languages_text": "Melanesian pidgin (lingua franca in much of the country), English (official but spoken by only 1%-2% of the population), 120 indigenous languages"
+    },
+    {
+      "cia_code": "ck",
+      "continent": "australia-oceania",
+      "country_name": "Cocos (Keeling) Islands",
+      "languages_text": "Malay (Cocos dialect) 68.8%, English 22.3%, unspecified 8.9%; note - data represent language spoken at home (2016 est.)"
+    },
+    {
+      "cia_code": "cq",
+      "continent": "australia-oceania",
+      "country_name": "Northern Mariana Islands",
+      "languages_text": "Philippine languages 32.8%, Chamorro (official) 24.1%, English (official) 17%, other Pacific island languages 10.1% (includes Carolinian (official), Chinese 6.8%, other Asian languages 7.3%, other 1.9% (2010 est.)"
+    },
+    {
+      "cia_code": "cr",
+      "continent": "australia-oceania",
+      "country_name": "Coral Sea Islands",
+      "languages_text": null
+    },
+    {
+      "cia_code": "cw",
+      "continent": "australia-oceania",
+      "country_name": "Cook Islands",
+      "languages_text": "English (official) 86.4%, Cook Islands Maori (Rarotongan) (official) 76.2%, other 8.3% (2011 est.)"
+    },
+    {
+      "cia_code": "fj",
+      "continent": "australia-oceania",
+      "country_name": "Fiji",
+      "languages_text": "English (official), iTaukei (official), Fiji Hindi (official)"
+    },
+    {
+      "cia_code": "fm",
+      "continent": "australia-oceania",
+      "country_name": "none",
+      "languages_text": "English (official and common language), Chuukese, Kosrean, Pohnpeian, Yapese, Ulithian, Woleaian, Nukuoro, Kapingamarangi"
+    },
+    {
+      "cia_code": "fp",
+      "continent": "australia-oceania",
+      "country_name": "French Polynesia",
+      "languages_text": "French (official) 73.5%, Tahitian 20.1%, Marquesan 2.6%, Austral languages 1.2%, Paumotu 1%, other 1.6% (2017 est.)"
+    },
+    {
+      "cia_code": "gq",
+      "continent": "australia-oceania",
+      "country_name": "Guam",
+      "languages_text": "English 43.3%, Filipino 24.9%, Chamorro 16%, other Pacific Island languages 9.4%, Asian languages 6.5% (2020 est.)"
+    },
+    {
+      "cia_code": "kr",
+      "continent": "australia-oceania",
+      "country_name": "Kiribati",
+      "languages_text": "Gilbertese, English (official)"
+    },
+    {
+      "cia_code": "kt",
+      "continent": "australia-oceania",
+      "country_name": "Christmas Island",
+      "languages_text": "English (official) 27.6%, Mandarin 17.2%, Malay 17.1%, Cantonese 3.9%, Min Nan 1.6%, Tagalog 1%, other 4.5%, unspecified 27.1% (2016 est.)"
+    },
+    {
+      "cia_code": "nc",
+      "continent": "australia-oceania",
+      "country_name": "New Caledonia",
+      "languages_text": "French (official), 33 Melanesian-Polynesian dialects"
+    },
+    {
+      "cia_code": "ne",
+      "continent": "australia-oceania",
+      "country_name": "Niue",
+      "languages_text": "Niuean 46% (official, a Polynesian language closely related to Tongan and Samoan), Niuean and English 32%, English (official) 11%, Niuean and others 5%, other 6% (2011 est.)"
+    },
+    {
+      "cia_code": "nf",
+      "continent": "australia-oceania",
+      "country_name": "Norfolk Island",
+      "languages_text": "English (official) 44.9%, Norfolk (official, a mixture of 18th century English and ancient Tahitian) 40.3%, Fijian 1.8%, other 6.8%, unspecified 6.2% (2016 est.)"
+    },
+    {
+      "cia_code": "nh",
+      "continent": "australia-oceania",
+      "country_name": "Vanuatu",
+      "languages_text": "indigenous languages (more than 100) 82.6%, Bislama (official; creole) 14.5%, English (official) 2.1%, French (official) 0.8% (2020 est.)"
+    },
+    {
+      "cia_code": "nr",
+      "continent": "australia-oceania",
+      "country_name": "Nauru",
+      "languages_text": "Nauruan 93% (official, a distinct Pacific Island language), English 2% (widely understood, spoken, and used for most government and commercial purposes), other 5% (includes Gilbertese 2% and Chinese 2%) (2011 est.)"
+    },
+    {
+      "cia_code": "nz",
+      "continent": "australia-oceania",
+      "country_name": "New Zealand",
+      "languages_text": "English (de facto official) 95.4%, Maori (de jure official) 4%, Samoan 2.2%, Northern Chinese 2%, Hindi 1.5%, French 1.2%, Yue 1.1%, New Zealand Sign Language (de jure official) 0.5%, other or not stated 17.2% (2018 est.)"
+    },
+    {
+      "cia_code": "pc",
+      "continent": "australia-oceania",
+      "country_name": "Pitcairn Islands",
+      "languages_text": "English (official), Pitkern (mixture of an 18th century English dialect and a Tahitian dialect)"
+    },
+    {
+      "cia_code": "ps",
+      "continent": "australia-oceania",
+      "country_name": "Palau",
+      "languages_text": "Palauan (official on most islands) 65.2%, other Micronesian 1.9%, English (official) 19.1%, Filipino 9.9%, Chinese 1.2%, other 2.8% (2015 est.)"
+    },
+    {
+      "cia_code": "rm",
+      "continent": "australia-oceania",
+      "country_name": "Marshall Islands",
+      "languages_text": "Marshallese (official) 98.2%, other languages 1.8% (1999)"
+    },
+    {
+      "cia_code": "tl",
+      "continent": "australia-oceania",
+      "country_name": "Tokelau",
+      "languages_text": "Tokelauan 88.1% (a Polynesian language), English 48.6%, Samoan 26.7%, Tuvaluan 11.2%, Kiribati 1.5%, other 2.8%, none 2.8%, unspecified 0.8% (2016 ests.)"
+    },
+    {
+      "cia_code": "tn",
+      "continent": "australia-oceania",
+      "country_name": "Tonga",
+      "languages_text": "Tongan only 85%, Tongan and other language 13.9%, Tongan not used at home 1.1% (2021 est.)"
+    },
+    {
+      "cia_code": "tv",
+      "continent": "australia-oceania",
+      "country_name": "Tuvalu",
+      "languages_text": "Tuvaluan (official), English (official), Samoan, Kiribati (on the island of Nui)"
+    },
+    {
+      "cia_code": "um",
+      "continent": "australia-oceania",
+      "country_name": "Baker Island, Howland Island, Jarvis Island, Johnston Atoll, Kingman Reef, Midway Islands, Palmyra Atoll",
+      "languages_text": null
+    },
+    {
+      "cia_code": "wf",
+      "continent": "australia-oceania",
+      "country_name": "Wallis and Futuna",
+      "languages_text": "Wallisian (indigenous Polynesian language) 58.9%, Futunian 30.1%, French (official) 10.8%, other 0.2% (2003 est.)"
+    },
+    {
+      "cia_code": "wq",
+      "continent": "australia-oceania",
+      "country_name": "Wake Island",
+      "languages_text": null
+    },
+    {
+      "cia_code": "ws",
+      "continent": "australia-oceania",
+      "country_name": "Samoa",
+      "languages_text": "Samoan (Polynesian) (official) 91.1%, Samoan/English 6.7%, English (official) 0.5%, other 0.2%, unspecified 1.6% (2006 est.)"
+    },
+    {
+      "cia_code": "aa",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Aruba",
+      "languages_text": "Papiamento (official) (a creole language that mixes Portuguese, Spanish, Dutch, English, French, African languages, and Arawak) 69.4%, Spanish 13.7%, English (widely spoken) 7.1%, Dutch (official) 6.1%, Chinese 1.5%, other 1.7%, unspecified 0.4% (2010 est.)"
+    },
+    {
+      "cia_code": "ac",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Antigua and Barbuda",
+      "languages_text": "English (official), Antiguan Creole (an English-based creole)"
+    },
+    {
+      "cia_code": "av",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Anguilla",
+      "languages_text": "English (official)"
+    },
+    {
+      "cia_code": "bb",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Barbados",
+      "languages_text": "English (official), Bajan (English-based creole language, widely spoken in informal settings)"
+    },
+    {
+      "cia_code": "bf",
+      "continent": "central-america-n-caribbean",
+      "country_name": "The Bahamas",
+      "languages_text": "English (official), Creole (among Haitian immigrants)"
+    },
+    {
+      "cia_code": "bh",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Belize",
+      "languages_text": "English 62.9% (official), Spanish 56.6%, Creole 44.6%, Maya 10.5%, German 3.2%, Garifuna 2.9%, other 1.8%, unknown 0.5% (2010 est.)"
+    },
+    {
+      "cia_code": "bq",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Navassa Island",
+      "languages_text": null
+    },
+    {
+      "cia_code": "cj",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Cayman Islands",
+      "languages_text": "English (official) 88.8%, Spanish 3.9%, Filipino 3.8%, other 2.8%, unspecified 0.7% (2021 est.)"
+    },
+    {
+      "cia_code": "cs",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Costa Rica",
+      "languages_text": "Spanish (official), English"
+    },
+    {
+      "cia_code": "cu",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Cuba",
+      "languages_text": "Spanish (official)"
+    },
+    {
+      "cia_code": "do",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Dominica",
+      "languages_text": "English (official), French patois"
+    },
+    {
+      "cia_code": "dr",
+      "continent": "central-america-n-caribbean",
+      "country_name": "The Dominican",
+      "languages_text": "Spanish (official)"
+    },
+    {
+      "cia_code": "es",
+      "continent": "central-america-n-caribbean",
+      "country_name": "El Salvador",
+      "languages_text": "Spanish (official), Nawat (among some indigenous)"
+    },
+    {
+      "cia_code": "gj",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Grenada",
+      "languages_text": "English (official), French patois"
+    },
+    {
+      "cia_code": "gt",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Guatemala",
+      "languages_text": "Spanish (official) 69.9%, Maya languages 29.7% (Q'eqchi' 8.3%, K'iche 7.8%, Mam 4.4%, Kaqchikel 3%, Q'anjob'al 1.2%, Poqomchi' 1%, other 4%), other 0.4% (includes Xinca and Garifuna) (2018 est.)"
+    },
+    {
+      "cia_code": "ha",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Haiti",
+      "languages_text": "French (official), Creole (official)"
+    },
+    {
+      "cia_code": "ho",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Honduras",
+      "languages_text": "Spanish (official), Amerindian dialects"
+    },
+    {
+      "cia_code": "jm",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Jamaica",
+      "languages_text": "English, Jamaican patois"
+    },
+    {
+      "cia_code": "mh",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Montserrat",
+      "languages_text": "English"
+    },
+    {
+      "cia_code": "nn",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Sint Maarten",
+      "languages_text": "English (official) 67.5%, Spanish 12.9%, Creole 8.2%, Dutch (official) 4.2%, Papiamento (a Spanish-Portuguese-Dutch-English dialect) 2.2%, French 1.5%, other 3.5% (2001 est.)"
+    },
+    {
+      "cia_code": "nu",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Nicaragua",
+      "languages_text": "Spanish (official) 99.5%, Indigenous 0.3%, Portuguese 0.1%, other 0.1% (2020 est.)"
+    },
+    {
+      "cia_code": "pm",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Panama",
+      "languages_text": "Spanish (official), Indigenous languages (including Ngabere (Guaymi), Buglere, Kuna, Embera, Wounaan, Naso (Teribe), and Bri Bri), Panamanian English Creole (a mixture of English and Spanish with elements of Ngabere, also known as Guari Guari and Colon Creole), English, Chinese (Yue and Hakka), Arabic, French Creole, other (Yiddish, Hebrew, Korean, Japanese)"
+    },
+    {
+      "cia_code": "rn",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Saint Martin",
+      "languages_text": "French (official), Dutch, English, Guadeloupian Creole, Haitian Creole, Italian, Martiniquan Creole, Papiamento (dialect of Netherlands Antilles), Spanish"
+    },
+    {
+      "cia_code": "rq",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Puerto Rico",
+      "languages_text": "Spanish, English"
+    },
+    {
+      "cia_code": "sc",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Saint Kitts and Nevis",
+      "languages_text": "English (official)"
+    },
+    {
+      "cia_code": "st",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Saint Lucia",
+      "languages_text": "English (official), Saint Lucian Creole"
+    },
+    {
+      "cia_code": "tb",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Saint Barthelemy",
+      "languages_text": "French (primary), English"
+    },
+    {
+      "cia_code": "td",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Trinidad and Tobago",
+      "languages_text": "English (official), Trinidadian Creole English, Tobagonian Creole English, Caribbean Hindustani (a dialect of Hindi), Trinidadian Creole French, Spanish, Chinese"
+    },
+    {
+      "cia_code": "tk",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Turks and Caicos Islands",
+      "languages_text": "English (official)"
+    },
+    {
+      "cia_code": "uc",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Curacao",
+      "languages_text": "Papiamento (official) (a creole language that is a mixture of Portuguese, Spanish, Dutch, English, and, to a lesser extent, French, as well as elements of African languages and the language of the Arawak) 80%, Dutch (official) 8.8%, Spanish 5.6%, English (official) 3.1%, other 2.3%, unspecified 0.3% (2011 est.)"
+    },
+    {
+      "cia_code": "vc",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Saint Vincent and the Grenadines",
+      "languages_text": "English, Vincentian Creole English, French patois"
+    },
+    {
+      "cia_code": "vi",
+      "continent": "central-america-n-caribbean",
+      "country_name": "British Virgin Islands",
+      "languages_text": "English (official), Virgin Islands Creole"
+    },
+    {
+      "cia_code": "vq",
+      "continent": "central-america-n-caribbean",
+      "country_name": "Virgin Islands",
+      "languages_text": "English 71.6%, Spanish or Spanish Creole 17.2%, French or French Creole 8.6%, other 2.5% (2010 est.)"
+    },
+    {
+      "cia_code": "kg",
+      "continent": "central-asia",
+      "country_name": "Kyrgyzstan",
+      "languages_text": "Kyrgyz (state language) 71.4%, Uzbek 14.4%, Russian (official language) 9%, other 5.2% (2009 est.)"
+    },
+    {
+      "cia_code": "kz",
+      "continent": "central-asia",
+      "country_name": "Kazakhstan",
+      "languages_text": "Kazakh (official, Qazaq) 80.1%, Russian 83.7%, English 35.1% (2021 est.)"
+    },
+    {
+      "cia_code": "rs",
+      "continent": "central-asia",
+      "country_name": "Russia",
+      "languages_text": "Russian (official) 85.7%, Tatar 3.2%, Chechen 1%, other 10.1% (2010 est.)"
+    },
+    {
+      "cia_code": "ti",
+      "continent": "central-asia",
+      "country_name": "Tajikistan",
+      "languages_text": "Tajik (official) 84.4%, Uzbek 11.9%, Kyrgyz 0.8%, Russian 0.5%, other 2.4% (2010 est.)"
+    },
+    {
+      "cia_code": "tx",
+      "continent": "central-asia",
+      "country_name": "Turkmenistan",
+      "languages_text": "Turkmen (official) 72%, Russian 12%, Uzbek 9%, other 7%"
+    },
+    {
+      "cia_code": "uz",
+      "continent": "central-asia",
+      "country_name": "Uzbekistan",
+      "languages_text": "Uzbek (official) 74.3%, Russian 14.2%, Tajik 4.4%, other 7.1%"
+    },
+    {
+      "cia_code": "bm",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Burma",
+      "languages_text": "Burmese (official)"
+    },
+    {
+      "cia_code": "bx",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Brunei",
+      "languages_text": "Malay (Bahasa Melayu) (official), English, Chinese dialects"
+    },
+    {
+      "cia_code": "cb",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Cambodia",
+      "languages_text": "Khmer (official) 95.8%, minority languages 2.9%, Chinese 0.6%, Vietnamese 0.5%, other 0.2% (2019 est.)"
+    },
+    {
+      "cia_code": "ch",
+      "continent": "east-n-southeast-asia",
+      "country_name": "China",
+      "languages_text": "Standard Chinese or Mandarin (official; Putonghua, based on the Beijing dialect), Yue (Cantonese), Wu (Shanghainese), Minbei (Fuzhou), Minnan (Hokkien-Taiwanese), Xiang, Gan, Hakka dialects, minority languages; note - Zhuang is official in Guangxi Zhuang, Yue is official in Guangdong, Mongolian is official in Nei Mongol, Uyghur is official in Xinjiang Uygur, Kyrgyz is official in Xinjiang Uyghur, and Tibetan is official in Xizang (Tibet)"
+    },
+    {
+      "cia_code": "hk",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Hong Kong",
+      "languages_text": "Cantonese (official) 85.4%, English (official) 4.5%, Putonghua (official) 2.2%, other Chinese dialects 2.8%, other 2%, persons under 5 or mute 3.2% (2021 est.)"
+    },
+    {
+      "cia_code": "id",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Indonesia",
+      "languages_text": "Bahasa Indonesia (official, modified form of Malay), English, Dutch, local dialects (of which the most widely spoken is Javanese); note -&nbsp;more than 700 languages are used in Indonesia"
+    },
+    {
+      "cia_code": "ja",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Japan",
+      "languages_text": "Japanese"
+    },
+    {
+      "cia_code": "kn",
+      "continent": "east-n-southeast-asia",
+      "country_name": "North Korea",
+      "languages_text": "Korean"
+    },
+    {
+      "cia_code": "ks",
+      "continent": "east-n-southeast-asia",
+      "country_name": "South Korea",
+      "languages_text": "Korean, English&nbsp;"
+    },
+    {
+      "cia_code": "la",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Laos",
+      "languages_text": "Lao (official), French, English, various ethnic languages"
+    },
+    {
+      "cia_code": "mc",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Macau",
+      "languages_text": "Cantonese 81%, Mandarin 4.7%, other Chinese dialects 5.4%, English 3.6%, Tagalog 2.9%, Portuguese 0.6%, other 1.8% (2021 est.)"
+    },
+    {
+      "cia_code": "mg",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Mongolia",
+      "languages_text": "Mongolian 90% (official, Khalkha dialect is predominant), Turkic, Russian (1999)"
+    },
+    {
+      "cia_code": "my",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Malaysia",
+      "languages_text": "Bahasa Malaysia (official), English, Chinese (Cantonese, Mandarin, Hokkien, Hakka, Hainan, Foochow), Tamil, Telugu, Malayalam, Panjabi, Thai"
+    },
+    {
+      "cia_code": "pf",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Paracel Islands",
+      "languages_text": null
+    },
+    {
+      "cia_code": "pg",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Spratly Islands",
+      "languages_text": null
+    },
+    {
+      "cia_code": "pp",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Papua New Guinea",
+      "languages_text": "Tok Pisin (official), English (official), Hiri Motu (official), some 839 living indigenous languages are spoken (about 12% of the world's total)"
+    },
+    {
+      "cia_code": "rp",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Philippines",
+      "languages_text": "Tagalog 39.9%, Bisaya/Binisaya 16%, Hiligaynon/Ilonggo 7.3%, Ilocano 7.1%, Cebuano 6.5%, Bikol/Bicol 3.9%, Waray 2.6%, Kapampangan 2.4%, Maguindanao 1.4%, Pangasinan/Panggalato 1.3%, other languages/dialects 11.2%, unspecified 0.4% (2020 est.)"
+    },
+    {
+      "cia_code": "sn",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Singapore",
+      "languages_text": "English (official) 48.3%, Mandarin (official) 29.9%, other Chinese dialects (includes Hokkien, Cantonese, Teochew, Hakka) 8.7%, Malay (official) 9.2%, Tamil (official) 2.5%, other 1.4% (2020 est.)"
+    },
+    {
+      "cia_code": "th",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Thailand",
+      "languages_text": "Thai (official) only 90.7%, Thai and other languages 6.4%, only other languages 2.9% (includes Malay, Burmese); English is a secondary language among the elite (2010 est.)"
+    },
+    {
+      "cia_code": "tt",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Timor-Leste",
+      "languages_text": "Tetun Prasa 30.6%, Mambai 16.6%, Makasai 10.5%, Tetun Terik 6.1%, Baikenu 5.9%, Kemak 5.8%, Bunak 5.5%, Tokodede 4%, Fataluku 3.5%, Waima'a 1.8%, Galoli 1.4%, Naueti 1.4%, Idate 1.2%, Midiki 1.2%, other 4.5% (2015 est.)"
+    },
+    {
+      "cia_code": "tw",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Taiwan",
+      "languages_text": "Mandarin (official), Min Nan, Hakka dialects, approximately 16 indigenous languages"
+    },
+    {
+      "cia_code": "vm",
+      "continent": "east-n-southeast-asia",
+      "country_name": "Vietnam",
+      "languages_text": "Vietnamese (official); English (often as a second language); some French, Chinese, and Khmer; mountain-area languages (including Mon-Khmer and Malayo-Polynesian)"
+    },
+    {
+      "cia_code": "al",
+      "continent": "europe",
+      "country_name": "Albania",
+      "languages_text": "Albanian 98.8% (official - derived from Tosk dialect), Greek 0.5%, other 0.6% (including Macedonian, Romani, Vlach, Turkish, Italian, and Serbo-Croatian), unspecified 0.1% (2011 est.)"
+    },
+    {
+      "cia_code": "an",
+      "continent": "europe",
+      "country_name": "Andorra",
+      "languages_text": "Catalan (official) 44.1%, Castilian 40.3%, Portuguese 13.5%, French 10%, English 3%, other 6.8% (2022 est.)"
+    },
+    {
+      "cia_code": "au",
+      "continent": "europe",
+      "country_name": "Austria",
+      "languages_text": "German (official nationwide) 88.6%, Turkish 2.3%, Serbian 2.2%, Croatian (official in Burgenland) 1.6%, other (includes Slovene, official in southern Carinthia, and Hungarian, official in Burgenland) 5.3% (2001 est.)"
+    },
+    {
+      "cia_code": "ax",
+      "continent": "europe",
+      "country_name": "Akrotiri",
+      "languages_text": "English, Greek"
+    },
+    {
+      "cia_code": "be",
+      "continent": "europe",
+      "country_name": "Belgium",
+      "languages_text": "Dutch (official) 60%, French (official) 40%, German (official) less than 1%"
+    },
+    {
+      "cia_code": "bk",
+      "continent": "europe",
+      "country_name": "Bosnia and Herzegovina",
+      "languages_text": "Bosnian (official) 52.9%, Serbian (official) 30.8%, Croatian (official) 14.6%, other 1.6%, no answer 0.2% (2013 est.)"
+    },
+    {
+      "cia_code": "bo",
+      "continent": "europe",
+      "country_name": "Belarus",
+      "languages_text": "Russian (official) 71.4%, Belarusian (official) 26%, other 0.3% (includes small Polish- and Ukrainian-speaking minorities), unspecified 2.3% (2019 est.)"
+    },
+    {
+      "cia_code": "bu",
+      "continent": "europe",
+      "country_name": "Bulgaria",
+      "languages_text": "Bulgarian (official) 77.3%, Turkish 7.9%, Romani 3.5%, other 1%, unspecified 10.4% (2021 est.)"
+    },
+    {
+      "cia_code": "cy",
+      "continent": "europe",
+      "country_name": "Cyprus",
+      "languages_text": "Greek (official) 80.9%, Turkish (official) 0.2%, English 4.1%, Romanian 2.9%, Russian 2.5%, Bulgarian 2.2%, Arabic 1.2%, Filipino 1.1%, other 4.3%, unspecified 0.6%&nbsp; (2011 est.)"
+    },
+    {
+      "cia_code": "da",
+      "continent": "europe",
+      "country_name": "Denmark",
+      "languages_text": "Danish, Faroese, Greenlandic (an Inuit dialect), German (small minority); note - English is the predominant second language"
+    },
+    {
+      "cia_code": "dx",
+      "continent": "europe",
+      "country_name": "Dhekelia",
+      "languages_text": "English, Greek"
+    },
+    {
+      "cia_code": "ee",
+      "continent": "europe",
+      "country_name": null,
+      "languages_text": "Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovene, Spanish, Swedish"
+    },
+    {
+      "cia_code": "ei",
+      "continent": "europe",
+      "country_name": "Ireland",
+      "languages_text": "English (official, the language generally used), Irish (Gaelic or Gaeilge) (official, spoken by approximately 37.7% of the population)"
+    },
+    {
+      "cia_code": "en",
+      "continent": "europe",
+      "country_name": "Estonia",
+      "languages_text": "Estonian (official) 67.2%, Russian 28.5%, other 3.7%, unspecified 0.6% (2021est.)"
+    },
+    {
+      "cia_code": "ez",
+      "continent": "europe",
+      "country_name": "Czechia",
+      "languages_text": "Czech (official) 88.4%, Slovak 1.5%, other 2.6%, unspecified 7.2% (2021 est.)"
+    },
+    {
+      "cia_code": "fi",
+      "continent": "europe",
+      "country_name": "Finland",
+      "languages_text": "Finnish (official) 85.9%, Swedish (official) 5.2%, Russian 1.7%, other 7.2% (2022 est.)"
+    },
+    {
+      "cia_code": "fo",
+      "continent": "europe",
+      "country_name": "Faroe Islands",
+      "languages_text": "Faroese 93.8% (derived from Old Norse), Danish 3.2%, other 3% (2011 est.)"
+    },
+    {
+      "cia_code": "fr",
+      "continent": "europe",
+      "country_name": "France",
+      "languages_text": "French (official) 100%, declining regional dialects and languages (Proven&ccedil;al, Breton, Alsatian, Corsican, Catalan, Basque, Flemish, Occitan, Picard)"
+    },
+    {
+      "cia_code": "gi",
+      "continent": "europe",
+      "country_name": "Gibraltar",
+      "languages_text": "English (used in schools and for official purposes), Spanish, Italian, Portuguese"
+    },
+    {
+      "cia_code": "gk",
+      "continent": "europe",
+      "country_name": "Guernsey",
+      "languages_text": "English, French, Norman-French dialect spoken in country districts"
+    },
+    {
+      "cia_code": "gm",
+      "continent": "europe",
+      "country_name": "Germany",
+      "languages_text": "German (official); note - Danish, Frisian, Sorbian, and Romani are official minority languages; Low German, Danish, North Frisian, Sater Frisian, Lower Sorbian, Upper Sorbian, and Romani are recognized as regional languages"
+    },
+    {
+      "cia_code": "gr",
+      "continent": "europe",
+      "country_name": "Greece",
+      "languages_text": "Greek (official) 99%, other (includes English and French) 1%"
+    },
+    {
+      "cia_code": "hr",
+      "continent": "europe",
+      "country_name": "Croatia",
+      "languages_text": "Croatian (official) 95.2%, Serbian 1.2%, other 3.1% (including Bosnian, Romani, Albanian, and Italian) unspecified 0.5% (2021 est.)"
+    },
+    {
+      "cia_code": "hu",
+      "continent": "europe",
+      "country_name": "Hungary",
+      "languages_text": "Hungarian (official) 98.8%, English 25.3%, German 12.6%, Russian 2.1%, French 1.5%, Romanian 1.4%, other 5.1% (2022 est.)"
+    },
+    {
+      "cia_code": "ic",
+      "continent": "europe",
+      "country_name": "Iceland",
+      "languages_text": "Icelandic, English, Polish, Nordic languages, German"
+    },
+    {
+      "cia_code": "im",
+      "continent": "europe",
+      "country_name": "Isle of Man",
+      "languages_text": "English, Manx Gaelic (about 2% of the population has some knowledge)"
+    },
+    {
+      "cia_code": "it",
+      "continent": "europe",
+      "country_name": "Italy",
+      "languages_text": "Italian (official), German (parts of Trentino-Alto Adige region are predominantly German-speaking), French (small French-speaking minority in Valle d'Aosta region), Slovene (Slovene-speaking minority in the Trieste-Gorizia area), Croatian (in Molise)"
+    },
+    {
+      "cia_code": "je",
+      "continent": "europe",
+      "country_name": "Jersey",
+      "languages_text": "<p>English (official) 94.5%, Portuguese 4.6%, other 0.9% (includes French (official) and Jerriais)</p> (2001 est.)"
+    },
+    {
+      "cia_code": "jn",
+      "continent": "europe",
+      "country_name": "Jan Mayen",
+      "languages_text": null
+    },
+    {
+      "cia_code": "kv",
+      "continent": "europe",
+      "country_name": "Kosovo",
+      "languages_text": "Albanian (official) 94.5%, Bosnian 1.7%, Serbian (official) 1.6%, Turkish 1.1%, other 0.9% (includes Romani), unspecified 0.1% (2011 est.)"
+    },
+    {
+      "cia_code": "lg",
+      "continent": "europe",
+      "country_name": "Latvia",
+      "languages_text": "Latvian (official) 56.3%, Russian 33.8%, other 0.6% (includes Polish, Ukrainian, and Belarusian), unspecified 9.4%&nbsp; (2011 est.)"
+    },
+    {
+      "cia_code": "lh",
+      "continent": "europe",
+      "country_name": "Lithuania",
+      "languages_text": "Lithuanian (official) 85.3%, Russian 6.8%, Polish 5.1%, other 1.1%, two mother tongues 1.7% (2021 est.)"
+    },
+    {
+      "cia_code": "lo",
+      "continent": "europe",
+      "country_name": "Slovakia",
+      "languages_text": "Slovak (official) 81.8%, Hungarian 8.5%, Roma 1.8%, other 2.2%, unspecified 5.7% (2021 est.)"
+    },
+    {
+      "cia_code": "ls",
+      "continent": "europe",
+      "country_name": "Liechtenstein",
+      "languages_text": "German 91.5% (official, Alemannic is the main dialect), Italian 1.5%, Turkish 1.3%, Portuguese 1.1%, other 4.6% (2015 est.)"
+    },
+    {
+      "cia_code": "lu",
+      "continent": "europe",
+      "country_name": "Luxembourg",
+      "languages_text": "Luxembourgish (official administrative, judicial, and national language) 48.9%, Portuguese 15.4%, French (official administrative, judicial, and legislative language) 14.9%, Italian 3.6%, English 3.6%, German (official administrative and judicial language) 2.9%, other 10.8% (2021 est.)"
+    },
+    {
+      "cia_code": "md",
+      "continent": "europe",
+      "country_name": "Moldova",
+      "languages_text": "Moldovan/Romanian 80.2% (official) (56.7% Moldovan; 23.5% Romanian), Russian 9.7%, Gagauz 4.2% (a Turkish language), Ukrainian 3.9%, Bulgarian 1.5%, Romani 0.3%, other 0.2% (2014)"
+    },
+    {
+      "cia_code": "mj",
+      "continent": "europe",
+      "country_name": "Montenegro",
+      "languages_text": "Serbian 42.9%, Montenegrin (official) 37%, Bosnian 5.3%, Albanian 5.3%, Serbo-Croat 2%, other 3.5%, unspecified 4% (2011 est.)"
+    },
+    {
+      "cia_code": "mk",
+      "continent": "europe",
+      "country_name": "North Macedonia",
+      "languages_text": "Macedonian (official) 61.4%, Albanian (official) 24.3%, Turkish 3.4%, Romani 1.7%, other (includes Aromanian (Vlach) and Bosnian) 2%, unspecified 7.2% (2021 est.)"
+    },
+    {
+      "cia_code": "mn",
+      "continent": "europe",
+      "country_name": "Monaco",
+      "languages_text": "French (official), English, Italian, Monegasque"
+    },
+    {
+      "cia_code": "mt",
+      "continent": "europe",
+      "country_name": "Malta",
+      "languages_text": "Maltese (official) 90.1%, English (official) 6%, multilingual 3%, other 0.9% (2005 est.)"
+    },
+    {
+      "cia_code": "nl",
+      "continent": "europe",
+      "country_name": "Netherlands",
+      "languages_text": "Dutch (official), Frisian (official in Fryslan province)"
+    },
+    {
+      "cia_code": "no",
+      "continent": "europe",
+      "country_name": "Norway",
+      "languages_text": "Bokmal Norwegian (official), Nynorsk Norwegian (official), small Sami- and Finnish-speaking minorities"
+    },
+    {
+      "cia_code": "pl",
+      "continent": "europe",
+      "country_name": "Poland",
+      "languages_text": "Polish (official) 98.2%, Silesian 1.4%, other 1.1%, unspecified 1.2% (2011 est.)"
+    },
+    {
+      "cia_code": "po",
+      "continent": "europe",
+      "country_name": "Portugal",
+      "languages_text": "Portuguese (official), Mirandese (official, but locally used)"
+    },
+    {
+      "cia_code": "ri",
+      "continent": "europe",
+      "country_name": "Serbia",
+      "languages_text": "Serbian (official) 88.1%, Hungarian 3.4%, Bosnian 1.9%, Romani 1.4%, other 3.4%, undeclared or unknown 1.8% (2011 est.)"
+    },
+    {
+      "cia_code": "ro",
+      "continent": "europe",
+      "country_name": "Romania",
+      "languages_text": "Romanian (official) 91.6%, Hungarian 6.3%, Romani 1.2%, other 0.7% (2021 est.)"
+    },
+    {
+      "cia_code": "si",
+      "continent": "europe",
+      "country_name": "Slovenia",
+      "languages_text": "Slovene (official) 87.7%, Croatian 2.8%, Serbo-Croatian 1.8%, Bosnian 1.6%, Serbian 1.6%, Hungarian 0.4% (official, only in municipalities where Hungarian nationals reside), Italian 0.2% (official, only in municipalities where Italian nationals reside), other or unspecified 3.9% (2002 est.)"
+    },
+    {
+      "cia_code": "sm",
+      "continent": "europe",
+      "country_name": "San Marino",
+      "languages_text": "Italian"
+    },
+    {
+      "cia_code": "sp",
+      "continent": "europe",
+      "country_name": "Spain",
+      "languages_text": "Castilian Spanish (official) 74%, Catalan (official in Catalonia, the Balearic Islands, and the Valencian Community) 17%, Galician (official in Galicia) 7%, Basque (official in the Basque Country and Navarre) 2%, Aranese (official in part of Catalonia) &lt;5,000 speakers"
+    },
+    {
+      "cia_code": "sv",
+      "continent": "europe",
+      "country_name": "Svalbard (sometimes referred to as Spitsbergen, the largest island in the archipelago)",
+      "languages_text": "Norwegian, Russian"
+    },
+    {
+      "cia_code": "sw",
+      "continent": "europe",
+      "country_name": "Sweden",
+      "languages_text": "Swedish (official)"
+    },
+    {
+      "cia_code": "sz",
+      "continent": "europe",
+      "country_name": "Switzerland",
+      "languages_text": "German (or Swiss German) (official) 62.1%, French (official) 22.8%, Italian (official) 8%, English 5.7%, Portuguese 3.5%, Albanian 3.3%, Serbo-Croatian 2.3%, Spanish 2.3%, Romansh (official) 0.5%, other 7.9% (2019 est.)"
+    },
+    {
+      "cia_code": "uk",
+      "continent": "europe",
+      "country_name": "United Kingdom",
+      "languages_text": "English"
+    },
+    {
+      "cia_code": "up",
+      "continent": "europe",
+      "country_name": "Ukraine",
+      "languages_text": "Ukrainian (official) 67.5%, Russian (regional language) 29.6%, other (includes Crimean Tatar, Moldovan/Romanian, and Hungarian) 2.9% (2001 est.)"
+    },
+    {
+      "cia_code": "vt",
+      "continent": "europe",
+      "country_name": "Holy See (Vatican City)",
+      "languages_text": "Italian, Latin, French, various other languages"
+    },
+    {
+      "cia_code": "ae",
+      "continent": "middle-east",
+      "country_name": "none",
+      "languages_text": "Arabic (official), English, Hindi, Malayalam, Urdu, Pashto, Tagalog, Persian"
+    },
+    {
+      "cia_code": "aj",
+      "continent": "middle-east",
+      "country_name": "Azerbaijan",
+      "languages_text": "Azerbaijani 96.1%, other 1.4%; less than 1%: Russian, Avar, Talyshi, Turkish, Tatar, Sakhur, Tat, Ukrainian, Georgian, Hebrew (2019 est.)"
+    },
+    {
+      "cia_code": "am",
+      "continent": "middle-east",
+      "country_name": "Armenia",
+      "languages_text": "Armenian 97.2%, Russian 1.4%, Ezidian 1.0%; less than 1%: other, unknown (2022)"
+    },
+    {
+      "cia_code": "ba",
+      "continent": "middle-east",
+      "country_name": "Bahrain",
+      "languages_text": "Arabic (official), English, Farsi, Urdu"
+    },
+    {
+      "cia_code": "gg",
+      "continent": "middle-east",
+      "country_name": "Georgia",
+      "languages_text": "Georgian (official) 87.6%, Azeri 6.2%, Armenian 3.9%, Russian 1.2%, other 1% (including Abkhaz, the official language in Abkhazia) (2014 est.)"
+    },
+    {
+      "cia_code": "gz",
+      "continent": "middle-east",
+      "country_name": "Gaza, Gaza Strip",
+      "languages_text": "Arabic, Hebrew (spoken by many Palestinians), English (widely understood)"
+    },
+    {
+      "cia_code": "ir",
+      "continent": "middle-east",
+      "country_name": "Iran",
+      "languages_text": "Persian Farsi&nbsp;(official), Azeri&nbsp;and other&nbsp;Turkic dialects, Kurdish, Gilaki and Mazandarani, Luri, Balochi, Arabic"
+    },
+    {
+      "cia_code": "is",
+      "continent": "middle-east",
+      "country_name": "Israel",
+      "languages_text": "Hebrew (official), Arabic (special status under Israeli law), English (most commonly used foreign language)"
+    },
+    {
+      "cia_code": "iz",
+      "continent": "middle-east",
+      "country_name": "Iraq",
+      "languages_text": "Arabic (official), Kurdish (official); Turkmen (a Turkish dialect) and Syriac (Neo-Aramaic) are recognized as official languages where native speakers of these languages are present"
+    },
+    {
+      "cia_code": "jo",
+      "continent": "middle-east",
+      "country_name": "Jordan",
+      "languages_text": "Arabic (official), English (widely understood among upper and middle classes)"
+    },
+    {
+      "cia_code": "ku",
+      "continent": "middle-east",
+      "country_name": "Kuwait",
+      "languages_text": "Arabic (official), English widely spoken"
+    },
+    {
+      "cia_code": "le",
+      "continent": "middle-east",
+      "country_name": "Lebanon",
+      "languages_text": "Arabic (official), French, English, Armenian"
+    },
+    {
+      "cia_code": "mu",
+      "continent": "middle-east",
+      "country_name": "Oman",
+      "languages_text": "Arabic (official), English, Baluchi, Swahili, Urdu, Indian dialects"
+    },
+    {
+      "cia_code": "qa",
+      "continent": "middle-east",
+      "country_name": "Qatar",
+      "languages_text": "Arabic (official), English commonly used as a second language"
+    },
+    {
+      "cia_code": "sa",
+      "continent": "middle-east",
+      "country_name": "Saudi Arabia",
+      "languages_text": "Arabic (official)"
+    },
+    {
+      "cia_code": "sy",
+      "continent": "middle-east",
+      "country_name": "Syria",
+      "languages_text": "Arabic (official), Kurdish, Armenian, Aramaic, Circassian, French, English"
+    },
+    {
+      "cia_code": "tu",
+      "continent": "middle-east",
+      "country_name": "Turkey",
+      "languages_text": "Turkish (official), Kurdish, other minority languages"
+    },
+    {
+      "cia_code": "we",
+      "continent": "middle-east",
+      "country_name": "West Bank",
+      "languages_text": "Arabic, Hebrew (spoken by Israeli settlers and many Palestinians), English (widely understood)"
+    },
+    {
+      "cia_code": "ym",
+      "continent": "middle-east",
+      "country_name": "Yemen",
+      "languages_text": "Arabic (official)"
+    },
+    {
+      "cia_code": "bd",
+      "continent": "north-america",
+      "country_name": "Bermuda",
+      "languages_text": "English (official), Portuguese"
+    },
+    {
+      "cia_code": "ca",
+      "continent": "north-america",
+      "country_name": "Canada",
+      "languages_text": "English (official) 87.1%, French (official) 29.1%, Chinese languages 4.2%, Spanish 3.2%, Punjabi 2.6%, Arabic 2.4%, Tagalog 2.3%, Italian 1.5% (2022 est.)"
+    },
+    {
+      "cia_code": "gl",
+      "continent": "north-america",
+      "country_name": "Greenland",
+      "languages_text": "Greenlandic, Danish, English"
+    },
+    {
+      "cia_code": "ip",
+      "continent": "north-america",
+      "country_name": "Clipperton Island",
+      "languages_text": null
+    },
+    {
+      "cia_code": "mx",
+      "continent": "north-america",
+      "country_name": "Mexico",
+      "languages_text": "Spanish only 93.8%, Spanish and indigenous languages (including Mayan, Nahuatl, and others) 5.4%, indigenous only 0.6%, unspecified 0.2% (2020 est.)"
+    },
+    {
+      "cia_code": "sb",
+      "continent": "north-america",
+      "country_name": "Saint Pierre and Miquelon",
+      "languages_text": "French (official)"
+    },
+    {
+      "cia_code": "us",
+      "continent": "north-america",
+      "country_name": "United States",
+      "languages_text": "English only (official) 78.2%, Spanish 13.4%, Chinese 1.1%, other 7.3% (2017 est.)"
+    },
+    {
+      "cia_code": "ar",
+      "continent": "south-america",
+      "country_name": "Argentina",
+      "languages_text": "Spanish (official), Italian, English, German, French, indigenous (Quechua, Guarani, Mapudungun)"
+    },
+    {
+      "cia_code": "bl",
+      "continent": "south-america",
+      "country_name": "Bolivia",
+      "languages_text": "Spanish (official) 68.1%, Quechua (official) 17.2%, Aymara (official) 10.5%, Guarani (official) 0.6%, other 1.5%, unspecified 2.1%; note - Spanish and all Indigenous languages are official (2012 est.)"
+    },
+    {
+      "cia_code": "br",
+      "continent": "south-america",
+      "country_name": "Brazil",
+      "languages_text": "Portuguese (official and most widely spoken language); less common languages include Spanish (border areas and schools), German, Italian, Japanese, English, and many minor Amerindian languages"
+    },
+    {
+      "cia_code": "ci",
+      "continent": "south-america",
+      "country_name": "Chile",
+      "languages_text": "Spanish 99.5% (official), English 10.2%, Indigenous 1% (includes Mapudungun, Aymara, Quechua, Rapa Nui), other 2.3%, unspecified 0.2%&nbsp; (2012 est.)"
+    },
+    {
+      "cia_code": "co",
+      "continent": "south-america",
+      "country_name": "Colombia",
+      "languages_text": "Spanish (official) 98.9%, indigenous 1%, Portuguese 0.1%; 65 indigenous languages exist (2023 est.)"
+    },
+    {
+      "cia_code": "ec",
+      "continent": "south-america",
+      "country_name": "Ecuador",
+      "languages_text": "Spanish (Castilian; official) 98.6%, indigenous 3.9% (Quechua 3.2%, other indigenous 0.7%), foreign 2.8%, other 0.6% (includes Ecuadorian sign language) (2022 est.)"
+    },
+    {
+      "cia_code": "fk",
+      "continent": "south-america",
+      "country_name": "Falkland Islands (Islas Malvinas)",
+      "languages_text": "English 89%, Spanish 7.7%, other 3.3% (2006 est.)"
+    },
+    {
+      "cia_code": "gy",
+      "continent": "south-america",
+      "country_name": "Guyana",
+      "languages_text": "English (official), Guyanese Creole, Amerindian languages (including Caribbean and Arawak languages), Indian languages (including Caribbean Hindustani, a dialect of Hindi), Chinese (2014 est.)"
+    },
+    {
+      "cia_code": "ns",
+      "continent": "south-america",
+      "country_name": "Suriname",
+      "languages_text": "Dutch (official), English (widely spoken), Sranang Tongo (Surinamese, sometimes called Taki-Taki, is the native language of Creoles and much of the younger population), Caribbean Hindustani (a dialect of Hindi), Javanese"
+    },
+    {
+      "cia_code": "pa",
+      "continent": "south-america",
+      "country_name": "Paraguay",
+      "languages_text": "Spanish (official) and Guarani (official) 46.3%, only Guarani 34%, only Spanish 15.2%, other (includes Portuguese, German, other Indigenous languages) 4.1%, no response 0.4% (2012 est.)"
+    },
+    {
+      "cia_code": "pe",
+      "continent": "south-america",
+      "country_name": "Peru",
+      "languages_text": "Spanish (official) 82.9%, Quechua (official) 13.6%, Aymara (official) 1.6%, Ashaninka 0.3%, other native languages (includes many minor Amazonian languages) 0.8%, other 0.2%, none 0.1%, unspecified 0.7% (2017 est.)"
+    },
+    {
+      "cia_code": "sx",
+      "continent": "south-america",
+      "country_name": "South Georgia and South Sandwich Islands",
+      "languages_text": null
+    },
+    {
+      "cia_code": "uy",
+      "continent": "south-america",
+      "country_name": "Uruguay",
+      "languages_text": "Spanish (official, Rioplatense is the most widely spoken dialect)"
+    },
+    {
+      "cia_code": "ve",
+      "continent": "south-america",
+      "country_name": "Venezuela",
+      "languages_text": "Spanish (official) 98.2%, indigenous 1.3%, Portuguese 0.1%, other 0.4% (2023 est.)"
+    },
+    {
+      "cia_code": "af",
+      "continent": "south-asia",
+      "country_name": "Afghanistan",
+      "languages_text": "Afghan Persian or Dari (official, lingua franca) 77%, Pashto (official) 48%, Uzbeki 11%, English 6%, Turkmani 3%, Urdu 3%, Pashaie 1%, Nuristani 1%, Arabic 1%, Balochi 1%, other &lt;1% (2020 est.)"
+    },
+    {
+      "cia_code": "bg",
+      "continent": "south-asia",
+      "country_name": "Bangladesh",
+      "languages_text": "Bangla 98.8% (official, also known as Bengali), other 1.2% (2011 est.)"
+    },
+    {
+      "cia_code": "bt",
+      "continent": "south-asia",
+      "country_name": "Bhutan",
+      "languages_text": "Sharchopkha 28%, Dzongkha (official) 24%, Lhotshamkha 22%, other 26% (includes foreign languages) (2005 est.)"
+    },
+    {
+      "cia_code": "ce",
+      "continent": "south-asia",
+      "country_name": "Sri Lanka",
+      "languages_text": "Sinhala (official) 87%, Tamil (official) 28.5%, English 23.8% (2012 est.)"
+    },
+    {
+      "cia_code": "in",
+      "continent": "south-asia",
+      "country_name": "India",
+      "languages_text": "Hindi 43.6%, Bengali 8%, Marathi 6.9%, Telugu 6.7%, Tamil 5.7%, Gujarati 4.6%, Urdu 4.2%, Kannada 3.6%, Odia 3.1%, Malayalam 2.9%, Punjabi 2.7%, Assamese 1.3%, Maithili 1.1%, other 5.6%;&nbsp; English is the subsidiary official language but is the most important one for national, political, and commercial communication (2011 est.)"
+    },
+    {
+      "cia_code": "io",
+      "continent": "south-asia",
+      "country_name": "none",
+      "languages_text": null
+    },
+    {
+      "cia_code": "mv",
+      "continent": "south-asia",
+      "country_name": "Maldives",
+      "languages_text": "Dhivehi (official, closely related to Sinhala, script derived from Arabic), English (spoken by most government officials)"
+    },
+    {
+      "cia_code": "np",
+      "continent": "south-asia",
+      "country_name": "Nepal",
+      "languages_text": "Nepali (official) 44.9%, Maithali 11.1%, Bhojpuri 6.2%, Tharu 5.9%, Tamang 4.9%, Bajjika 3.9%, Avadhi 3%, Nepalbhasha (Newari) 3%, Magar Dhut 2.8%, Doteli 1.7%, Urdu 1.4%, Yakthung/Limbu 1.2%, Gurung 1.1%, other 8.9% (2021 est.)"
+    },
+    {
+      "cia_code": "pk",
+      "continent": "south-asia",
+      "country_name": "Pakistan",
+      "languages_text": "Punjabi 38.8%, Pashto (alternate name, Pashtu) 18.2%, Sindhi 14.6%, Saraiki (a Punjabi variant) 12.2%, Urdu 7.1%, Balochi 3%, Hindko 2.4%, Brahui 1.2%, other 2.4%"
+    },
+    {
+      "cia_code": "xx",
+      "continent": "world",
+      "country_name": null,
+      "languages_text": "<strong>most-spoken language: </strong>English 18.8%, Mandarin Chinese 13.8%, Hindi 7.5%, Spanish 6.9%, French 3.4%, Arabic 3.4%, Bengali 3.4%, Russian 3.2%, Portuguese 3.2%, Urdu 2.9% (2022 est.) <br><br><strong>most-spoken first language:</strong> Mandarin Chinese 12.3%, Spanish 6%, English 5.1%, Arabic 5.1%, Hindi 3.5%, Bengali 3.3%, Portuguese 3%, Russian 2.1%, Japanese 1.7%, Punjabi, Western 1.3%, Javanese 1.1% (2018 est.) <br><br><strong>note 1:</strong> the six UN languages -- Arabic, Chinese (Mandarin), English, French, Russian, and Spanish (Castilian) -- are the mother tongue or second language of about 49.6% of the world's population (2022), and are the official languages in more than half the states in the world; some 400 languages have more than a million first-language speakers (2018) <br><br><strong>note 2:</strong> all told, there are estimated to be 7,168 living languages spoken in the world (2023); approximately 80% of these languages are spoken by fewer than 100,000 people; about 150 languages are spoken by fewer than 10 people; communities that are isolated in mountainous regions often develop multiple languages -- Papua New Guinea, for example, boasts about 840 separate languages (2018) <br><br><strong>note 3:</strong> approximately 2,300 languages are spoken in Asia; 2,140, in Africa; 1,310 in the Pacific; 1,060 in the Americas; and 290 in Europe (2020)"
+    }
+  ]
+}

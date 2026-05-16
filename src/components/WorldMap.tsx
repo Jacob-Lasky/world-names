@@ -8,7 +8,8 @@ import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import { useSelection } from '../store/selection';
 
 type CountryProps = { name: string };
-type CountryFeature = Feature<Geometry, CountryProps> & { id?: string | number };
+// `id` is already optional on GeoJSON Feature; no need to redeclare.
+type CountryFeature = Feature<Geometry, CountryProps>;
 
 const INITIAL_VIEW_STATE = {
   longitude: 10,
@@ -32,6 +33,12 @@ function dataUrl(): string {
   return `${import.meta.env.BASE_URL}countries-50m.json`;
 }
 
+// TopoJSON ids can be `string | number`; normalize once so equality checks
+// against the selection store (which holds strings) are reliable everywhere.
+function featureId(f: CountryFeature): string {
+  return String(f.id ?? '');
+}
+
 export function WorldMap() {
   const [features, setFeatures] = useState<CountryFeature[] | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -42,30 +49,26 @@ export function WorldMap() {
   const hover = useSelection((s) => s.hover);
 
   useEffect(() => {
-    let cancelled = false;
-    fetch(dataUrl())
-      .then((r) => {
+    const controller = new AbortController();
+    (async () => {
+      try {
+        const r = await fetch(dataUrl(), { signal: controller.signal });
         if (!r.ok) throw new Error(`countries-50m.json: HTTP ${r.status}`);
-        return r.json() as Promise<Topology<{ countries: GeometryCollection<CountryProps> }>>;
-      })
-      .then((topo) => {
-        if (cancelled) return;
+        const topo = (await r.json()) as Topology<{ countries: GeometryCollection<CountryProps> }>;
         const fc = feature(topo, topo.objects.countries) as FeatureCollection<Geometry, CountryProps>;
         setFeatures(fc.features as CountryFeature[]);
-      })
-      .catch((e: unknown) => {
-        if (cancelled) return;
+      } catch (e: unknown) {
+        if (e instanceof DOMException && e.name === 'AbortError') return;
         setError(e instanceof Error ? e.message : String(e));
-      });
-    return () => {
-      cancelled = true;
-    };
+      }
+    })();
+    return () => controller.abort();
   }, []);
 
   const layers = useMemo(() => {
     if (!features) return [];
     return [
-      new GeoJsonLayer<CountryFeature>({
+      new GeoJsonLayer<CountryProps>({
         id: 'countries',
         data: features,
         filled: true,
@@ -73,7 +76,7 @@ export function WorldMap() {
         pickable: true,
         autoHighlight: false,
         getFillColor: (f) => {
-          const id = String(f.id ?? '');
+          const id = featureId(f);
           if (id === selectedId) return RGBA.selected;
           if (id === hoveredId) return RGBA.hover;
           return RGBA.default;
@@ -91,13 +94,13 @@ export function WorldMap() {
           const f = info.object as CountryFeature | undefined;
           if (!f) return;
           selectCountry({
-            numericId: String(f.id ?? ''),
+            numericId: featureId(f),
             name: f.properties?.name ?? 'Unknown',
           });
         },
         onHover: (info: PickingInfo) => {
           const f = info.object as CountryFeature | undefined;
-          hover(f ? String(f.id ?? '') : null);
+          hover(f ? featureId(f) : null);
         },
       }),
     ];

@@ -4,6 +4,8 @@ Interactive world map: click any country to see what it calls itself in its domi
 
 **Live:** [pietech.net/world-names](https://pietech.net/world-names/) *(pending deploy)*
 
+![Screenshot of the World Names viz](docs/screenshot.png)
+
 ## What's interesting
 
 The clustering is **etymological-root**, not string-distance. Germany decomposes into ~5 global root families: *Germani* (English Germany), *Alemanni* (French Allemagne), *Deutsch* (German Deutschland, Tyskland), Slavic *Niemcy* ("the mute ones"), Saxons (Finnish Saksa). Coloring by which root each country uses is the visualization that pops — and it generalizes to any country, not just Germany.

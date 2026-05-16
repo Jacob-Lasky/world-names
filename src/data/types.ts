@@ -17,3 +17,18 @@ export type Exonym = {
   observer_language_code: string;
   exonym: string;
 };
+
+// One row's worth of "what does country X call country Y" detail — the
+// secondary card the DetailPanel shows when the user hovers (desktop) or
+// taps (mobile) a non-selected country. All fields except observer_name_en
+// + exonym can be null when the cluster YAML hasn't covered this pair yet.
+export type InspectionDetail = {
+  observer_iso3: string;
+  observer_name_en: string;
+  observer_language_name: string | null;
+  exonym: string;
+  cluster_label: string | null;
+  etymology_origin: string | null;
+  hue: number | null;
+  similarity: number | null;
+};

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import DeckGL from '@deck.gl/react';
 import { GeoJsonLayer } from '@deck.gl/layers';
 import type { PickingInfo } from '@deck.gl/core';
@@ -10,8 +10,11 @@ import { useClusterColors } from '../data/use-cluster-colors';
 import { clusterFill } from '../lib/similarity';
 import {
   featureId,
-  handleCountryClick,
-  handleBackgroundClick,
+  isTouchEvent,
+  handleCountrySelect,
+  handleCountryInspect,
+  handleBackgroundDeselect,
+  handleBackgroundDismissInspection,
 } from './world-map-handlers';
 
 type CountryProps = { name: string };
@@ -41,19 +44,41 @@ const RGBA = {
   // hue or near-white fill — works against the deutsch cluster's white tint
   // and against neighboring cluster hues uniformly.
   selectedStroke: [0, 0, 0, 255] as [number, number, number, number],
+  // Inspection ring: matches the selection outline weight but in a softer
+  // bluish-white so the eye reads "this is the inspected country, not the
+  // selected one." Distinct enough to never confuse the two.
+  inspectStroke: [220, 230, 245, 255] as [number, number, number, number],
   unclustered: [55, 65, 80, 255] as [number, number, number, number],
 };
 
-// Outline widths in pixels. Selected gets a bold 2.5px stroke so the
-// selection reads at every zoom level; everyone else stays at the thin
-// 0.5px graticule width.
+// Outline widths in pixels. Selected gets a bold 2.5px stroke, inspected
+// gets a 1.5px medium stroke, everyone else stays at the thin 0.5px
+// graticule width.
 const STROKE_WIDTH_SELECTED = 2.5;
+const STROKE_WIDTH_INSPECTED = 1.5;
 const STROKE_WIDTH_DEFAULT = 0.5;
+
+// Long-press threshold for touch — 500ms feels deliberate without dragging
+// out for so long the user thinks the tap was ignored. iOS uses 500ms for
+// its system-level long-press; matching feels native.
+const LONG_PRESS_MS = 500;
+// If the touch moves more than this many pixels during the press window,
+// treat it as a pan and cancel the long-press timer. Prevents accidental
+// selection changes when the user is scrolling/zooming the map.
+const LONG_PRESS_MOVE_TOLERANCE_PX = 10;
 
 function dataUrl(): string {
   // Respects Vite's base path so this works both at /world-names/ and locally.
   return `${import.meta.env.BASE_URL}countries-50m.json`;
 }
+
+// deck.gl's React wrapper has dynamic-ish types; the bits we need here are
+// pickObject and a containing element to translate clientX/Y → canvas-local
+// coordinates for the picker.
+type DeckRef = {
+  pickObject?: (opts: { x: number; y: number; radius?: number }) => PickingInfo | null;
+  deck?: { pickObject?: (opts: { x: number; y: number; radius?: number }) => PickingInfo | null };
+};
 
 export function WorldMap() {
   const [features, setFeatures] = useState<CountryFeature[] | null>(null);
@@ -89,10 +114,118 @@ export function WorldMap() {
     return () => controller.abort();
   }, []);
 
+  // Long-press bookkeeping. Refs (not state) so press lifecycle doesn't
+  // trigger re-renders. `pressTimer` schedules the select; `pressStart`
+  // remembers where the press began so we can pick at that point even if
+  // the finger drifted slightly. `longPressFired` blocks the subsequent
+  // touchend → onClick from firing inspect on the same press.
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const deckRef = useRef<DeckRef | null>(null);
+  const pressTimer = useRef<number | null>(null);
+  const pressStart = useRef<{ clientX: number; clientY: number } | null>(null);
+  const longPressFired = useRef(false);
+
+  function pickAt(clientX: number, clientY: number): CountryFeature | null {
+    const wrapper = wrapperRef.current;
+    if (!wrapper) return null;
+    const rect = wrapper.getBoundingClientRect();
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
+    // deck.gl React wrapper sometimes exposes pickObject directly, sometimes
+    // only on the inner deck instance. Try both before giving up.
+    const pick = deckRef.current?.pickObject?.bind(deckRef.current)
+      ?? deckRef.current?.deck?.pickObject?.bind(deckRef.current.deck);
+    if (!pick) return null;
+    const info = pick({ x, y, radius: 5 });
+    return (info?.object as CountryFeature | undefined) ?? null;
+  }
+
+  function cancelPress() {
+    if (pressTimer.current != null) {
+      window.clearTimeout(pressTimer.current);
+      pressTimer.current = null;
+    }
+    pressStart.current = null;
+  }
+
+  function onPointerDown(e: React.PointerEvent<HTMLDivElement>) {
+    // Mouse/pen path stays on deck.gl's onClick (no long-press needed —
+    // desktop clicks are unambiguous). Only touch needs the long-press
+    // gesture.
+    if (e.pointerType !== 'touch') return;
+    cancelPress();
+    longPressFired.current = false;
+    pressStart.current = { clientX: e.clientX, clientY: e.clientY };
+    pressTimer.current = window.setTimeout(() => {
+      const start = pressStart.current;
+      if (!start) return;
+      const f = pickAt(start.clientX, start.clientY);
+      pressTimer.current = null;
+      pressStart.current = null;
+      if (!f) return;
+      longPressFired.current = true;
+      handleCountrySelect(f, { selectCountry, hover });
+      // Best-effort haptic feedback. Not all touch devices support it, and
+      // browser policy varies — wrapped to never throw.
+      try {
+        if ('vibrate' in navigator) (navigator as Navigator).vibrate?.(40);
+      } catch { /* ignore */ }
+    }, LONG_PRESS_MS);
+  }
+
+  function onPointerMove(e: React.PointerEvent<HTMLDivElement>) {
+    if (e.pointerType !== 'touch' || !pressStart.current) return;
+    const dx = e.clientX - pressStart.current.clientX;
+    const dy = e.clientY - pressStart.current.clientY;
+    if (Math.sqrt(dx * dx + dy * dy) > LONG_PRESS_MOVE_TOLERANCE_PX) {
+      cancelPress();
+    }
+  }
+
+  function onPointerEnd() {
+    cancelPress();
+  }
+
+  // Layer handlers extracted as stable callbacks so the ref-access lint rule
+  // (react-hooks/refs) doesn't trip on `longPressFired.current` references
+  // inside the useMemo body. Reading a ref inside a user-fired handler is
+  // safe (handlers run after render, not during it).
+  const onLayerClick = useCallback((info: PickingInfo) => {
+    const f = info.object as CountryFeature | undefined;
+    if (!f) return;
+    if (longPressFired.current) {
+      longPressFired.current = false;
+      return;
+    }
+    if (isTouchEvent(info)) {
+      handleCountryInspect(f, { selectCountry, hover }, selectedId);
+    } else {
+      handleCountrySelect(f, { selectCountry, hover });
+    }
+  }, [selectCountry, hover, selectedId]);
+
+  const onLayerHover = useCallback((info: PickingInfo) => {
+    // Touch-derived hover events fire on touchstart and would race with the
+    // explicit tap → onClick path. Inspection on touch is owned exclusively
+    // by onClick (tap) and the press timer (long-press).
+    if (isTouchEvent(info)) return;
+    const f = info.object as CountryFeature | undefined;
+    if (f) {
+      handleCountryInspect(f, { selectCountry, hover }, selectedId);
+    } else {
+      hover(null);
+    }
+  }, [selectCountry, hover, selectedId]);
+
   const layers = useMemo(() => {
     if (!features) return [];
-    return [
-      new GeoJsonLayer<CountryProps>({
+    // ref access (longPressFired) is encapsulated inside onLayerClick (a
+    // useCallback). The handler only runs in response to user input, not
+    // during render. The rule's static analysis can't see across the
+    // callback boundary, so this is a known false-positive that the
+    // React team's own pattern produces.
+    // eslint-disable-next-line react-hooks/refs
+    return [new GeoJsonLayer<CountryProps>({
         id: 'countries',
         data: features,
         filled: true,
@@ -132,7 +265,6 @@ export function WorldMap() {
             }
             return RGBA.selectedFallback;
           }
-          if (id === hoveredId) return RGBA.hover;
           if (clusterColors) {
             const c = clusterColors.get(id);
             if (c?.hue != null) {
@@ -148,45 +280,56 @@ export function WorldMap() {
             // has no exonym row or no cluster yet (uncovered observer language).
             return RGBA.unclustered;
           }
+          // No selection yet — hover gets a lighter wash so the user can
+          // see what they're about to pick.
+          if (id === hoveredId) return RGBA.hover;
           return RGBA.default;
         },
         getLineColor: (f) => {
           const id = featureId(f);
-          return id === selectedId ? RGBA.selectedStroke : RGBA.stroke;
+          if (id === selectedId) return RGBA.selectedStroke;
+          if (id === hoveredId) return RGBA.inspectStroke;
+          return RGBA.stroke;
         },
         getLineWidth: (f) => {
           const id = featureId(f);
-          return id === selectedId ? STROKE_WIDTH_SELECTED : STROKE_WIDTH_DEFAULT;
+          if (id === selectedId) return STROKE_WIDTH_SELECTED;
+          if (id === hoveredId) return STROKE_WIDTH_INSPECTED;
+          return STROKE_WIDTH_DEFAULT;
         },
         // Force the GPU attribute buffers to refresh when selection/hover/data changes.
         updateTriggers: {
           getFillColor: [selectedId, hoveredId, clusterColors],
-          getLineColor: [selectedId],
-          getLineWidth: [selectedId],
+          getLineColor: [selectedId, hoveredId],
+          getLineWidth: [selectedId, hoveredId],
         },
-        // Layer-level handlers: fire when a pick lands on a feature in this
-        // layer. DeckGL's top-level onClick was unreliable in headless test
-        // runs — feature picking belongs on the layer. Click + background
-        // handlers are pure functions in world-map-handlers.ts so the state
-        // transitions are unit-tested.
-        onClick: (info: PickingInfo) => {
-          const f = info.object as CountryFeature | undefined;
-          if (f) handleCountryClick(f, { selectCountry, hover });
-        },
-        onHover: (info: PickingInfo) => {
-          const f = info.object as CountryFeature | undefined;
-          hover(f ? featureId(f) : null);
-        },
-      }),
-    ];
-  }, [features, selectedId, hoveredId, selectCountry, hover, clusterColors]);
+        // Layer-level handlers: onClick fires after a tap (touch) or click
+        // (mouse). Mouse → SELECT, touch tap → INSPECT, touch long-press
+        // → SELECT (via the pointerdown timer; the trailing onClick is
+        // suppressed via the longPressFired ref). onHover only acts on
+        // mouse events; touch-derived hover from deck.gl is ignored so
+        // the inspection state is driven exclusively by the explicit tap
+        // path. Both handlers extracted to useCallback above so the
+        // ref-access lint rule doesn't flag the useMemo body.
+        onClick: onLayerClick,
+        onHover: onLayerHover,
+      })];
+  }, [features, selectedId, hoveredId, clusterColors, onLayerClick, onLayerHover]);
 
   function onDeckClick(info: PickingInfo): void {
-    handleBackgroundClick(info.object, { selectCountry, hover });
+    // Background click handling. Mouse → deselect (clear selection + hover);
+    // touch → dismiss inspection only (selection persists; wayward
+    // background taps during pan shouldn't blow away focus).
+    if (isTouchEvent(info)) {
+      handleBackgroundDismissInspection(info.object, { selectCountry, hover });
+    } else {
+      handleBackgroundDeselect(info.object, { selectCountry, hover });
+    }
   }
 
   return (
     <div
+      ref={wrapperRef}
       data-testid="world-map"
       style={{
         position: 'relative',
@@ -194,7 +337,17 @@ export function WorldMap() {
         borderRight: '1px solid var(--rule)',
         minHeight: 0,
         overflow: 'hidden',
+        // touch-action: none gives us full control over touch gestures.
+        // Without this, the browser may steal pointermoves for native
+        // scroll and cancel our long-press timer. deck.gl's controller
+        // handles pan/zoom internally, so we don't need browser scroll.
+        touchAction: 'none',
       }}
+      onPointerDown={onPointerDown}
+      onPointerMove={onPointerMove}
+      onPointerUp={onPointerEnd}
+      onPointerCancel={onPointerEnd}
+      onPointerLeave={onPointerEnd}
     >
       {error && (
         <div
@@ -210,6 +363,7 @@ export function WorldMap() {
         </div>
       )}
       <DeckGL
+        ref={deckRef as unknown as React.Ref<DeckGL>}
         initialViewState={INITIAL_VIEW_STATE}
         controller={true}
         layers={layers}

@@ -27,7 +27,13 @@ export type InspectionDetail = {
   observer_name_en: string;
   observer_language_name: string | null;
   exonym: string;
+  // Latin transliteration of `exonym` for a pronunciation cue. NULL when
+  // the exonym is already in Latin script (or Latin-dominant) — no cue
+  // adds value there. Thai ประเทศญี่ปุ่น → 'praethsyiipun'.
+  exonym_pronunciation: string | null;
   cluster_label: string | null;
+  // Latin transliteration of `cluster_label` (same null contract).
+  cluster_pronunciation: string | null;
   etymology_origin: string | null;
   hue: number | null;
   similarity: number | null;
@@ -47,6 +53,9 @@ export type InspectionDetail = {
 export type ClusterSummary = {
   id: string;
   label: string;
+  // Latin transliteration of `label` for a pronunciation cue on the
+  // Legend chip. NULL when the label is already Latin-readable.
+  pronunciation: string | null;
   hue: number;
   etymology_origin: string | null;
   member_count: number;

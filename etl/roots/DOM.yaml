@@ -8,7 +8,7 @@ clusters:
     label: Dominican Republic
     hue: 194.0
     etymology_origin: Auto-detected orthographic cluster around 'Dominikanska Republika'
-      (42 languages). Hand-curated etymology pending.
+      (44 languages). Hand-curated etymology pending.
     languages:
     - afr
     - aze
@@ -32,6 +32,7 @@ clusters:
     - kat
     - kir
     - kor
+    - lao
     - lav
     - lit
     - ltz
@@ -48,13 +49,14 @@ clusters:
     - sna
     - srp
     - swe
+    - tha
     - tuk
     - ukr
     - uzb
     - zul
   auto_1:
     label: República Dominicana
-    hue: 266.0
+    hue: 284.0
     etymology_origin: Auto-detected orthographic cluster around 'Repúblika Dominikana'
       (22 languages). Hand-curated etymology pending.
     languages:
@@ -82,7 +84,7 @@ clusters:
     - ton
   auto_2:
     label: Dominik Cumhuriyeti
-    hue: 338.0
+    hue: 14.0
     etymology_origin: Auto-detected orthographic cluster around 'ޑޮމިނިކަން ޖުމްހޫރިއްޔާ'
       (3 languages). Hand-curated etymology pending.
     languages:
@@ -90,17 +92,8 @@ clusters:
     - ell
     - tur
   auto_3:
-    label: สาธารณรัฐโดมินิกัน
-    hue: 50.0
-    etymology_origin: Auto-detected orthographic cluster around 'สาธารณรัฐโดมินิกัน'
-      (3 languages). Hand-curated etymology pending.
-    languages:
-    - khm
-    - lao
-    - tha
-  auto_4:
     label: جمهوری دومینیکن
-    hue: 122.0
+    hue: 104.0
     etymology_origin: Auto-detected orthographic cluster around 'جمهورية الدومينيكان'
       (2 languages). Hand-curated etymology pending.
     languages:

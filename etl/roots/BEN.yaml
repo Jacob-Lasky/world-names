@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Benin
     hue: 123.0
-    etymology_origin: Auto-detected orthographic cluster around 'Benin' (81 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Benin' (83 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -50,6 +50,7 @@ clusters:
     - kin
     - kir
     - kor
+    - lao
     - lat
     - lav
     - lit
@@ -85,17 +86,10 @@ clusters:
     - swe
     - tgk
     - tgl
+    - tha
     - tuk
     - tur
     - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: ປະເທດເບແນັງ
-    hue: 303.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດເບແນັງ' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

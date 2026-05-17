@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Vatikan
     hue: 145.0
-    etymology_origin: Auto-detected orthographic cluster around 'Vatikan' (77 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Vatikan' (78 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -81,6 +81,7 @@ clusters:
     - swe
     - tet
     - tgk
+    - tha
     - ton
     - tuk
     - tur

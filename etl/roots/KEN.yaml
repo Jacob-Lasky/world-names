@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Kenya
     hue: 132.0
-    etymology_origin: Auto-detected orthographic cluster around 'Kenia' (83 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Kenia' (84 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -86,6 +86,7 @@ clusters:
     - swe
     - tgk
     - tgl
+    - tha
     - tsn
     - tuk
     - tur

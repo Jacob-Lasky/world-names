@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Côte d'Ivoire
     hue: 136.0
-    etymology_origin: Auto-detected orthographic cluster around 'Кот д'Ивоар' (32
+    etymology_origin: Auto-detected orthographic cluster around 'Кот д'Ивоар' (33
       languages). Hand-curated etymology pending.
     languages:
     - aze
@@ -40,6 +40,7 @@ clusters:
     - spa
     - tgk
     - tgl
+    - tha
     - tuk
     - ukr
   auto_1:

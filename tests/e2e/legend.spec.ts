@@ -117,6 +117,53 @@ test('legend focus clears when selection changes between countries', async ({ pa
   await expect(chipAfter).toHaveAttribute('aria-pressed', 'false');
 });
 
+test('inspection card shows exonym pronunciation for Thai (non-Latin script)', async ({ page }) => {
+  await page.goto('/');
+  await page.waitForSelector('canvas');
+  await page.waitForTimeout(400);
+
+  // Select Japan; Thailand will be our inspected observer.
+  await page.evaluate(() => {
+    const set = (window as unknown as { __setSelection?: (c: unknown) => void }).__setSelection;
+    set?.({ numericId: '392', name: 'Japan' });
+  });
+  await expect(page.getByRole('heading', { name: /日本|Japan/i })).toBeVisible({ timeout: 10_000 });
+
+  await page.evaluate(() => {
+    const setHover = (window as unknown as { __setHover?: (id: string | null) => void }).__setHover;
+    setHover?.('764'); // Thailand
+  });
+  const inspectionCard = page.getByTestId('inspection-card');
+  await expect(inspectionCard).toBeVisible({ timeout: 5_000 });
+
+  // The exonym pronunciation cue is rendered for non-Latin exonyms.
+  const cue = inspectionCard.getByTestId('inspection-exonym-pronunciation');
+  await expect(cue).toBeVisible();
+  // Thai for Japan transliterates to something containing "yiipun".
+  await expect(cue).toContainText(/yiipun/i);
+});
+
+test('inspection card has NO pronunciation cue for Latin-script exonyms', async ({ page }) => {
+  await page.goto('/');
+  await page.waitForSelector('canvas');
+  await page.waitForTimeout(400);
+
+  await page.evaluate(() => {
+    const set = (window as unknown as { __setSelection?: (c: unknown) => void }).__setSelection;
+    set?.({ numericId: '276', name: 'Germany' });
+  });
+  await expect(page.getByRole('heading', { name: /Deutschland/i })).toBeVisible({ timeout: 10_000 });
+
+  await page.evaluate(() => {
+    const setHover = (window as unknown as { __setHover?: (id: string | null) => void }).__setHover;
+    setHover?.('250'); // France — Latin-script "Allemagne"
+  });
+  await expect(page.getByTestId('inspection-card')).toBeVisible({ timeout: 5_000 });
+
+  // No pronunciation cue for an all-Latin exonym.
+  await expect(page.getByTestId('inspection-exonym-pronunciation')).toHaveCount(0);
+});
+
 test('auto-detected indicator appears for auto-generated clusters, hides for hand-curated', async ({ page }) => {
   // Germany is hand-curated (etl/roots/DEU.yaml without auto_generated
   // flag) → no indicator. France is auto-generated → indicator.

@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Kanada
     hue: 240.0
-    etymology_origin: Auto-detected orthographic cluster around 'Kanada' (84 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Kanada' (86 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -53,6 +53,7 @@ clusters:
     - kin
     - kir
     - kor
+    - lao
     - lat
     - lav
     - lit
@@ -87,6 +88,7 @@ clusters:
     - swe
     - tet
     - tgl
+    - tha
     - ton
     - tuk
     - tur
@@ -94,11 +96,3 @@ clusters:
     - uzb
     - vie
     - zul
-  auto_1:
-    label: ປະເທດການາດາ
-    hue: 60.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດການາດາ' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

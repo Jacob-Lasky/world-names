@@ -18,174 +18,174 @@ To hand-curate an auto-generated YAML: edit the file in `etl/roots/`, remove the
 - **ALB** Albania — 1 clusters from 90 exonyms
 - **AND** Andorra — 1 clusters from 86 exonyms
 - **ARE** United Arab Emirates — 3 clusters from 86 exonyms
-- **ARG** Argentina — 1 clusters from 88 exonyms
-- **ARM** Armenia — 2 clusters from 87 exonyms
-- **ATG** Antigua and Barbuda — 2 clusters from 82 exonyms
+- **ARG** Argentina — 2 clusters from 88 exonyms
+- **ARM** Armenia — 1 clusters from 87 exonyms
+- **ATG** Antigua and Barbuda — 1 clusters from 82 exonyms
 - **AUS** Australia — 1 clusters from 90 exonyms
 - **AUT** Austria — 2 clusters from 88 exonyms
 - **AZE** Azerbaijan — 2 clusters from 90 exonyms
 - **BDI** Burundi — 1 clusters from 82 exonyms
 - **BEL** Belgium — 1 clusters from 87 exonyms
-- **BEN** Benin — 2 clusters from 84 exonyms
-- **BFA** Burkina Faso — 2 clusters from 82 exonyms
-- **BGD** Bangladesh — 2 clusters from 87 exonyms
+- **BEN** Benin — 1 clusters from 84 exonyms
+- **BFA** Burkina Faso — 1 clusters from 82 exonyms
+- **BGD** Bangladesh — 1 clusters from 87 exonyms
 - **BGR** Bulgaria — 1 clusters from 87 exonyms
-- **BHR** Bahrain — 2 clusters from 83 exonyms
-- **BHS** The Bahamas — 3 clusters from 84 exonyms
-- **BIH** Bosnia and Herzegovina — 4 clusters from 88 exonyms
-- **BLR** Belarus — 3 clusters from 87 exonyms
+- **BHR** Bahrain — 1 clusters from 83 exonyms
+- **BHS** The Bahamas — 2 clusters from 84 exonyms
+- **BIH** Bosnia and Herzegovina — 3 clusters from 88 exonyms
+- **BLR** Belarus — 2 clusters from 87 exonyms
 - **BLZ** Belize — 2 clusters from 82 exonyms
-- **BOL** Bolivia — 2 clusters from 86 exonyms
-- **BRA** Brazil — 2 clusters from 89 exonyms
+- **BOL** Bolivia — 1 clusters from 86 exonyms
+- **BRA** Brazil — 1 clusters from 89 exonyms
 - **BRB** Barbados — 1 clusters from 82 exonyms
-- **BRN** Brunei — 2 clusters from 83 exonyms
-- **BTN** Bhutan — 2 clusters from 84 exonyms
-- **BWA** Botswana — 2 clusters from 85 exonyms
+- **BRN** Brunei — 1 clusters from 83 exonyms
+- **BTN** Bhutan — 1 clusters from 84 exonyms
+- **BWA** Botswana — 1 clusters from 85 exonyms
 - **CAF** Central African Republic — 9 clusters from 83 exonyms
-- **CAN** Canada — 2 clusters from 88 exonyms
+- **CAN** Canada — 1 clusters from 88 exonyms
 - **CHE** Switzerland — 4 clusters from 89 exonyms
 - **CHL** Chile — 1 clusters from 90 exonyms
-- **CHN** People's Republic of China — 7 clusters from 90 exonyms
+- **CHN** People's Republic of China — 6 clusters from 90 exonyms
 - **CIV** Ivory Coast — 9 clusters from 82 exonyms
 - **CMR** Cameroon — 1 clusters from 82 exonyms
 - **COD** Democratic Republic of the Congo — 9 clusters from 84 exonyms
-- **COG** Republic of the Congo — 8 clusters from 83 exonyms
+- **COG** Republic of the Congo — 7 clusters from 83 exonyms
 - **COK** Cook Islands — 9 clusters from 70 exonyms
-- **COL** Colombia — 2 clusters from 89 exonyms
+- **COL** Colombia — 1 clusters from 89 exonyms
 - **COM** Comoros — 2 clusters from 81 exonyms
 - **CPV** Cape Verde — 3 clusters from 84 exonyms
 - **CRI** Costa Rica — 1 clusters from 82 exonyms
-- **CUB** Cuba — 2 clusters from 85 exonyms
+- **CUB** Cuba — 1 clusters from 85 exonyms
 - **CUW** Curaçao — 1 clusters from 61 exonyms
-- **CYP** Cyprus — 4 clusters from 83 exonyms
-- **CZE** Czech Republic — 8 clusters from 87 exonyms
-- **DJI** Djibouti — 2 clusters from 83 exonyms
-- **DMA** Dominica — 3 clusters from 80 exonyms
-- **DNK** Denmark — 2 clusters from 88 exonyms
-- **DOM** Dominican Republic — 5 clusters from 83 exonyms
+- **CYP** Cyprus — 3 clusters from 83 exonyms
+- **CZE** Czech Republic — 7 clusters from 87 exonyms
+- **DJI** Djibouti — 1 clusters from 83 exonyms
+- **DMA** Dominica — 2 clusters from 80 exonyms
+- **DNK** Denmark — 1 clusters from 88 exonyms
+- **DOM** Dominican Republic — 4 clusters from 83 exonyms
 - **DZA** Algeria — 1 clusters from 86 exonyms
-- **ECU** Ecuador — 2 clusters from 86 exonyms
+- **ECU** Ecuador — 1 clusters from 86 exonyms
 - **EGY** Egypt — 2 clusters from 87 exonyms
-- **ERI** Eritrea — 2 clusters from 83 exonyms
+- **ERI** Eritrea — 1 clusters from 83 exonyms
 - **ESP** Spain — 1 clusters from 89 exonyms
 - **EST** Estonia — 1 clusters from 86 exonyms
 - **ETH** Ethiopia — 3 clusters from 85 exonyms
 - **FIN** Finland — 2 clusters from 90 exonyms
-- **FJI** Fiji — 4 clusters from 80 exonyms
-- **FRA** France — 4 clusters from 90 exonyms
+- **FJI** Fiji — 3 clusters from 80 exonyms
+- **FRA** France — 3 clusters from 90 exonyms
 - **FSM** Federated States of Micronesia — 5 clusters from 75 exonyms
-- **GAB** Gabon — 2 clusters from 83 exonyms
+- **GAB** Gabon — 1 clusters from 83 exonyms
 - **GBR** United Kingdom — 10 clusters from 90 exonyms
 - **GEO** Georgia — 2 clusters from 86 exonyms
-- **GHA** Ghana — 2 clusters from 85 exonyms
+- **GHA** Ghana — 1 clusters from 85 exonyms
 - **GIN** Guinea — 1 clusters from 82 exonyms
-- **GMB** The Gambia — 2 clusters from 83 exonyms
+- **GMB** The Gambia — 1 clusters from 83 exonyms
 - **GNB** Guinea-Bissau — 2 clusters from 82 exonyms
 - **GNQ** Equatorial Guinea — 7 clusters from 82 exonyms
-- **GRC** Greece — 2 clusters from 87 exonyms
+- **GRC** Greece — 3 clusters from 87 exonyms
 - **GRD** Grenada — 1 clusters from 81 exonyms
 - **GRL** Greenland — 3 clusters from 75 exonyms
-- **GTM** Guatemala — 2 clusters from 83 exonyms
-- **GUY** Guyana — 2 clusters from 82 exonyms
-- **HND** Honduras — 2 clusters from 80 exonyms
+- **GTM** Guatemala — 1 clusters from 83 exonyms
+- **GUY** Guyana — 1 clusters from 82 exonyms
+- **HND** Honduras — 1 clusters from 80 exonyms
 - **HRV** Croatia — 1 clusters from 87 exonyms
 - **HTI** Haiti — 1 clusters from 81 exonyms
-- **HUN** Hungary — 3 clusters from 87 exonyms
+- **HUN** Hungary — 2 clusters from 87 exonyms
 - **IDN** Indonesia — 1 clusters from 88 exonyms
-- **IND** India — 4 clusters from 89 exonyms
+- **IND** India — 3 clusters from 89 exonyms
 - **IRL** Ireland — 2 clusters from 87 exonyms
-- **IRN** Iran — 2 clusters from 87 exonyms
+- **IRN** Iran — 1 clusters from 87 exonyms
 - **IRQ** Iraq — 2 clusters from 82 exonyms
 - **ISL** Iceland — 1 clusters from 88 exonyms
-- **ISR** Israel — 2 clusters from 86 exonyms
-- **ITA** Italy — 2 clusters from 90 exonyms
+- **ISR** Israel — 1 clusters from 86 exonyms
+- **ITA** Italy — 1 clusters from 90 exonyms
 - **JAM** Jamaica — 1 clusters from 82 exonyms
 - **JOR** Jordan — 1 clusters from 82 exonyms
 - **JPN** Japan — 3 clusters from 91 exonyms
 - **KAZ** Kazakhstan — 1 clusters from 85 exonyms
 - **KEN** Kenya — 1 clusters from 85 exonyms
 - **KGZ** Kyrgyzstan — 1 clusters from 83 exonyms
-- **KHM** Cambodia — 2 clusters from 85 exonyms
+- **KHM** Cambodia — 1 clusters from 85 exonyms
 - **KIR** Kiribati — 3 clusters from 79 exonyms ⚠ no endonym (lightness channel will be flat)
 - **KNA** Saint Kitts and Nevis — 1 clusters from 77 exonyms
 - **KOR** South Korea — 9 clusters from 85 exonyms
-- **KWT** Kuwait — 2 clusters from 84 exonyms
-- **LAO** Laos — 3 clusters from 86 exonyms
-- **LBN** Lebanon — 2 clusters from 84 exonyms
-- **LBR** Liberia — 1 clusters from 81 exonyms
+- **KWT** Kuwait — 1 clusters from 84 exonyms
+- **LAO** Laos — 2 clusters from 86 exonyms
+- **LBN** Lebanon — 1 clusters from 84 exonyms
+- **LBR** Liberia — 2 clusters from 81 exonyms
 - **LBY** Libya — 1 clusters from 83 exonyms
 - **LCA** Saint Lucia — 1 clusters from 78 exonyms
-- **LIE** Liechtenstein — 2 clusters from 85 exonyms
+- **LIE** Liechtenstein — 1 clusters from 85 exonyms
 - **LKA** Sri Lanka — 1 clusters from 82 exonyms
 - **LSO** Lesotho — 2 clusters from 81 exonyms
-- **LTU** Lithuania — 3 clusters from 89 exonyms
+- **LTU** Lithuania — 2 clusters from 89 exonyms
 - **LUX** Luxembourg — 1 clusters from 85 exonyms
 - **LVA** Latvia — 2 clusters from 86 exonyms
 - **MAR** Morocco — 1 clusters from 83 exonyms
-- **MCO** Monaco — 3 clusters from 84 exonyms
-- **MDA** Moldova — 3 clusters from 85 exonyms
-- **MDG** Madagascar — 2 clusters from 86 exonyms
-- **MDV** Maldives — 4 clusters from 82 exonyms
-- **MEX** Mexico — 2 clusters from 90 exonyms
+- **MCO** Monaco — 2 clusters from 84 exonyms
+- **MDA** Moldova — 2 clusters from 85 exonyms
+- **MDG** Madagascar — 1 clusters from 86 exonyms
+- **MDV** Maldives — 3 clusters from 82 exonyms
+- **MEX** Mexico — 1 clusters from 90 exonyms
 - **MHL** Marshall Islands — 5 clusters from 77 exonyms
-- **MKD** North Macedonia — 3 clusters from 84 exonyms
+- **MKD** North Macedonia — 4 clusters from 84 exonyms
 - **MLI** Mali — 1 clusters from 83 exonyms
 - **MLT** Malta — 1 clusters from 84 exonyms
 - **MMR** Myanmar — 3 clusters from 84 exonyms
-- **MNE** Montenegro — 3 clusters from 84 exonyms
-- **MNG** Mongolia — 2 clusters from 86 exonyms
+- **MNE** Montenegro — 2 clusters from 84 exonyms
+- **MNG** Mongolia — 1 clusters from 86 exonyms
 - **MOZ** Mozambique — 1 clusters from 86 exonyms ⚠ no endonym (lightness channel will be flat)
 - **MRT** Mauritania — 1 clusters from 82 exonyms
 - **MUS** Mauritius — 1 clusters from 81 exonyms
 - **MWI** Malawi — 2 clusters from 83 exonyms
-- **MYS** Malaysia — 2 clusters from 85 exonyms
+- **MYS** Malaysia — 1 clusters from 85 exonyms
 - **NAM** Namibia — 1 clusters from 82 exonyms
 - **NER** Niger — 1 clusters from 82 exonyms
 - **NGA** Nigeria — 1 clusters from 83 exonyms
 - **NIC** Nicaragua — 1 clusters from 83 exonyms
 - **NIU** Niue — 2 clusters from 70 exonyms ⚠ no endonym (lightness channel will be flat)
 - **NLD** Kingdom of the Netherlands — 11 clusters from 62 exonyms
-- **NOR** Norway — 3 clusters from 90 exonyms
+- **NOR** Norway — 1 clusters from 90 exonyms
 - **NPL** Nepal — 1 clusters from 85 exonyms
 - **NRU** Nauru — 1 clusters from 77 exonyms
 - **NZL** New Zealand — 2 clusters from 85 exonyms
 - **OMN** Oman — 2 clusters from 82 exonyms
 - **PAK** Pakistan — 1 clusters from 84 exonyms
 - **PAN** Panama — 1 clusters from 81 exonyms
-- **PER** Peru — 2 clusters from 87 exonyms
+- **PER** Peru — 1 clusters from 87 exonyms
 - **PHL** Philippines — 1 clusters from 85 exonyms
 - **PLW** Palau — 1 clusters from 78 exonyms ⚠ no endonym (lightness channel will be flat)
-- **PNG** Papua New Guinea — 2 clusters from 80 exonyms ⚠ no endonym (lightness channel will be flat)
-- **POL** Poland — 3 clusters from 89 exonyms
+- **PNG** Papua New Guinea — 1 clusters from 80 exonyms ⚠ no endonym (lightness channel will be flat)
+- **POL** Poland — 2 clusters from 89 exonyms
 - **PRK** North Korea — 10 clusters from 84 exonyms
 - **PRT** Portugal — 1 clusters from 88 exonyms
-- **PRY** Paraguay — 3 clusters from 86 exonyms
+- **PRY** Paraguay — 2 clusters from 86 exonyms
 - **PSE** Palestine — 4 clusters from 79 exonyms
-- **QAT** Qatar — 2 clusters from 84 exonyms
+- **QAT** Qatar — 1 clusters from 84 exonyms
 - **ROU** Romania — 1 clusters from 87 exonyms
 - **RUS** Russia — 2 clusters from 90 exonyms
 - **RWA** Rwanda — 1 clusters from 81 exonyms
-- **SAU** Saudi Arabia — 3 clusters from 84 exonyms
+- **SAU** Saudi Arabia — 2 clusters from 84 exonyms
 - **SDN** Sudan — 1 clusters from 83 exonyms
 - **SEN** Senegal — 1 clusters from 83 exonyms
-- **SGP** Singapore — 2 clusters from 85 exonyms
+- **SGP** Singapore — 1 clusters from 85 exonyms
 - **SLB** Solomon Islands — 2 clusters from 78 exonyms
 - **SLE** Sierra Leone — 1 clusters from 82 exonyms ⚠ no endonym (lightness channel will be flat)
-- **SLV** El Salvador — 2 clusters from 82 exonyms
+- **SLV** El Salvador — 1 clusters from 82 exonyms
 - **SMR** San Marino — 1 clusters from 84 exonyms
 - **SOM** Somalia — 2 clusters from 83 exonyms
-- **SRB** Serbia — 2 clusters from 87 exonyms
+- **SRB** Serbia — 1 clusters from 87 exonyms
 - **SSD** South Sudan — 4 clusters from 78 exonyms
 - **STP** São Tomé and Príncipe — 2 clusters from 82 exonyms
 - **SUR** Suriname — 1 clusters from 80 exonyms
-- **SVK** Slovakia — 2 clusters from 85 exonyms
-- **SVN** Slovenia — 2 clusters from 86 exonyms
+- **SVK** Slovakia — 1 clusters from 85 exonyms
+- **SVN** Slovenia — 1 clusters from 86 exonyms
 - **SWE** Sweden — 3 clusters from 88 exonyms
 - **SWZ** Eswatini — 2 clusters from 79 exonyms
 - **SXM** Sint Maarten — 1 clusters from 59 exonyms
 - **SYC** Seychelles — 2 clusters from 81 exonyms ⚠ no endonym (lightness channel will be flat)
-- **SYR** Syria — 3 clusters from 84 exonyms
-- **TCD** Chad — 2 clusters from 83 exonyms
+- **SYR** Syria — 2 clusters from 84 exonyms
+- **TCD** Chad — 1 clusters from 83 exonyms
 - **TGO** Togo — 2 clusters from 81 exonyms
 - **THA** Thailand — 4 clusters from 89 exonyms
 - **TJK** Tajikistan — 1 clusters from 84 exonyms
@@ -194,25 +194,25 @@ To hand-curate an auto-generated YAML: edit the file in `etl/roots/`, remove the
 - **TON** Tonga — 1 clusters from 78 exonyms
 - **TTO** Trinidad and Tobago — 1 clusters from 81 exonyms
 - **TUN** Tunisia — 1 clusters from 84 exonyms
-- **TUR** Turkey — 3 clusters from 90 exonyms
+- **TUR** Turkey — 2 clusters from 90 exonyms
 - **TUV** Tuvalu — 2 clusters from 78 exonyms ⚠ no endonym (lightness channel will be flat)
 - **TWN** Taiwan — 4 clusters from 83 exonyms
 - **TZA** Tanzania — 1 clusters from 85 exonyms
 - **UGA** Uganda — 1 clusters from 82 exonyms
-- **UKR** Ukraine — 3 clusters from 89 exonyms
-- **URY** Uruguay — 2 clusters from 83 exonyms
+- **UKR** Ukraine — 2 clusters from 89 exonyms
+- **URY** Uruguay — 1 clusters from 83 exonyms
 - **USA** United States — 11 clusters from 90 exonyms
 - **UZB** Uzbekistan — 1 clusters from 83 exonyms
 - **VAT** Vatican City — 1 clusters from 86 exonyms
 - **VCT** Saint Vincent and the Grenadines — 1 clusters from 75 exonyms
-- **VEN** Venezuela — 3 clusters from 84 exonyms
-- **VNM** Vietnam — 2 clusters from 89 exonyms
+- **VEN** Venezuela — 2 clusters from 84 exonyms
+- **VNM** Vietnam — 1 clusters from 89 exonyms
 - **VUT** Vanuatu — 1 clusters from 80 exonyms
 - **WSM** Samoa — 1 clusters from 77 exonyms
 - **XKS** Kosovo — 3 clusters from 75 exonyms
 - **XKX** Kosovo — 3 clusters from 75 exonyms
 - **YEM** Yemen — 1 clusters from 83 exonyms
-- **ZAF** South Africa — 10 clusters from 87 exonyms
+- **ZAF** South Africa — 9 clusters from 87 exonyms
 - **ZMB** Zambia — 1 clusters from 83 exonyms ⚠ no endonym (lightness channel will be flat)
 - **ZWE** Zimbabwe — 1 clusters from 84 exonyms
 

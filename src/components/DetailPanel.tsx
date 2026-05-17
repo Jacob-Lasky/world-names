@@ -166,9 +166,18 @@ function InspectionCard() {
       <p style={{ ...inspectionExonymStyle, color: exonymTint }}>
         {d.exonym}
       </p>
+      {d.exonym_pronunciation && (
+        <p data-testid="inspection-exonym-pronunciation" style={pronunciationStyle}>
+          /{d.exonym_pronunciation}/
+        </p>
+      )}
       {d.cluster_label && (
         <p style={inspectionMetaStyle}>
-          <strong>{shortClusterLabel(d.cluster_label)}</strong> cluster
+          <strong>{shortClusterLabel(d.cluster_label)}</strong>
+          {d.cluster_pronunciation && (
+            <span style={inlinePronunciationStyle}> /{d.cluster_pronunciation}/</span>
+          )}
+          {' cluster'}
           {d.etymology_origin ? ` · ${d.etymology_origin}` : ''}
         </p>
       )}
@@ -236,4 +245,23 @@ const inspectionMetaStyle: React.CSSProperties = {
   fontSize: '0.85rem',
   marginTop: '0.25rem',
   marginBottom: 0,
+};
+
+// Pronunciation cue under the exonym in the inspection card. Slashes
+// borrowed from IPA notation (/.../ as a phonetic-transcription
+// convention) so the user recognizes it as a reading aid, not a name.
+const pronunciationStyle: React.CSSProperties = {
+  color: 'var(--muted)',
+  fontSize: '0.95rem',
+  fontStyle: 'italic',
+  margin: 0,
+  marginTop: '-0.25rem',
+  marginBottom: '0.5rem',
+};
+
+// Same cue, inline for use INSIDE a single line of text (e.g. after the
+// short cluster label in the meta paragraph).
+const inlinePronunciationStyle: React.CSSProperties = {
+  color: 'var(--muted)',
+  fontStyle: 'italic',
 };

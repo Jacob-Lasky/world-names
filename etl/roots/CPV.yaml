@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Cabo Verde
     hue: 353.0
-    etymology_origin: Auto-detected orthographic cluster around 'Kabo-Verde' (62 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Kabo-Verde' (63 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -67,6 +67,7 @@ clusters:
     - swe
     - tet
     - tgl
+    - tha
     - tuk
     - tur
     - ukr

@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Mozambique
     hue: 216.0
-    etymology_origin: Auto-detected orthographic cluster around 'Mozambik' (83 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Mozambik' (84 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -85,6 +85,7 @@ clusters:
     - tet
     - tgk
     - tgl
+    - tha
     - ton
     - tsn
     - tuk

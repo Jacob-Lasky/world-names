@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Guinea-Bissau
     hue: 155.0
-    etymology_origin: Auto-detected orthographic cluster around 'Guinea Bissau' (76
+    etymology_origin: Auto-detected orthographic cluster around 'Guinea Bissau' (77
       languages). Hand-curated etymology pending.
     languages:
     - afr
@@ -80,6 +80,7 @@ clusters:
     - tet
     - tgk
     - tgl
+    - tha
     - tuk
     - tur
     - ukr

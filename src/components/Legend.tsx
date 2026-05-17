@@ -77,7 +77,14 @@ export function Legend() {
                     background: `rgb(${r}, ${g}, ${b})`,
                   }}
                 />
-                <span style={labelStyle}>{short}</span>
+                <span style={labelColumnStyle}>
+                  <span style={labelStyle}>{short}</span>
+                  {c.pronunciation && (
+                    <span data-testid="legend-chip-pronunciation" style={chipPronunciationStyle}>
+                      /{c.pronunciation}/
+                    </span>
+                  )}
+                </span>
                 <span style={memberCountStyle}>{c.member_count}</span>
               </button>
             </li>
@@ -175,8 +182,28 @@ const swatchStyle: React.CSSProperties = {
   border: '1px solid rgba(0,0,0,0.4)',
 };
 
-const labelStyle: React.CSSProperties = {
+// Container for the label + optional pronunciation stack, so they
+// share one flex column and the member-count stays right-aligned.
+const labelColumnStyle: React.CSSProperties = {
   flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  minWidth: 0,
+  lineHeight: 1.15,
+};
+
+const labelStyle: React.CSSProperties = {
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'nowrap',
+};
+
+// Pronunciation cue under the chip's native label. Smaller + italic
+// + muted so it reads as a reading aid, not a competing name.
+const chipPronunciationStyle: React.CSSProperties = {
+  color: 'var(--muted)',
+  fontSize: '0.7rem',
+  fontStyle: 'italic',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap',

@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Mexico
     hue: 264.0
-    etymology_origin: Auto-detected orthographic cluster around 'Meksiko' (87 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Meksiko' (89 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -53,6 +53,7 @@ clusters:
     - kin
     - kir
     - kor
+    - lao
     - lat
     - lav
     - lit
@@ -89,6 +90,7 @@ clusters:
     - tet
     - tgk
     - tgl
+    - tha
     - ton
     - tsn
     - tuk
@@ -97,11 +99,3 @@ clusters:
     - uzb
     - vie
     - zul
-  auto_1:
-    label: ປະເທດເມັກຊິກ
-    hue: 84.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດເມັກຊິກ' (2
-      languages). Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

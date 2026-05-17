@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _lib import normalized_similarity  # noqa: E402
+from _lib import _strip_country_prefix, normalized_similarity, pronunciation  # noqa: E402
 
 ETL = Path(__file__).parent
 PUBLIC_DEST = ETL.parent / "public" / "world-names.sqlite"
@@ -76,6 +76,11 @@ CREATE TABLE exonyms (
   -- ready-made channel for the polygon-fill lightness gradient — no
   -- string-distance code ships to the browser.
   similarity_to_endonym   REAL,
+  -- Latin transliteration of the exonym for display, computed via
+  -- _lib.pronunciation. NULL when the exonym is already Latin-script
+  -- (or Latin-dominant) — no pronunciation guide adds value there.
+  -- Thai ประเทศญี่ปุ่น → 'praethsyiipun', Russian Россия → 'Rossiia'.
+  pronunciation           TEXT,
   PRIMARY KEY (observer_language_code, target_country_iso3)
 );
 CREATE INDEX idx_exo_target ON exonyms(target_country_iso3);
@@ -89,7 +94,14 @@ CREATE TABLE clusters (
   -- 1 = first-pass string-similarity coverage (etl/auto_cluster.py);
   -- 0 = hand-curated etymology YAML. The Legend uses this to surface
   -- an "auto-detected" indicator so the user knows the difference.
-  auto_generated      INTEGER NOT NULL DEFAULT 0
+  auto_generated      INTEGER NOT NULL DEFAULT 0,
+  -- Latin transliteration of the cluster label, computed via
+  -- _lib.pronunciation. NULL when the label is already Latin-script
+  -- (e.g. "Russia", "Allemagne") or Latin-dominant (e.g. the hand-
+  -- curated "Slavic *němьcь" — Cyrillic chars don't outweigh the Latin
+  -- "Slavic"). The Legend chip and InspectionCard render this as a
+  -- pronunciation cue underneath the native label.
+  pronunciation       TEXT
 );
 
 CREATE TABLE blurbs (
@@ -194,10 +206,11 @@ def main() -> int:
     )
     con.executemany(
         """INSERT INTO clusters
-           (id, target_country_iso3, label, hue, etymology_origin, auto_generated)
-           VALUES (?, ?, ?, ?, ?, ?)""",
+           (id, target_country_iso3, label, hue, etymology_origin, auto_generated, pronunciation)
+           VALUES (?, ?, ?, ?, ?, ?, ?)""",
         [(c["id"], c["target_country_iso3"], c["label"], c["hue"],
-          c.get("etymology_origin"), to_bool(c.get("auto_generated")))
+          c.get("etymology_origin"), to_bool(c.get("auto_generated")),
+          pronunciation(c["label"]))
          for c in clusters],
     )
     # similarity_to_endonym: precomputed per (target, observer) pair so the
@@ -207,18 +220,27 @@ def main() -> int:
     # missed a country), leave the value NULL and the front-end falls back
     # to the cluster's base lightness.
     endonym_by_iso3 = {e["country_iso3"]: e["endonym"] for e in endonyms}
+    # similarity_to_endonym uses the PREFIX-STRIPPED form of each
+    # exonym so Thai/Lao "country of X" classifiers don't inflate
+    # phonetic distance against the endonym. The exonym we display
+    # stays the original (with the classifier intact).
     con.executemany(
         """INSERT INTO exonyms
-           (observer_language_code, target_country_iso3, exonym, cluster_id, similarity_to_endonym)
-           VALUES (?, ?, ?, ?, ?)""",
+           (observer_language_code, target_country_iso3, exonym, cluster_id,
+            similarity_to_endonym, pronunciation)
+           VALUES (?, ?, ?, ?, ?, ?)""",
         [
             (
                 e["observer_language_code"],
                 e["target_country_iso3"],
                 e["exonym"],
                 e.get("cluster_id"),
-                normalized_similarity(e["exonym"], endonym_by_iso3[e["target_country_iso3"]])
+                normalized_similarity(
+                    _strip_country_prefix(e["exonym"], e["observer_language_code"]),
+                    endonym_by_iso3[e["target_country_iso3"]],
+                )
                 if e["target_country_iso3"] in endonym_by_iso3 else None,
+                pronunciation(e["exonym"]),
             )
             for e in exonyms
         ],
@@ -226,7 +248,7 @@ def main() -> int:
 
     con.execute("INSERT INTO meta (key, value) VALUES ('schema_version', '2')")
     con.execute("INSERT INTO meta (key, value) VALUES ('source', 'github.com/Jacob-Lasky/world-names')")
-    con.execute("INSERT INTO meta (key, value) VALUES ('phase', 'phase-3-auto-cluster-every-country')")
+    con.execute("INSERT INTO meta (key, value) VALUES ('phase', 'phase-4-pronunciation-guide')")
     con.commit()
 
     # Vacuum to reclaim space.

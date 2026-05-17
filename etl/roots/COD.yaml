@@ -87,38 +87,37 @@ clusters:
     - nld
     - swe
   auto_4:
-    label: สาธารณรัฐประชาธิปไตยคองโก
-    hue: 104.0
-    etymology_origin: Auto-detected orthographic cluster around 'สาธารณรัฐประชาธิปไตยคองโก'
-      (3 languages). Hand-curated etymology pending.
-    languages:
-    - khm
-    - lao
-    - tha
-  auto_5:
     label: ކޮންގޯ
-    hue: 144.0
+    hue: 104.0
     etymology_origin: Auto-detected orthographic cluster around 'ކޮންގޯ' (2 languages).
       Hand-curated etymology pending.
     languages:
     - div
     - ssw
-  auto_6:
+  auto_5:
     label: Jamhuriyar dimokuradiyya Kwango
-    hue: 184.0
+    hue: 144.0
     etymology_origin: Auto-detected orthographic cluster around 'Jamhuriyar dimokuradiyya
       Kwango' (2 languages). Hand-curated etymology pending.
     languages:
     - hau
     - som
-  auto_7:
+  auto_6:
     label: ਕਾਂਗੋ ਲੋਕਤੰਤਰੀ ਗਣਰਾਜ
-    hue: 224.0
+    hue: 184.0
     etymology_origin: Auto-detected orthographic cluster around 'कांगो लोकतान्त्रिक
       गणराज्य' (2 languages). Hand-curated etymology pending.
     languages:
     - hin
     - pan
+  auto_7:
+    label: สาธารณรัฐประชาธิปไตยคองโก
+    hue: 224.0
+    etymology_origin: Auto-detected orthographic cluster around 'ສາທາລະນະລັດ ປະຊາທິປະໄຕ
+      ກົງໂກ' (2 languages). Hand-curated etymology pending.
+    languages:
+    - lao
+    - tha
   auto_8:
     label: Ripubrikit Engame Kongo
     hue: 264.0

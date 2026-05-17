@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Cyprus
     hue: 266.0
-    etymology_origin: Auto-detected orthographic cluster around 'Ciprus' (70 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Ciprus' (71 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -75,6 +75,7 @@ clusters:
     - tet
     - tgk
     - tgl
+    - tha
     - ton
     - tur
     - ukr
@@ -82,7 +83,7 @@ clusters:
     - zul
   auto_1:
     label: قبرس
-    hue: 356.0
+    hue: 26.0
     etymology_origin: Auto-detected orthographic cluster around 'قبرص' (3 languages).
       Hand-curated etymology pending.
     languages:
@@ -91,17 +92,9 @@ clusters:
     - pus
   auto_2:
     label: Kipr Respublikası
-    hue: 86.0
+    hue: 146.0
     etymology_origin: Auto-detected orthographic cluster around 'Kipr Respublikası'
       (2 languages). Hand-curated etymology pending.
     languages:
     - aze
     - tuk
-  auto_3:
-    label: ປະເທດໄຊປຣັດ
-    hue: 176.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດໄຊປຣັດ' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

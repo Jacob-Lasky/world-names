@@ -88,3 +88,11 @@ clusters:
     - uzb
     - vie
     - zul
+  auto_1:
+    label: ໄລບີເລຍ
+    hue: 104.0
+    etymology_origin: Auto-detected orthographic cluster around 'ໄລບີເລຍ' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - lao
+    - tha

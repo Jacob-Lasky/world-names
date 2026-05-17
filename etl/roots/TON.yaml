@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Tonga
     hue: 91.0
-    etymology_origin: Auto-detected orthographic cluster around 'Tonga' (76 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Tonga' (77 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -79,6 +79,7 @@ clusters:
     - swe
     - tgk
     - tgl
+    - tha
     - ton
     - tuk
     - tur

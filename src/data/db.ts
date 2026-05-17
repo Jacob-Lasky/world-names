@@ -259,6 +259,7 @@ export class WorldNamesDB {
                cs.label           AS label,
                cs.hue             AS hue,
                cs.etymology_origin AS etymology_origin,
+               cs.auto_generated  AS auto_generated,
                COUNT(DISTINCT cl.country_iso3) AS member_count
         FROM clusters cs
         JOIN target t ON t.iso3 = cs.target_country_iso3
@@ -266,7 +267,7 @@ export class WorldNamesDB {
         LEFT JOIN country_languages cl
           ON cl.language_code = e.observer_language_code
          AND cl.is_dominant_l1 = 1
-        GROUP BY cs.id, cs.label, cs.hue, cs.etymology_origin
+        GROUP BY cs.id, cs.label, cs.hue, cs.etymology_origin, cs.auto_generated
         ORDER BY member_count DESC, cs.label ASC
       `,
       bind: [targetM49],
@@ -279,6 +280,7 @@ export class WorldNamesDB {
       hue: r.hue as number,
       etymology_origin: (r.etymology_origin as string | null) ?? null,
       member_count: Number(r.member_count ?? 0),
+      auto_generated: Number(r.auto_generated ?? 0) === 1,
     }));
   }
 }

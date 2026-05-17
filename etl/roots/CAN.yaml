@@ -1,0 +1,100 @@
+country: CAN
+name: Canada
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Kanada
+    hue: 240.0
+    etymology_origin: Auto-detected orthographic cluster around 'Kanada' (58 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kea
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Канада
+    hue: 330.0
+    etymology_origin: Auto-detected orthographic cluster around 'Канада' (7 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - ukr
+  auto_2:
+    label: कनाडा
+    hue: 60.0
+    etymology_origin: Auto-detected orthographic cluster around 'कनाडा' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_3:
+    label: کانادا
+    hue: 150.0
+    etymology_origin: Auto-detected orthographic cluster around 'کانادا' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - fas
+    - pus

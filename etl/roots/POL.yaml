@@ -1,0 +1,90 @@
+country: POL
+name: Poland
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Poland
+    hue: 205.0
+    etymology_origin: Auto-detected orthographic cluster around 'Poloña' (56 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kea
+    - kin
+    - lat
+    - lav
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - nya
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - zul
+  auto_1:
+    label: Польша
+    hue: 325.0
+    etymology_origin: Auto-detected orthographic cluster around 'Польша' (7 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - ukr
+  auto_2:
+    label: पोलैंड
+    hue: 85.0
+    etymology_origin: Auto-detected orthographic cluster around 'पोलैंड' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep

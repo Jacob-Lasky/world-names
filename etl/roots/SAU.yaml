@@ -1,0 +1,91 @@
+country: SAU
+name: Saudi Arabia
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Saudi Arabia
+    hue: 143.0
+    etymology_origin: Auto-detected orthographic cluster around 'Saudi Arabia' (35
+      languages). Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - fin
+    - hau
+    - hrv
+    - hun
+    - isl
+    - jam
+    - kal
+    - lav
+    - lit
+    - ltz
+    - nau
+    - nld
+    - nno
+    - orm
+    - pap
+    - slk
+    - slv
+    - sna
+    - som
+    - swe
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - zul
+  auto_1:
+    label: Arab Saudi
+    hue: 233.0
+    etymology_origin: Auto-detected orthographic cluster around 'Aràbia Saudita' (17
+      languages). Hand-curated etymology pending.
+    languages:
+    - cat
+    - fra
+    - ful
+    - grn
+    - ind
+    - ita
+    - kin
+    - lat
+    - mlg
+    - mlt
+    - msa
+    - pol
+    - por
+    - ron
+    - spa
+    - sqi
+    - tet
+  auto_2:
+    label: Саудын Араб
+    hue: 323.0
+    etymology_origin: Auto-detected orthographic cluster around 'Саудитска Арабия'
+      (6 languages). Hand-curated etymology pending.
+    languages:
+    - bul
+    - mkd
+    - mon
+    - rus
+    - srp
+    - ukr
+  auto_3:
+    label: सउदी अरब
+    hue: 53.0
+    etymology_origin: Auto-detected orthographic cluster around 'सउदी अरब' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep

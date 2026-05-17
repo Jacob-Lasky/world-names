@@ -1,0 +1,91 @@
+country: COM
+name: Comoros
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Comoros
+    hue: 313.0
+    etymology_origin: Auto-detected orthographic cluster around 'Komoros' (51 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - ind
+    - isl
+    - ita
+    - jam
+    - kin
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tgl
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Комор
+    hue: 43.0
+    etymology_origin: Auto-detected orthographic cluster around 'Комор' (5 languages).
+      Hand-curated etymology pending.
+    languages:
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+  auto_2:
+    label: कोमोरोस
+    hue: 133.0
+    etymology_origin: Auto-detected orthographic cluster around 'कोमोरोस' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_3:
+    label: Коморски острови
+    hue: 223.0
+    etymology_origin: Auto-detected orthographic cluster around 'Коморски острови'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - bul
+    - ukr

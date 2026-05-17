@@ -1,0 +1,93 @@
+country: WSM
+name: Samoa
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Samoa
+    hue: 217.0
+    etymology_origin: Auto-detected orthographic cluster around 'Samoa' (49 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - fij
+    - fin
+    - fra
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - spa
+    - sqi
+    - swe
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Самоа
+    hue: 307.0
+    etymology_origin: Auto-detected orthographic cluster around 'Самоа' (8 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: ساموا
+    hue: 37.0
+    etymology_origin: Auto-detected orthographic cluster around 'ساموا' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_3:
+    label: समोआ
+    hue: 127.0
+    etymology_origin: Auto-detected orthographic cluster around 'समोआ' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep

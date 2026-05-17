@@ -1,0 +1,98 @@
+country: ARM
+name: Armenia
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Armenia
+    hue: 284.0
+    etymology_origin: Auto-detected orthographic cluster around 'Armenia' (56 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kea
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - nya
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Армения
+    hue: 14.0
+    etymology_origin: Auto-detected orthographic cluster around 'Армения' (7 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - ukr
+  auto_2:
+    label: आर्मीनिया
+    hue: 104.0
+    etymology_origin: Auto-detected orthographic cluster around 'आर्मीनिया' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_3:
+    label: ارمنستان
+    hue: 194.0
+    etymology_origin: Auto-detected orthographic cluster around 'ارمنستان' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - fas
+    - pus

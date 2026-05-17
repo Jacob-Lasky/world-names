@@ -1,0 +1,103 @@
+country: VNM
+name: Vietnam
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Vietnam
+    hue: 181.0
+    etymology_origin: Auto-detected orthographic cluster around 'Viëtnam' (59 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - nya
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tsn
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Вьетнам
+    hue: 271.0
+    etymology_origin: Auto-detected orthographic cluster around 'Вьетнам' (8 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: فيتنام
+    hue: 1.0
+    etymology_origin: Auto-detected orthographic cluster around 'ويتنام' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_3:
+    label: वियतनाम
+    hue: 91.0
+    etymology_origin: Auto-detected orthographic cluster around 'वियतनाम' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep

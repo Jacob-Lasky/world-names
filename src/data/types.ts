@@ -38,10 +38,17 @@ export type InspectionDetail = {
 // (color swatch from `hue`, label, and the number of observer countries
 // whose dominant language sits in this cluster). Click a chip to
 // highlight that cluster on the map; non-matching countries dim.
+//
+// `auto_generated` is true when the cluster came from string-similarity
+// auto-clustering (etl/auto_cluster.py — first-pass approximation) and
+// false for hand-curated etymology YAMLs. The Legend surfaces an
+// "auto-detected" indicator when ANY cluster in the current selection
+// is auto-generated so the user knows the etymology is approximate.
 export type ClusterSummary = {
   id: string;
   label: string;
   hue: number;
   etymology_origin: string | null;
   member_count: number;
+  auto_generated: boolean;
 };

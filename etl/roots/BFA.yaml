@@ -1,0 +1,98 @@
+country: BFA
+name: Burkina Faso
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Burkina Faso
+    hue: 141.0
+    etymology_origin: Auto-detected orthographic cluster around 'Burkina Faso' (54
+      languages). Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kea
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tgl
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Буркина Фасо
+    hue: 231.0
+    etymology_origin: Auto-detected orthographic cluster around 'Буркина Фасо' (8
+      languages). Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: بورکینافاسو
+    hue: 321.0
+    etymology_origin: Auto-detected orthographic cluster around 'بورکينا فاسو' (3
+      languages). Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_3:
+    label: बुर्किना फासो
+    hue: 51.0
+    etymology_origin: Auto-detected orthographic cluster around 'बुर्किना फासो' (3
+      languages). Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep

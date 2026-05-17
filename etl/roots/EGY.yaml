@@ -1,0 +1,117 @@
+country: EGY
+name: Egypt
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Egypt
+    hue: 199.0
+    etymology_origin: Auto-detected orthographic cluster around 'Egipt' (45 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - fin
+    - fra
+    - grn
+    - hrv
+    - hun
+    - isl
+    - ita
+    - jam
+    - kal
+    - kea
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - nau
+    - nld
+    - nno
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - sot
+    - spa
+    - sqi
+    - swe
+    - tet
+    - tgl
+    - tsn
+  auto_1:
+    label: Misra
+    hue: 250.4
+    etymology_origin: Auto-detected orthographic cluster around 'Misr' (9 languages).
+      Hand-curated etymology pending.
+    languages:
+    - aze
+    - ful
+    - hau
+    - ind
+    - msa
+    - som
+    - tuk
+    - tur
+    - uzb
+  auto_2:
+    label: Египет
+    hue: 301.9
+    etymology_origin: Auto-detected orthographic cluster around 'Египет' (6 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - mkd
+    - mon
+    - rus
+    - srp
+    - ukr
+  auto_3:
+    label: مصر
+    hue: 353.3
+    etymology_origin: Auto-detected orthographic cluster around 'مصر' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_4:
+    label: मिस्र
+    hue: 44.7
+    etymology_origin: Auto-detected orthographic cluster around 'मिस्र' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+  auto_5:
+    label: Миср
+    hue: 96.1
+    etymology_origin: Auto-detected orthographic cluster around 'Мисир' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - kir
+    - tgk
+  auto_6:
+    label: IGibhithe
+    hue: 147.6
+    etymology_origin: Auto-detected orthographic cluster around 'IGibhithe' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ssw
+    - zul

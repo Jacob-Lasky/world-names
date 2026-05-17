@@ -1,0 +1,93 @@
+country: MKD
+name: North Macedonia
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Nordmakedonien
+    hue: 70.0
+    etymology_origin: Auto-detected orthographic cluster around 'Macedonia' (52 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - kal
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - spa
+    - sqi
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Македонија
+    hue: 160.0
+    etymology_origin: Auto-detected orthographic cluster around 'Северна Македония'
+      (6 languages). Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - rus
+    - srp
+    - ukr
+  auto_2:
+    label: उत्तर मैसीडोनिया
+    hue: 250.0
+    etymology_origin: Auto-detected orthographic cluster around 'उत्तर मैसीडोनिया'
+      (3 languages). Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_3:
+    label: مقدونیه شمالی
+    hue: 340.0
+    etymology_origin: Auto-detected orthographic cluster around 'مقدونيا الشمالية'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas

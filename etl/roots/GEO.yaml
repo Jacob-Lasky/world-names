@@ -1,0 +1,103 @@
+country: GEO
+name: Georgia
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Georgia
+    hue: 249.0
+    etymology_origin: Auto-detected orthographic cluster around 'Geòrgia' (55 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kin
+    - lat
+    - lav
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Грузия
+    hue: 321.0
+    etymology_origin: Auto-detected orthographic cluster around 'Грузия' (5 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - mkd
+    - rus
+    - srp
+    - ukr
+  auto_2:
+    label: जॉर्जिया
+    hue: 33.0
+    etymology_origin: Auto-detected orthographic cluster around 'जॉर्जिया' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_3:
+    label: گرجستان
+    hue: 105.0
+    etymology_origin: Auto-detected orthographic cluster around 'گرجستان' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - fas
+    - pus
+  auto_4:
+    label: Гүржүстан
+    hue: 177.0
+    etymology_origin: Auto-detected orthographic cluster around 'Гүржүстан' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - kir
+    - tgk

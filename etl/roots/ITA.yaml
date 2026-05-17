@@ -1,0 +1,98 @@
+country: ITA
+name: Italy
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Italia
+    hue: 102.0
+    etymology_origin: Auto-detected orthographic cluster around 'Itàlia' (54 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kea
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - nya
+    - pap
+    - por
+    - ron
+    - slv
+    - sna
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tsn
+    - tuk
+    - tur
+    - uzb
+    - zul
+  auto_1:
+    label: Италия
+    hue: 192.0
+    etymology_origin: Auto-detected orthographic cluster around 'Италия' (8 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: إيطاليا
+    hue: 282.0
+    etymology_origin: Auto-detected orthographic cluster around 'إيطاليا' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_3:
+    label: इटली
+    hue: 12.0
+    etymology_origin: Auto-detected orthographic cluster around 'इटली' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep

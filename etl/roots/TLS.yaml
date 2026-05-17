@@ -1,0 +1,108 @@
+country: TLS
+name: Timor-Leste
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: East Timor
+    hue: 3.0
+    etymology_origin: Auto-detected orthographic cluster around 'East Timor' (30 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - ces
+    - dan
+    - deu
+    - est
+    - fin
+    - ful
+    - hrv
+    - hun
+    - isl
+    - jam
+    - lav
+    - lit
+    - nau
+    - nld
+    - nno
+    - pap
+    - slk
+    - slv
+    - sna
+    - som
+    - swe
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Timor-Leste
+    hue: 54.4
+    etymology_origin: Auto-detected orthographic cluster around 'Timor Leste' (15
+      languages). Hand-curated etymology pending.
+    languages:
+    - cat
+    - eng
+    - fra
+    - hau
+    - ind
+    - ita
+    - kin
+    - lat
+    - ltz
+    - mlt
+    - msa
+    - por
+    - ron
+    - spa
+    - tet
+  auto_2:
+    label: Зүүн Тимор
+    hue: 105.9
+    etymology_origin: Auto-detected orthographic cluster around 'Источни Тимор' (6
+      languages). Hand-curated etymology pending.
+    languages:
+    - bul
+    - mkd
+    - mon
+    - rus
+    - srp
+    - ukr
+  auto_3:
+    label: पूर्ब तिमोर
+    hue: 157.3
+    etymology_origin: Auto-detected orthographic cluster around 'पूर्वी तिमोर' (3
+      languages). Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_4:
+    label: تیمور شرقی
+    hue: 208.7
+    etymology_origin: Auto-detected orthographic cluster around 'تيمور الشرقية' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+  auto_5:
+    label: Тимор Лешти
+    hue: 260.1
+    etymology_origin: Auto-detected orthographic cluster around 'Тимор Лешти' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - kir
+    - tgk
+  auto_6:
+    label: Tiimor Bahaa
+    hue: 311.6
+    etymology_origin: Auto-detected orthographic cluster around 'Tiimor Bahaa' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - orm
+    - ton

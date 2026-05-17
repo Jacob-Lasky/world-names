@@ -85,7 +85,11 @@ CREATE TABLE clusters (
   target_country_iso3 TEXT NOT NULL REFERENCES countries(iso3),
   label               TEXT NOT NULL,
   hue                 REAL NOT NULL,
-  etymology_origin    TEXT
+  etymology_origin    TEXT,
+  -- 1 = first-pass string-similarity coverage (etl/auto_cluster.py);
+  -- 0 = hand-curated etymology YAML. The Legend uses this to surface
+  -- an "auto-detected" indicator so the user knows the difference.
+  auto_generated      INTEGER NOT NULL DEFAULT 0
 );
 
 CREATE TABLE blurbs (
@@ -190,9 +194,11 @@ def main() -> int:
     )
     con.executemany(
         """INSERT INTO clusters
-           (id, target_country_iso3, label, hue, etymology_origin)
-           VALUES (?, ?, ?, ?, ?)""",
-        [(c["id"], c["target_country_iso3"], c["label"], c["hue"], c.get("etymology_origin")) for c in clusters],
+           (id, target_country_iso3, label, hue, etymology_origin, auto_generated)
+           VALUES (?, ?, ?, ?, ?, ?)""",
+        [(c["id"], c["target_country_iso3"], c["label"], c["hue"],
+          c.get("etymology_origin"), to_bool(c.get("auto_generated")))
+         for c in clusters],
     )
     # similarity_to_endonym: precomputed per (target, observer) pair so the
     # front-end's lightness channel comes out of the SQLite as-is. Keyed by
@@ -220,7 +226,7 @@ def main() -> int:
 
     con.execute("INSERT INTO meta (key, value) VALUES ('schema_version', '2')")
     con.execute("INSERT INTO meta (key, value) VALUES ('source', 'github.com/Jacob-Lasky/world-names')")
-    con.execute("INSERT INTO meta (key, value) VALUES ('phase', 'phase-2-similarity-encoding')")
+    con.execute("INSERT INTO meta (key, value) VALUES ('phase', 'phase-3-auto-cluster-every-country')")
     con.commit()
 
     # Vacuum to reclaim space.

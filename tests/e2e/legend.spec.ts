@@ -75,10 +75,12 @@ test('legend renders one chip per cluster after selecting Germany', async ({ pag
   }
 });
 
-test('legend disappears and focus clears when selection changes', async ({ page }) => {
-  // Switching from Germany (clusters present) to a country with no
-  // YAML coverage should hide the legend, AND clearing the selection
-  // should release any pinned focus.
+test('legend focus clears when selection changes between countries', async ({ page }) => {
+  // After auto-clustering, every country gets a legend, so the test
+  // is about focus-reset across selections rather than legend
+  // disappearance. The store's selectCountry action clears
+  // focusedClusterId atomically — pinning a cluster on Germany must
+  // not carry into France.
   await page.goto('/');
   await page.waitForSelector('canvas');
   await page.waitForTimeout(400);
@@ -94,16 +96,18 @@ test('legend disappears and focus clears when selection changes', async ({ page 
   await chip.click();
   await expect(chip).toHaveAttribute('aria-pressed', 'true');
 
-  // Switch to France (no YAML coverage → no clusters → no legend).
+  // Switch to France (auto-clustered post #14, still shows a legend).
   await page.evaluate(() => {
     const set = (window as unknown as { __setSelection?: (c: unknown) => void }).__setSelection;
     set?.({ numericId: '250', name: 'France' });
   });
 
-  await expect(page.getByTestId('cluster-legend')).not.toBeVisible({ timeout: 5_000 });
+  // Legend still visible, but with France's clusters; no chip pressed.
+  await expect(page.getByTestId('cluster-legend')).toBeVisible({ timeout: 5_000 });
+  const franceFirstChip = page.getByTestId('cluster-legend').getByRole('button').first();
+  await expect(franceFirstChip).toHaveAttribute('aria-pressed', 'false');
 
-  // And the focused cluster must reset — if we re-select Germany the
-  // pin should NOT persist from the previous selection.
+  // Re-select Germany — focused cluster must NOT persist.
   await page.evaluate(() => {
     const set = (window as unknown as { __setSelection?: (c: unknown) => void }).__setSelection;
     set?.({ numericId: '276', name: 'Germany' });
@@ -111,4 +115,29 @@ test('legend disappears and focus clears when selection changes', async ({ page 
   await expect(page.getByTestId('cluster-legend')).toBeVisible({ timeout: 10_000 });
   const chipAfter = page.getByTestId('cluster-legend').getByRole('button').first();
   await expect(chipAfter).toHaveAttribute('aria-pressed', 'false');
+});
+
+test('auto-detected indicator appears for auto-generated clusters, hides for hand-curated', async ({ page }) => {
+  // Germany is hand-curated (etl/roots/DEU.yaml without auto_generated
+  // flag) → no indicator. France is auto-generated → indicator.
+  await page.goto('/');
+  await page.waitForSelector('canvas');
+  await page.waitForTimeout(400);
+
+  // Germany: hand-curated. Indicator absent.
+  await page.evaluate(() => {
+    const set = (window as unknown as { __setSelection?: (c: unknown) => void }).__setSelection;
+    set?.({ numericId: '276', name: 'Germany' });
+  });
+  await expect(page.getByTestId('cluster-legend')).toBeVisible({ timeout: 10_000 });
+  await expect(page.getByTestId('legend-auto-indicator')).not.toBeVisible();
+
+  // France: auto-generated. Indicator visible with descriptive tooltip.
+  await page.evaluate(() => {
+    const set = (window as unknown as { __setSelection?: (c: unknown) => void }).__setSelection;
+    set?.({ numericId: '250', name: 'France' });
+  });
+  const indicator = page.getByTestId('legend-auto-indicator');
+  await expect(indicator).toBeVisible({ timeout: 5_000 });
+  await expect(indicator).toHaveText(/auto/i);
 });

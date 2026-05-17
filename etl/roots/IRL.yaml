@@ -1,0 +1,80 @@
+country: IRL
+name: Ireland
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Irlanda
+    hue: 51.0
+    etymology_origin: Auto-detected orthographic cluster around 'Irlanda' (47 languages).
+      Hand-curated etymology pending.
+    languages:
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - ita
+    - jam
+    - kal
+    - kea
+    - kin
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nld
+    - nno
+    - pap
+    - pol
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - spa
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Ирландия
+    hue: 171.0
+    etymology_origin: Auto-detected orthographic cluster around 'Ирландия' (5 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mon
+    - rus
+    - ukr
+  auto_2:
+    label: Republik Irlandia
+    hue: 291.0
+    etymology_origin: Auto-detected orthographic cluster around 'República da Irlanda'
+      (4 languages). Hand-curated etymology pending.
+    languages:
+    - afr
+    - ind
+    - por
+    - sqi

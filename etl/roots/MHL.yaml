@@ -1,0 +1,107 @@
+country: MHL
+name: Marshall Islands
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Marshall Islands
+    hue: 345.0
+    etymology_origin: Auto-detected orthographic cluster around 'Marshall Islands'
+      (27 languages). Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - fin
+    - hrv
+    - hun
+    - isl
+    - jam
+    - lav
+    - lit
+    - ltz
+    - nld
+    - nno
+    - slk
+    - slv
+    - sna
+    - swe
+    - tuk
+    - tur
+    - uzb
+    - zul
+  auto_1:
+    label: Kepulauan Marshall
+    hue: 36.4
+    etymology_origin: Auto-detected orthographic cluster around 'Islas Marshall' (18
+      languages). Hand-curated etymology pending.
+    languages:
+    - cat
+    - fra
+    - grn
+    - hau
+    - ind
+    - ita
+    - mlg
+    - mlt
+    - msa
+    - pap
+    - pol
+    - por
+    - ron
+    - som
+    - spa
+    - sqi
+    - tgl
+    - vie
+  auto_2:
+    label: Маршалска Острва
+    hue: 87.9
+    etymology_origin: Auto-detected orthographic cluster around 'Маршалови острови'
+      (5 languages). Hand-curated etymology pending.
+    languages:
+    - bul
+    - mkd
+    - rus
+    - srp
+    - ukr
+  auto_3:
+    label: मार्शल दीप
+    hue: 139.3
+    etymology_origin: Auto-detected orthographic cluster around 'मार्शल द्वीपसमूह'
+      (3 languages). Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_4:
+    label: جزر مارشال
+    hue: 190.7
+    etymology_origin: Auto-detected orthographic cluster around 'جزر مارشال' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+  auto_5:
+    label: Маршалл аралдары
+    hue: 242.1
+    etymology_origin: Auto-detected orthographic cluster around 'Маршалл аралдары'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - kir
+    - mon
+  auto_6:
+    label: M̧ajeļ
+    hue: 293.6
+    etymology_origin: Auto-detected orthographic cluster around 'M̧ajeļ' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - mah
+    - nau

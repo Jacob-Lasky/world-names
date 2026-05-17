@@ -1,0 +1,105 @@
+country: RUS
+name: Russia
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Russia
+    hue: 160.0
+    etymology_origin: Auto-detected orthographic cluster around 'Rusia' (54 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - ewe
+    - fij
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kea
+    - kin
+    - lat
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - nya
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tsn
+    - tuk
+    - tur
+    - uzb
+    - zul
+  auto_1:
+    label: Русия
+    hue: 232.0
+    etymology_origin: Auto-detected orthographic cluster around 'Русия' (7 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: روسیه
+    hue: 304.0
+    etymology_origin: Auto-detected orthographic cluster around 'روسیه' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_3:
+    label: रूस
+    hue: 16.0
+    etymology_origin: Auto-detected orthographic cluster around 'रूस' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_4:
+    label: Venäjä
+    hue: 88.0
+    etymology_origin: Auto-detected orthographic cluster around 'Venemaa' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - est
+    - fin

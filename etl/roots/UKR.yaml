@@ -1,0 +1,114 @@
+country: UKR
+name: Ukraine
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Ukraine
+    hue: 212.0
+    etymology_origin: Auto-detected orthographic cluster around 'Ukraina' (54 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - kal
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - nya
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tsn
+    - tuk
+    - tur
+    - uzb
+    - vie
+  auto_1:
+    label: Украина
+    hue: 272.0
+    etymology_origin: Auto-detected orthographic cluster around 'Украйна' (8 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: اوکراین
+    hue: 332.0
+    etymology_origin: Auto-detected orthographic cluster around 'اوکراين' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_3:
+    label: युक्रेन
+    hue: 32.0
+    etymology_origin: Auto-detected orthographic cluster around 'युक्रेन' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_4:
+    label: Yuukrien
+    hue: 92.0
+    etymology_origin: Auto-detected orthographic cluster around 'Yuukrien' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - jam
+    - orm
+  auto_5:
+    label: IYukhureni
+    hue: 152.0
+    etymology_origin: Auto-detected orthographic cluster around 'IYukhureni' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ssw
+    - zul

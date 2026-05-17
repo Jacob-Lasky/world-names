@@ -1,0 +1,99 @@
+country: SVN
+name: Slovenia
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Slovenia
+    hue: 67.0
+    etymology_origin: Auto-detected orthographic cluster around 'Slovenia' (56 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Словения
+    hue: 157.0
+    etymology_origin: Auto-detected orthographic cluster around 'Словения' (8 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: स्लोवेनिया
+    hue: 247.0
+    etymology_origin: Auto-detected orthographic cluster around 'स्लोवेनिया' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_3:
+    label: سلوفينيا
+    hue: 337.0
+    etymology_origin: Auto-detected orthographic cluster around 'سلوفينيا' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - pus

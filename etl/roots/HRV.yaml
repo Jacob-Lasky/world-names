@@ -7,48 +7,71 @@ clusters:
   auto_0:
     label: Croatia
     hue: 180.0
-    etymology_origin: Auto-detected orthographic cluster around 'Kroatia' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Κροατία' (82 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
+    - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -56,50 +79,16 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
+    - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Хорватия
-    hue: 252.0
-    etymology_origin: Auto-detected orthographic cluster around 'Хорватия' (6 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mon
-    - rus
-    - tgk
-    - ukr
-  auto_2:
-    label: کرواسی
-    hue: 324.0
-    etymology_origin: Auto-detected orthographic cluster around 'کرواسيا' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: क्रोशिया
-    hue: 36.0
-    etymology_origin: Auto-detected orthographic cluster around 'क्रोएशिया' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
-    label: Хрватска
-    hue: 108.0
-    etymology_origin: Auto-detected orthographic cluster around 'Хрватска' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - mkd
-    - srp

@@ -8,12 +8,13 @@ clusters:
     label: Estados Unidos
     hue: 83.0
     etymology_origin: Auto-detected orthographic cluster around 'Estats Units d'Amèrica'
-      (10 languages). Hand-curated etymology pending.
+      (11 languages). Hand-curated etymology pending.
     languages:
     - cat
     - fra
     - ita
     - kea
+    - mlg
     - mlt
     - pap
     - por
@@ -21,8 +22,34 @@ clusters:
     - spa
     - tgl
   auto_1:
+    label: IMelika
+    hue: 115.7
+    etymology_origin: Auto-detected orthographic cluster around 'अमेरिका' (7 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - div
+    - ind
+    - msa
+    - nau
+    - ssw
+    - zul
+  auto_2:
+    label: United States
+    hue: 148.5
+    etymology_origin: Auto-detected orthographic cluster around 'United States' (7
+      languages). Hand-curated etymology pending.
+    languages:
+    - bis
+    - dzo
+    - eng
+    - ewe
+    - nya
+    - sna
+    - sot
+  auto_3:
     label: Amerika Qoʻshma Shtatlari
-    hue: 113.0
+    hue: 181.2
     etymology_origin: Auto-detected orthographic cluster around 'Amerika Birləşmiş
       Ştatları' (4 languages). Hand-curated etymology pending.
     languages:
@@ -30,9 +57,9 @@ clusters:
     - tuk
     - tur
     - uzb
-  auto_2:
+  auto_4:
     label: USA
-    hue: 143.0
+    hue: 213.9
     etymology_origin: Auto-detected orthographic cluster around 'USA' (4 languages).
       Hand-curated etymology pending.
     languages:
@@ -40,79 +67,55 @@ clusters:
     - nno
     - swe
     - tsn
-  auto_3:
-    label: United States
-    hue: 173.0
-    etymology_origin: Auto-detected orthographic cluster around 'United States' (4
-      languages). Hand-curated etymology pending.
-    languages:
-    - eng
-    - ewe
-    - jam
-    - nya
-  auto_4:
+  auto_5:
     label: Verenigde State
-    hue: 203.0
+    hue: 246.6
     etymology_origin: Auto-detected orthographic cluster around 'Verenigde Staten'
       (3 languages). Hand-curated etymology pending.
     languages:
     - afr
     - deu
     - nld
-  auto_5:
-    label: United States of America
-    hue: 233.0
-    etymology_origin: Auto-detected orthographic cluster around 'United States of
-      America' (3 languages). Hand-curated etymology pending.
-    languages:
-    - bis
-    - sna
-    - sot
   auto_6:
     label: Sjedinjene Američke Države
-    hue: 263.0
+    hue: 279.4
     etymology_origin: Auto-detected orthographic cluster around 'Sjedinjene Američke
-      Države' (2 languages). Hand-curated etymology pending.
+      Države' (3 languages). Hand-curated etymology pending.
     languages:
     - bos
     - hrv
+    - srp
   auto_7:
-    label: САЩ
-    hue: 293.0
-    etymology_origin: Auto-detected orthographic cluster around 'САЩ' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - mkd
-  auto_8:
     label: Spojené státy americké
-    hue: 323.0
+    hue: 312.1
     etymology_origin: Auto-detected orthographic cluster around 'Spojené státy americké'
-      (2 languages). Hand-curated etymology pending.
+      (3 languages). Hand-curated etymology pending.
     languages:
     - ces
     - slk
-  auto_9:
+    - ukr
+  auto_8:
     label: संयुक्त राज्य अमेरिका
-    hue: 353.0
+    hue: 344.8
     etymology_origin: Auto-detected orthographic cluster around 'संयुक्त राज्य अमेरिका'
-      (2 languages). Hand-curated etymology pending.
+      (3 languages). Hand-curated etymology pending.
     languages:
     - hin
     - nep
-  auto_10:
-    label: Amerika Serikat
-    hue: 23.0
-    etymology_origin: Auto-detected orthographic cluster around 'Amerika Serikat'
-      (2 languages). Hand-curated etymology pending.
-    languages:
-    - ind
-    - msa
-  auto_11:
-    label: IMelika
-    hue: 53.0
-    etymology_origin: Auto-detected orthographic cluster around 'IMelika' (2 languages).
+    - pan
+  auto_9:
+    label: 美國
+    hue: 17.5
+    etymology_origin: Auto-detected orthographic cluster around '美國' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - ssw
-    - zul
+    - cmn
+    - kor
+  auto_10:
+    label: สหรัฐอเมริกา
+    hue: 50.3
+    etymology_origin: Auto-detected orthographic cluster around 'ສະຫະລັດອາເມຣິກາ'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - lao
+    - tha

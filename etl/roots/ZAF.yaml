@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: South Africa
     hue: 15.0
-    etymology_origin: Auto-detected orthographic cluster around 'Südafrika' (25 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Südafrika' (28 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -15,13 +15,17 @@ clusters:
     - cat
     - dan
     - deu
+    - dzo
+    - ell
     - eng
     - ewe
+    - fin
     - ful
     - grn
     - isl
     - ita
     - jam
+    - lav
     - ltz
     - nau
     - nld
@@ -33,74 +37,93 @@ clusters:
     - som
     - spa
     - swe
-    - tgl
     - tur
   auto_1:
     label: Južnoafrička Republika
-    hue: 60.0
-    etymology_origin: Auto-detected orthographic cluster around 'Južnoafrička Republika'
-      (8 languages). Hand-curated etymology pending.
+    hue: 51.0
+    etymology_origin: Auto-detected orthographic cluster around 'Juhoafrická republika'
+      (12 languages). Hand-curated etymology pending.
     languages:
     - aze
     - bos
     - ces
     - hrv
+    - kat
+    - kir
     - lit
     - slk
+    - srp
     - tuk
+    - ukr
     - uzb
   auto_2:
+    label: ਦੱਖਣ ਅਫ਼ਰੀਕਾ
+    hue: 87.0
+    etymology_origin: Auto-detected orthographic cluster around 'दक्षिण अफ़्रीका'
+      (7 languages). Hand-curated etymology pending.
+    languages:
+    - ben
+    - bho
+    - div
+    - hin
+    - nep
+    - pan
+    - sin
+  auto_3:
     label: Afrika Atsimo
-    hue: 105.0
-    etymology_origin: Auto-detected orthographic cluster around 'Africa de Sud' (6
+    hue: 123.0
+    etymology_origin: Auto-detected orthographic cluster around 'Africa de Sud' (5
       languages). Hand-curated etymology pending.
     languages:
     - fra
-    - kin
     - mlg
     - mlt
     - por
     - ron
-  auto_3:
+  auto_4:
+    label: Afrika Borwa
+    hue: 159.0
+    etymology_origin: Auto-detected orthographic cluster around 'Afrika Borwa' (3
+      languages). Hand-curated etymology pending.
+    languages:
+    - sot
+    - ton
+    - tsn
+  auto_5:
+    label: ЮАР
+    hue: 195.0
+    etymology_origin: Auto-detected orthographic cluster around 'ЮАР' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - rus
+  auto_6:
     label: Afrika Selatan
-    hue: 150.0
-    etymology_origin: Auto-detected orthographic cluster around 'Afrika Borwa' (5
+    hue: 231.0
+    etymology_origin: Auto-detected orthographic cluster around 'Afrika Selatan' (2
       languages). Hand-curated etymology pending.
     languages:
     - ind
     - msa
-    - sot
-    - ton
-    - tsn
-  auto_4:
-    label: दक्षिण अफ्रिका
-    hue: 195.0
-    etymology_origin: Auto-detected orthographic cluster around 'दक्षिण अफ़्रीका'
-      (3 languages). Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_5:
-    label: ЮАР
-    hue: 240.0
-    etymology_origin: Auto-detected orthographic cluster around 'ЮАР' (3 languages).
+  auto_7:
+    label: 南アフリカ共和国
+    hue: 267.0
+    etymology_origin: Auto-detected orthographic cluster around '南アフリカ共和国' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - bul
-    - mkd
-    - rus
-  auto_6:
-    label: Јужноафричка Република
-    hue: 285.0
-    etymology_origin: Auto-detected orthographic cluster around 'Түштүк-Африка Республикасы'
+    - jpn
+    - kor
+  auto_8:
+    label: ປະເທດອາຟຣິກາໃຕ້
+    hue: 303.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອາຟຣິກາໃຕ້'
       (2 languages). Hand-curated etymology pending.
     languages:
-    - kir
-    - srp
-  auto_7:
+    - lao
+    - tha
+  auto_9:
     label: IRiphabliki yaseNingizimu Afrika
-    hue: 330.0
+    hue: 339.0
     etymology_origin: Auto-detected orthographic cluster around 'IRiphabhulikhi yeNingizimu
       Afrika' (2 languages). Hand-curated etymology pending.
     languages:

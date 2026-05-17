@@ -7,48 +7,71 @@ clusters:
   auto_0:
     label: Algeria
     hue: 163.0
-    etymology_origin: Auto-detected orthographic cluster around 'Algèria' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Algèria' (82 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -56,43 +79,16 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
+    - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Алжир
-    hue: 253.0
-    etymology_origin: Auto-detected orthographic cluster around 'Алжир' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_2:
-    label: الجزائر
-    hue: 343.0
-    etymology_origin: Auto-detected orthographic cluster around 'الجزائر' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: अल्जीरिया
-    hue: 73.0
-    etymology_origin: Auto-detected orthographic cluster around 'अल्जीरिया' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

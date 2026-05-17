@@ -7,47 +7,70 @@ clusters:
   auto_0:
     label: Mali
     hue: 106.0
-    etymology_origin: Auto-detected orthographic cluster around 'Mali' (54 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Mali' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
+    - lao
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -55,43 +78,15 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Мали
-    hue: 196.0
-    etymology_origin: Auto-detected orthographic cluster around 'Мали' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: مالي
-    hue: 286.0
-    etymology_origin: Auto-detected orthographic cluster around 'مالي' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: माली
-    hue: 16.0
-    etymology_origin: Auto-detected orthographic cluster around 'माली' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - hin
-    - nep

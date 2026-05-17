@@ -7,97 +7,88 @@ clusters:
   auto_0:
     label: Russia
     hue: 160.0
-    etymology_origin: Auto-detected orthographic cluster around 'Rusia' (54 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Rusia' (76 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - ell
     - eng
     - ewe
+    - fas
     - fij
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - sna
     - som
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - zul
   auto_1:
-    label: Русия
-    hue: 232.0
-    etymology_origin: Auto-detected orthographic cluster around 'Русия' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: روسیه
-    hue: 304.0
-    etymology_origin: Auto-detected orthographic cluster around 'روسیه' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: रूस
-    hue: 16.0
-    etymology_origin: Auto-detected orthographic cluster around 'रूस' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
     label: Venäjä
-    hue: 88.0
+    hue: 340.0
     etymology_origin: Auto-detected orthographic cluster around 'Venemaa' (2 languages).
       Hand-curated etymology pending.
     languages:

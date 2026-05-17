@@ -7,101 +7,121 @@ clusters:
   auto_0:
     label: Nordkorea
     hue: 297.0
-    etymology_origin: Auto-detected orthographic cluster around 'Nordkorea' (17 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Nordkorea' (25 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - bis
+    - cat
     - dan
     - deu
+    - ell
     - eng
     - est
     - ewe
+    - fra
     - grn
     - isl
+    - ita
     - jam
     - ltz
     - nld
     - nno
     - pap
+    - por
+    - ron
     - sna
+    - spa
     - swe
+    - tet
     - zul
   auto_1:
-    label: Sjeverna Koreja
-    hue: 337.0
-    etymology_origin: Auto-detected orthographic cluster around 'Severna Koreja' (7
+    label: Северна Кореја
+    hue: 333.0
+    etymology_origin: Auto-detected orthographic cluster around 'Северна Кореја' (10
       languages). Hand-curated etymology pending.
     languages:
     - aze
     - bos
+    - bul
     - ces
     - hrv
     - lav
     - lit
+    - mkd
     - slv
+    - srp
   auto_2:
-    label: Corea del Nord
-    hue: 17.0
-    etymology_origin: Auto-detected orthographic cluster around 'Corea del Nord' (7
+    label: उत्तर कोरिया
+    hue: 9.0
+    etymology_origin: Auto-detected orthographic cluster around 'উত্তর কোরিয়া' (7
       languages). Hand-curated etymology pending.
     languages:
-    - cat
-    - fra
-    - ita
-    - por
-    - ron
-    - spa
-    - tet
+    - ben
+    - bho
+    - div
+    - hin
+    - nep
+    - pan
+    - sin
   auto_3:
     label: Korea Utara
-    hue: 57.0
-    etymology_origin: Auto-detected orthographic cluster around 'Korea Utara' (4 languages).
+    hue: 45.0
+    etymology_origin: Auto-detected orthographic cluster around 'Korea Utara' (5 languages).
       Hand-curated etymology pending.
     languages:
     - ind
     - kal
     - mlg
+    - mlt
     - msa
   auto_4:
-    label: उत्तर कोरिया
-    hue: 97.0
-    etymology_origin: Auto-detected orthographic cluster around 'उत्तर कोरिया' (3
-      languages). Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_5:
-    label: Северна Кореја
-    hue: 137.0
-    etymology_origin: Auto-detected orthographic cluster around 'Северна Кореја' (3
-      languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - mkd
-    - srp
-  auto_6:
     label: 朝鮮民主主義人民共和國
-    hue: 177.0
-    etymology_origin: Auto-detected orthographic cluster around '朝鮮民主主義人民共和國' (2 languages).
+    hue: 81.0
+    etymology_origin: Auto-detected orthographic cluster around '朝鮮民主主義人民共和國' (3 languages).
       Hand-curated etymology pending.
     languages:
     - cmn
     - jpn
+    - kor
+  auto_5:
+    label: Koreya Xalq Demokratik Respublikasi
+    hue: 117.0
+    etymology_origin: Auto-detected orthographic cluster around 'Kórejská ľudovodemokratická
+      republika' (3 languages). Hand-curated etymology pending.
+    languages:
+    - slk
+    - ukr
+    - uzb
+  auto_6:
+    label: کره شمالی
+    hue: 153.0
+    etymology_origin: Auto-detected orthographic cluster around 'كوريا الشمالية' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
   auto_7:
+    label: Koriya ta Arewa
+    hue: 189.0
+    etymology_origin: Auto-detected orthographic cluster around 'Koriya ta Arewa'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - hau
+    - orm
+  auto_8:
     label: КЭДР
-    hue: 217.0
+    hue: 225.0
     etymology_origin: Auto-detected orthographic cluster around 'КЭДР' (2 languages).
       Hand-curated etymology pending.
     languages:
     - kir
     - rus
-  auto_8:
-    label: Koreya Xalq Demokratik Respublikasi
-    hue: 257.0
-    etymology_origin: Auto-detected orthographic cluster around 'Kórejská ľudovodemokratická
-      republika' (2 languages). Hand-curated etymology pending.
+  auto_9:
+    label: ປະເທດເກົາຫຼີເໜືອ
+    hue: 261.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດເກົາຫຼີເໜືອ'
+      (2 languages). Hand-curated etymology pending.
     languages:
-    - slk
-    - uzb
+    - lao
+    - tha

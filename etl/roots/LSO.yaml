@@ -7,17 +7,23 @@ clusters:
   auto_0:
     label: Lesotho
     hue: 88.0
-    etymology_origin: Auto-detected orthographic cluster around 'Lesotho' (53 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Lesotho' (74 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
@@ -26,28 +32,40 @@ clusters:
     - ful
     - grn
     - hau
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -55,43 +73,24 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - swe
+    - tgk
     - tgl
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Лесото
-    hue: 178.0
-    etymology_origin: Auto-detected orthographic cluster around 'Лесото' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
     label: لسوتو
     hue: 268.0
-    etymology_origin: Auto-detected orthographic cluster around 'ليسوتو' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'لسوتو' (4 languages).
       Hand-curated etymology pending.
     languages:
     - ara
     - fas
+    - heb
     - pus
-  auto_3:
-    label: लेसोथो
-    hue: 358.0
-    etymology_origin: Auto-detected orthographic cluster around 'लेसोथो' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

@@ -5,57 +5,70 @@ method: string-similarity union-find on normalized Levenshtein
 threshold: 0.45
 clusters:
   auto_0:
-    label: Češka
+    label: Чехия
     hue: 286.0
-    etymology_origin: Auto-detected orthographic cluster around 'Chekia' (35 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Չեխիա' (49 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - ell
     - est
     - fin
     - fra
     - ful
     - grn
+    - heb
     - hrv
+    - hye
     - ind
     - jam
     - kal
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
+    - mkd
     - mlg
+    - mon
     - nld
     - nno
     - pol
     - por
     - ron
+    - rus
     - slk
     - slv
     - sot
+    - srp
     - ssw
     - swe
+    - tgk
     - tuk
     - tur
+    - ukr
     - uzb
     - zul
   auto_1:
     label: Republik Czech
-    hue: 346.0
-    etymology_origin: Auto-detected orthographic cluster around 'Republika Çeke' (10
+    hue: 331.0
+    etymology_origin: Auto-detected orthographic cluster around 'Republika Çeke' (9
       languages). Hand-curated etymology pending.
     languages:
     - ita
     - mlt
     - msa
     - nau
-    - orm
     - spa
     - sqi
     - tet
@@ -63,7 +76,7 @@ clusters:
     - ton
   auto_2:
     label: Czech Republic
-    hue: 46.0
+    hue: 16.0
     etymology_origin: Auto-detected orthographic cluster around 'Czech Republic' (7
       languages). Hand-curated etymology pending.
     languages:
@@ -75,30 +88,43 @@ clusters:
     - pap
     - sna
   auto_3:
-    label: Чехия
-    hue: 106.0
-    etymology_origin: Auto-detected orthographic cluster around 'Чехия' (6 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mon
-    - rus
-    - tgk
-    - ukr
-  auto_4:
-    label: चेक गणराज्य
-    hue: 166.0
-    etymology_origin: Auto-detected orthographic cluster around 'चेक गणराज्य' (2 languages).
+    label: ਚੈੱਕ ਗਣਰਾਜ
+    hue: 61.0
+    etymology_origin: Auto-detected orthographic cluster around 'चेक गणराज्य' (3 languages).
       Hand-curated etymology pending.
     languages:
     - hin
-    - nep
+    - pan
+    - sin
+  auto_4:
+    label: جمهوری چک
+    hue: 106.0
+    etymology_origin: Auto-detected orthographic cluster around 'جمهورية التشيك' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
   auto_5:
-    label: Чешка
-    hue: 226.0
-    etymology_origin: Auto-detected orthographic cluster around 'Чешка' (2 languages).
+    label: चेक गणतन्त्र
+    hue: 151.0
+    etymology_origin: Auto-detected orthographic cluster around 'চেক প্রজাতন্ত্র'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - ben
+    - nep
+  auto_6:
+    label: चेक रिपब्लिक
+    hue: 196.0
+    etymology_origin: Auto-detected orthographic cluster around 'चेक रिपब्लिक' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - bho
+    - dzo
+  auto_7:
+    label: ປະເທດເຊັກກີ
+    hue: 241.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດເຊັກກີ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - mkd
-    - srp
+    - lao
+    - tha

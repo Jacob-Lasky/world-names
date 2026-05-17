@@ -7,46 +7,69 @@ clusters:
   auto_0:
     label: Chad
     hue: 69.0
-    etymology_origin: Auto-detected orthographic cluster around 'Chad' (51 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Chad' (79 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -54,49 +77,23 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
+    - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
-  auto_1:
-    label: Чад
-    hue: 141.0
-    etymology_origin: Auto-detected orthographic cluster around 'Чад' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: चाड
-    hue: 213.0
-    etymology_origin: Auto-detected orthographic cluster around 'चाड' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
-    label: چاد
-    hue: 285.0
-    etymology_origin: Auto-detected orthographic cluster around 'چاد' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - fas
-    - pus
-  auto_4:
-    label: IShedi
-    hue: 357.0
-    etymology_origin: Auto-detected orthographic cluster around 'IShedi' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ssw
     - zul
+  auto_1:
+    label: ປະເທດຊາດ
+    hue: 249.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດຊາດ' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - lao
+    - tha

@@ -7,47 +7,71 @@ clusters:
   auto_0:
     label: Djibouti
     hue: 35.0
-    etymology_origin: Auto-detected orthographic cluster around 'Djíbútí' (53 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Djíbútí' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -55,43 +79,22 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Жибути
-    hue: 125.0
-    etymology_origin: Auto-detected orthographic cluster around 'Жибути' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: جيبوتي
+    label: ປະເທດຈິບູຕີ
     hue: 215.0
-    etymology_origin: Auto-detected orthographic cluster around 'جيبوتي' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດຈິບູຕີ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: जिबूती
-    hue: 305.0
-    etymology_origin: Auto-detected orthographic cluster around 'जिबूती' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

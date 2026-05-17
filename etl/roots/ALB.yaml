@@ -7,96 +7,91 @@ clusters:
   auto_0:
     label: Albania
     hue: 87.0
-    etymology_origin: Auto-detected orthographic cluster around 'Albania' (58 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Albania' (85 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - sot
     - spa
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tsn
     - tuk
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Албания
-    hue: 177.0
-    etymology_origin: Auto-detected orthographic cluster around 'Албания' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: آلبانی
-    hue: 267.0
-    etymology_origin: Auto-detected orthographic cluster around 'البانیا' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: अल्बानिया
-    hue: 357.0
-    etymology_origin: Auto-detected orthographic cluster around 'अल्बानिया' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

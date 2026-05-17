@@ -7,48 +7,71 @@ clusters:
   auto_0:
     label: Libya
     hue: 291.0
-    etymology_origin: Auto-detected orthographic cluster around 'Libya' (54 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Libia' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -56,42 +79,14 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Либия
-    hue: 21.0
-    etymology_origin: Auto-detected orthographic cluster around 'Ливия' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: लीबिया
-    hue: 111.0
-    etymology_origin: Auto-detected orthographic cluster around 'लीबिया' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
-    label: ليبيا
-    hue: 201.0
-    etymology_origin: Auto-detected orthographic cluster around 'ليبيا' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - pus

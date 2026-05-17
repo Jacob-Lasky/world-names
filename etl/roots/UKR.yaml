@@ -7,17 +7,25 @@ clusters:
   auto_0:
     label: Ukraine
     hue: 212.0
-    etymology_origin: Auto-detected orthographic cluster around 'Ukraina' (54 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Украйна' (84 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
@@ -27,27 +35,44 @@ clusters:
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
+    - jam
+    - jpn
     - kal
+    - kat
+    - khm
+    - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
+    - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -55,60 +80,33 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
+    - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
+    - zul
   auto_1:
-    label: Украина
-    hue: 272.0
-    etymology_origin: Auto-detected orthographic cluster around 'Украйна' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
     label: اوکراین
     hue: 332.0
-    etymology_origin: Auto-detected orthographic cluster around 'اوکراين' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'اوکراین' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - ara
     - fas
     - pus
-  auto_3:
-    label: युक्रेन
-    hue: 32.0
-    etymology_origin: Auto-detected orthographic cluster around 'युक्रेन' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
-    label: Yuukrien
+  auto_2:
+    label: ປະເທດອູແກຣນ
     hue: 92.0
-    etymology_origin: Auto-detected orthographic cluster around 'Yuukrien' (2 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອູແກຣນ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - jam
-    - orm
-  auto_5:
-    label: IYukhureni
-    hue: 152.0
-    etymology_origin: Auto-detected orthographic cluster around 'IYukhureni' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ssw
-    - zul
+    - lao
+    - tha

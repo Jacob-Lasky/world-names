@@ -7,25 +7,31 @@ clusters:
   auto_0:
     label: Mikronesia
     hue: 80.0
-    etymology_origin: Auto-detected orthographic cluster around 'Mikronesia' (30 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Mikronesia' (38 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
     - bis
+    - bul
     - ces
     - dan
+    - div
     - est
     - fin
     - hau
     - hrv
+    - hye
     - ind
     - isl
+    - kat
     - kin
+    - kir
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - msa
     - nld
@@ -35,6 +41,8 @@ clusters:
     - ron
     - slk
     - slv
+    - srp
+    - tgk
     - tgl
     - ton
     - tuk
@@ -43,8 +51,8 @@ clusters:
   auto_1:
     label: Federated States of Micronesia
     hue: 152.0
-    etymology_origin: Auto-detected orthographic cluster around 'Estats Federats de
-      Micronèsia' (9 languages). Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'Federated States
+      of Micronesia' (12 languages). Hand-curated etymology pending.
     languages:
     - cat
     - deu
@@ -52,32 +60,36 @@ clusters:
     - fra
     - ita
     - mlt
+    - rus
     - sna
     - spa
+    - sqi
+    - ukr
     - zul
   auto_2:
-    label: Микронезия
+    label: মাইক্রোনেশিয়া যুক্তরাজ্য
     hue: 224.0
-    etymology_origin: Auto-detected orthographic cluster around 'Микронезия' (4 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'माइक्रोनेशिया के
+      संघीकृत राज्य' (3 languages). Hand-curated etymology pending.
+    languages:
+    - ben
+    - hin
+    - pan
+  auto_3:
+    label: 密克罗尼西亚联邦
+    hue: 296.0
+    etymology_origin: Auto-detected orthographic cluster around 'ミクロネシア連邦' (3 languages).
       Hand-curated etymology pending.
     languages:
-    - kir
-    - mkd
-    - srp
-    - tgk
-  auto_3:
+    - cmn
+    - jpn
+    - kor
+  auto_4:
     label: Mikronesiaføderasjonen
-    hue: 296.0
-    etymology_origin: Auto-detected orthographic cluster around 'Mikronesiaføderasjonen'
-      (2 languages). Hand-curated etymology pending.
+    hue: 8.0
+    etymology_origin: Auto-detected orthographic cluster around 'Mikronesiska federationen'
+      (3 languages). Hand-curated etymology pending.
     languages:
     - nno
     - swe
-  auto_4:
-    label: Федеративні Штати Мікронезії
-    hue: 8.0
-    etymology_origin: Auto-detected orthographic cluster around 'Федеративные Штаты
-      Микронезии' (2 languages). Hand-curated etymology pending.
-    languages:
-    - rus
-    - ukr
+    - uzb

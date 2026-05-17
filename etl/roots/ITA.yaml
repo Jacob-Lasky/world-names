@@ -7,92 +7,94 @@ clusters:
   auto_0:
     label: Italia
     hue: 102.0
-    etymology_origin: Auto-detected orthographic cluster around 'Itàlia' (54 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Itàlia' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
     - kin
+    - kir
+    - kor
+    - lao
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
+    - pan
     - pap
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slv
     - sna
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - zul
   auto_1:
-    label: Италия
-    hue: 192.0
-    etymology_origin: Auto-detected orthographic cluster around 'Италия' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: إيطاليا
+    label: ประเทศอิตาลี
     hue: 282.0
-    etymology_origin: Auto-detected orthographic cluster around 'إيطاليا' (3 languages).
-      Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'ប្រទេសអ៊ីតាលី' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: इटली
-    hue: 12.0
-    etymology_origin: Auto-detected orthographic cluster around 'इटली' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - khm
+    - tha

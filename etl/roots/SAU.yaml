@@ -7,48 +7,69 @@ clusters:
   auto_0:
     label: Saudi Arabia
     hue: 143.0
-    etymology_origin: Auto-detected orthographic cluster around 'Saudi Arabia' (35
+    etymology_origin: Auto-detected orthographic cluster around 'Saudi Arabia' (56
       languages). Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - ces
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - fin
     - hau
+    - hin
     - hrv
     - hun
+    - hye
     - isl
     - jam
+    - jpn
     - kal
+    - kat
+    - kor
     - lav
     - lit
     - ltz
+    - mkd
+    - mon
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
+    - pus
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
+    - srp
+    - ssw
     - swe
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - zul
   auto_1:
     label: Arab Saudi
-    hue: 233.0
-    etymology_origin: Auto-detected orthographic cluster around 'Aràbia Saudita' (17
+    hue: 263.0
+    etymology_origin: Auto-detected orthographic cluster around 'Aràbia Saudita' (18
       languages). Hand-curated etymology pending.
     languages:
     - cat
@@ -68,24 +89,12 @@ clusters:
     - spa
     - sqi
     - tet
+    - tgk
   auto_2:
-    label: Саудын Араб
-    hue: 323.0
-    etymology_origin: Auto-detected orthographic cluster around 'Саудитска Арабия'
-      (6 languages). Hand-curated etymology pending.
+    label: ປະເທດຊາອຸດິອາຣາເບຍ
+    hue: 23.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດຊາອຸດິອາຣາເບຍ'
+      (2 languages). Hand-curated etymology pending.
     languages:
-    - bul
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_3:
-    label: सउदी अरब
-    hue: 53.0
-    etymology_origin: Auto-detected orthographic cluster around 'सउदी अरब' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

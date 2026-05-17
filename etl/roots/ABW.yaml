@@ -7,80 +7,77 @@ clusters:
   auto_0:
     label: Aruba
     hue: 158.0
-    etymology_origin: Auto-detected orthographic cluster around 'Aruba' (44 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Aruba' (71 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
+    - fas
     - fin
     - fra
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kea
     - kin
+    - kir
+    - kor
+    - lao
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - som
     - spa
     - sqi
+    - srp
     - swe
     - tgl
+    - tha
+    - ton
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Аруба
-    hue: 248.0
-    etymology_origin: Auto-detected orthographic cluster around 'Аруба' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_2:
-    label: أروبا
-    hue: 338.0
-    etymology_origin: Auto-detected orthographic cluster around 'أروبا' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: अरूबा
-    hue: 68.0
-    etymology_origin: Auto-detected orthographic cluster around 'अरूबा' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - hin
-    - nep

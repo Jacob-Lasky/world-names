@@ -7,17 +7,23 @@ clusters:
   auto_0:
     label: Somalia
     hue: 209.0
-    etymology_origin: Auto-detected orthographic cluster around 'Somalia' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Somalia' (77 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
@@ -26,29 +32,42 @@ clusters:
     - ful
     - grn
     - hau
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -56,43 +75,25 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Сомали
-    hue: 299.0
-    etymology_origin: Auto-detected orthographic cluster around 'Сомали' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: सोमालिया
-    hue: 29.0
-    etymology_origin: Auto-detected orthographic cluster around 'सोमालिया' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
     label: سومالی
-    hue: 119.0
-    etymology_origin: Auto-detected orthographic cluster around 'سومالی' (2 languages).
+    hue: 29.0
+    etymology_origin: Auto-detected orthographic cluster around 'سومالی' (4 languages).
       Hand-curated etymology pending.
     languages:
+    - ara
     - fas
+    - heb
     - pus

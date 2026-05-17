@@ -38,10 +38,30 @@ def test_distant_variants_score_low():
     assert s < 0.3, f"expected <0.3, got {s}"
 
 
-def test_cross_script_scores_near_zero():
-    """ドイツ (Japanese for Germany) vs Deutschland: no shared characters,
-    distance == max length, similarity == 0."""
-    assert normalized_similarity("ドイツ", "Deutschland") == 0.0
+def test_cross_script_now_compares_phonetically():
+    """Post-unidecode: cross-script pairs no longer have automatic zero
+    similarity. Japanese ドイツ transliterates to 'doitsu' and shares the
+    'd...t...' phonetic skeleton with Deutschland. Same for Cyrillic
+    Россия → 'rossiia' vs Russia → 'russia'.
+
+    The previous "always-zero for cross-script" behavior was a latent
+    bug — it broke the similarity-to-endonym channel for every country
+    with a non-Latin endonym (Russia, China, Japan, Saudi Arabia, ...).
+    The Legend's cluster recolor for those countries degenerated to
+    "fully saturated everywhere" because no observer's exonym
+    registered any similarity to the endonym."""
+    # Japanese ドイツ ↔ German Deutschland: borrowed via Dutch "Duits",
+    # so a non-trivial phonetic relationship exists.
+    assert normalized_similarity("ドイツ", "Deutschland") > 0.2
+    assert normalized_similarity("ドイツ", "Deutschland") < 0.4
+
+    # Russian Россия ↔ English Russia: same root, transliteration
+    # gives 'rossiia' vs 'russia' → meaningful similarity.
+    assert normalized_similarity("Россия", "Russia") > 0.4
+
+    # Genuine "foreign" pairs still score low.
+    # 中国 → 'zhongguo' has nothing in common with 'Deutschland'.
+    assert normalized_similarity("中国", "Deutschland") < 0.3
 
 
 def test_empty_strings():

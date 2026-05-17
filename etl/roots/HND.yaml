@@ -7,90 +7,91 @@ clusters:
   auto_0:
     label: Honduras
     hue: 38.0
-    etymology_origin: Auto-detected orthographic cluster around 'Honduras' (52 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Honduras' (77 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
+    - fas
     - fin
     - fra
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Гондурас
-    hue: 128.0
-    etymology_origin: Auto-detected orthographic cluster around 'Гондурас' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: هندوراس
+    label: ປະເທດຮອນດູຣັສ
     hue: 218.0
-    etymology_origin: Auto-detected orthographic cluster around 'هندوراس' (3 languages).
-      Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດຮອນດູຣັສ' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: होंडुरास
-    hue: 308.0
-    etymology_origin: Auto-detected orthographic cluster around 'होन्डुरस' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

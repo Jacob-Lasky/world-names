@@ -7,92 +7,95 @@ clusters:
   auto_0:
     label: Armenia
     hue: 284.0
-    etymology_origin: Auto-detected orthographic cluster around 'Armenia' (56 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Armenia' (81 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
     - kea
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Армения
-    hue: 14.0
-    etymology_origin: Auto-detected orthographic cluster around 'Армения' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_2:
-    label: आर्मीनिया
+    label: ປະເທດອາກເມນີ
     hue: 104.0
-    etymology_origin: Auto-detected orthographic cluster around 'आर्मीनिया' (3 languages).
-      Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອາກເມນີ' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
-    label: ارمنستان
-    hue: 194.0
-    etymology_origin: Auto-detected orthographic cluster around 'ارمنستان' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - fas
-    - pus
+    - lao
+    - tha

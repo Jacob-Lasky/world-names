@@ -7,94 +7,80 @@ clusters:
   auto_0:
     label: Saint Lucia
     hue: 298.0
-    etymology_origin: Auto-detected orthographic cluster around 'Saint Lucia' (51
+    etymology_origin: Auto-detected orthographic cluster around 'Saint Lucia' (74
       languages). Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Сент-Люсия
-    hue: 10.0
-    etymology_origin: Auto-detected orthographic cluster around 'Сент-Люсия' (6 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mon
-    - rus
-    - tgk
-    - ukr
-  auto_2:
-    label: سنت لوسیا
-    hue: 82.0
-    etymology_origin: Auto-detected orthographic cluster around 'سانت لوسيا' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: सेंट लूसिया
-    hue: 154.0
-    etymology_origin: Auto-detected orthographic cluster around 'सेंट लूसिया' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - hin
-    - nep
-  auto_4:
-    label: Света Луција
-    hue: 226.0
-    etymology_origin: Auto-detected orthographic cluster around 'Света Луција' (2
-      languages). Hand-curated etymology pending.
-    languages:
-    - mkd
-    - srp

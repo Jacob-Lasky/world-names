@@ -5,19 +5,26 @@ method: string-similarity union-find on normalized Levenshtein
 threshold: 0.45
 clusters:
   auto_0:
-    label: Bosnia and Herzegovina
+    label: Босна и Херцеговина
     hue: 241.0
-    etymology_origin: Auto-detected orthographic cluster around 'Bósnia e Herzegovina'
-      (55 languages). Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'Bosnia & Herzegovina'
+      (77 languages). Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
@@ -26,81 +33,81 @@ clusters:
     - fra
     - grn
     - hau
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Босна и Херцеговина
-    hue: 313.0
-    etymology_origin: Auto-detected orthographic cluster around 'Босна и Херцеговина'
-      (8 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: बोस्निया र हर्जगोभिना
-    hue: 25.0
-    etymology_origin: Auto-detected orthographic cluster around 'बोस्निया और हर्ज़ेगोविना'
-      (3 languages). Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
     label: بوسنی و هرزگوین
-    hue: 97.0
+    hue: 331.0
     etymology_origin: Auto-detected orthographic cluster around 'بوسنی و هرزگوین'
       (2 languages). Hand-curated etymology pending.
     languages:
     - fas
     - pus
-  auto_4:
+  auto_2:
     label: Bosniya
-    hue: 169.0
+    hue: 61.0
     etymology_origin: Auto-detected orthographic cluster around 'Bosniya' (2 languages).
       Hand-curated etymology pending.
     languages:
     - ful
     - som
+  auto_3:
+    label: ປະເທດບົດສະນີ ແລະ ແຮກເຊໂກວິນາ
+    hue: 151.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດບົດສະນີ ແລະ
+      ແຮກເຊໂກວິນາ' (2 languages). Hand-curated etymology pending.
+    languages:
+    - lao
+    - tha

@@ -7,74 +7,75 @@ clusters:
   auto_0:
     label: Solomon Islands
     hue: 105.0
-    etymology_origin: Auto-detected orthographic cluster around 'Solomon Aelan' (27
-      languages). Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'Соломони' (65 languages).
+      Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
     - bis
     - bos
+    - bul
+    - cat
     - ces
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - fij
     - fin
+    - fra
+    - hau
+    - hin
     - hrv
+    - hun
+    - ind
     - isl
+    - ita
     - jam
+    - jpn
+    - kat
+    - kin
+    - kir
+    - kor
+    - lat
     - lav
     - lit
     - ltz
-    - nld
-    - nno
-    - slk
-    - slv
-    - sna
-    - swe
-    - tuk
-    - tur
-    - uzb
-    - zul
-  auto_1:
-    label: Kepulauan Solomon
-    hue: 165.0
-    etymology_origin: Auto-detected orthographic cluster around 'Isla Solomon' (21
-      languages). Hand-curated etymology pending.
-    languages:
-    - cat
-    - fra
-    - hau
-    - ind
-    - ita
-    - kin
-    - lat
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
+    - nld
+    - nno
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
+    - slk
+    - slv
+    - sna
     - som
     - spa
     - sqi
-    - tgl
-    - ton
-    - vie
-  auto_2:
-    label: Соломонова Острва
-    hue: 225.0
-    etymology_origin: Auto-detected orthographic cluster around 'Соломоновы Острова'
-      (4 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - rus
     - srp
+    - swe
+    - tgk
+    - tgl
+    - tuk
+    - tur
     - ukr
-  auto_3:
+    - uzb
+    - vie
+    - zul
+  auto_1:
     label: جزر سليمان
     hue: 285.0
     etymology_origin: Auto-detected orthographic cluster around 'جزر سليمان' (2 languages).
@@ -82,19 +83,3 @@ clusters:
     languages:
     - ara
     - fas
-  auto_4:
-    label: सोलोमन द्विप
-    hue: 345.0
-    etymology_origin: Auto-detected orthographic cluster around 'सोलोमन द्वीपसमूह'
-      (2 languages). Hand-curated etymology pending.
-    languages:
-    - hin
-    - nep
-  auto_5:
-    label: Соломоны арлууд
-    hue: 45.0
-    etymology_origin: Auto-detected orthographic cluster around 'Соломон Аралдары'
-      (2 languages). Hand-curated etymology pending.
-    languages:
-    - kir
-    - mon

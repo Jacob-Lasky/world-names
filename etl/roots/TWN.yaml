@@ -7,38 +7,53 @@ clusters:
   auto_0:
     label: Taiwan
     hue: 339.0
-    etymology_origin: Auto-detected orthographic cluster around 'Taiwan' (42 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Taiwan' (58 languages).
       Hand-curated etymology pending.
     languages:
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
     - cat
     - ces
     - dan
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - grn
     - hau
+    - heb
+    - hye
     - ind
     - isl
     - ita
     - jam
     - kal
+    - kat
+    - khm
     - kin
+    - kir
     - lao
     - lit
     - ltz
     - mlg
     - mlt
     - msa
+    - nep
     - nld
+    - pan
     - pap
     - por
+    - pus
     - ron
+    - sin
     - slk
     - slv
     - sna
@@ -46,6 +61,7 @@ clusters:
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
@@ -53,66 +69,36 @@ clusters:
     - vie
     - zul
   auto_1:
-    label: Republik China
-    hue: 24.0
-    etymology_origin: Auto-detected orthographic cluster around 'Republika Kina' (9
+    label: Република Кина
+    hue: 69.0
+    etymology_origin: Auto-detected orthographic cluster around 'Republika Kina' (13
       languages). Hand-curated etymology pending.
     languages:
     - afr
+    - bul
     - deu
     - hrv
     - lat
+    - mkd
     - nau
     - nno
     - pol
     - spa
     - sqi
-  auto_2:
-    label: Република Кина
-    hue: 69.0
-    etymology_origin: Auto-detected orthographic cluster around 'Република Кина' (4
-      languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - mkd
     - srp
     - ukr
-  auto_3:
-    label: تايوان
-    hue: 114.0
-    etymology_origin: Auto-detected orthographic cluster around 'تايوان' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_4:
-    label: ताइवान
-    hue: 159.0
-    etymology_origin: Auto-detected orthographic cluster around 'ताइवान' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - nep
-  auto_5:
+  auto_2:
     label: 中華民國
-    hue: 204.0
-    etymology_origin: Auto-detected orthographic cluster around '中華民國' (2 languages).
+    hue: 159.0
+    etymology_origin: Auto-detected orthographic cluster around '中華民國' (3 languages).
       Hand-curated etymology pending.
     languages:
     - cmn
     - jpn
-  auto_6:
-    label: Тайван
-    hue: 249.0
-    etymology_origin: Auto-detected orthographic cluster around 'Тайвань' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - kir
-    - tgk
-  auto_7:
+    - kor
+  auto_3:
     label: Ķīnas Republika
-    hue: 294.0
+    hue: 249.0
     etymology_origin: Auto-detected orthographic cluster around 'Ķīnas Republika'
       (2 languages). Hand-curated etymology pending.
     languages:

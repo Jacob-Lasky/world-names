@@ -8,85 +8,77 @@ clusters:
     label: Saint Kitts i Nevis
     hue: 38.0
     etymology_origin: Auto-detected orthographic cluster around 'Saint Kitts an Nevis'
-      (49 languages). Hand-curated etymology pending.
+      (72 languages). Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - div
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - spa
     - sqi
+    - srp
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Сент-Китс и Невис
-    hue: 128.0
-    etymology_origin: Auto-detected orthographic cluster around 'Сент-Китс и Невис'
-      (8 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: سنت کیتس و نویس
-    hue: 218.0
-    etymology_origin: Auto-detected orthographic cluster around 'سنت کیتس و نویس'
-      (3 languages). Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: सन्त किट्स और नेविस
-    hue: 308.0
-    etymology_origin: Auto-detected orthographic cluster around 'सन्त किट्स और नेविस'
-      (2 languages). Hand-curated etymology pending.
-    languages:
-    - hin
-    - nep

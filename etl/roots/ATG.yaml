@@ -8,90 +8,90 @@ clusters:
     label: Antigua i Barbuda
     hue: 340.0
     etymology_origin: Auto-detected orthographic cluster around 'Antigua a Barbuda'
-      (53 languages). Hand-curated etymology pending.
+      (77 languages). Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kea
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Антигуа и Барбуда
-    hue: 70.0
-    etymology_origin: Auto-detected orthographic cluster around 'Антигуа и Барбуда'
-      (8 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: أنتيغوا وباربودا
+    label: ປະເທດອັງຕີກາ ແລະ ບາກບູດາ
     hue: 160.0
-    etymology_origin: Auto-detected orthographic cluster around 'أنتيغوا وباربودا'
-      (3 languages). Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອັງຕີກາ ແລະ
+      ບາກບູດາ' (2 languages). Hand-curated etymology pending.
     languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: एंटीगुआ आ बारबूडा
-    hue: 250.0
-    etymology_origin: Auto-detected orthographic cluster around 'एंटीगुआ आ बारबूडा'
-      (3 languages). Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

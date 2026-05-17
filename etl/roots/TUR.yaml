@@ -7,51 +7,73 @@ clusters:
   auto_0:
     label: Turkey
     hue: 281.0
-    etymology_origin: Auto-detected orthographic cluster around 'Turkia' (57 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Turkia' (82 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
     - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -59,48 +81,28 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
   auto_1:
-    label: Турция
-    hue: 353.0
-    etymology_origin: Auto-detected orthographic cluster around 'Туркия' (8 languages).
+    label: ປະເທດຕຸຣກີ
+    hue: 41.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດຕຸຣກີ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
+    - lao
+    - tha
   auto_2:
-    label: तुर्की
-    hue: 65.0
-    etymology_origin: Auto-detected orthographic cluster around 'तुर्की' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
-    label: ترکیه
-    hue: 137.0
-    etymology_origin: Auto-detected orthographic cluster around 'ترکیه' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - fas
-    - pus
-  auto_4:
     label: ITheki
-    hue: 209.0
+    hue: 161.0
     etymology_origin: Auto-detected orthographic cluster around 'IThekhi' (2 languages).
       Hand-curated etymology pending.
     languages:

@@ -7,96 +7,84 @@ clusters:
   auto_0:
     label: Jordan
     hue: 205.0
-    etymology_origin: Auto-detected orthographic cluster around 'Jordània' (49 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Jordan' (78 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
+    - fas
     - fin
     - fra
+    - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
+    - jam
+    - jpn
     - kal
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
+    - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - tuk
+    - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Иордания
-    hue: 277.0
-    etymology_origin: Auto-detected orthographic cluster around 'Йордания' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: اردن
-    hue: 349.0
-    etymology_origin: Auto-detected orthographic cluster around 'اردن' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: जॉर्डन
-    hue: 61.0
-    etymology_origin: Auto-detected orthographic cluster around 'जॉर्डन' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
-    label: Urdun
-    hue: 133.0
-    etymology_origin: Auto-detected orthographic cluster around 'Urdun' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ful
-    - som
-    - tur

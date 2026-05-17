@@ -5,35 +5,37 @@ method: string-similarity union-find on normalized Levenshtein
 threshold: 0.45
 clusters:
   auto_0:
-    label: Regnum Nederlandense
+    label: नीदरलैण्ड
     hue: 342.0
+    etymology_origin: Auto-detected orthographic cluster around 'Niderland krallığı'
+      (10 languages). Hand-curated etymology pending.
+    languages:
+    - aze
+    - hin
+    - hun
+    - kir
+    - lav
+    - lit
+    - mlg
+    - mon
+    - tur
+    - uzb
+  auto_1:
+    label: Kongeriket Nederlanda
+    hue: 14.7
     etymology_origin: Auto-detected orthographic cluster around 'Koninkrijk der Nederlanden'
-      (8 languages). Hand-curated etymology pending.
+      (7 languages). Hand-curated etymology pending.
     languages:
     - afr
     - dan
     - deu
-    - lat
     - ltz
     - nld
     - nno
     - swe
-  auto_1:
-    label: Nederlandy
-    hue: 22.0
-    etymology_origin: Auto-detected orthographic cluster around 'Niderland krallığı'
-      (7 languages). Hand-curated etymology pending.
-    languages:
-    - aze
-    - hun
-    - lav
-    - lit
-    - mlg
-    - tur
-    - uzb
   auto_2:
     label: Кралство Холандија
-    hue: 62.0
+    hue: 47.5
     etymology_origin: Auto-detected orthographic cluster around 'Кралство Нидерландия'
       (5 languages). Hand-curated etymology pending.
     languages:
@@ -43,53 +45,70 @@ clusters:
     - srp
     - ukr
   auto_3:
-    label: Regno dei Paesi Bassi
-    hue: 102.0
-    etymology_origin: Auto-detected orthographic cluster around 'Reino dos Países
-      Baixos' (4 languages). Hand-curated etymology pending.
-    languages:
-    - cat
-    - ita
-    - por
-    - spa
-  auto_4:
     label: Kraljevina Nizozemska
-    hue: 142.0
+    hue: 80.2
     etymology_origin: Auto-detected orthographic cluster around 'Kraljevina Nizozemska'
       (3 languages). Hand-curated etymology pending.
     languages:
     - bos
     - hrv
     - slv
+  auto_4:
+    label: Reino dos Países Baixos
+    hue: 112.9
+    etymology_origin: Auto-detected orthographic cluster around 'Reino dos Países
+      Baixos' (3 languages). Hand-curated etymology pending.
+    languages:
+    - cat
+    - por
+    - spa
   auto_5:
+    label: 荷兰王国
+    hue: 145.6
+    etymology_origin: Auto-detected orthographic cluster around 'オランダ王国' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - cmn
+    - jpn
+    - kor
+  auto_6:
+    label: Renju tan-Netherlands
+    hue: 178.4
+    etymology_origin: Auto-detected orthographic cluster around 'Renju tan-Netherlands'
+      (3 languages). Hand-curated etymology pending.
+    languages:
+    - eng
+    - mlt
+    - zul
+  auto_7:
     label: Holandské kráľovstvo
-    hue: 182.0
+    hue: 211.1
     etymology_origin: Auto-detected orthographic cluster around 'Nizozemské království'
       (2 languages). Hand-curated etymology pending.
     languages:
     - ces
     - slk
-  auto_6:
+  auto_8:
     label: Kerajaan Belanda
-    hue: 222.0
+    hue: 243.8
     etymology_origin: Auto-detected orthographic cluster around 'Kerajaan Belanda'
       (2 languages). Hand-curated etymology pending.
     languages:
     - ind
     - msa
-  auto_7:
+  auto_9:
     label: Holland
-    hue: 262.0
+    hue: 276.5
     etymology_origin: Auto-detected orthographic cluster around 'Holland' (2 languages).
       Hand-curated etymology pending.
     languages:
     - isl
     - pol
-  auto_8:
-    label: Renju tan-Netherlands
-    hue: 302.0
-    etymology_origin: Auto-detected orthographic cluster around 'Renju tan-Netherlands'
-      (2 languages). Hand-curated etymology pending.
+  auto_10:
+    label: Reino Hulandes
+    hue: 309.3
+    etymology_origin: Auto-detected orthographic cluster around 'Reino Hulandes' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - mlt
-    - zul
+    - pap
+    - sqi

@@ -7,36 +7,46 @@ clusters:
   auto_0:
     label: Equatorial Guinea
     hue: 170.0
-    etymology_origin: Auto-detected orthographic cluster around 'Equatorial Guinea'
-      (24 languages). Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'Ekvatorial-Guinea'
+      (34 languages). Hand-curated etymology pending.
     languages:
     - afr
     - aze
     - bis
     - bos
+    - bul
     - dan
     - deu
+    - div
     - eng
     - est
     - hrv
     - jam
+    - kat
+    - kir
     - lav
     - ltz
+    - mkd
+    - mon
+    - nep
     - nld
     - nno
     - orm
+    - rus
     - slv
     - sna
     - som
     - sot
+    - srp
     - swe
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
   auto_1:
     label: Gini Ekwatoria
-    hue: 230.0
+    hue: 221.4
     etymology_origin: Auto-detected orthographic cluster around 'Guinea Ekuatorial'
       (18 languages). Hand-curated etymology pending.
     languages:
@@ -59,37 +69,41 @@ clusters:
     - sqi
     - tgl
   auto_2:
-    label: Экваторын Гвиней
-    hue: 290.0
-    etymology_origin: Auto-detected orthographic cluster around 'Екваториална Гвинея'
-      (7 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_3:
     label: भूमध्यरेखीय गिनी
-    hue: 350.0
+    hue: 272.9
     etymology_origin: Auto-detected orthographic cluster around 'भूमध्यरेखीय गिनी'
-      (2 languages). Hand-curated etymology pending.
+      (3 languages). Hand-curated etymology pending.
     languages:
     - bho
     - hin
+    - pan
+  auto_3:
+    label: گینه استوایی
+    hue: 324.3
+    etymology_origin: Auto-detected orthographic cluster around 'غينيا الاستوائية'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
   auto_4:
     label: Rovníková Guinea
-    hue: 50.0
+    hue: 15.7
     etymology_origin: Auto-detected orthographic cluster around 'Rovníková Guinea'
       (2 languages). Hand-curated etymology pending.
     languages:
     - ces
     - slk
   auto_5:
+    label: 赤道几内亚
+    hue: 67.1
+    etymology_origin: Auto-detected orthographic cluster around '赤道几内亚' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - cmn
+    - jpn
+  auto_6:
     label: Guinea Khatulistiwa
-    hue: 110.0
+    hue: 118.6
     etymology_origin: Auto-detected orthographic cluster around 'Guinea Khatulistiwa'
       (2 languages). Hand-curated etymology pending.
     languages:

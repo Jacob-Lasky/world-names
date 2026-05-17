@@ -7,49 +7,71 @@ clusters:
   auto_0:
     label: Portugal
     hue: 306.0
-    etymology_origin: Auto-detected orthographic cluster around 'Portugal' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Portugal' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -57,42 +79,14 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
+    - ukr
     - uzb
     - zul
-  auto_1:
-    label: Португалия
-    hue: 36.0
-    etymology_origin: Auto-detected orthographic cluster around 'Португалия' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: پرتغال
-    hue: 126.0
-    etymology_origin: Auto-detected orthographic cluster around 'پرتغال' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: पुर्तगाल
-    hue: 216.0
-    etymology_origin: Auto-detected orthographic cluster around 'पुर्तगाल' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin

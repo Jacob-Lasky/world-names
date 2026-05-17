@@ -7,17 +7,23 @@ clusters:
   auto_0:
     label: Kiribati
     hue: 260.0
-    etymology_origin: Auto-detected orthographic cluster around 'Kiribati' (50 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Kiribati' (71 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - fin
@@ -25,69 +31,71 @@ clusters:
     - ful
     - grn
     - hau
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kin
+    - kir
+    - kor
+    - lao
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - swe
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Кирибати
-    hue: 350.0
-    etymology_origin: Auto-detected orthographic cluster around 'Кирибати' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_2:
-    label: كيريباتي
-    hue: 80.0
-    etymology_origin: Auto-detected orthographic cluster around 'کيريباتي' (3 languages).
+    label: קיריבטי
+    hue: 20.0
+    etymology_origin: Auto-detected orthographic cluster around 'كيريباتي' (4 languages).
       Hand-curated etymology pending.
     languages:
     - ara
     - fas
+    - heb
     - pus
-  auto_3:
-    label: किरिबाती
-    hue: 170.0
-    etymology_origin: Auto-detected orthographic cluster around 'किरिबाती' (3 languages).
-      Hand-curated etymology pending.
+  auto_2:
+    label: Ҷумҳурии Кирибатӣ
+    hue: 140.0
+    etymology_origin: Auto-detected orthographic cluster around 'ཀི་རི་བྷ་ཊི། (Kiribati)'
+      (2 languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
+    - dzo
+    - tgk

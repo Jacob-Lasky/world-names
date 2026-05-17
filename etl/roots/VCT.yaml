@@ -8,84 +8,78 @@ clusters:
     label: Saint Vincent and the Grenadines
     hue: 207.0
     etymology_origin: Auto-detected orthographic cluster around 'Saint Vincent e Grenadine'
-      (49 languages). Hand-curated etymology pending.
+      (73 languages). Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - grn
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - spa
     - sqi
+    - srp
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Сент-Винсент ба Гренадин
-    hue: 297.0
-    etymology_origin: Auto-detected orthographic cluster around 'Сент Винсент и Гренадини'
-      (8 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: سنت وینسنت و گرنادینها
-    hue: 27.0
-    etymology_origin: Auto-detected orthographic cluster around 'سانت فينسنت والغرينادين'
-      (2 languages). Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-  auto_3:
-    label: सन्त विन्सेण्ट और ग्रेनाडाइन्स
-    hue: 117.0
-    etymology_origin: Auto-detected orthographic cluster around 'सन्त विन्सेण्ट और
-      ग्रेनाडाइन्स' (2 languages). Hand-curated etymology pending.
-    languages:
-    - hin
-    - nep

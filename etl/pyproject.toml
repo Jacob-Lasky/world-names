@@ -6,6 +6,13 @@ requires-python = ">=3.11"
 dependencies = [
   "httpx>=0.27",
   "pyyaml>=6.0",
+  # Unidecode transliterates every Unicode string to plain ASCII so the
+  # string-similarity passes through _lib.normalized_similarity / the
+  # auto-clusterer compare ACROSS scripts. Without it, Cyrillic vs
+  # Latin / Arabic / Devanagari all have edit-distance 1.0 (zero
+  # overlap) and the clusters degenerate to one-per-script. Pure
+  # Python, no compiled code, deterministic; safe in a build pipeline.
+  "unidecode>=1.3",
 ]
 
 [dependency-groups]

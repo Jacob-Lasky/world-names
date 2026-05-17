@@ -7,25 +7,46 @@ clusters:
   auto_0:
     label: United Kingdom
     hue: 159.0
-    etymology_origin: Auto-detected orthographic cluster around 'United Kingdom' (12
+    etymology_origin: Auto-detected orthographic cluster around 'United Kingdom' (18
       languages). Hand-curated etymology pending.
     languages:
+    - bho
     - bis
+    - div
+    - dzo
     - eng
     - ewe
+    - hin
     - jam
     - msa
+    - mya
     - nya
     - orm
+    - pan
     - sna
     - sot
     - ssw
     - tgl
     - tsn
   auto_1:
+    label: Ujedinjeno Kraljevstvo
+    hue: 195.0
+    etymology_origin: Auto-detected orthographic cluster around 'Ujedinjeno Kraljevstvo'
+      (9 languages). Hand-curated etymology pending.
+    languages:
+    - bos
+    - bul
+    - ces
+    - hrv
+    - mkd
+    - slk
+    - slv
+    - srp
+    - ukr
+  auto_2:
     label: Reino Unido
-    hue: 189.0
-    etymology_origin: Auto-detected orthographic cluster around 'Reino Unido' (9 languages).
+    hue: 231.0
+    etymology_origin: Auto-detected orthographic cluster around 'Reino Unido' (8 languages).
       Hand-curated etymology pending.
     languages:
     - cat
@@ -36,21 +57,34 @@ clusters:
     - por
     - ron
     - spa
-    - tet
-  auto_2:
-    label: Ujedinjeno Kraljevstvo
-    hue: 219.0
-    etymology_origin: Auto-detected orthographic cluster around 'Ujedinjeno Kraljevstvo'
-      (5 languages). Hand-curated etymology pending.
-    languages:
-    - bos
-    - ces
-    - hrv
-    - slk
-    - slv
   auto_3:
+    label: Storbritannien
+    hue: 267.0
+    etymology_origin: Auto-detected orthographic cluster around 'Storbritannia' (7
+      languages). Hand-curated etymology pending.
+    languages:
+    - dan
+    - est
+    - kir
+    - nno
+    - pol
+    - rus
+    - swe
+  auto_4:
+    label: بریتانیا
+    hue: 303.0
+    etymology_origin: Auto-detected orthographic cluster around 'Birtaniya' (6 languages).
+      Hand-curated etymology pending.
+    languages:
+    - fas
+    - hau
+    - ind
+    - pus
+    - sqi
+    - ton
+  auto_5:
     label: Verenigde Koninkryk
-    hue: 249.0
+    hue: 339.0
     etymology_origin: Auto-detected orthographic cluster around 'Verenigd Koninkrijk'
       (4 languages). Hand-curated etymology pending.
     languages:
@@ -58,70 +92,37 @@ clusters:
     - deu
     - ltz
     - nld
-  auto_4:
-    label: Storbritannien
-    hue: 279.0
-    etymology_origin: Auto-detected orthographic cluster around 'Storbritannien' (4
-      languages). Hand-curated etymology pending.
-    languages:
-    - dan
-    - est
-    - nno
-    - swe
-  auto_5:
-    label: Обединено кралство
-    hue: 309.0
-    etymology_origin: Auto-detected orthographic cluster around 'Обединено кралство'
-      (3 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - mkd
-    - srp
   auto_6:
     label: Birleşik Krallık
-    hue: 339.0
-    etymology_origin: Auto-detected orthographic cluster around 'Birləşmiş Krallıq'
-      (2 languages). Hand-curated etymology pending.
+    hue: 15.0
+    etymology_origin: Auto-detected orthographic cluster around 'Birleşik Krallık'
+      (3 languages). Hand-curated etymology pending.
     languages:
     - aze
     - tur
+    - uzb
   auto_7:
-    label: यूनाइटेड किंगडम
-    hue: 9.0
-    etymology_origin: Auto-detected orthographic cluster around 'यूनाइटेड किंगडम'
-      (2 languages). Hand-curated etymology pending.
+    label: សហរាជាណាចក្រ
+    hue: 51.0
+    etymology_origin: Auto-detected orthographic cluster around 'សហរាជាណាចក្រ' (3
+      languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
+    - khm
+    - lao
+    - tha
   auto_8:
-    label: بریتانیا
-    hue: 39.0
-    etymology_origin: Auto-detected orthographic cluster around 'بریتانیا' (2 languages).
+    label: যুক্তরাজ্য
+    hue: 87.0
+    etymology_origin: Auto-detected orthographic cluster around 'যুক্তরাজ্য' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - fas
-    - pus
+    - ben
+    - nep
   auto_9:
-    label: Birtaniya
-    hue: 69.0
-    etymology_origin: Auto-detected orthographic cluster around 'Birtaniya' (2 languages).
+    label: 英国
+    hue: 123.0
+    etymology_origin: Auto-detected orthographic cluster around '英国' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - hau
-    - ton
-  auto_10:
-    label: Britania Raya
-    hue: 99.0
-    etymology_origin: Auto-detected orthographic cluster around 'Britania Raya' (2
-      languages). Hand-curated etymology pending.
-    languages:
-    - ind
-    - sqi
-  auto_11:
-    label: Улуу Британия
-    hue: 129.0
-    etymology_origin: Auto-detected orthographic cluster around 'Улуу Британия' (2
-      languages). Hand-curated etymology pending.
-    languages:
-    - kir
-    - rus
+    - cmn
+    - kor

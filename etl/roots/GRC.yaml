@@ -7,16 +7,19 @@ clusters:
   auto_0:
     label: Greece
     hue: 280.0
-    etymology_origin: Auto-detected orthographic cluster around 'Grècia' (43 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Grècia' (58 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ben
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - dzo
     - eng
     - est
     - ewe
@@ -28,14 +31,20 @@ clusters:
     - isl
     - ita
     - jam
+    - jpn
     - kea
+    - kin
+    - kir
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - nau
+    - nep
     - nld
     - nya
     - orm
@@ -43,63 +52,40 @@ clusters:
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
+    - ssw
     - swe
     - tet
     - tgl
     - tuk
-  auto_1:
-    label: Yunani
-    hue: 340.0
-    etymology_origin: Auto-detected orthographic cluster around 'Yunani' (6 languages).
-      Hand-curated etymology pending.
-    languages:
-    - aze
-    - ful
-    - ind
-    - msa
-    - tur
-    - uzb
-  auto_2:
-    label: Грек
-    hue: 40.0
-    etymology_origin: Auto-detected orthographic cluster around 'Грекия' (6 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mon
-    - rus
-    - srp
     - ukr
-  auto_3:
-    label: یونان
+    - zul
+  auto_1:
+    label: यूनान
     hue: 100.0
-    etymology_origin: Auto-detected orthographic cluster around 'يونان' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Yunan' (15 languages).
       Hand-curated etymology pending.
     languages:
     - ara
-    - fas
-    - pus
-  auto_4:
-    label: IGreki
-    hue: 160.0
-    etymology_origin: Auto-detected orthographic cluster around 'IGreki' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - kin
-    - ssw
-    - zul
-  auto_5:
-    label: यूनान
-    hue: 220.0
-    etymology_origin: Auto-detected orthographic cluster around 'यूनान' (2 languages).
-      Hand-curated etymology pending.
-    languages:
+    - aze
     - bho
+    - div
+    - fas
+    - ful
     - hin
+    - hye
+    - ind
+    - msa
+    - pan
+    - pus
+    - tgk
+    - tur
+    - uzb

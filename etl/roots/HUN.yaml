@@ -7,14 +7,21 @@ clusters:
   auto_0:
     label: Hungary
     hue: 265.0
-    etymology_origin: Auto-detected orthographic cluster around 'Hungaria' (47 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Hungaria' (67 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ben
+    - bho
     - bis
+    - bul
     - cat
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
@@ -23,27 +30,40 @@ clusters:
     - ful
     - grn
     - hau
+    - heb
+    - hin
+    - hye
     - ind
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
     - sna
     - som
     - sot
@@ -59,35 +79,27 @@ clusters:
     - zul
   auto_1:
     label: Mađarska
-    hue: 355.0
-    etymology_origin: Auto-detected orthographic cluster around 'Mađarska' (8 languages).
+    hue: 25.0
+    etymology_origin: Auto-detected orthographic cluster around 'Mađarska' (11 languages).
       Hand-curated etymology pending.
     languages:
     - aze
     - bos
     - ces
+    - fas
     - hrv
     - slk
     - slv
+    - srp
+    - tgk
     - tur
     - uzb
   auto_2:
-    label: Венгрия
-    hue: 85.0
-    etymology_origin: Auto-detected orthographic cluster around 'Унгария' (5 languages).
-      Hand-curated etymology pending.
+    label: ປະເທດຮົງກາລີ
+    hue: 145.0
+    etymology_origin: Auto-detected orthographic cluster around 'ประเทศฮังการี' (3
+      languages). Hand-curated etymology pending.
     languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-  auto_3:
-    label: हंगरी
-    hue: 175.0
-    etymology_origin: Auto-detected orthographic cluster around 'हंगरी' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - khm
+    - lao
+    - tha

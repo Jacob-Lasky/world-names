@@ -7,72 +7,95 @@ clusters:
   auto_0:
     label: Myanmar
     hue: 146.0
-    etymology_origin: Auto-detected orthographic cluster around 'Myanmar' (46 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Myanmar' (72 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - mya
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
     - slk
     - slv
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Мьянма
-    hue: 206.0
-    etymology_origin: Auto-detected orthographic cluster around 'Мьянмар' (8 languages).
+    label: Burma
+    hue: 266.0
+    etymology_origin: Auto-detected orthographic cluster around 'Burma' (5 languages).
       Hand-curated etymology pending.
     languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
+    - bis
+    - div
+    - sin
+    - sna
+    - som
   auto_2:
     label: Birmania
-    hue: 266.0
+    hue: 26.0
     etymology_origin: Auto-detected orthographic cluster around 'Birmania' (5 languages).
       Hand-curated etymology pending.
     languages:
@@ -81,30 +104,3 @@ clusters:
     - spa
     - sqi
     - tet
-  auto_3:
-    label: ميانمار
-    hue: 326.0
-    etymology_origin: Auto-detected orthographic cluster around 'ميانمار' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_4:
-    label: म्याँमार
-    hue: 26.0
-    etymology_origin: Auto-detected orthographic cluster around 'म्यान्मार' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_5:
-    label: Burma
-    hue: 86.0
-    etymology_origin: Auto-detected orthographic cluster around 'Burma' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bis
-    - sna
-    - som

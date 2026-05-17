@@ -7,102 +7,88 @@ clusters:
   auto_0:
     label: East Timor
     hue: 3.0
-    etymology_origin: Auto-detected orthographic cluster around 'East Timor' (30 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Østtimor' (43 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - ces
+    - cmn
     - dan
     - deu
     - est
     - fin
     - ful
+    - hin
     - hrv
     - hun
     - isl
     - jam
+    - jpn
+    - kor
     - lav
-    - lit
+    - mkd
+    - mon
     - nau
+    - nep
     - nld
     - nno
+    - pan
     - pap
+    - rus
     - slk
     - slv
     - sna
     - som
+    - srp
     - swe
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
     label: Timor-Leste
-    hue: 54.4
-    etymology_origin: Auto-detected orthographic cluster around 'Timor Leste' (15
+    hue: 93.0
+    etymology_origin: Auto-detected orthographic cluster around 'Timor-Leste' (15
       languages). Hand-curated etymology pending.
     languages:
-    - cat
     - eng
-    - fra
     - hau
     - ind
     - ita
     - kin
-    - lat
+    - kir
     - ltz
     - mlt
     - msa
+    - pol
     - por
     - ron
-    - spa
     - tet
+    - tgk
+    - ton
   auto_2:
-    label: Зүүн Тимор
-    hue: 105.9
-    etymology_origin: Auto-detected orthographic cluster around 'Источни Тимор' (6
+    label: Timor Oriental
+    hue: 183.0
+    etymology_origin: Auto-detected orthographic cluster around 'Timor Oriental' (4
       languages). Hand-curated etymology pending.
     languages:
-    - bul
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
+    - cat
+    - fra
+    - lat
+    - spa
   auto_3:
-    label: पूर्ब तिमोर
-    hue: 157.3
-    etymology_origin: Auto-detected orthographic cluster around 'पूर्वी तिमोर' (3
-      languages). Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
     label: تیمور شرقی
-    hue: 208.7
+    hue: 273.0
     etymology_origin: Auto-detected orthographic cluster around 'تيمور الشرقية' (2
       languages). Hand-curated etymology pending.
     languages:
     - ara
     - fas
-  auto_5:
-    label: Тимор Лешти
-    hue: 260.1
-    etymology_origin: Auto-detected orthographic cluster around 'Тимор Лешти' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - kir
-    - tgk
-  auto_6:
-    label: Tiimor Bahaa
-    hue: 311.6
-    etymology_origin: Auto-detected orthographic cluster around 'Tiimor Bahaa' (2
-      languages). Hand-curated etymology pending.
-    languages:
-    - orm
-    - ton

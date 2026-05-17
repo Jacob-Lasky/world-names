@@ -7,7 +7,7 @@
 // query volume; revisit Promiser/worker mode if init blocks UX.
 
 import sqlite3InitModule from '@sqlite.org/sqlite-wasm';
-import type { CountryDetail, Exonym, InspectionDetail } from './types';
+import type { ClusterSummary, CountryDetail, Exonym, InspectionDetail } from './types';
 
 // The package doesn't ship types. We use `any` for the SQLite handles
 // and lean on this wrapper class for app-side type safety.
@@ -238,5 +238,47 @@ export class WorldNamesDB {
       hue: (r.hue as number | null) ?? null,
       similarity: (r.similarity as number | null) ?? null,
     };
+  }
+
+  /**
+   * Every etymological cluster for the given target country, with the
+   * number of observer countries (dominant-L1 languages) whose exonym
+   * for the target falls in that cluster. Used by the Legend overlay to
+   * render one chip per root with its member count.
+   *
+   * Ordering: largest cluster first — visually the legend reads as a
+   * pareto-style breakdown, biggest root at the top.
+   */
+  clustersForTarget(targetM49: string): ClusterSummary[] {
+    const rows = this.inner.exec({
+      sql: `
+        WITH target AS (
+          SELECT iso3 FROM countries WHERE m49 = ?
+        )
+        SELECT cs.id              AS id,
+               cs.label           AS label,
+               cs.hue             AS hue,
+               cs.etymology_origin AS etymology_origin,
+               COUNT(DISTINCT cl.country_iso3) AS member_count
+        FROM clusters cs
+        JOIN target t ON t.iso3 = cs.target_country_iso3
+        LEFT JOIN exonyms e ON e.cluster_id = cs.id
+        LEFT JOIN country_languages cl
+          ON cl.language_code = e.observer_language_code
+         AND cl.is_dominant_l1 = 1
+        GROUP BY cs.id, cs.label, cs.hue, cs.etymology_origin
+        ORDER BY member_count DESC, cs.label ASC
+      `,
+      bind: [targetM49],
+      returnValue: 'resultRows',
+      rowMode: 'object',
+    });
+    return rows.map((r) => ({
+      id: r.id as string,
+      label: r.label as string,
+      hue: r.hue as number,
+      etymology_origin: (r.etymology_origin as string | null) ?? null,
+      member_count: Number(r.member_count ?? 0),
+    }));
   }
 }

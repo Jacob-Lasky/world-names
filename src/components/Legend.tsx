@@ -1,0 +1,153 @@
+// Cluster legend overlay. Renders one chip per etymological-root cluster
+// for the currently-selected country, with a hue swatch + label + member
+// count (number of observer countries whose dominant L1 sits in that
+// cluster). Clicking a chip pins the focus to that cluster; the map
+// dims everyone else. Clicking the same chip again clears focus.
+//
+// Positioned absolutely in the top-right of the map area. Translucent
+// dark background so the polygons underneath stay readable.
+
+import { useSelection } from '../store/selection';
+import { useClusters } from '../data/use-clusters';
+import { clusterFill } from '../lib/similarity';
+import { shortClusterLabel } from '../lib/cluster-label';
+
+export function Legend() {
+  const selectedId = useSelection((s) => s.selectedCountry?.numericId ?? null);
+  const focusedClusterId = useSelection((s) => s.focusedClusterId);
+  const focusCluster = useSelection((s) => s.focusCluster);
+  const clustersState = useClusters(selectedId);
+
+  if (clustersState.status !== 'ready') return null;
+  if (clustersState.clusters.length === 0) return null;
+
+  return (
+    <div data-testid="cluster-legend" style={legendStyle}>
+      <p style={headerStyle}>
+        Roots <span style={countStyle}>· {clustersState.clusters.length}</span>
+      </p>
+      <ul style={listStyle}>
+        {clustersState.clusters.map((c) => {
+          const isFocused = focusedClusterId === c.id;
+          const isDimmed = focusedClusterId != null && !isFocused;
+          // Saturated chip color at the base end of the cluster fill
+          // gradient (similarity=0) — readable against the dark backdrop
+          // and matches the most-saturated polygon for this cluster.
+          const [r, g, b] = clusterFill(c.hue, 0);
+          const short = shortClusterLabel(c.label);
+          return (
+            <li key={c.id}>
+              <button
+                type="button"
+                onClick={() => focusCluster(isFocused ? null : c.id)}
+                aria-pressed={isFocused}
+                aria-label={`${short} cluster, ${c.member_count} countries${c.etymology_origin ? `, ${c.etymology_origin}` : ''}`}
+                title={`${c.label}${c.etymology_origin ? `\n\n${c.etymology_origin}` : ''}`}
+                style={{
+                  ...chipButtonStyle,
+                  opacity: isDimmed ? 0.4 : 1,
+                  outline: isFocused ? '1.5px solid var(--accent)' : '1.5px solid transparent',
+                }}
+              >
+                <span
+                  aria-hidden
+                  style={{
+                    ...swatchStyle,
+                    background: `rgb(${r}, ${g}, ${b})`,
+                  }}
+                />
+                <span style={labelStyle}>{short}</span>
+                <span style={memberCountStyle}>{c.member_count}</span>
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+const legendStyle: React.CSSProperties = {
+  position: 'absolute',
+  top: '0.75rem',
+  right: '0.75rem',
+  zIndex: 3,
+  maxHeight: 'calc(100% - 1.5rem)',
+  overflowY: 'auto',
+  padding: '0.5rem 0.6rem',
+  background: 'rgba(20, 25, 32, 0.85)',
+  backdropFilter: 'blur(6px)',
+  WebkitBackdropFilter: 'blur(6px)',
+  border: '1px solid var(--rule)',
+  borderRadius: '6px',
+  fontSize: '0.8rem',
+  // Don't fight the map for taps when the legend has empty whitespace —
+  // the chips themselves capture clicks via their <button>s, but a stray
+  // tap on the padding should pass through to the map below.
+  pointerEvents: 'auto',
+  // Constrain width so very wide cluster labels don't push past the map
+  // edge. 14em is enough room for "Latin Germani" + a 2-digit count.
+  maxWidth: '14em',
+};
+
+const headerStyle: React.CSSProperties = {
+  margin: 0,
+  marginBottom: '0.35rem',
+  color: 'var(--muted)',
+  fontSize: '0.7rem',
+  textTransform: 'uppercase',
+  letterSpacing: '0.05em',
+};
+
+const countStyle: React.CSSProperties = {
+  color: 'var(--muted)',
+  opacity: 0.7,
+};
+
+const listStyle: React.CSSProperties = {
+  listStyle: 'none',
+  margin: 0,
+  padding: 0,
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '0.15rem',
+};
+
+const chipButtonStyle: React.CSSProperties = {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '0.5rem',
+  width: '100%',
+  padding: '0.25rem 0.4rem',
+  background: 'transparent',
+  border: 0,
+  borderRadius: '4px',
+  color: 'inherit',
+  font: 'inherit',
+  textAlign: 'left',
+  cursor: 'pointer',
+  // Match the outline transition so toggling focus is smooth.
+  transition: 'opacity 120ms ease, outline-color 120ms ease',
+};
+
+const swatchStyle: React.CSSProperties = {
+  display: 'inline-block',
+  width: '0.85rem',
+  height: '0.85rem',
+  borderRadius: '2px',
+  flexShrink: 0,
+  border: '1px solid rgba(0,0,0,0.4)',
+};
+
+const labelStyle: React.CSSProperties = {
+  flex: 1,
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'nowrap',
+};
+
+const memberCountStyle: React.CSSProperties = {
+  color: 'var(--muted)',
+  fontSize: '0.75rem',
+  fontVariantNumeric: 'tabular-nums',
+};

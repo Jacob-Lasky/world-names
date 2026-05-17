@@ -4,6 +4,7 @@ import { useCountryDetail } from '../data/use-country-detail';
 import { useClusterColors } from '../data/use-cluster-colors';
 import { useInspectionDetail } from '../data/use-inspection-detail';
 import { clusterFill, selectedHeadingColor } from '../lib/similarity';
+import { shortClusterLabel } from '../lib/cluster-label';
 
 export function DetailPanel() {
   const selected = useSelection((s) => s.selectedCountry);
@@ -167,7 +168,7 @@ function InspectionCard() {
       </p>
       {d.cluster_label && (
         <p style={inspectionMetaStyle}>
-          <strong>{d.cluster_label}</strong> cluster
+          <strong>{shortClusterLabel(d.cluster_label)}</strong> cluster
           {d.etymology_origin ? ` · ${d.etymology_origin}` : ''}
         </p>
       )}

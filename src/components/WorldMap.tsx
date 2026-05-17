@@ -8,6 +8,7 @@ import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import { useSelection } from '../store/selection';
 import { useClusterColors } from '../data/use-cluster-colors';
 import { clusterFill } from '../lib/similarity';
+import { Legend } from './Legend';
 import {
   featureId,
   isTouchEvent,
@@ -59,6 +60,12 @@ const STROKE_WIDTH_SELECTED = 2.5;
 const STROKE_WIDTH_INSPECTED = 1.5;
 const STROKE_WIDTH_DEFAULT = 0.5;
 
+// Alpha applied to non-matching countries when the user has clicked a
+// Legend chip to focus a cluster. Low enough to drop visual weight (the
+// focused cluster pops), high enough to keep the dimmed hue readable
+// as context.
+const FOCUS_DIM_ALPHA = 70;
+
 // Long-press threshold for touch — 500ms feels deliberate without dragging
 // out for so long the user thinks the tap was ignored. iOS uses 500ms for
 // its system-level long-press; matching feels native.
@@ -80,6 +87,7 @@ export function WorldMap() {
 
   const selectedId = useSelection((s) => s.selectedCountry?.numericId ?? null);
   const hoveredId = useSelection((s) => s.hoveredId);
+  const focusedClusterId = useSelection((s) => s.focusedClusterId);
   const selectCountry = useSelection((s) => s.selectCountry);
   const hover = useSelection((s) => s.hover);
 
@@ -156,6 +164,12 @@ export function WorldMap() {
     // desktop clicks are unambiguous). Only touch needs the long-press
     // gesture.
     if (e.pointerType !== 'touch') return;
+    // If the press started on the Legend overlay, don't arm the long-
+    // press timer. The legend chips have their own click handlers; an
+    // accidental long-press through the chip would otherwise pickObject
+    // at whatever country happens to sit beneath the legend and switch
+    // selection unexpectedly.
+    if ((e.target as Element | null)?.closest('[data-testid="cluster-legend"]')) return;
     cancelPress();
     longPressFired.current = false;
     pressStart.current = { clientX: e.clientX, clientY: e.clientY };
@@ -268,7 +282,8 @@ export function WorldMap() {
           // definition, so the precomputed similarity is 1.0. If cluster
           // data hasn't landed (or there's no YAML coverage for the
           // dominant language), fall back to near-white so the bold outline
-          // alone communicates selection.
+          // alone communicates selection. The selected country is the
+          // focal point and never dims, regardless of the legend focus.
           if (id === selectedId) {
             const c = clusterColors?.get(id);
             if (c?.hue != null) {
@@ -286,10 +301,21 @@ export function WorldMap() {
               // base hue) to keep rendering deterministic.
               const sim = c.similarity ?? 0;
               const [r, g, b] = clusterFill(c.hue, sim);
-              return [r, g, b, 255];
+              // Legend dim: if the user has pinned focus to a cluster
+              // from the Legend overlay, every non-matching country drops
+              // to a low alpha. The hue stays so you can still see what
+              // cluster they're in, but the visual weight collapses onto
+              // the focused cluster.
+              const dim = focusedClusterId != null && c.cluster_id !== focusedClusterId;
+              return [r, g, b, dim ? FOCUS_DIM_ALPHA : 255];
             }
             // We have cluster data for the selected target, but this country
             // has no exonym row or no cluster yet (uncovered observer language).
+            // When a cluster is focused, dim these too — they're not in any
+            // cluster, so they're not in the focused one either.
+            if (focusedClusterId != null) {
+              return [RGBA.unclustered[0], RGBA.unclustered[1], RGBA.unclustered[2], FOCUS_DIM_ALPHA];
+            }
             return RGBA.unclustered;
           }
           // No selection yet — hover gets a lighter wash so the user can
@@ -311,7 +337,7 @@ export function WorldMap() {
         },
         // Force the GPU attribute buffers to refresh when selection/hover/data changes.
         updateTriggers: {
-          getFillColor: [selectedId, hoveredId, clusterColors],
+          getFillColor: [selectedId, hoveredId, clusterColors, focusedClusterId],
           getLineColor: [selectedId, hoveredId],
           getLineWidth: [selectedId, hoveredId],
         },
@@ -326,7 +352,7 @@ export function WorldMap() {
         onClick: onLayerClick,
         onHover: onLayerHover,
       })];
-  }, [features, selectedId, hoveredId, clusterColors, onLayerClick, onLayerHover]);
+  }, [features, selectedId, hoveredId, clusterColors, focusedClusterId, onLayerClick, onLayerHover]);
 
   function onDeckClick(info: PickingInfo): void {
     // Background click handling. Mouse → deselect (clear selection + hover);
@@ -383,6 +409,7 @@ export function WorldMap() {
         getCursor={({ isHovering }) => (isHovering ? 'pointer' : 'grab')}
         style={{ position: 'absolute', width: '100%', height: '100%' }}
       />
+      <Legend />
     </div>
   );
 }

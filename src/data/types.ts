@@ -32,3 +32,16 @@ export type InspectionDetail = {
   hue: number | null;
   similarity: number | null;
 };
+
+// One etymological-root cluster of names that countries use for the
+// currently-selected target. The Legend renders one chip per cluster
+// (color swatch from `hue`, label, and the number of observer countries
+// whose dominant language sits in this cluster). Click a chip to
+// highlight that cluster on the map; non-matching countries dim.
+export type ClusterSummary = {
+  id: string;
+  label: string;
+  hue: number;
+  etymology_origin: string | null;
+  member_count: number;
+};

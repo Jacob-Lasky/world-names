@@ -1,0 +1,98 @@
+country: LIE
+name: Liechtenstein
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Liechtenstein
+    hue: 128.0
+    etymology_origin: Auto-detected orthographic cluster around 'Liechtenstein' (54
+      languages). Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - spa
+    - sqi
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Лихтенштейн
+    hue: 218.0
+    etymology_origin: Auto-detected orthographic cluster around 'Лихтенштейн' (8 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: ليختنشتاين
+    hue: 308.0
+    etymology_origin: Auto-detected orthographic cluster around 'لیختناشتاین' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_3:
+    label: लिस्टेनटाइन
+    hue: 38.0
+    etymology_origin: Auto-detected orthographic cluster around 'लिक्टेन्स्टाइन' (3
+      languages). Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep

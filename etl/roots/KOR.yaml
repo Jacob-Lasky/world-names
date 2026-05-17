@@ -1,0 +1,96 @@
+country: KOR
+name: South Korea
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: South Korea
+    hue: 86.0
+    etymology_origin: Auto-detected orthographic cluster around 'Südkorea' (26 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - bis
+    - bos
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - grn
+    - hrv
+    - hun
+    - isl
+    - jam
+    - lav
+    - lit
+    - ltz
+    - nld
+    - nno
+    - pap
+    - slv
+    - sna
+    - swe
+    - tgl
+    - zul
+  auto_1:
+    label: Corea del Sud
+    hue: 137.4
+    etymology_origin: Auto-detected orthographic cluster around 'Corea del Sud' (7
+      languages). Hand-curated etymology pending.
+    languages:
+    - cat
+    - fra
+    - ita
+    - por
+    - ron
+    - spa
+    - tet
+  auto_2:
+    label: Јужна Кореја
+    hue: 188.9
+    etymology_origin: Auto-detected orthographic cluster around 'Јужна Кореја' (4
+      languages). Hand-curated etymology pending.
+    languages:
+    - bul
+    - mkd
+    - srp
+    - ukr
+  auto_3:
+    label: दक्षिण कोरिया
+    hue: 240.3
+    etymology_origin: Auto-detected orthographic cluster around 'दक्षिण कोरिया' (3
+      languages). Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_4:
+    label: Korea Selatan
+    hue: 291.7
+    etymology_origin: Auto-detected orthographic cluster around 'Korea Selatan' (3
+      languages). Hand-curated etymology pending.
+    languages:
+    - fin
+    - ind
+    - msa
+  auto_5:
+    label: Kórejská republika
+    hue: 343.1
+    etymology_origin: Auto-detected orthographic cluster around 'Koreýa Respublikasy'
+      (3 languages). Hand-curated etymology pending.
+    languages:
+    - slk
+    - tuk
+    - uzb
+  auto_6:
+    label: 大韩民国
+    hue: 34.6
+    etymology_origin: Auto-detected orthographic cluster around '大韩民国' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - cmn
+    - jpn

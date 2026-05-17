@@ -1,0 +1,114 @@
+country: FIN
+name: Finland
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Finland
+    hue: 131.0
+    etymology_origin: Auto-detected orthographic cluster around 'Finland' (54 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - ewe
+    - fij
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kea
+    - kin
+    - lat
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - nya
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tsn
+    - tuk
+    - tur
+    - uzb
+    - zul
+  auto_1:
+    label: Финланд
+    hue: 191.0
+    etymology_origin: Auto-detected orthographic cluster around 'Финляндия' (6 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mon
+    - rus
+    - tgk
+    - ukr
+  auto_2:
+    label: Soome
+    hue: 251.0
+    etymology_origin: Auto-detected orthographic cluster around 'Suomija' (4 languages).
+      Hand-curated etymology pending.
+    languages:
+    - est
+    - fin
+    - lav
+    - lit
+  auto_3:
+    label: فنلندا
+    hue: 311.0
+    etymology_origin: Auto-detected orthographic cluster around 'فنلاند' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_4:
+    label: फिनलैंड
+    hue: 11.0
+    etymology_origin: Auto-detected orthographic cluster around 'फिनलैंड' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_5:
+    label: Финска
+    hue: 71.0
+    etymology_origin: Auto-detected orthographic cluster around 'Финска' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - mkd
+    - srp

@@ -1,0 +1,92 @@
+country: GRL
+name: Greenland
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Greenland
+    hue: 289.0
+    etymology_origin: Auto-detected orthographic cluster around 'Groenland' (42 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bos
+    - cat
+    - dan
+    - deu
+    - eng
+    - fin
+    - fra
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nld
+    - nno
+    - nya
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slv
+    - som
+    - spa
+    - sqi
+    - swe
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Гренланд
+    hue: 1.0
+    etymology_origin: Auto-detected orthographic cluster around 'Гренландия' (7 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: گرینلند
+    hue: 73.0
+    etymology_origin: Auto-detected orthographic cluster around 'غرينلاند' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_3:
+    label: Grónsko
+    hue: 145.0
+    etymology_origin: Auto-detected orthographic cluster around 'Grónsko' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ces
+    - slk
+  auto_4:
+    label: ग्रीनलैण्ड
+    hue: 217.0
+    etymology_origin: Auto-detected orthographic cluster around 'ग्रीनलैण्ड' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - hin
+    - nep

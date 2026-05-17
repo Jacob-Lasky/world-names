@@ -1,0 +1,93 @@
+country: PLW
+name: Palau
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Palau
+    hue: 123.0
+    etymology_origin: Auto-detected orthographic cluster around 'Palau' (50 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - fij
+    - fin
+    - fra
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - spa
+    - sqi
+    - swe
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Палау
+    hue: 213.0
+    etymology_origin: Auto-detected orthographic cluster around 'Палау' (8 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: بالاو
+    hue: 303.0
+    etymology_origin: Auto-detected orthographic cluster around 'پالائو' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_3:
+    label: पलाउ
+    hue: 33.0
+    etymology_origin: Auto-detected orthographic cluster around 'पलाउ' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - hin
+    - nep

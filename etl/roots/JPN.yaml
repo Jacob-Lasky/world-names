@@ -1,0 +1,110 @@
+country: JPN
+name: Japan
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Japan
+    hue: 232.0
+    etymology_origin: Auto-detected orthographic cluster around 'Japan' (60 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kea
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mah
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - nya
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tsn
+    - tuk
+    - tur
+    - uzb
+    - zul
+  auto_1:
+    label: Япония
+    hue: 304.0
+    etymology_origin: Auto-detected orthographic cluster around 'Япония' (7 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - tgk
+    - ukr
+  auto_2:
+    label: जापान
+    hue: 16.0
+    etymology_origin: Auto-detected orthographic cluster around 'जापान' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_3:
+    label: 日本
+    hue: 88.0
+    etymology_origin: Auto-detected orthographic cluster around '日本' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - cmn
+    - jpn
+  auto_4:
+    label: ژاپن
+    hue: 160.0
+    etymology_origin: Auto-detected orthographic cluster around 'ژاپن' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - fas
+    - pus

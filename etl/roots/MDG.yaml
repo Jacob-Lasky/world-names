@@ -1,0 +1,99 @@
+country: MDG
+name: Madagascar
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Madagaskar
+    hue: 216.0
+    etymology_origin: Auto-detected orthographic cluster around 'Madagaskar' (57 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fij
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - nya
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Мадагаскар
+    hue: 306.0
+    etymology_origin: Auto-detected orthographic cluster around 'Мадагаскар' (7 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: मेडागास्कर
+    hue: 36.0
+    etymology_origin: Auto-detected orthographic cluster around 'मेडागास्कर' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_3:
+    label: مادغاسکر
+    hue: 126.0
+    etymology_origin: Auto-detected orthographic cluster around 'ماداگاسکار' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - fas
+    - pus

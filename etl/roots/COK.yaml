@@ -1,0 +1,93 @@
+country: COK
+name: Cook Islands
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Cook Islands
+    hue: 311.0
+    etymology_origin: Auto-detected orthographic cluster around 'Cookeilande' (12
+      languages). Hand-curated etymology pending.
+    languages:
+    - afr
+    - dan
+    - deu
+    - eng
+    - est
+    - fin
+    - ltz
+    - nld
+    - nno
+    - sna
+    - swe
+    - zul
+  auto_1:
+    label: Kepulauan Cook
+    hue: 356.0
+    etymology_origin: Auto-detected orthographic cluster around 'Islas Cook' (10 languages).
+      Hand-curated etymology pending.
+    languages:
+    - cat
+    - fra
+    - ind
+    - ita
+    - lat
+    - msa
+    - por
+    - ron
+    - spa
+    - tgl
+  auto_2:
+    label: Kukova ostrva
+    hue: 41.0
+    etymology_origin: Auto-detected orthographic cluster around 'Cookovy ostrovy'
+      (5 languages). Hand-curated etymology pending.
+    languages:
+    - bos
+    - ces
+    - hrv
+    - slk
+    - slv
+  auto_3:
+    label: Kuk adaları
+    hue: 86.0
+    etymology_origin: Auto-detected orthographic cluster around 'Kuk adaları' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - aze
+    - tur
+    - uzb
+  auto_4:
+    label: Острови Кук
+    hue: 131.0
+    etymology_origin: Auto-detected orthographic cluster around 'Острови Кука' (3
+      languages). Hand-curated etymology pending.
+    languages:
+    - bul
+    - rus
+    - ukr
+  auto_5:
+    label: جزر كوك
+    hue: 176.0
+    etymology_origin: Auto-detected orthographic cluster around 'جزر كوك' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+  auto_6:
+    label: Kuka Salas
+    hue: 221.0
+    etymology_origin: Auto-detected orthographic cluster around 'Kuka Salas' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - lav
+    - lit
+  auto_7:
+    label: Кукова Острва
+    hue: 266.0
+    etymology_origin: Auto-detected orthographic cluster around 'Кукови Острови' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - mkd
+    - srp

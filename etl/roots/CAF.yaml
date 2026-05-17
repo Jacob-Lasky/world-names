@@ -1,0 +1,94 @@
+country: CAF
+name: Central African Republic
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Central African Republic
+    hue: 232.0
+    etymology_origin: Auto-detected orthographic cluster around 'Centrālāfrikas Republika'
+      (23 languages). Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bos
+    - ces
+    - dan
+    - deu
+    - eng
+    - ewe
+    - hrv
+    - jam
+    - lav
+    - lit
+    - ltz
+    - nld
+    - nno
+    - slk
+    - slv
+    - sna
+    - sot
+    - swe
+    - tuk
+    - uzb
+    - zul
+  auto_1:
+    label: Republica Centrafricană
+    hue: 292.0
+    etymology_origin: Auto-detected orthographic cluster around 'República Centroafricana'
+      (13 languages). Hand-curated etymology pending.
+    languages:
+    - bis
+    - cat
+    - fra
+    - ita
+    - kea
+    - kin
+    - mlt
+    - pap
+    - pol
+    - por
+    - ron
+    - spa
+    - tgl
+  auto_2:
+    label: Republik Afrika Tengah
+    hue: 352.0
+    etymology_origin: Auto-detected orthographic cluster around 'Republik Afrika Tengah'
+      (6 languages). Hand-curated etymology pending.
+    languages:
+    - ind
+    - lat
+    - mlg
+    - msa
+    - nau
+    - sqi
+  auto_3:
+    label: Централноафричка Република
+    hue: 52.0
+    etymology_origin: Auto-detected orthographic cluster around 'Централноафриканска
+      република' (5 languages). Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - rus
+    - srp
+    - ukr
+  auto_4:
+    label: मध्य अफ़्रीकी गणराज्य
+    hue: 112.0
+    etymology_origin: Auto-detected orthographic cluster around 'मध्य अफ़्रीकी गणराज्य'
+      (3 languages). Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_5:
+    label: Kesk-Aafrika Vabariik
+    hue: 172.0
+    etymology_origin: Auto-detected orthographic cluster around 'Kesk-Aafrika Vabariik'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - est
+    - fin

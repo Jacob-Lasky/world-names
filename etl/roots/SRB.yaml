@@ -1,0 +1,113 @@
+country: SRB
+name: Serbia
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Serbia
+    hue: 291.0
+    etymology_origin: Auto-detected orthographic cluster around 'Sèrbia' (55 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kal
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - nya
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - ton
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Сербия
+    hue: 351.0
+    etymology_origin: Auto-detected orthographic cluster around 'Сербия' (6 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mon
+    - rus
+    - tgk
+    - ukr
+  auto_2:
+    label: صربيا
+    hue: 51.0
+    etymology_origin: Auto-detected orthographic cluster around 'صربيا' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_3:
+    label: सर्बिया
+    hue: 111.0
+    etymology_origin: Auto-detected orthographic cluster around 'सर्बिया' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_4:
+    label: Srbsko
+    hue: 171.0
+    etymology_origin: Auto-detected orthographic cluster around 'Srbsko' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ces
+    - slk
+  auto_5:
+    label: Србија
+    hue: 231.0
+    etymology_origin: Auto-detected orthographic cluster around 'Србија' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - mkd
+    - srp

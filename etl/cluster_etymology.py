@@ -63,6 +63,12 @@ def main() -> int:
     for path in yaml_files:
         data = load_root_yaml(path)
         target_iso3 = data["country"]
+        # `auto_generated: true` at the YAML root marks the country as
+        # first-pass string-similarity coverage rather than hand-curated
+        # etymology — the Legend surfaces an "auto-detected" indicator
+        # and the COVERAGE report tracks the distinction so future
+        # hand-curation has an explicit queue.
+        auto_generated = bool(data.get("auto_generated", False))
         for local_id, cluster in data["clusters"].items():
             cluster_id = f"{target_iso3.lower()}.{local_id}"
             clusters.append({
@@ -71,6 +77,7 @@ def main() -> int:
                 "label": cluster["label"],
                 "hue": float(cluster["hue"]),
                 "etymology_origin": cluster.get("etymology_origin", "").strip(),
+                "auto_generated": auto_generated,
             })
             for lang in cluster.get("languages", []):
                 key = (target_iso3, lang)

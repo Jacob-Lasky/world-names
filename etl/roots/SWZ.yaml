@@ -1,0 +1,97 @@
+country: SWZ
+name: Eswatini
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Eswatini
+    hue: 110.0
+    etymology_origin: Auto-detected orthographic cluster around 'Eswatini' (40 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - deu
+    - eng
+    - est
+    - ewe
+    - fra
+    - grn
+    - hau
+    - hrv
+    - ind
+    - isl
+    - ita
+    - jam
+    - kin
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nno
+    - orm
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - tgl
+    - tsn
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Swaziland
+    hue: 182.0
+    etymology_origin: Auto-detected orthographic cluster around 'Swaziland' (9 languages).
+      Hand-curated etymology pending.
+    languages:
+    - dan
+    - fin
+    - lat
+    - nld
+    - pap
+    - spa
+    - sqi
+    - swe
+    - tuk
+  auto_2:
+    label: Есватини
+    hue: 254.0
+    etymology_origin: Auto-detected orthographic cluster around 'Есватини' (7 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - ukr
+  auto_3:
+    label: إسواتيني
+    hue: 326.0
+    etymology_origin: Auto-detected orthographic cluster around 'إسواتيني' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - pus
+  auto_4:
+    label: स्वाजीलैंड
+    hue: 38.0
+    etymology_origin: Auto-detected orthographic cluster around 'स्वाजीलैंड' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - nep

@@ -1,0 +1,118 @@
+country: CIV
+name: Ivory Coast
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Côte d'Ivoire
+    hue: 136.0
+    etymology_origin: Auto-detected orthographic cluster around 'Côte d'Ivoire' (14
+      languages). Hand-curated etymology pending.
+    languages:
+    - bis
+    - cat
+    - ewe
+    - fra
+    - ita
+    - mlg
+    - mlt
+    - pap
+    - por
+    - ron
+    - sna
+    - sot
+    - spa
+    - tgl
+  auto_1:
+    label: Кот д'Ивоар
+    hue: 168.7
+    etymology_origin: Auto-detected orthographic cluster around 'Кот-д'Ивуар' (6 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mon
+    - rus
+    - tgk
+    - ukr
+  auto_2:
+    label: Kotdivuāra
+    hue: 201.5
+    etymology_origin: Auto-detected orthographic cluster around 'Kot-d'İvuar' (5 languages).
+      Hand-curated etymology pending.
+    languages:
+    - aze
+    - kin
+    - lav
+    - orm
+    - tuk
+  auto_3:
+    label: Elfebeeküst
+    hue: 234.2
+    etymology_origin: Auto-detected orthographic cluster around 'Elfenbenskusten'
+      (5 languages). Hand-curated etymology pending.
+    languages:
+    - dan
+    - deu
+    - ltz
+    - nno
+    - swe
+  auto_4:
+    label: Ivory Coast
+    hue: 266.9
+    etymology_origin: Auto-detected orthographic cluster around 'Ivory Coast' (4 languages).
+      Hand-curated etymology pending.
+    languages:
+    - eng
+    - hau
+    - msa
+    - tsn
+  auto_5:
+    label: Ivoorkus
+    hue: 299.6
+    etymology_origin: Auto-detected orthographic cluster around 'Ivoorkus' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - nld
+  auto_6:
+    label: ساحل عاج
+    hue: 332.4
+    etymology_origin: Auto-detected orthographic cluster around 'ساحل العاج' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+  auto_7:
+    label: आइवरी कोस्ट
+    hue: 5.1
+    etymology_origin: Auto-detected orthographic cluster around 'आइवरी कोस्ट' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - nep
+  auto_8:
+    label: Pobřeží slonoviny
+    hue: 37.8
+    etymology_origin: Auto-detected orthographic cluster around 'Pobřeží slonoviny'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - ces
+    - slk
+  auto_9:
+    label: Aivri Kuos
+    hue: 70.5
+    etymology_origin: Auto-detected orthographic cluster around 'Aivri Kuos' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - jam
+    - nau
+  auto_10:
+    label: Fildişi Sahili
+    hue: 103.3
+    etymology_origin: Auto-detected orthographic cluster around 'Fildişi Sahili' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - tur
+    - uzb

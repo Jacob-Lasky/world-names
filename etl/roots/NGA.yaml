@@ -1,0 +1,98 @@
+country: NGA
+name: Nigeria
+auto_generated: true
+method: string-similarity union-find on normalized Levenshtein
+threshold: 0.45
+clusters:
+  auto_0:
+    label: Nigeria
+    hue: 184.0
+    etymology_origin: Auto-detected orthographic cluster around 'Nigèria' (55 languages).
+      Hand-curated etymology pending.
+    languages:
+    - afr
+    - aze
+    - bis
+    - bos
+    - cat
+    - ces
+    - dan
+    - deu
+    - eng
+    - est
+    - ewe
+    - fin
+    - fra
+    - ful
+    - grn
+    - hau
+    - hrv
+    - hun
+    - ind
+    - isl
+    - ita
+    - jam
+    - kin
+    - lat
+    - lav
+    - lit
+    - ltz
+    - mlg
+    - mlt
+    - msa
+    - nau
+    - nld
+    - nno
+    - orm
+    - pap
+    - pol
+    - por
+    - ron
+    - slk
+    - slv
+    - sna
+    - som
+    - sot
+    - spa
+    - sqi
+    - ssw
+    - swe
+    - tet
+    - tgl
+    - tsn
+    - tuk
+    - tur
+    - uzb
+    - vie
+    - zul
+  auto_1:
+    label: Нигерия
+    hue: 274.0
+    etymology_origin: Auto-detected orthographic cluster around 'Нигерия' (8 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bul
+    - kir
+    - mkd
+    - mon
+    - rus
+    - srp
+    - tgk
+    - ukr
+  auto_2:
+    label: नाइजीरिया
+    hue: 4.0
+    etymology_origin: Auto-detected orthographic cluster around 'नाइजीरिया' (3 languages).
+      Hand-curated etymology pending.
+    languages:
+    - bho
+    - hin
+    - nep
+  auto_3:
+    label: نيجيريا
+    hue: 94.0
+    etymology_origin: Auto-detected orthographic cluster around 'نيجيريا' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - ara
+    - pus

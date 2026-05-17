@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Sudan
     hue: 229.0
-    etymology_origin: Auto-detected orthographic cluster around 'Sudan' (80 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Sudan' (81 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -84,6 +84,7 @@ clusters:
     - swe
     - tgk
     - tgl
+    - tha
     - tuk
     - tur
     - ukr

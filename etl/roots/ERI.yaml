@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Eritrea
     hue: 164.0
-    etymology_origin: Auto-detected orthographic cluster around 'Eritrea' (80 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Eritrea' (81 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -84,17 +84,10 @@ clusters:
     - swe
     - tgk
     - tgl
+    - tha
     - tuk
     - tur
     - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: ປະເທດອິຣີເຕຣຍ
-    hue: 344.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອິຣີເຕຣຍ' (2
-      languages). Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

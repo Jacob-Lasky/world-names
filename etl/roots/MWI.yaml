@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Malawi
     hue: 87.0
-    etymology_origin: Auto-detected orthographic cluster around 'Malawi' (78 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Malawi' (79 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -81,6 +81,7 @@ clusters:
     - swe
     - tgk
     - tgl
+    - tha
     - tsn
     - tuk
     - tur

@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Australia
     hue: 23.0
-    etymology_origin: Auto-detected orthographic cluster around 'Austràlia' (86 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Austràlia' (87 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -89,6 +89,7 @@ clusters:
     - tet
     - tgk
     - tgl
+    - tha
     - ton
     - tsn
     - tuk

@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Honduras
     hue: 38.0
-    etymology_origin: Auto-detected orthographic cluster around 'Honduras' (77 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Honduras' (79 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -46,6 +46,7 @@ clusters:
     - kin
     - kir
     - kor
+    - lao
     - lat
     - lav
     - lit
@@ -80,6 +81,7 @@ clusters:
     - tet
     - tgk
     - tgl
+    - tha
     - ton
     - tuk
     - tur
@@ -87,11 +89,3 @@ clusters:
     - uzb
     - vie
     - zul
-  auto_1:
-    label: ປະເທດຮອນດູຣັສ
-    hue: 218.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດຮອນດູຣັສ' (2
-      languages). Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

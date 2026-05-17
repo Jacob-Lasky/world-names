@@ -7,10 +7,11 @@ clusters:
   auto_0:
     label: Norway
     hue: 89.0
-    etymology_origin: Auto-detected orthographic cluster around 'Norvégia' (83 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Norvégia' (87 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
     - ben
     - bho
@@ -28,6 +29,7 @@ clusters:
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
@@ -69,6 +71,7 @@ clusters:
     - pap
     - pol
     - por
+    - pus
     - ron
     - rus
     - sin
@@ -85,6 +88,7 @@ clusters:
     - tet
     - tgk
     - tgl
+    - tha
     - ton
     - tsn
     - tuk
@@ -93,20 +97,3 @@ clusters:
     - uzb
     - vie
     - zul
-  auto_1:
-    label: نروژ
-    hue: 209.0
-    etymology_origin: Auto-detected orthographic cluster around 'نروژ' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_2:
-    label: ປະເທດນອກແວ
-    hue: 329.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດນອກແວ' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

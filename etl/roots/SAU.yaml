@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Saudi Arabia
     hue: 143.0
-    etymology_origin: Auto-detected orthographic cluster around 'Saudi Arabia' (56
+    etymology_origin: Auto-detected orthographic cluster around 'Saudi Arabia' (58
       languages). Hand-curated etymology pending.
     languages:
     - afr
@@ -37,6 +37,7 @@ clusters:
     - kal
     - kat
     - kor
+    - lao
     - lav
     - lit
     - ltz
@@ -60,6 +61,7 @@ clusters:
     - ssw
     - swe
     - tgl
+    - tha
     - ton
     - tuk
     - tur
@@ -68,7 +70,7 @@ clusters:
     - zul
   auto_1:
     label: Arab Saudi
-    hue: 263.0
+    hue: 323.0
     etymology_origin: Auto-detected orthographic cluster around 'Aràbia Saudita' (18
       languages). Hand-curated etymology pending.
     languages:
@@ -90,11 +92,3 @@ clusters:
     - sqi
     - tet
     - tgk
-  auto_2:
-    label: ປະເທດຊາອຸດິອາຣາເບຍ
-    hue: 23.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດຊາອຸດິອາຣາເບຍ'
-      (2 languages). Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

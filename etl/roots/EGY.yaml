@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Egypt
     hue: 199.0
-    etymology_origin: Auto-detected orthographic cluster around 'Egipt' (62 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Egipt' (63 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -68,6 +68,7 @@ clusters:
     - swe
     - tet
     - tgl
+    - tha
     - ton
     - tsn
     - ukr

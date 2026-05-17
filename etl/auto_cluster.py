@@ -35,7 +35,7 @@ from typing import Iterable
 import yaml  # type: ignore[import-untyped]
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _lib import _levenshtein, _normalize_for_similarity  # noqa: E402
+from _lib import _levenshtein, _normalize_for_similarity, _strip_country_prefix  # noqa: E402
 
 ETL = Path(__file__).parent
 CACHE = ETL / "cache"
@@ -140,19 +140,37 @@ def pick_centroid(items: list[str]) -> str:
 
 def cluster_country_exonyms(exonyms: list[dict]) -> list[ClusterCandidate]:
     """Cluster the exonyms a country has, return the size-≥2 clusters
-    in size-descending order. Singletons are dropped."""
+    in size-descending order. Singletons are dropped.
+
+    Per-language "country of …" prefix stripping happens HERE, not in
+    the wider similarity helper, because the stripped form is only
+    correct for clustering: the LABEL still uses the original full
+    exonym for display, so the InspectionCard shows the actual Thai
+    'ประเทศญี่ปุ่น' rather than a stripped 'ญี่ปุ่น'. Without the
+    strip, Thai and Lao exonyms (which prepend 'country of' to
+    everything) cluster only with each other; with it, they
+    correctly join the main phonetic group for the target country.
+    """
     if not exonyms:
         return []
     items = [e["exonym"] for e in exonyms]
-    raw_groups = union_find_cluster(items, DISTANCE_THRESHOLD)
+    # cluster_keys are what the metric operates on — prefix-stripped per
+    # observer language so 'ประเทศ' / 'ປະເທດ' classifier noise doesn't
+    # dominate edit-distance. Parallel to `items`, same indexing.
+    cluster_keys = [
+        _strip_country_prefix(e["exonym"], e["observer_language_code"])
+        for e in exonyms
+    ]
+    raw_groups = union_find_cluster(cluster_keys, DISTANCE_THRESHOLD)
     out: list[ClusterCandidate] = []
     for idx_list in raw_groups:
         if len(idx_list) < MIN_CLUSTER_SIZE:
             continue
         member_rows = [exonyms[i] for i in idx_list]
+        # Label + representative come from the ORIGINAL exonyms (full
+        # form). The clustering metric used the stripped form; the
+        # display layer uses the unmodified text.
         member_strs = [items[i] for i in idx_list]
-        # Canonical label: the most common form among the cluster's
-        # exonyms. Ties broken by shortest (typical of more "core" forms).
         counts = Counter(member_strs).most_common()
         max_count = counts[0][1]
         top = [s for s, c in counts if c == max_count]

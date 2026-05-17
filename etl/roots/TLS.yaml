@@ -56,7 +56,7 @@ clusters:
   auto_1:
     label: Timor-Leste
     hue: 93.0
-    etymology_origin: Auto-detected orthographic cluster around 'Timor-Leste' (15
+    etymology_origin: Auto-detected orthographic cluster around 'Timor-Leste' (16
       languages). Hand-curated etymology pending.
     languages:
     - eng
@@ -73,6 +73,7 @@ clusters:
     - ron
     - tet
     - tgk
+    - tha
     - ton
   auto_2:
     label: Timor Oriental

@@ -202,6 +202,100 @@ def resolve_bcp47(iso639_3: str, qid_to_alpha2: dict[str, str | None], iso_to_qi
 
 
 _NON_ALNUM = re.compile(r"[^a-z0-9]")
+_WHITESPACE = re.compile(r"\s+")
+
+# Languages that systematically prepend a "country of …" / "republic of …" /
+# "islands of …" classifier to their country-name exonyms. The classifier
+# becomes phonetic noise after unidecode (Thai 'ประเทศ' → 'praeths' added
+# to every exonym; Lao 'ປະເທດ' → 'paethd' likewise), which inflates
+# edit-distance to every other language's bare name for that country and
+# pushes Thai + Lao exonyms into their own dead-end clusters instead of
+# letting them join the main phonetic group. Detected at ETL time and
+# stripped from the cluster-key form ONLY — the full exonym is still
+# stored, displayed in the InspectionCard, and shown verbatim in tooltips.
+#
+# Coverage decision: only languages where the classifier prepends to a
+# clear majority of exonyms get an entry. Thai prepends ประเทศ to 187 /
+# 204 of its exonyms; Lao prepends ປະເທດ to 127 / 158. Add more as you
+# discover them — Vietnamese 'nước', Korean '대한', Burmese, etc. all
+# have analogous patterns. Order matters: longest prefix first so the
+# stripper tries 'สาธารณรัฐ' (republic) before falling back to 'ประเทศ'
+# (country).
+COUNTRY_OF_PREFIXES: dict[str, tuple[str, ...]] = {
+    "tha": ("สาธารณรัฐ", "ประเทศ", "หมู่เกาะ", "นครรัฐ"),
+    "lao": ("ສາທາລະນະລັດ", "ປະເທດ", "ໝູ່ເກາະ"),
+}
+
+
+def _strip_country_prefix(s: str, lang: str | None) -> str:
+    """If `s` starts with a known "country of …" prefix for `lang`,
+    return `s` with the prefix removed (and surrounding whitespace
+    cleaned up). Otherwise return `s` unchanged."""
+    if not lang or not s:
+        return s
+    for prefix in COUNTRY_OF_PREFIXES.get(lang, ()):
+        if s.startswith(prefix):
+            stripped = s[len(prefix):].strip()
+            if stripped:
+                return stripped
+    return s
+
+
+def _is_latin_letter(c: str) -> bool:
+    """Letters whose Unicode name starts with 'LATIN' (Basic Latin +
+    Latin-1 Supplement + Latin Extended A/B + IPA Extensions). Returns
+    False for non-letters and for letters in any other script."""
+    if not c.isalpha():
+        return False
+    try:
+        return "LATIN" in unicodedata.name(c, "")
+    except ValueError:
+        return False
+
+
+def pronunciation(s: str) -> str | None:
+    """Display-form transliteration of `s` for the UI's pronunciation
+    guide. Returns None when no pronunciation is helpful — either
+    because `s` is already Latin script, or because Latin chars
+    dominate so the unidecode output would mostly echo the original
+    (e.g. "Slavic *němьcь" → "Slavic *nem'c'", strictly worse).
+
+    Examples that DO get a pronunciation:
+        'Россия'             → 'Rossiia'
+        'ประเทศญี่ปุ่น'      → 'praethsyiipun'
+        '中華人民共和国'        → 'Zhong Hua Ren Min Gong He Guo'
+        '대한민국'             → 'daehanmingug'
+
+    Examples that DO NOT (returns None):
+        'Allemagne'          (all Latin)
+        'Naïve'              (Latin + accents; unidecode just drops accents)
+        'Slavic *němьcь'     (Latin-dominant; the few Cyrillic chars
+                              don't justify the noisy "Slavic *nem'c'")
+
+    Distinct from `_normalize_for_similarity` — that one strips spaces
+    + non-alnum + casefolds for edit-distance comparison. This one
+    preserves spaces + case so the result reads as a natural
+    pronunciation, not a cluster key.
+    """
+    latin = 0
+    non_latin = 0
+    for c in s:
+        if not c.isalpha():
+            continue
+        if _is_latin_letter(c):
+            latin += 1
+        else:
+            non_latin += 1
+    if non_latin == 0:
+        return None
+    # Dominant-script rule: only transliterate when non-Latin letters
+    # outnumber Latin ones. Otherwise the source is already mostly
+    # readable to a Latin-alphabet reader.
+    if non_latin <= latin:
+        return None
+    result = unidecode(s).strip()
+    result = _WHITESPACE.sub(" ", result)
+    return result or None
 
 
 def _normalize_for_similarity(s: str) -> str:

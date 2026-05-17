@@ -203,7 +203,9 @@ export class WorldNamesDB {
                obs.name_en           AS observer_name_en,
                l.name_en             AS observer_language_name,
                e.exonym              AS exonym,
+               e.pronunciation       AS exonym_pronunciation,
                cs.label              AS cluster_label,
+               cs.pronunciation      AS cluster_pronunciation,
                cs.etymology_origin   AS etymology_origin,
                cs.hue                AS hue,
                e.similarity_to_endonym AS similarity
@@ -233,7 +235,9 @@ export class WorldNamesDB {
       observer_name_en: r.observer_name_en as string,
       observer_language_name: (r.observer_language_name as string | null) ?? null,
       exonym: r.exonym as string,
+      exonym_pronunciation: (r.exonym_pronunciation as string | null) ?? null,
       cluster_label: (r.cluster_label as string | null) ?? null,
+      cluster_pronunciation: (r.cluster_pronunciation as string | null) ?? null,
       etymology_origin: (r.etymology_origin as string | null) ?? null,
       hue: (r.hue as number | null) ?? null,
       similarity: (r.similarity as number | null) ?? null,
@@ -257,6 +261,7 @@ export class WorldNamesDB {
         )
         SELECT cs.id              AS id,
                cs.label           AS label,
+               cs.pronunciation   AS pronunciation,
                cs.hue             AS hue,
                cs.etymology_origin AS etymology_origin,
                cs.auto_generated  AS auto_generated,
@@ -267,7 +272,7 @@ export class WorldNamesDB {
         LEFT JOIN country_languages cl
           ON cl.language_code = e.observer_language_code
          AND cl.is_dominant_l1 = 1
-        GROUP BY cs.id, cs.label, cs.hue, cs.etymology_origin, cs.auto_generated
+        GROUP BY cs.id, cs.label, cs.pronunciation, cs.hue, cs.etymology_origin, cs.auto_generated
         ORDER BY member_count DESC, cs.label ASC
       `,
       bind: [targetM49],
@@ -277,6 +282,7 @@ export class WorldNamesDB {
     return rows.map((r) => ({
       id: r.id as string,
       label: r.label as string,
+      pronunciation: (r.pronunciation as string | null) ?? null,
       hue: r.hue as number,
       etymology_origin: (r.etymology_origin as string | null) ?? null,
       member_count: Number(r.member_count ?? 0),

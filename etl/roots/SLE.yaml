@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Sierra Leone
     hue: 108.0
-    etymology_origin: Auto-detected orthographic cluster around 'Sierra Leone' (78
+    etymology_origin: Auto-detected orthographic cluster around 'Sierra Leone' (79
       languages). Hand-curated etymology pending.
     languages:
     - afr
@@ -81,6 +81,7 @@ clusters:
     - swe
     - tgk
     - tgl
+    - tha
     - tsn
     - tuk
     - tur

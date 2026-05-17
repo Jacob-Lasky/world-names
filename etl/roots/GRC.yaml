@@ -70,7 +70,7 @@ clusters:
     - zul
   auto_1:
     label: यूनान
-    hue: 100.0
+    hue: 40.0
     etymology_origin: Auto-detected orthographic cluster around 'Yunan' (15 languages).
       Hand-curated etymology pending.
     languages:
@@ -89,3 +89,11 @@ clusters:
     - tgk
     - tur
     - uzb
+  auto_2:
+    label: ក្រិច
+    hue: 160.0
+    etymology_origin: Auto-detected orthographic cluster around 'ក្រិច' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - khm
+    - tha

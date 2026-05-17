@@ -8,7 +8,7 @@ clusters:
     label: Antigua i Barbuda
     hue: 340.0
     etymology_origin: Auto-detected orthographic cluster around 'Antigua a Barbuda'
-      (77 languages). Hand-curated etymology pending.
+      (79 languages). Hand-curated etymology pending.
     languages:
     - afr
     - ara
@@ -47,6 +47,7 @@ clusters:
     - kin
     - kir
     - kor
+    - lao
     - lat
     - lav
     - lit
@@ -80,6 +81,7 @@ clusters:
     - tet
     - tgk
     - tgl
+    - tha
     - ton
     - tuk
     - tur
@@ -87,11 +89,3 @@ clusters:
     - uzb
     - vie
     - zul
-  auto_1:
-    label: ປະເທດອັງຕີກາ ແລະ ບາກບູດາ
-    hue: 160.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອັງຕີກາ ແລະ
-      ບາກບູດາ' (2 languages). Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Gambia
     hue: 124.0
-    etymology_origin: Auto-detected orthographic cluster around 'Gambia' (80 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Gambia' (81 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -49,6 +49,7 @@ clusters:
     - kin
     - kir
     - kor
+    - lao
     - lat
     - lav
     - lit
@@ -90,11 +91,3 @@ clusters:
     - uzb
     - vie
     - zul
-  auto_1:
-    label: ປະເທດກຳບີ
-    hue: 304.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດກຳບີ' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

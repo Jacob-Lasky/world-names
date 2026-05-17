@@ -8,7 +8,7 @@ clusters:
     label: Equatorial Guinea
     hue: 170.0
     etymology_origin: Auto-detected orthographic cluster around 'Ekvatorial-Guinea'
-      (34 languages). Hand-curated etymology pending.
+      (35 languages). Hand-curated etymology pending.
     languages:
     - afr
     - aze
@@ -39,6 +39,7 @@ clusters:
     - sot
     - srp
     - swe
+    - tha
     - tsn
     - tuk
     - tur

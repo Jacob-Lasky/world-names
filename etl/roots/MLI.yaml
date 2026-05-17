@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Mali
     hue: 106.0
-    etymology_origin: Auto-detected orthographic cluster around 'Mali' (80 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Mali' (81 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -83,6 +83,7 @@ clusters:
     - swe
     - tgk
     - tgl
+    - tha
     - tsn
     - tuk
     - tur

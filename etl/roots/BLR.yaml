@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Belarus
     hue: 344.0
-    etymology_origin: Auto-detected orthographic cluster around 'Belarus' (75 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Belarus' (77 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -46,6 +46,7 @@ clusters:
     - kin
     - kir
     - kor
+    - lao
     - lav
     - lit
     - mkd
@@ -78,6 +79,7 @@ clusters:
     - tet
     - tgk
     - tgl
+    - tha
     - ton
     - tuk
     - tur
@@ -87,7 +89,7 @@ clusters:
     - zul
   auto_1:
     label: Wit-Rusland
-    hue: 104.0
+    hue: 164.0
     etymology_origin: Auto-detected orthographic cluster around 'Hvíta-Rússland' (4
       languages). Hand-curated etymology pending.
     languages:
@@ -95,11 +97,3 @@ clusters:
     - kal
     - ltz
     - nld
-  auto_2:
-    label: ประเทศเบลารุส
-    hue: 224.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດເບລາຣຸດຊີ' (2
-      languages). Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

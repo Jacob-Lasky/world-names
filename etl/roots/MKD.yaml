@@ -76,7 +76,7 @@ clusters:
     - zul
   auto_1:
     label: उत्तर मैसीडोनिया
-    hue: 190.0
+    hue: 160.0
     etymology_origin: Auto-detected orthographic cluster around 'उत्तर मैसिडोनिया'
       (5 languages). Hand-curated etymology pending.
     languages:
@@ -87,9 +87,17 @@ clusters:
     - sin
   auto_2:
     label: مقدونیه شمالی
-    hue: 310.0
+    hue: 250.0
     etymology_origin: Auto-detected orthographic cluster around 'مقدونيا الشمالية'
       (2 languages). Hand-curated etymology pending.
     languages:
     - ara
     - fas
+  auto_3:
+    label: ມາຊິໂດເນຍເໜືອ
+    hue: 340.0
+    etymology_origin: Auto-detected orthographic cluster around 'ມາຊິໂດເນຍເໜືອ' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - lao
+    - tha

@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Zimbabwe
     hue: 336.0
-    etymology_origin: Auto-detected orthographic cluster around 'Zimbabwe' (81 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Zimbabwe' (82 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -84,6 +84,7 @@ clusters:
     - swe
     - tgk
     - tgl
+    - tha
     - tsn
     - tuk
     - tur

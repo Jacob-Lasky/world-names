@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Finland
     hue: 131.0
-    etymology_origin: Auto-detected orthographic cluster around 'Finland' (80 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Finland' (81 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -82,6 +82,7 @@ clusters:
     - tet
     - tgk
     - tgl
+    - tha
     - ton
     - tsn
     - tuk

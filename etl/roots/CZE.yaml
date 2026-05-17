@@ -7,7 +7,7 @@ clusters:
   auto_0:
     label: Чехия
     hue: 286.0
-    etymology_origin: Auto-detected orthographic cluster around 'Չեխիա' (49 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Չեխիա' (51 languages).
       Hand-curated etymology pending.
     languages:
     - afr
@@ -35,6 +35,7 @@ clusters:
     - kin
     - kir
     - kor
+    - lao
     - lat
     - lav
     - lit
@@ -54,6 +55,7 @@ clusters:
     - ssw
     - swe
     - tgk
+    - tha
     - tuk
     - tur
     - ukr
@@ -61,7 +63,7 @@ clusters:
     - zul
   auto_1:
     label: Republik Czech
-    hue: 331.0
+    hue: 337.4
     etymology_origin: Auto-detected orthographic cluster around 'Republika Çeke' (9
       languages). Hand-curated etymology pending.
     languages:
@@ -76,7 +78,7 @@ clusters:
     - ton
   auto_2:
     label: Czech Republic
-    hue: 16.0
+    hue: 28.9
     etymology_origin: Auto-detected orthographic cluster around 'Czech Republic' (7
       languages). Hand-curated etymology pending.
     languages:
@@ -89,7 +91,7 @@ clusters:
     - sna
   auto_3:
     label: ਚੈੱਕ ਗਣਰਾਜ
-    hue: 61.0
+    hue: 80.3
     etymology_origin: Auto-detected orthographic cluster around 'चेक गणराज्य' (3 languages).
       Hand-curated etymology pending.
     languages:
@@ -98,7 +100,7 @@ clusters:
     - sin
   auto_4:
     label: جمهوری چک
-    hue: 106.0
+    hue: 131.7
     etymology_origin: Auto-detected orthographic cluster around 'جمهورية التشيك' (2
       languages). Hand-curated etymology pending.
     languages:
@@ -106,7 +108,7 @@ clusters:
     - fas
   auto_5:
     label: चेक गणतन्त्र
-    hue: 151.0
+    hue: 183.1
     etymology_origin: Auto-detected orthographic cluster around 'চেক প্রজাতন্ত্র'
       (2 languages). Hand-curated etymology pending.
     languages:
@@ -114,17 +116,9 @@ clusters:
     - nep
   auto_6:
     label: चेक रिपब्लिक
-    hue: 196.0
+    hue: 234.6
     etymology_origin: Auto-detected orthographic cluster around 'चेक रिपब्लिक' (2
       languages). Hand-curated etymology pending.
     languages:
     - bho
     - dzo
-  auto_7:
-    label: ປະເທດເຊັກກີ
-    hue: 241.0
-    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດເຊັກກີ' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - lao
-    - tha

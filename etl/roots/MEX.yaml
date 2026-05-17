@@ -7,51 +7,75 @@ clusters:
   auto_0:
     label: Mexico
     hue: 264.0
-    etymology_origin: Auto-detected orthographic cluster around 'Mexiko' (60 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Meksiko' (87 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -59,37 +83,25 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Мексика
-    hue: 24.0
-    etymology_origin: Auto-detected orthographic cluster around 'Мексика' (8 languages).
-      Hand-curated etymology pending.
+    label: ປະເທດເມັກຊິກ
+    hue: 84.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດເມັກຊິກ' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: मेक्सिको
-    hue: 144.0
-    etymology_origin: Auto-detected orthographic cluster around 'मेक्सिको' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

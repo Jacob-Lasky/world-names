@@ -7,94 +7,96 @@ clusters:
   auto_0:
     label: Israel
     hue: 88.0
-    etymology_origin: Auto-detected orthographic cluster around 'Israel' (56 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Israel' (82 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Израел
-    hue: 178.0
-    etymology_origin: Auto-detected orthographic cluster around 'Израил' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: إسرائيل
+    label: ประเทศอิสราเอล
     hue: 268.0
-    etymology_origin: Auto-detected orthographic cluster around 'إسرائيل' (3 languages).
-      Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອິດສະຣາເອນ'
+      (2 languages). Hand-curated etymology pending.
     languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: इजराइल
-    hue: 358.0
-    etymology_origin: Auto-detected orthographic cluster around 'इजराइल' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

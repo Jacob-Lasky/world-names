@@ -7,17 +7,21 @@ clusters:
   auto_0:
     label: India
     hue: 279.0
-    etymology_origin: Auto-detected orthographic cluster around 'India' (57 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'India' (73 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
@@ -29,16 +33,23 @@ clusters:
     - hau
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
+    - khm
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
     - msa
@@ -51,6 +62,7 @@ clusters:
     - pol
     - por
     - ron
+    - rus
     - slk
     - slv
     - sna
@@ -58,27 +70,30 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
+    - vie
     - zul
   auto_1:
-    label: Индия
+    label: भारत
     hue: 9.0
-    etymology_origin: Auto-detected orthographic cluster around 'Индия' (6 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ভারত' (5 languages).
       Hand-curated etymology pending.
     languages:
-    - bul
-    - kir
-    - mkd
-    - rus
-    - srp
-    - ukr
+    - ben
+    - bho
+    - hin
+    - nep
+    - pan
   auto_2:
     label: هند
     hue: 99.0
@@ -89,11 +104,10 @@ clusters:
     - fas
     - pus
   auto_3:
-    label: भारत
+    label: ປະເທດອິນເດຍ
     hue: 189.0
-    etymology_origin: Auto-detected orthographic cluster around 'भारत' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອິນເດຍ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

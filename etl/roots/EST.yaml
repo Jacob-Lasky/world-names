@@ -7,37 +7,68 @@ clusters:
   auto_0:
     label: Estonia
     hue: 206.0
-    etymology_origin: Auto-detected orthographic cluster around 'Estonia' (44 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Estonia' (79 languages).
       Hand-curated etymology pending.
     languages:
+    - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
+    - dan
+    - deu
+    - dzo
+    - ell
     - eng
     - ewe
+    - fas
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
+    - hye
     - ind
+    - isl
     - ita
     - jam
+    - jpn
+    - kal
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lit
+    - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
+    - nld
+    - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -45,59 +76,16 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
+    - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Estland
-    hue: 278.0
-    etymology_origin: Auto-detected orthographic cluster around 'Estland' (9 languages).
-      Hand-curated etymology pending.
-    languages:
-    - afr
-    - dan
-    - deu
-    - isl
-    - kal
-    - ltz
-    - nld
-    - nno
-    - swe
-  auto_2:
-    label: Эстония
-    hue: 350.0
-    etymology_origin: Auto-detected orthographic cluster around 'Эстония' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_3:
-    label: استونی
-    hue: 62.0
-    etymology_origin: Auto-detected orthographic cluster around 'إستونيا' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_4:
-    label: इस्टोनिया
-    hue: 134.0
-    etymology_origin: Auto-detected orthographic cluster around 'इस्टोनिया' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

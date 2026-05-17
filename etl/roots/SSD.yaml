@@ -7,71 +7,84 @@ clusters:
   auto_0:
     label: Južni Sudan
     hue: 324.0
-    etymology_origin: Auto-detected orthographic cluster around 'Sur Sudan' (29 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Südsudan' (48 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - ces
+    - cmn
     - dan
     - deu
     - eng
     - est
     - fin
+    - heb
+    - hin
     - hrv
     - hun
     - isl
     - jam
+    - jpn
+    - kat
+    - kir
+    - kor
     - lav
     - ltz
+    - mkd
+    - mon
     - nau
+    - nep
     - nld
     - nno
+    - pan
     - pap
+    - rus
+    - sin
     - slk
     - slv
     - sna
+    - som
+    - srp
     - swe
     - tgl
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
   auto_1:
     label: Sudan del Sud
     hue: 54.0
-    etymology_origin: Auto-detected orthographic cluster around 'Sudan del Sud' (10
+    etymology_origin: Auto-detected orthographic cluster around 'Sudan del Sud' (8
       languages). Hand-curated etymology pending.
     languages:
     - cat
     - fra
-    - hau
     - ind
     - ita
     - msa
     - por
     - ron
     - spa
-    - sqi
   auto_2:
-    label: Южен Судан
+    label: سوېلي سوډان
     hue: 144.0
-    etymology_origin: Auto-detected orthographic cluster around 'Южен Судан' (5 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - mkd
-    - mon
-    - rus
-    - srp
-  auto_3:
-    label: दक्खिन सूडान
-    hue: 234.0
-    etymology_origin: Auto-detected orthographic cluster around 'दक्षिण सूडान' (3
+    etymology_origin: Auto-detected orthographic cluster around 'جنوب السودان' (2
       languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
+    - ara
+    - pus
+  auto_3:
+    label: Sudan ta Kudu
+    hue: 234.0
+    etymology_origin: Auto-detected orthographic cluster around 'Sudan ta Kudu' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - hau
+    - sqi

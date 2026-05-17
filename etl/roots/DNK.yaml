@@ -7,49 +7,73 @@ clusters:
   auto_0:
     label: Denmark
     hue: 161.0
-    etymology_origin: Auto-detected orthographic cluster around 'Danmarka' (57 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Danmarka' (84 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
+    - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -57,50 +81,24 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Дания
-    hue: 233.0
-    etymology_origin: Auto-detected orthographic cluster around 'Дания' (6 languages).
+    label: ປະເທດດານມາກ
+    hue: 341.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດດານມາກ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - bul
-    - kir
-    - mon
-    - rus
-    - tgk
-    - ukr
-  auto_2:
-    label: डेनमार्क
-    hue: 305.0
-    etymology_origin: Auto-detected orthographic cluster around 'डेनमार्क' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
-    label: دانمارک
-    hue: 17.0
-    etymology_origin: Auto-detected orthographic cluster around 'دانمارک' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - fas
-    - pus
-  auto_4:
-    label: Данска
-    hue: 89.0
-    etymology_origin: Auto-detected orthographic cluster around 'Данска' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - mkd
-    - srp
+    - lao
+    - tha

@@ -7,47 +7,70 @@ clusters:
   auto_0:
     label: Senegal
     hue: 260.0
-    etymology_origin: Auto-detected orthographic cluster around 'Senegal' (53 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Senegal' (79 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -55,43 +78,14 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - swe
+    - tgk
     - tgl
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Сенегал
-    hue: 350.0
-    etymology_origin: Auto-detected orthographic cluster around 'Сенегал' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: سنگال
-    hue: 80.0
-    etymology_origin: Auto-detected orthographic cluster around 'سنگال' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: सेनेगल
-    hue: 170.0
-    etymology_origin: Auto-detected orthographic cluster around 'सेनेगल' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

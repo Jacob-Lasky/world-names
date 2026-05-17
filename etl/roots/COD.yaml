@@ -8,12 +8,14 @@ clusters:
     label: Demokratska Republika Kongo
     hue: 304.0
     etymology_origin: Auto-detected orthographic cluster around 'Demokratska Republika
-      Kongo' (26 languages). Hand-curated etymology pending.
+      Kongo' (34 languages). Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - bho
     - bis
     - bos
+    - bul
     - ces
     - dan
     - deu
@@ -23,26 +25,33 @@ clusters:
     - hrv
     - hun
     - jam
+    - kat
+    - kir
     - lav
     - lit
     - ltz
+    - mkd
     - nno
     - nya
     - pol
+    - rus
     - slk
     - slv
     - sna
+    - srp
     - tgl
     - tuk
     - tur
+    - ukr
     - uzb
   auto_1:
     label: Republik Demokratik Kongo
-    hue: 4.0
+    hue: 344.0
     etymology_origin: Auto-detected orthographic cluster around 'Republika demokratika
-      di Kongo' (16 languages). Hand-curated etymology pending.
+      di Kongo' (18 languages). Hand-curated etymology pending.
     languages:
     - cat
+    - ell
     - fra
     - ind
     - ita
@@ -58,20 +67,19 @@ clusters:
     - sot
     - spa
     - sqi
+    - tgk
   auto_2:
-    label: Демократска Република Конго
-    hue: 64.0
-    etymology_origin: Auto-detected orthographic cluster around 'Демократска Република
-      Конго' (5 languages). Hand-curated etymology pending.
+    label: 刚果民主共和国
+    hue: 24.0
+    etymology_origin: Auto-detected orthographic cluster around 'コンゴ民主共和国' (3 languages).
+      Hand-curated etymology pending.
     languages:
-    - bul
-    - mkd
-    - rus
-    - srp
-    - ukr
+    - cmn
+    - jpn
+    - kor
   auto_3:
     label: Koŋgo Kinshasa
-    hue: 124.0
+    hue: 64.0
     etymology_origin: Auto-detected orthographic cluster around 'Kongo-Kinshasa' (3
       languages). Hand-curated etymology pending.
     languages:
@@ -79,18 +87,43 @@ clusters:
     - nld
     - swe
   auto_4:
-    label: 刚果民主共和国
-    hue: 184.0
-    etymology_origin: Auto-detected orthographic cluster around '刚果民主共和国' (2 languages).
+    label: สาธารณรัฐประชาธิปไตยคองโก
+    hue: 104.0
+    etymology_origin: Auto-detected orthographic cluster around 'สาธารณรัฐประชาธิปไตยคองโก'
+      (3 languages). Hand-curated etymology pending.
+    languages:
+    - khm
+    - lao
+    - tha
+  auto_5:
+    label: ކޮންގޯ
+    hue: 144.0
+    etymology_origin: Auto-detected orthographic cluster around 'ކޮންގޯ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - cmn
-    - jpn
-  auto_5:
+    - div
+    - ssw
+  auto_6:
     label: Jamhuriyar dimokuradiyya Kwango
-    hue: 244.0
+    hue: 184.0
     etymology_origin: Auto-detected orthographic cluster around 'Jamhuriyar dimokuradiyya
       Kwango' (2 languages). Hand-curated etymology pending.
     languages:
     - hau
     - som
+  auto_7:
+    label: ਕਾਂਗੋ ਲੋਕਤੰਤਰੀ ਗਣਰਾਜ
+    hue: 224.0
+    etymology_origin: Auto-detected orthographic cluster around 'कांगो लोकतान्त्रिक
+      गणराज्य' (2 languages). Hand-curated etymology pending.
+    languages:
+    - hin
+    - pan
+  auto_8:
+    label: Ripubrikit Engame Kongo
+    hue: 264.0
+    etymology_origin: Auto-detected orthographic cluster around 'Ripubrikit Engame
+      Kongo' (2 languages). Hand-curated etymology pending.
+    languages:
+    - nau
+    - zul

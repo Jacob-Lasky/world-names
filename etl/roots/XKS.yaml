@@ -7,14 +7,17 @@ clusters:
   auto_0:
     label: Kosovo
     hue: 216.0
-    etymology_origin: Auto-detected orthographic cluster around 'Kosovo' (48 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Kosovo' (61 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
     - eng
@@ -24,19 +27,26 @@ clusters:
     - grn
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - kal
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
@@ -44,38 +54,37 @@ clusters:
     - pol
     - por
     - ron
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - swe
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Косово
-    hue: 336.0
-    etymology_origin: Auto-detected orthographic cluster around 'Косово' (6 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - srp
-    - ukr
-  auto_2:
     label: كوسوفو
-    hue: 96.0
+    hue: 336.0
     etymology_origin: Auto-detected orthographic cluster around 'کوسووو' (3 languages).
       Hand-curated etymology pending.
     languages:
     - ara
     - fas
     - pus
+  auto_2:
+    label: ਕੋਸੋਵੋ ਗਣਰਾਜ
+    hue: 96.0
+    etymology_origin: Auto-detected orthographic cluster around 'कोसोवो गणराज्य' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - hin
+    - pan

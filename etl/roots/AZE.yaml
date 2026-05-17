@@ -7,17 +7,25 @@ clusters:
   auto_0:
     label: Azerbaijan
     hue: 164.0
-    etymology_origin: Auto-detected orthographic cluster around 'Azerbaijan' (58 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Azerbaijan' (84 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
@@ -27,30 +35,44 @@ clusters:
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
     - kin
+    - kir
+    - kor
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -58,43 +80,25 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
+    - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Азербайджан
-    hue: 254.0
-    etymology_origin: Auto-detected orthographic cluster around 'Азербайжан' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_2:
-    label: अज़रबैजान
+    label: ປະເທດອາແຊກໄບຊານ
     hue: 344.0
-    etymology_origin: Auto-detected orthographic cluster around 'अज़रबैजान' (3 languages).
-      Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອາແຊກໄບຊານ'
+      (2 languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
-    label: أذربيجان
-    hue: 74.0
-    etymology_origin: Auto-detected orthographic cluster around 'أذربيجان' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - pus
+    - lao
+    - tha

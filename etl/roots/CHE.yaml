@@ -7,71 +7,81 @@ clusters:
   auto_0:
     label: Switzerland
     hue: 88.0
-    etymology_origin: Auto-detected orthographic cluster around 'Switserland' (46
+    etymology_origin: Auto-detected orthographic cluster around 'Switserland' (69
       languages). Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - hin
     - hrv
+    - hye
     - ind
     - isl
     - jam
+    - jpn
+    - kat
     - kea
+    - khm
     - kin
+    - kir
+    - kor
     - lav
     - lit
+    - mkd
     - mlg
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
+    - pol
     - por
+    - pus
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
+    - srp
     - ssw
     - tet
+    - tgk
     - tgl
     - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - zul
   auto_1:
-    label: Швейцария
-    hue: 148.0
-    etymology_origin: Auto-detected orthographic cluster around 'Швейцария' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_2:
     label: Schweiz
-    hue: 208.0
+    hue: 178.0
     etymology_origin: Auto-detected orthographic cluster around 'Schweiz' (5 languages).
       Hand-curated etymology pending.
     languages:
@@ -80,29 +90,21 @@ clusters:
     - kal
     - ltz
     - swe
-  auto_3:
-    label: स्विट्ज़रलैंड
+  auto_2:
+    label: Ελβετία
     hue: 268.0
-    etymology_origin: Auto-detected orthographic cluster around 'स्विट्ज़रलैण्ड' (3
-      languages). Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'Elveția' (3 languages).
+      Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
+    - ell
+    - lat
+    - ron
+  auto_3:
     label: Zvicër
-    hue: 328.0
+    hue: 358.0
     etymology_origin: Auto-detected orthographic cluster around 'Żvizzera' (3 languages).
       Hand-curated etymology pending.
     languages:
     - ita
     - mlt
     - sqi
-  auto_5:
-    label: Elveția
-    hue: 28.0
-    etymology_origin: Auto-detected orthographic cluster around 'Helvetia' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - lat
-    - ron

@@ -7,94 +7,91 @@ clusters:
   auto_0:
     label: New Zealand
     hue: 64.0
-    etymology_origin: Auto-detected orthographic cluster around 'New Zealand' (49
-      languages). Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'Нов Зеланд' (76 languages).
+      Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - ewe
+    - fas
     - fij
     - fra
     - ful
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
+    - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - mya
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
     - slk
     - slv
     - sna
     - som
     - spa
+    - srp
     - swe
     - tet
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Нов Зеланд
-    hue: 136.0
-    etymology_origin: Auto-detected orthographic cluster around 'Нова Зеландия' (7
-      languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_2:
-    label: نیوزیلند
-    hue: 208.0
-    etymology_origin: Auto-detected orthographic cluster around 'نيوزيلندا' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
     label: Zelanda e Re
-    hue: 280.0
+    hue: 244.0
     etymology_origin: Auto-detected orthographic cluster around 'Selandia Baru' (3
       languages). Hand-curated etymology pending.
     languages:
     - grn
     - ind
     - sqi
-  auto_4:
-    label: न्यूजीलैंड
-    hue: 352.0
-    etymology_origin: Auto-detected orthographic cluster around 'न्यूजीलैंड' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin

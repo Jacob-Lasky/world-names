@@ -7,45 +7,63 @@ clusters:
   auto_0:
     label: Etiopia
     hue: 225.0
-    etymology_origin: Auto-detected orthographic cluster around 'Etiòpia' (53 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Etiòpia' (75 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - ell
     - eng
     - est
     - ewe
     - fin
     - fra
+    - ful
     - grn
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kea
     - kin
+    - kir
+    - kor
+    - lao
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -53,50 +71,33 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
+    - tha
     - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Эфиопия
-    hue: 297.0
-    etymology_origin: Auto-detected orthographic cluster around 'Эфиопия' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: इथियोपिया
-    hue: 9.0
-    etymology_origin: Auto-detected orthographic cluster around 'इथियोपिया' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
-    label: إثيوبيا
-    hue: 81.0
-    etymology_origin: Auto-detected orthographic cluster around 'إثيوبيا' (2 languages).
+    label: اتیوپی
+    hue: 345.0
+    etymology_origin: Auto-detected orthographic cluster around 'اتیوپی' (4 languages).
       Hand-curated etymology pending.
     languages:
     - ara
+    - fas
+    - heb
     - pus
-  auto_4:
+  auto_2:
     label: Habasha
-    hue: 153.0
+    hue: 105.0
     etymology_origin: Auto-detected orthographic cluster around 'Habasha' (2 languages).
       Hand-curated etymology pending.
     languages:

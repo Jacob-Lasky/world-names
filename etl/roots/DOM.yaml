@@ -8,12 +8,15 @@ clusters:
     label: Dominican Republic
     hue: 194.0
     etymology_origin: Auto-detected orthographic cluster around 'Dominikanska Republika'
-      (26 languages). Hand-curated etymology pending.
+      (42 languages). Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - ces
     - dan
     - deu
@@ -21,26 +24,39 @@ clusters:
     - est
     - ewe
     - fin
+    - hin
     - hrv
+    - hun
     - jam
+    - jpn
+    - kat
+    - kir
+    - kor
     - lav
     - lit
     - ltz
+    - mkd
+    - nep
     - nld
     - nno
+    - pan
     - pol
+    - rus
+    - sin
     - slk
     - slv
     - sna
+    - srp
     - swe
     - tuk
+    - ukr
     - uzb
     - zul
   auto_1:
     label: República Dominicana
     hue: 266.0
     etymology_origin: Auto-detected orthographic cluster around 'Repúblika Dominikana'
-      (21 languages). Hand-curated etymology pending.
+      (22 languages). Hand-curated etymology pending.
     languages:
     - cat
     - fra
@@ -61,29 +77,27 @@ clusters:
     - spa
     - sqi
     - tet
+    - tgk
     - tgl
     - ton
   auto_2:
-    label: Доминиканска Република
+    label: Dominik Cumhuriyeti
     hue: 338.0
-    etymology_origin: Auto-detected orthographic cluster around 'Доминиканска република'
-      (6 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - rus
-    - srp
-    - ukr
-  auto_3:
-    label: डोमिनिकन गणराज्य
-    hue: 50.0
-    etymology_origin: Auto-detected orthographic cluster around 'डोमिनिकन गणराज्य'
+    etymology_origin: Auto-detected orthographic cluster around 'ޑޮމިނިކަން ޖުމްހޫރިއްޔާ'
       (3 languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
+    - div
+    - ell
+    - tur
+  auto_3:
+    label: สาธารณรัฐโดมินิกัน
+    hue: 50.0
+    etymology_origin: Auto-detected orthographic cluster around 'สาธารณรัฐโดมินิกัน'
+      (3 languages). Hand-curated etymology pending.
+    languages:
+    - khm
+    - lao
+    - tha
   auto_4:
     label: جمهوری دومینیکن
     hue: 122.0

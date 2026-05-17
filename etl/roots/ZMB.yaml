@@ -7,48 +7,70 @@ clusters:
   auto_0:
     label: Zambia
     hue: 23.0
-    etymology_origin: Auto-detected orthographic cluster around 'Zàmbia' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Zàmbia' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -56,44 +78,15 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Замбия
-    hue: 113.0
-    etymology_origin: Auto-detected orthographic cluster around 'Замбия' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: زامبيا
-    hue: 203.0
-    etymology_origin: Auto-detected orthographic cluster around 'زامبيا' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: जांबिया
-    hue: 293.0
-    etymology_origin: Auto-detected orthographic cluster around 'ज़ाम्बिया' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

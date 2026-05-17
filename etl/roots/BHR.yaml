@@ -7,91 +7,94 @@ clusters:
   auto_0:
     label: Bahrain
     hue: 220.0
-    etymology_origin: Auto-detected orthographic cluster around 'Bahrain' (53 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Bahrain' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
+    - fas
     - fin
     - fra
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Бахрейн
-    hue: 310.0
-    etymology_origin: Auto-detected orthographic cluster around 'Бахрейн' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: بحرین
+    label: ປະເທດບາເຣນ
     hue: 40.0
-    etymology_origin: Auto-detected orthographic cluster around 'بحرین' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດບາເຣນ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: बहरीन
-    hue: 130.0
-    etymology_origin: Auto-detected orthographic cluster around 'बहरीन' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

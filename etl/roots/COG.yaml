@@ -8,11 +8,12 @@ clusters:
     label: Republik Kongo
     hue: 307.0
     etymology_origin: Auto-detected orthographic cluster around 'Republika Kongo'
-      (28 languages). Hand-curated etymology pending.
+      (33 languages). Hand-curated etymology pending.
     languages:
     - afr
     - bis
     - bos
+    - bul
     - cat
     - dan
     - deu
@@ -25,6 +26,7 @@ clusters:
     - kea
     - lat
     - ltz
+    - mkd
     - mlg
     - msa
     - nau
@@ -32,30 +34,36 @@ clusters:
     - pap
     - por
     - ron
+    - rus
     - slv
     - sna
     - sot
     - sqi
+    - srp
     - tgl
+    - ukr
     - zul
   auto_1:
     label: Kongo Republika
-    hue: 358.4
+    hue: 352.0
     etymology_origin: Auto-detected orthographic cluster around 'Kongo Respublika'
-      (6 languages). Hand-curated etymology pending.
+      (8 languages). Hand-curated etymology pending.
     languages:
     - aze
     - ces
+    - kat
+    - kir
     - lav
     - lit
     - tuk
     - uzb
   auto_2:
     label: Kongo
-    hue: 49.9
-    etymology_origin: Auto-detected orthographic cluster around 'Kongo' (6 languages).
+    hue: 37.0
+    etymology_origin: Auto-detected orthographic cluster around 'Kongo' (7 languages).
       Hand-curated etymology pending.
     languages:
+    - div
     - jam
     - kin
     - mlt
@@ -63,39 +71,51 @@ clusters:
     - spa
     - tur
   auto_3:
-    label: Република Конго
-    hue: 101.3
-    etymology_origin: Auto-detected orthographic cluster around 'Република Конго'
+    label: Kongo-Brazzaville
+    hue: 82.0
+    etymology_origin: Auto-detected orthographic cluster around 'Kongo-Brazzaville'
       (5 languages). Hand-curated etymology pending.
     languages:
-    - bul
-    - mkd
-    - rus
-    - srp
-    - ukr
-  auto_4:
-    label: Kongo-Brazzaville
-    hue: 152.7
-    etymology_origin: Auto-detected orthographic cluster around 'Kongo-Brazzaville'
-      (4 languages). Hand-curated etymology pending.
-    languages:
+    - fin
     - nld
     - nno
     - slk
     - swe
+  auto_4:
+    label: جمهوری کنگو
+    hue: 127.0
+    etymology_origin: Auto-detected orthographic cluster around 'جمهورية الكونغو'
+      (4 languages). Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+    - hau
+    - som
   auto_5:
     label: कांगो गणराज्य
-    hue: 204.1
-    etymology_origin: Auto-detected orthographic cluster around 'कांगो गणराज्य' (2
+    hue: 172.0
+    etymology_origin: Auto-detected orthographic cluster around 'कांगो गणराज्य' (4
       languages). Hand-curated etymology pending.
     languages:
     - bho
     - hin
+    - pan
+    - sin
   auto_6:
-    label: Jamhuriyar Kwango
-    hue: 255.6
-    etymology_origin: Auto-detected orthographic cluster around 'Jamhuriyar Kwango'
-      (2 languages). Hand-curated etymology pending.
+    label: 剛果共和國
+    hue: 217.0
+    etymology_origin: Auto-detected orthographic cluster around 'コンゴ共和国' (3 languages).
+      Hand-curated etymology pending.
     languages:
-    - hau
-    - som
+    - cmn
+    - jpn
+    - kor
+  auto_7:
+    label: สาธารณรัฐคองโก
+    hue: 262.0
+    etymology_origin: Auto-detected orthographic cluster around 'สาธารณรัฐคองโก' (3
+      languages). Hand-curated etymology pending.
+    languages:
+    - khm
+    - lao
+    - tha

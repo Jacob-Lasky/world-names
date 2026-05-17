@@ -7,86 +7,101 @@ clusters:
   auto_0:
     label: Maldives
     hue: 231.0
-    etymology_origin: Auto-detected orthographic cluster around 'Maldive' (48 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Maldive' (70 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - dzo
+    - ell
     - eng
     - est
     - fin
     - fra
     - grn
     - hau
+    - hin
     - hrv
+    - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
     - slk
     - slv
     - sna
     - spa
     - sqi
+    - srp
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Малдиви
-    hue: 321.0
-    etymology_origin: Auto-detected orthographic cluster around 'Малдиви' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
     label: مالدیو
-    hue: 51.0
-    etymology_origin: Auto-detected orthographic cluster around 'مالديپ' (3 languages).
+    hue: 321.0
+    etymology_origin: Auto-detected orthographic cluster around 'مالدیو' (3 languages).
       Hand-curated etymology pending.
     languages:
     - ara
     - fas
     - pus
+  auto_2:
+    label: ދިވެހިރާއްޖެ
+    hue: 51.0
+    etymology_origin: Auto-detected orthographic cluster around 'ދިވެހިރާއްޖެ' (2
+      languages). Hand-curated etymology pending.
+    languages:
+    - div
+    - sin
   auto_3:
-    label: मालदीव
+    label: ປະເທດມັລດີຟ
     hue: 141.0
-    etymology_origin: Auto-detected orthographic cluster around 'मालदीव' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດມັລດີຟ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

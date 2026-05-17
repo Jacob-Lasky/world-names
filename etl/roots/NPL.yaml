@@ -7,92 +7,86 @@ clusters:
   auto_0:
     label: Nepal
     hue: 114.0
-    etymology_origin: Auto-detected orthographic cluster around 'Nepal' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Nepal' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
+    - lao
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Непал
-    hue: 204.0
-    etymology_origin: Auto-detected orthographic cluster around 'Непал' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: نپال
-    hue: 294.0
-    etymology_origin: Auto-detected orthographic cluster around 'نيپال' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: नेपाल
-    hue: 24.0
-    etymology_origin: Auto-detected orthographic cluster around 'नेपाल' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

@@ -7,42 +7,58 @@ clusters:
   auto_0:
     label: Irlanda
     hue: 51.0
-    etymology_origin: Auto-detected orthographic cluster around 'Irlanda' (47 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Irlanda' (65 languages).
       Hand-curated etymology pending.
     languages:
     - aze
+    - ben
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
+    - hye
     - ita
     - jam
+    - jpn
     - kal
     - kea
     - kin
+    - kir
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - nep
     - nld
     - nno
+    - orm
+    - pan
     - pap
     - pol
     - ron
+    - rus
     - slk
     - slv
     - sna
@@ -52,29 +68,22 @@ clusters:
     - swe
     - tet
     - tgl
+    - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Ирландия
-    hue: 171.0
-    etymology_origin: Auto-detected orthographic cluster around 'Ирландия' (5 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mon
-    - rus
-    - ukr
-  auto_2:
-    label: Republik Irlandia
-    hue: 291.0
+    label: Република Ирска
+    hue: 231.0
     etymology_origin: Auto-detected orthographic cluster around 'República da Irlanda'
-      (4 languages). Hand-curated etymology pending.
+      (6 languages). Hand-curated etymology pending.
     languages:
     - afr
     - ind
+    - nau
     - por
     - sqi
+    - srp

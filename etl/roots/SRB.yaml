@@ -7,107 +7,97 @@ clusters:
   auto_0:
     label: Serbia
     hue: 291.0
-    etymology_origin: Auto-detected orthographic cluster around 'Sèrbia' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Sèrbia' (83 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
+    - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
+    - slk
     - slv
     - sna
     - som
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Сербия
-    hue: 351.0
-    etymology_origin: Auto-detected orthographic cluster around 'Сербия' (6 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mon
-    - rus
-    - tgk
-    - ukr
-  auto_2:
-    label: صربيا
-    hue: 51.0
-    etymology_origin: Auto-detected orthographic cluster around 'صربيا' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: सर्बिया
+    label: ປະເທດແຊກບີ
     hue: 111.0
-    etymology_origin: Auto-detected orthographic cluster around 'सर्बिया' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດແຊກບີ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
-    label: Srbsko
-    hue: 171.0
-    etymology_origin: Auto-detected orthographic cluster around 'Srbsko' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ces
-    - slk
-  auto_5:
-    label: Србија
-    hue: 231.0
-    etymology_origin: Auto-detected orthographic cluster around 'Србија' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - mkd
-    - srp
+    - lao
+    - tha

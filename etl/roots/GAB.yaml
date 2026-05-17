@@ -7,47 +7,69 @@ clusters:
   auto_0:
     label: Gabon
     hue: 112.0
-    etymology_origin: Auto-detected orthographic cluster around 'Gabon' (54 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Gabon' (79 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -55,44 +77,23 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Габон
-    hue: 202.0
-    etymology_origin: Auto-detected orthographic cluster around 'Габон' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: گابن
+    label: ປະເທດກາບົງ
     hue: 292.0
-    etymology_origin: Auto-detected orthographic cluster around 'ګابون' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດກາບົງ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: गबॉन
-    hue: 22.0
-    etymology_origin: Auto-detected orthographic cluster around 'गैबोन' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

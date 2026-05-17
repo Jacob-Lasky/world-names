@@ -7,47 +7,71 @@ clusters:
   auto_0:
     label: Eritrea
     hue: 164.0
-    etymology_origin: Auto-detected orthographic cluster around 'Eritrea' (53 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Eritrea' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -55,42 +79,22 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Эритрея
-    hue: 254.0
-    etymology_origin: Auto-detected orthographic cluster around 'Эритрея' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: इरीट्रिया
+    label: ປະເທດອິຣີເຕຣຍ
     hue: 344.0
-    etymology_origin: Auto-detected orthographic cluster around 'इरीट्रिया' (3 languages).
-      Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອິຣີເຕຣຍ' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
-    label: إرتريا
-    hue: 74.0
-    etymology_origin: Auto-detected orthographic cluster around 'إرتريا' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - pus
+    - lao
+    - tha

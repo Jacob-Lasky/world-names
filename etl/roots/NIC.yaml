@@ -7,93 +7,88 @@ clusters:
   auto_0:
     label: Nicaragua
     hue: 248.0
-    etymology_origin: Auto-detected orthographic cluster around 'Nicaragua' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Никарагуа' (82 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - mya
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Никарагуа
-    hue: 338.0
-    etymology_origin: Auto-detected orthographic cluster around 'Никарагуа' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: نيكاراغوا
-    hue: 68.0
-    etymology_origin: Auto-detected orthographic cluster around 'نيکاراګوای' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: निकारागुआ
-    hue: 158.0
-    etymology_origin: Auto-detected orthographic cluster around 'निकारागुआ' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

@@ -7,50 +7,74 @@ clusters:
   auto_0:
     label: Colombia
     hue: 312.0
-    etymology_origin: Auto-detected orthographic cluster around 'Kolómbia' (59 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Κολομβία' (86 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -58,46 +82,25 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Колумбия
-    hue: 42.0
-    etymology_origin: Auto-detected orthographic cluster around 'Колумбия' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: کلمبیا
+    label: ປະເທດໂກໂລມບີ
     hue: 132.0
-    etymology_origin: Auto-detected orthographic cluster around 'کولمبيا' (3 languages).
-      Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດໂກໂລມບີ' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: कोलम्बिया
-    hue: 222.0
-    etymology_origin: Auto-detected orthographic cluster around 'कोलम्बिया' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

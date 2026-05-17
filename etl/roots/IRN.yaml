@@ -7,49 +7,71 @@ clusters:
   auto_0:
     label: Iran
     hue: 53.0
-    etymology_origin: Auto-detected orthographic cluster around 'Iran' (57 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Iran' (82 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -57,51 +79,24 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Иран
-    hue: 125.0
-    etymology_origin: Auto-detected orthographic cluster around 'Иран' (6 languages).
+    label: ປະເທດອີຣານ
+    hue: 233.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດອີຣານ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - bul
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_2:
-    label: إيران
-    hue: 197.0
-    etymology_origin: Auto-detected orthographic cluster around 'إيران' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: ईरान
-    hue: 269.0
-    etymology_origin: Auto-detected orthographic cluster around 'ईरान' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
-    label: Эрен
-    hue: 341.0
-    etymology_origin: Auto-detected orthographic cluster around 'Эрен' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - kir
-    - tgk
+    - lao
+    - tha

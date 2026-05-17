@@ -7,17 +7,23 @@ clusters:
   auto_0:
     label: Syria
     hue: 164.0
-    etymology_origin: Auto-detected orthographic cluster around 'Siria' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Siria' (77 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
@@ -26,74 +32,76 @@ clusters:
     - ful
     - grn
     - hau
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Сирия
-    hue: 254.0
-    etymology_origin: Auto-detected orthographic cluster around 'Сирия' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
     label: سوريا
-    hue: 344.0
-    etymology_origin: Auto-detected orthographic cluster around 'سوريه' (3 languages).
+    hue: 284.0
+    etymology_origin: Auto-detected orthographic cluster around 'سوریه' (4 languages).
       Hand-curated etymology pending.
     languages:
     - ara
     - fas
+    - heb
     - pus
-  auto_3:
-    label: सीरिया
-    hue: 74.0
-    etymology_origin: Auto-detected orthographic cluster around 'सीरिया' (3 languages).
+  auto_2:
+    label: ປະເທດຊີເຣຍ
+    hue: 44.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດຊີເຣຍ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

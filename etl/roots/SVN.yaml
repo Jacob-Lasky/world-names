@@ -7,48 +7,72 @@ clusters:
   auto_0:
     label: Slovenia
     hue: 67.0
-    etymology_origin: Auto-detected orthographic cluster around 'Slovenia' (56 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Slovenia' (83 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -56,44 +80,24 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Словения
-    hue: 157.0
-    etymology_origin: Auto-detected orthographic cluster around 'Словения' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: स्लोवेनिया
+    label: ປະເທດສະໂລເວນີ
     hue: 247.0
-    etymology_origin: Auto-detected orthographic cluster around 'स्लोवेनिया' (3 languages).
-      Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດສະໂລເວນີ' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
-    label: سلوفينيا
-    hue: 337.0
-    etymology_origin: Auto-detected orthographic cluster around 'سلوفينيا' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - pus
+    - lao
+    - tha

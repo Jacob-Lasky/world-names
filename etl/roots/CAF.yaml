@@ -8,11 +8,12 @@ clusters:
     label: Central African Republic
     hue: 232.0
     etymology_origin: Auto-detected orthographic cluster around 'Centrālāfrikas Republika'
-      (23 languages). Hand-curated etymology pending.
+      (29 languages). Hand-curated etymology pending.
     languages:
     - afr
     - aze
     - bos
+    - bul
     - ces
     - dan
     - deu
@@ -20,23 +21,28 @@ clusters:
     - ewe
     - hrv
     - jam
+    - kat
+    - kir
     - lav
     - lit
     - ltz
     - nld
     - nno
+    - rus
     - slk
     - slv
     - sna
     - sot
+    - srp
     - swe
     - tuk
+    - ukr
     - uzb
     - zul
   auto_1:
     label: Republica Centrafricană
-    hue: 292.0
-    etymology_origin: Auto-detected orthographic cluster around 'República Centroafricana'
+    hue: 272.0
+    etymology_origin: Auto-detected orthographic cluster around 'República Centro-Africana'
       (13 languages). Hand-curated etymology pending.
     languages:
     - bis
@@ -53,42 +59,66 @@ clusters:
     - spa
     - tgl
   auto_2:
+    label: ਕੇਂਦਰੀ ਅਫ਼ਰੀਕੀ ਗਣਰਾਜ
+    hue: 312.0
+    etymology_origin: Auto-detected orthographic cluster around 'मध्य अफ़्रीकी गणराज्य'
+      (6 languages). Hand-curated etymology pending.
+    languages:
+    - ben
+    - bho
+    - hin
+    - nep
+    - pan
+    - sin
+  auto_3:
     label: Republik Afrika Tengah
     hue: 352.0
     etymology_origin: Auto-detected orthographic cluster around 'Republik Afrika Tengah'
-      (6 languages). Hand-curated etymology pending.
+      (5 languages). Hand-curated etymology pending.
     languages:
     - ind
     - lat
     - mlg
     - msa
-    - nau
     - sqi
-  auto_3:
-    label: Централноафричка Република
-    hue: 52.0
-    etymology_origin: Auto-detected orthographic cluster around 'Централноафриканска
-      република' (5 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - rus
-    - srp
-    - ukr
   auto_4:
-    label: मध्य अफ़्रीकी गणराज्य
-    hue: 112.0
-    etymology_origin: Auto-detected orthographic cluster around 'मध्य अफ़्रीकी गणराज्य'
-      (3 languages). Hand-curated etymology pending.
+    label: 中非共和國
+    hue: 32.0
+    etymology_origin: Auto-detected orthographic cluster around '中央アフリカ共和国' (3 languages).
+      Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
+    - cmn
+    - jpn
+    - kor
   auto_5:
+    label: جمهوری آفریقای مرکزی
+    hue: 72.0
+    etymology_origin: Auto-detected orthographic cluster around 'جمهورية إفريقيا الوسطى'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - ara
+    - fas
+  auto_6:
     label: Kesk-Aafrika Vabariik
-    hue: 172.0
+    hue: 112.0
     etymology_origin: Auto-detected orthographic cluster around 'Kesk-Aafrika Vabariik'
       (2 languages). Hand-curated etymology pending.
     languages:
     - est
     - fin
+  auto_7:
+    label: Jamhuriyar Afirka ta Tsakiya
+    hue: 152.0
+    etymology_origin: Auto-detected orthographic cluster around 'Jamhuriyar Afirka
+      ta Tsakiya' (2 languages). Hand-curated etymology pending.
+    languages:
+    - hau
+    - som
+  auto_8:
+    label: สาธารณรัฐแอฟริกากลาง
+    hue: 192.0
+    etymology_origin: Auto-detected orthographic cluster around 'ສາທາລະນະລັດ ອາຟຣິກາກາງ'
+      (2 languages). Hand-curated etymology pending.
+    languages:
+    - lao
+    - tha

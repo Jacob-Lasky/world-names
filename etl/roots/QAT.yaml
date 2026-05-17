@@ -7,92 +7,95 @@ clusters:
   auto_0:
     label: Qatar
     hue: 20.0
-    etymology_origin: Auto-detected orthographic cluster around 'Qatar' (54 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Katar' (81 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Катар
-    hue: 110.0
-    etymology_origin: Auto-detected orthographic cluster around 'Катар' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: قطر
+    label: ປະເທດກາຕາ
     hue: 200.0
-    etymology_origin: Auto-detected orthographic cluster around 'قطر' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດກາຕາ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: क़तर
-    hue: 290.0
-    etymology_origin: Auto-detected orthographic cluster around 'क़तर' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

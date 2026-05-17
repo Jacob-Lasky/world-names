@@ -7,46 +7,68 @@ clusters:
   auto_0:
     label: Sierra Leone
     hue: 108.0
-    etymology_origin: Auto-detected orthographic cluster around 'Sierra Leone' (53
+    etymology_origin: Auto-detected orthographic cluster around 'Sierra Leone' (78
       languages). Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kin
+    - kir
+    - kor
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -54,43 +76,15 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Сьерра-Леоне
-    hue: 198.0
-    etymology_origin: Auto-detected orthographic cluster around 'Сьерра-Леоне' (8
-      languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: سيراليون
-    hue: 288.0
-    etymology_origin: Auto-detected orthographic cluster around 'سيراليون' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: सिएरा लियोन
-    hue: 18.0
-    etymology_origin: Auto-detected orthographic cluster around 'सिएरा लियोन' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin

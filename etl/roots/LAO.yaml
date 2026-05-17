@@ -7,17 +7,23 @@ clusters:
   auto_0:
     label: Laos
     hue: 250.0
-    etymology_origin: Auto-detected orthographic cluster around 'Laos' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Laos' (79 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
@@ -27,73 +33,76 @@ clusters:
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Лаос
-    hue: 340.0
-    etymology_origin: Auto-detected orthographic cluster around 'Лаос' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
     label: لاوس
-    hue: 70.0
+    hue: 10.0
     etymology_origin: Auto-detected orthographic cluster around 'لاوس' (3 languages).
       Hand-curated etymology pending.
     languages:
     - ara
     - fas
     - pus
-  auto_3:
-    label: लाओस
-    hue: 160.0
-    etymology_origin: Auto-detected orthographic cluster around 'लाओस' (3 languages).
+  auto_2:
+    label: ປະເທດລາວ
+    hue: 130.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດລາວ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

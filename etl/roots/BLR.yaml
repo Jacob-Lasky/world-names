@@ -7,41 +7,64 @@ clusters:
   auto_0:
     label: Belarus
     hue: 344.0
-    etymology_origin: Auto-detected orthographic cluster around 'Belarus' (49 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Belarus' (75 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - ewe
+    - fas
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
+    - hye
     - ind
     - ita
     - jam
+    - jpn
+    - kat
     - kea
+    - khm
     - kin
+    - kir
+    - kor
     - lav
     - lit
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -49,55 +72,34 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Беларусь
-    hue: 56.0
-    etymology_origin: Auto-detected orthographic cluster around 'Беларусь' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
     label: Wit-Rusland
-    hue: 128.0
-    etymology_origin: Auto-detected orthographic cluster around 'Wit-Rusland' (4 languages).
-      Hand-curated etymology pending.
+    hue: 104.0
+    etymology_origin: Auto-detected orthographic cluster around 'Hvíta-Rússland' (4
+      languages). Hand-curated etymology pending.
     languages:
     - isl
     - kal
     - ltz
     - nld
-  auto_3:
-    label: بلاروس
-    hue: 200.0
-    etymology_origin: Auto-detected orthographic cluster around 'بيلاروس' (3 languages).
-      Hand-curated etymology pending.
+  auto_2:
+    label: ประเทศเบลารุส
+    hue: 224.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດເບລາຣຸດຊີ' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - ara
-    - fas
-    - pus
-  auto_4:
-    label: बेलारूस
-    hue: 272.0
-    etymology_origin: Auto-detected orthographic cluster around 'बेलारूस' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

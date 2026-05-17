@@ -7,45 +7,68 @@ clusters:
   auto_0:
     label: Sweden
     hue: 89.0
-    etymology_origin: Auto-detected orthographic cluster around 'Swedia' (51 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Swedia' (77 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - ewe
+    - fas
     - fij
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - ita
     - jam
+    - jpn
+    - kat
     - kea
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -53,56 +76,28 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
+    - ukr
     - uzb
     - zul
   auto_1:
-    label: Швеция
-    hue: 149.0
-    etymology_origin: Auto-detected orthographic cluster around 'Шведия' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_2:
-    label: سوئد
-    hue: 209.0
-    etymology_origin: Auto-detected orthographic cluster around 'سوئد' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: स्वीडन
-    hue: 269.0
-    etymology_origin: Auto-detected orthographic cluster around 'स्वीडन' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
     label: İsveç
-    hue: 329.0
+    hue: 209.0
     etymology_origin: Auto-detected orthographic cluster around 'İsveç' (2 languages).
       Hand-curated etymology pending.
     languages:
     - aze
     - tur
-  auto_5:
+  auto_2:
     label: Rootsi
-    hue: 29.0
+    hue: 329.0
     etymology_origin: Auto-detected orthographic cluster around 'Rootsi' (2 languages).
       Hand-curated etymology pending.
     languages:

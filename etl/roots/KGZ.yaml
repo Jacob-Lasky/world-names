@@ -7,91 +7,87 @@ clusters:
   auto_0:
     label: Kyrgyzstan
     hue: 206.0
-    etymology_origin: Auto-detected orthographic cluster around 'Kirgizstan' (53 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Киргизстан' (81 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
+    - lao
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - swe
     - tet
+    - tgk
     - tgl
+    - tha
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
-  auto_1:
-    label: Киргистан
-    hue: 296.0
-    etymology_origin: Auto-detected orthographic cluster around 'Киргизстан' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: قرغزستان
-    hue: 26.0
-    etymology_origin: Auto-detected orthographic cluster around 'قرغيزستان' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: किर्गिज़स्तान
-    hue: 116.0
-    etymology_origin: Auto-detected orthographic cluster around 'किर्गिज़स्तान' (3
-      languages). Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

@@ -16,12 +16,14 @@ time and shipped in the SQLite payload.
 from __future__ import annotations
 
 import json
+import re
 import time
 import unicodedata
 from pathlib import Path
 from typing import Callable
 
 import httpx
+from unidecode import unidecode
 
 # Wikidata's etiquette policy requires an identifying User-Agent on every
 # query. Anonymous or generic UAs can be rate-limited or blocked.
@@ -199,18 +201,40 @@ def resolve_bcp47(iso639_3: str, qid_to_alpha2: dict[str, str | None], iso_to_qi
     return iso639_3
 
 
-def _normalize_for_similarity(s: str) -> str:
-    """Casefold + NFKD-decompose + strip combining marks.
+_NON_ALNUM = re.compile(r"[^a-z0-9]")
 
-    Used before edit-distance so accent / case / compatibility variants
-    don't inflate distance. Example: 'Allemagne' vs 'allemagne' should be
-    identical; 'naïve' vs 'naive' should be identical. Script differences
-    (Latin vs CJK vs Arabic) are intentionally preserved — that IS the
-    signal we want lightness to encode.
+
+def _normalize_for_similarity(s: str) -> str:
+    """Transliterate to ASCII, then casefold + NFKD + strip non-alnum.
+
+    Used before edit-distance so two exonyms in different scripts can
+    still be meaningfully compared — without this, 'Россия' vs 'Russia'
+    has distance 1.0 (no overlap) and every cross-script pair lands in
+    its own cluster. After this:
+
+        'Россия'      → 'rossiia'
+        '中国'         → 'zhongguo'
+        'ドイツ'        → 'doitsu'
+        'Venäjä'      → 'venaja'
+        "K'azak'stan" → 'kazakstan'
+
+    Transliteration is via the `unidecode` package: pure-Python,
+    deterministic, decent quality on major scripts (Cyrillic / CJK /
+    Devanagari / Thai are good; Arabic gets a rougher Buckwalter-style
+    output but at least lands non-Arabic exonyms in roughly comparable
+    Latin form). Non-alphanumeric stripping ('zhong guo' → 'zhongguo')
+    keeps word-boundary whitespace from inflating edit distance.
+
+    DO NOT remove unidecode and revert to "preserve script differences"
+    — the auto-clusterer specifically depends on phonetic comparison
+    across scripts; the cross-script-similarity-zero behavior is a bug,
+    not a feature.
     """
-    folded = s.casefold()
+    transliterated = unidecode(s)
+    folded = transliterated.casefold()
     decomposed = unicodedata.normalize("NFKD", folded)
-    return "".join(ch for ch in decomposed if not unicodedata.combining(ch))
+    no_marks = "".join(ch for ch in decomposed if not unicodedata.combining(ch))
+    return _NON_ALNUM.sub("", no_marks)
 
 
 def _levenshtein(a: str, b: str) -> int:

@@ -8,93 +8,85 @@ clusters:
     label: São Tomé and Príncipe
     hue: 7.0
     etymology_origin: Auto-detected orthographic cluster around 'São Tomé a Príncipe'
-      (50 languages). Hand-curated etymology pending.
+      (74 languages). Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kin
+    - kir
+    - kor
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slv
     - sna
     - som
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Сао Томе и Принсипи
-    hue: 79.0
-    etymology_origin: Auto-detected orthographic cluster around 'Сан-Томе и Принсипи'
-      (8 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: ساو تومي وبرينسيب
-    hue: 151.0
-    etymology_origin: Auto-detected orthographic cluster around 'سائوتومه و پرینسیپ'
-      (3 languages). Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: साओ टोम अउरी प्रिंसेप
-    hue: 223.0
-    etymology_origin: Auto-detected orthographic cluster around 'साओ तोमे और प्रिन्सिपी'
-      (3 languages). Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
     label: Svatý Tomáš a Princův ostrov
-    hue: 295.0
+    hue: 187.0
     etymology_origin: Auto-detected orthographic cluster around 'Svatý Tomáš a Princův
       ostrov' (2 languages). Hand-curated etymology pending.
     languages:

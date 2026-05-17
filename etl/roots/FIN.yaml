@@ -7,46 +7,68 @@ clusters:
   auto_0:
     label: Finland
     hue: 131.0
-    etymology_origin: Auto-detected orthographic cluster around 'Finland' (54 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Finland' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - ewe
+    - fas
     - fij
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
     - kea
     - kin
+    - kir
+    - kor
     - lat
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -54,31 +76,23 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
+    - vie
     - zul
   auto_1:
-    label: Финланд
-    hue: 191.0
-    etymology_origin: Auto-detected orthographic cluster around 'Финляндия' (6 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mon
-    - rus
-    - tgk
-    - ukr
-  auto_2:
     label: Soome
-    hue: 251.0
+    hue: 311.0
     etymology_origin: Auto-detected orthographic cluster around 'Suomija' (4 languages).
       Hand-curated etymology pending.
     languages:
@@ -86,29 +100,3 @@ clusters:
     - fin
     - lav
     - lit
-  auto_3:
-    label: فنلندا
-    hue: 311.0
-    etymology_origin: Auto-detected orthographic cluster around 'فنلاند' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_4:
-    label: फिनलैंड
-    hue: 11.0
-    etymology_origin: Auto-detected orthographic cluster around 'फिनलैंड' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_5:
-    label: Финска
-    hue: 71.0
-    etymology_origin: Auto-detected orthographic cluster around 'Финска' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - mkd
-    - srp

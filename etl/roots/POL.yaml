@@ -7,17 +7,25 @@ clusters:
   auto_0:
     label: Poland
     hue: 205.0
-    etymology_origin: Auto-detected orthographic cluster around 'Poloña' (56 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Poloña' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
@@ -27,29 +35,42 @@ clusters:
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -57,6 +78,7 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
@@ -64,27 +86,24 @@ clusters:
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
+    - vie
     - zul
   auto_1:
-    label: Польша
+    label: لهستان
     hue: 325.0
-    etymology_origin: Auto-detected orthographic cluster around 'Польша' (7 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'لهستان' (3 languages).
       Hand-curated etymology pending.
     languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
+    - fas
+    - hye
+    - tgk
   auto_2:
-    label: पोलैंड
+    label: ປະເທດໂປໂລຍ
     hue: 85.0
-    etymology_origin: Auto-detected orthographic cluster around 'पोलैंड' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດໂປໂລຍ' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

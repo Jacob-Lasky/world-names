@@ -7,98 +7,94 @@ clusters:
   auto_0:
     label: Montenegro
     hue: 164.0
-    etymology_origin: Auto-detected orthographic cluster around 'Montenegro' (41 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Montenegro' (60 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - cat
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hun
     - ind
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kin
+    - kir
+    - kor
+    - lat
     - ltz
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - por
+    - pus
     - ron
+    - sin
     - sna
     - som
     - spa
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - vie
     - zul
   auto_1:
     label: Crna Gora
-    hue: 224.0
-    etymology_origin: Auto-detected orthographic cluster around 'Crna Gora' (8 languages).
+    hue: 284.0
+    etymology_origin: Auto-detected orthographic cluster around 'Черна гора' (14 languages).
       Hand-curated etymology pending.
     languages:
     - bos
+    - bul
     - ces
     - hrv
+    - hye
+    - mkd
     - pol
+    - rus
     - slk
     - slv
+    - srp
     - tuk
+    - ukr
     - uzb
   auto_2:
-    label: Црна Гора
-    hue: 284.0
-    etymology_origin: Auto-detected orthographic cluster around 'Черна гора' (5 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - mkd
-    - rus
-    - srp
-    - ukr
-  auto_3:
-    label: मोंटीनीग्रो
-    hue: 344.0
-    etymology_origin: Auto-detected orthographic cluster around 'मॉन्टेनीग्रो' (3
+    label: ປະເທດມົງເຕເນໂກ
+    hue: 44.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດມົງເຕເນໂກ' (2
       languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
-    label: Монтенегро
-    hue: 44.0
-    etymology_origin: Auto-detected orthographic cluster around 'Монтенегро' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - kir
-    - mon
-    - tgk
-  auto_5:
-    label: مونتهنگرو
-    hue: 104.0
-    etymology_origin: Auto-detected orthographic cluster around 'مونتهنگرو' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - fas
-    - pus
+    - lao
+    - tha

@@ -7,46 +7,69 @@ clusters:
   auto_0:
     label: Moldova
     hue: 210.0
-    etymology_origin: Auto-detected orthographic cluster around 'Moldova' (54 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Moldova' (80 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -54,51 +77,30 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Молдова
-    hue: 282.0
-    etymology_origin: Auto-detected orthographic cluster around 'Молдова' (8 languages).
-      Hand-curated etymology pending.
+    label: ປະເທດມອລໂດວາ
+    hue: 330.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດມອລໂດວາ' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
+    - lao
+    - tha
   auto_2:
-    label: مولدوفا
-    hue: 354.0
-    etymology_origin: Auto-detected orthographic cluster around 'مولدووا' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
-    label: मोल्डोवा
-    hue: 66.0
-    etymology_origin: Auto-detected orthographic cluster around 'मोल्डोवा' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
     label: Republica Moldova
-    hue: 138.0
+    hue: 90.0
     etymology_origin: Auto-detected orthographic cluster around 'Ripubrikin Mordowa'
       (2 languages). Hand-curated etymology pending.
     languages:

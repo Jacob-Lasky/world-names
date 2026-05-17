@@ -7,46 +7,65 @@ clusters:
   auto_0:
     label: Palestina
     hue: 322.0
-    etymology_origin: Auto-detected orthographic cluster around 'Palestina' (46 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Palestina' (65 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
+    - ben
+    - bho
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
     - eng
     - est
+    - fas
     - fij
     - fin
     - fra
     - grn
     - hau
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
     - kin
+    - kir
+    - kor
     - lat
+    - lav
+    - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - nep
     - nld
     - nno
     - nya
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
@@ -57,44 +76,26 @@ clusters:
     - vie
     - zul
   auto_1:
-    label: Држава Палестина
-    hue: 22.0
-    etymology_origin: Auto-detected orthographic cluster around 'Држава Палестина'
-      (4 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - mkd
-    - rus
-    - srp
-  auto_2:
-    label: دولة فلسطين
-    hue: 82.0
-    etymology_origin: Auto-detected orthographic cluster around 'دولة فلسطين' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-  auto_3:
     label: Fələstin Dövləti
-    hue: 142.0
+    hue: 52.0
     etymology_origin: Auto-detected orthographic cluster around 'Fələstin Dövləti'
       (2 languages). Hand-curated etymology pending.
     languages:
     - aze
     - tuk
-  auto_4:
-    label: फिलिस्तीन
-    hue: 202.0
-    etymology_origin: Auto-detected orthographic cluster around 'फिलिस्तीन' (2 languages).
-      Hand-curated etymology pending.
+  auto_2:
+    label: รัฐปาเลสไตน์
+    hue: 142.0
+    etymology_origin: Auto-detected orthographic cluster around 'រដ្ឋប៉ាឡេស្ទីន' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-  auto_5:
-    label: Palestīnas Valsts
-    hue: 262.0
-    etymology_origin: Auto-detected orthographic cluster around 'Palestīnas Valsts'
+    - khm
+    - tha
+  auto_3:
+    label: Давлати Фаластин
+    hue: 232.0
+    etymology_origin: Auto-detected orthographic cluster around 'Dawlada Falastiin'
       (2 languages). Hand-curated etymology pending.
     languages:
-    - lav
-    - lit
+    - som
+    - tgk

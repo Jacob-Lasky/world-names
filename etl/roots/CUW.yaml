@@ -7,64 +7,65 @@ clusters:
   auto_0:
     label: Curaçao
     hue: 149.0
-    etymology_origin: Auto-detected orthographic cluster around 'Curaçao' (38 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Curaçao' (59 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - ell
     - eng
     - est
+    - fas
     - fin
     - fra
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
+    - jpn
+    - kat
+    - khm
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlt
     - msa
     - nld
     - nno
+    - pan
+    - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - spa
     - sqi
+    - srp
     - swe
     - tgl
     - ton
     - tur
+    - ukr
     - uzb
     - vie
-  auto_1:
-    label: Кюрасао
-    hue: 269.0
-    etymology_origin: Auto-detected orthographic cluster around 'Кюрасао' (6 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - rus
-    - srp
-    - ukr
-  auto_2:
-    label: كوراساو
-    hue: 29.0
-    etymology_origin: Auto-detected orthographic cluster around 'كوراساو' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas

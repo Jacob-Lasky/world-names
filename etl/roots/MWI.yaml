@@ -7,17 +7,23 @@ clusters:
   auto_0:
     label: Malawi
     hue: 87.0
-    etymology_origin: Auto-detected orthographic cluster around 'Malawi' (55 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Malawi' (78 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
@@ -26,29 +32,43 @@ clusters:
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
+    - khm
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -56,44 +76,24 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - tsn
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Малави
-    hue: 177.0
-    etymology_origin: Auto-detected orthographic cluster around 'Малави' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
     label: ملاوي
     hue: 267.0
-    etymology_origin: Auto-detected orthographic cluster around 'مالاوي' (3 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'ملاوي' (3 languages).
       Hand-curated etymology pending.
     languages:
     - ara
     - fas
     - pus
-  auto_3:
-    label: मलावी
-    hue: 357.0
-    etymology_origin: Auto-detected orthographic cluster around 'मलावी' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

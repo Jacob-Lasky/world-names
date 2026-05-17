@@ -7,17 +7,24 @@ clusters:
   auto_0:
     label: Togo
     hue: 204.0
-    etymology_origin: Auto-detected orthographic cluster around 'Togo' (53 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Togo' (75 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - est
     - ewe
@@ -26,28 +33,40 @@ clusters:
     - ful
     - grn
     - hau
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -55,29 +74,18 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Того
-    hue: 294.0
-    etymology_origin: Auto-detected orthographic cluster around 'Того' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
     label: توغو
     hue: 24.0
     etymology_origin: Auto-detected orthographic cluster around 'توغو' (3 languages).
@@ -86,12 +94,3 @@ clusters:
     - ara
     - fas
     - pus
-  auto_3:
-    label: टोगो
-    hue: 114.0
-    etymology_origin: Auto-detected orthographic cluster around 'टोगो' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep

@@ -7,50 +7,72 @@ clusters:
   auto_0:
     label: Madagaskar
     hue: 216.0
-    etymology_origin: Auto-detected orthographic cluster around 'Madagaskar' (57 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Madagaskar' (82 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
+    - fas
     - fij
     - fin
     - fra
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
+    - khm
     - kin
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -58,42 +80,23 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Мадагаскар
-    hue: 306.0
-    etymology_origin: Auto-detected orthographic cluster around 'Мадагаскар' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: मेडागास्कर
+    label: ປະເທດມາດາກັສກາ
     hue: 36.0
-    etymology_origin: Auto-detected orthographic cluster around 'मेडागास्कर' (3 languages).
-      Hand-curated etymology pending.
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດມາດາກັສກາ' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
-    label: مادغاسکر
-    hue: 126.0
-    etymology_origin: Auto-detected orthographic cluster around 'ماداگاسکار' (2 languages).
-      Hand-curated etymology pending.
-    languages:
-    - fas
-    - pus
+    - lao
+    - tha

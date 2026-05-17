@@ -7,12 +7,15 @@ clusters:
   auto_0:
     label: China
     hue: 97.0
-    etymology_origin: Auto-detected orthographic cluster around 'China' (32 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'China' (43 languages).
       Hand-curated etymology pending.
     languages:
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - ces
     - dan
     - est
@@ -21,21 +24,29 @@ clusters:
     - ful
     - hau
     - hun
+    - hye
     - ita
     - jam
     - kal
     - kea
+    - kir
     - lav
     - ltz
+    - mkd
     - nya
     - orm
+    - pan
     - pap
     - por
+    - pus
+    - rus
+    - sin
     - slk
     - sna
     - som
     - sot
     - sqi
+    - srp
     - ssw
     - swe
     - tet
@@ -46,11 +57,12 @@ clusters:
     label: Republik Rakyat China
     hue: 148.4
     etymology_origin: Auto-detected orthographic cluster around 'República Popular
-      China' (8 languages). Hand-curated etymology pending.
+      China' (9 languages). Hand-curated etymology pending.
     languages:
     - cat
     - fra
     - lat
+    - mlg
     - mlt
     - msa
     - ron
@@ -60,41 +72,39 @@ clusters:
     label: Volksrepubliek China
     hue: 199.9
     etymology_origin: Auto-detected orthographic cluster around 'Volksrepubliek China'
-      (5 languages). Hand-curated etymology pending.
+      (6 languages). Hand-curated etymology pending.
     languages:
     - afr
     - deu
     - eng
+    - hrv
     - nld
     - nno
   auto_3:
-    label: Кина
-    hue: 251.3
-    etymology_origin: Auto-detected orthographic cluster around 'Китай' (5 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - rus
-    - srp
-  auto_4:
-    label: Narodna Republika Kina
-    hue: 302.7
-    etymology_origin: Auto-detected orthographic cluster around 'Ljudska republika
-      Kitajska' (3 languages). Hand-curated etymology pending.
-    languages:
-    - hrv
-    - pol
-    - slv
-  auto_5:
     label: 中华人民共和国
-    hue: 354.1
-    etymology_origin: Auto-detected orthographic cluster around '中华人民共和国' (2 languages).
+    hue: 251.3
+    etymology_origin: Auto-detected orthographic cluster around '中华人民共和国' (3 languages).
       Hand-curated etymology pending.
     languages:
     - cmn
     - jpn
+    - kor
+  auto_4:
+    label: ཀྲུང་ཀོ
+    hue: 302.7
+    etymology_origin: Auto-detected orthographic cluster around 'ཀྲུང་ཀོ' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - dzo
+    - vie
+  auto_5:
+    label: ປະເທດຈີນ
+    hue: 354.1
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດຈີນ' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - lao
+    - tha
   auto_6:
     label: Hytaý Halk Respublikasy
     hue: 45.6

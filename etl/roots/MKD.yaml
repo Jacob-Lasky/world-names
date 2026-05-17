@@ -7,17 +7,21 @@ clusters:
   auto_0:
     label: Nordmakedonien
     hue: 70.0
-    etymology_origin: Auto-detected orthographic cluster around 'Macedonia' (52 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Makedonia' (64 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - ewe
@@ -28,17 +32,23 @@ clusters:
     - hau
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
+    - jpn
     - kal
+    - kat
     - kin
-    - lat
+    - kir
+    - kor
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
     - nld
@@ -48,44 +58,36 @@ clusters:
     - pol
     - por
     - ron
+    - rus
     - slk
     - slv
     - sna
     - spa
     - sqi
+    - srp
     - swe
     - tet
     - tgl
-    - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Македонија
-    hue: 160.0
-    etymology_origin: Auto-detected orthographic cluster around 'Северна Македония'
-      (6 languages). Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - rus
-    - srp
-    - ukr
-  auto_2:
     label: उत्तर मैसीडोनिया
-    hue: 250.0
-    etymology_origin: Auto-detected orthographic cluster around 'उत्तर मैसीडोनिया'
-      (3 languages). Hand-curated etymology pending.
+    hue: 190.0
+    etymology_origin: Auto-detected orthographic cluster around 'उत्तर मैसिडोनिया'
+      (5 languages). Hand-curated etymology pending.
     languages:
+    - ben
     - bho
     - hin
     - nep
-  auto_3:
+    - sin
+  auto_2:
     label: مقدونیه شمالی
-    hue: 340.0
+    hue: 310.0
     etymology_origin: Auto-detected orthographic cluster around 'مقدونيا الشمالية'
       (2 languages). Hand-curated etymology pending.
     languages:

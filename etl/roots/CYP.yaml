@@ -7,16 +7,21 @@ clusters:
   auto_0:
     label: Cyprus
     hue: 266.0
-    etymology_origin: Auto-detected orthographic cluster around 'Ciprus' (49 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Ciprus' (70 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - ell
     - eng
     - est
     - ewe
@@ -25,77 +30,78 @@ clusters:
     - ful
     - grn
     - hau
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
+    - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tur
+    - ukr
     - uzb
     - zul
   auto_1:
-    label: Кипр
-    hue: 338.0
-    etymology_origin: Auto-detected orthographic cluster around 'Кипр' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
     label: قبرس
-    hue: 50.0
-    etymology_origin: Auto-detected orthographic cluster around 'قبرس' (3 languages).
+    hue: 356.0
+    etymology_origin: Auto-detected orthographic cluster around 'قبرص' (3 languages).
       Hand-curated etymology pending.
     languages:
     - ara
     - fas
     - pus
-  auto_3:
-    label: साइप्रस
-    hue: 122.0
-    etymology_origin: Auto-detected orthographic cluster around 'साइप्रस' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_4:
+  auto_2:
     label: Kipr Respublikası
-    hue: 194.0
+    hue: 86.0
     etymology_origin: Auto-detected orthographic cluster around 'Kipr Respublikası'
       (2 languages). Hand-curated etymology pending.
     languages:
     - aze
     - tuk
+  auto_3:
+    label: ປະເທດໄຊປຣັດ
+    hue: 176.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດໄຊປຣັດ' (2 languages).
+      Hand-curated etymology pending.
+    languages:
+    - lao
+    - tha

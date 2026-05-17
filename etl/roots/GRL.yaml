@@ -7,86 +7,89 @@ clusters:
   auto_0:
     label: Greenland
     hue: 289.0
-    etymology_origin: Auto-detected orthographic cluster around 'Groenland' (42 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Grenland' (67 languages).
       Hand-curated etymology pending.
     languages:
     - afr
+    - ara
     - aze
+    - ben
     - bos
+    - bul
     - cat
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
+    - fas
     - fin
     - fra
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
+    - jpn
+    - kat
     - kin
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
+    - pus
     - ron
+    - rus
+    - sin
     - slv
     - som
     - spa
     - sqi
+    - srp
     - swe
+    - tgk
+    - tha
+    - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Гренланд
-    hue: 1.0
-    etymology_origin: Auto-detected orthographic cluster around 'Гренландия' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
-    label: گرینلند
-    hue: 73.0
-    etymology_origin: Auto-detected orthographic cluster around 'غرينلاند' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - ara
-    - fas
-    - pus
-  auto_3:
     label: Grónsko
-    hue: 145.0
+    hue: 49.0
     etymology_origin: Auto-detected orthographic cluster around 'Grónsko' (2 languages).
       Hand-curated etymology pending.
     languages:
     - ces
     - slk
-  auto_4:
-    label: ग्रीनलैण्ड
-    hue: 217.0
-    etymology_origin: Auto-detected orthographic cluster around 'ग्रीनलैण्ड' (2 languages).
+  auto_2:
+    label: ໂກຣແອນລັງ
+    hue: 169.0
+    etymology_origin: Auto-detected orthographic cluster around 'ក្រូអិនឡង់' (2 languages).
       Hand-curated etymology pending.
     languages:
-    - hin
-    - nep
+    - khm
+    - lao

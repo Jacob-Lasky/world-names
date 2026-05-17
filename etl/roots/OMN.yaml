@@ -7,17 +7,23 @@ clusters:
   auto_0:
     label: Oman
     hue: 264.0
-    etymology_origin: Auto-detected orthographic cluster around 'Oman' (54 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Oman' (76 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - ell
     - eng
     - est
     - fin
@@ -25,70 +31,64 @@ clusters:
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
     - som
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Оман
-    hue: 354.0
-    etymology_origin: Auto-detected orthographic cluster around 'Оман' (7 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - ukr
-  auto_2:
-    label: ओमान
-    hue: 84.0
-    etymology_origin: Auto-detected orthographic cluster around 'ओमान' (3 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bho
-    - hin
-    - nep
-  auto_3:
     label: عمان
-    hue: 174.0
+    hue: 84.0
     etymology_origin: Auto-detected orthographic cluster around 'عمان' (2 languages).
       Hand-curated etymology pending.
     languages:

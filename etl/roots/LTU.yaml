@@ -7,17 +7,24 @@ clusters:
   auto_0:
     label: Lituania
     hue: 125.0
-    etymology_origin: Auto-detected orthographic cluster around 'Lituània' (58 languages).
+    etymology_origin: Auto-detected orthographic cluster around 'Lituània' (81 languages).
       Hand-curated etymology pending.
     languages:
     - afr
     - aze
+    - ben
+    - bho
     - bis
     - bos
+    - bul
     - cat
     - ces
+    - cmn
     - dan
     - deu
+    - div
+    - dzo
+    - ell
     - eng
     - ewe
     - fij
@@ -26,31 +33,44 @@ clusters:
     - ful
     - grn
     - hau
+    - heb
+    - hin
     - hrv
     - hun
+    - hye
     - ind
     - isl
     - ita
     - jam
+    - jpn
     - kal
+    - kat
     - kea
     - kin
+    - kir
+    - kor
     - lat
     - lav
     - lit
     - ltz
+    - mkd
     - mlg
     - mlt
+    - mon
     - msa
     - nau
+    - nep
     - nld
     - nno
     - nya
     - orm
+    - pan
     - pap
     - pol
     - por
     - ron
+    - rus
+    - sin
     - slk
     - slv
     - sna
@@ -58,45 +78,33 @@ clusters:
     - sot
     - spa
     - sqi
+    - srp
     - ssw
     - swe
     - tet
+    - tgk
     - tgl
     - ton
     - tuk
     - tur
+    - ukr
     - uzb
     - vie
     - zul
   auto_1:
-    label: Литва
-    hue: 215.0
-    etymology_origin: Auto-detected orthographic cluster around 'Литва' (8 languages).
-      Hand-curated etymology pending.
-    languages:
-    - bul
-    - kir
-    - mkd
-    - mon
-    - rus
-    - srp
-    - tgk
-    - ukr
-  auto_2:
     label: لتوانيا
-    hue: 305.0
-    etymology_origin: Auto-detected orthographic cluster around 'ليتوانيا' (3 languages).
+    hue: 245.0
+    etymology_origin: Auto-detected orthographic cluster around 'لیتوانی' (3 languages).
       Hand-curated etymology pending.
     languages:
     - ara
     - fas
     - pus
-  auto_3:
-    label: लिथुआनिया
-    hue: 35.0
-    etymology_origin: Auto-detected orthographic cluster around 'लिथुआनिया' (3 languages).
-      Hand-curated etymology pending.
+  auto_2:
+    label: ປະເທດລີຕົວນີ
+    hue: 5.0
+    etymology_origin: Auto-detected orthographic cluster around 'ປະເທດລີຕົວນີ' (2
+      languages). Hand-curated etymology pending.
     languages:
-    - bho
-    - hin
-    - nep
+    - lao
+    - tha

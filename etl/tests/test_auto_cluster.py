@@ -57,21 +57,45 @@ def test_pick_centroid_single_item():
 
 def test_cluster_country_exonyms_drops_singletons():
     """Singletons aren't useful in the legend, so the
-    `cluster_country_exonyms` pipeline drops them. This Russia-shaped
-    fixture has 3 Latin-script Russia-family members + 1 isolated
-    Cyrillic outlier; the outlier disappears."""
+    `cluster_country_exonyms` pipeline drops them. Build a fixture
+    where 3 names chain together via orthographic similarity and a
+    4th is genuinely far from all of them (post-transliteration too,
+    so unidecode doesn't accidentally bridge to it)."""
     exonyms = [
         {"observer_language_code": "eng", "exonym": "Russia"},
         {"observer_language_code": "spa", "exonym": "Rusia"},
         {"observer_language_code": "fra", "exonym": "Russie"},
-        {"observer_language_code": "rus", "exonym": "Россия"},  # singleton
+        {"observer_language_code": "fin", "exonym": "Venäjä"},  # phonetic singleton (Finnic)
     ]
     clusters = cluster_country_exonyms(exonyms)
     assert len(clusters) == 1
     assert len(clusters[0].members) == 3
-    # The Cyrillic outlier shouldn't appear in any kept cluster.
+    # The Finnic outlier shouldn't appear in any kept cluster — Venäjä
+    # transliterates to 'venaja' which is far from 'russia'/'rusia'/'russie'.
     member_strs = {m["exonym"] for m in clusters[0].members}
-    assert "Россия" not in member_strs
+    assert "Venäjä" not in member_strs
+
+
+def test_cluster_country_exonyms_bridges_scripts_post_unidecode():
+    """Regression coverage for the phonetic-clustering upgrade. Before
+    the unidecode pass, Russia's Cyrillic 'Россия' had distance 1.0 to
+    Latin 'Russia' (no shared characters) and landed in its own
+    cluster. After: 'rossiia' vs 'russia' is close enough to join.
+
+    Without this behavior, the auto-clusterer's legend on Russia
+    showed 5 script-divided clusters instead of ~2 phonetic groups."""
+    exonyms = [
+        {"observer_language_code": "eng", "exonym": "Russia"},
+        {"observer_language_code": "rus", "exonym": "Россия"},   # → 'rossiia'
+        {"observer_language_code": "ukr", "exonym": "Росія"},    # → 'rosiia'
+        {"observer_language_code": "fas", "exonym": "روسیه"},    # → 'rwsyh' (Buckwalter-ish)
+    ]
+    clusters = cluster_country_exonyms(exonyms)
+    # The Latin + both Cyrillic forms should all chain together.
+    all_members = {m["exonym"] for c in clusters for m in c.members}
+    assert "Russia" in all_members
+    assert "Россия" in all_members
+    assert "Росія" in all_members
 
 
 def test_cluster_country_exonyms_sorted_descending_by_size():

@@ -24,7 +24,7 @@ The clustering is **etymological-root**, not string-distance. Germany decomposes
 
 ```sh
 npm install
-npm run dev               # http://localhost:5173/world-names/
+npm run dev               # http://localhost:5174/world-names/
 npm run test              # vitest
 npm run test:e2e:install  # one-time: pull Playwright browsers
 npm run test:e2e          # playwright

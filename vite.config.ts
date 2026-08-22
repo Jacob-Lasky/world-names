@@ -13,7 +13,7 @@ const crossOriginIsolationHeaders = {
 export default defineConfig({
   base: '/world-names/',
   plugins: [react()],
-  server: { port: 5173, headers: crossOriginIsolationHeaders },
+  server: { port: 5174, headers: crossOriginIsolationHeaders },
   preview: { headers: crossOriginIsolationHeaders },
   optimizeDeps: {
     // sqlite-wasm ships its own worker; don't try to pre-bundle it.
